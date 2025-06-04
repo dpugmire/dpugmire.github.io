@@ -3,6 +3,10 @@
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
+# talk map fix.
+The key to fixing the talk map is in _pages/talks.html. The href must be "/talkmap"
+It was initially set to "/talkmap.html".  This caused it to try and pull up the wrong page when pulling up the map.  Was a huge pain to find, but it finally works.
+
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
