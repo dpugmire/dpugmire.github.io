@@ -20,6 +20,12 @@ author_profile: true
     {% if pub.url %}
       <a href="{{ pub.url }}">[PDF]</a>
     {% endif %}
+
+    {% if pub.bibtex %}
+      <button onclick="copyBibtex('bibtex-{{ forloop.index }}')">Copy BibTeX</button>
+      <pre id="bibtex-{{ forloop.index }}" style="display: none;">{{ pub.bibtex }}</pre>
+    {% endif %}
+
   </li>
 {% endfor %}
 </ul>
@@ -53,3 +59,15 @@ author_profile: true
   </li>
 {% endfor %}
 </ul>
+
+<script>
+function copyBibtex(id) {
+  const pre = document.getElementById(id);
+  const text = pre.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("BibTeX copied to clipboard!");
+  }, () => {
+    alert("Failed to copy BibTeX.");
+  });
+}
+</script>
