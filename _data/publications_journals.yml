@@ -4,3 +4,10 @@
   year: 2023
   url: "https://example.com/paper"
   citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
+
+- title: "Fast GPU-Based Ray Tracing2"
+  authors: "Dave Pugmire, Alice Smith"
+  journal: "IEEE TVCG"
+  year: 2023
+  url: "https://example.com/paper"
+  citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
