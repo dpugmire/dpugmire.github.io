@@ -1,9 +1,10 @@
-- title: "11 Fast GPU-Based Ray Tracing"
-  authors: "Dave Pugmire, Alice Smith"
-  journal: "IEEE TVCG"
-  year: 2023
-  url: "https://example.com/paper"
-  citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
+- title: "In Situ Workload Estimation for Block Assignment and Duplication in Parallelization‐Over‐Data Particle Advection"
+  authors: "Zhe Wang, Kenneth Moreland, Matthew Larsen, James Kress, Hank Childs, Guan Li, Guihua Shan, David Pugmire"
+  journal: "Eurovis 2025"
+  year: 2025
+  doi: "https://doi.org/10.1111/cgf.70108"
+  #url: "https://example.com/paper"
+  #citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
 
 - title: "22 Fast GPU-Based Ray Tracing 2"
   authors: "Dave Pugmire, Alice Smith"
