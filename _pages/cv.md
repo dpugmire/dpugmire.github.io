@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+### [📄 Full CV (PDF)](/files/Dave_Pugmire_CV.pdf)
+
 # Education
 
 - Ph.D in Computer Science, University of Utah 2000
