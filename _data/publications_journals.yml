@@ -2,6 +2,7 @@
   authors: "Zhe Wang, Kenneth Moreland, Matthew Larsen, James Kress, Hank Childs, David Pugmire"
   journal: "IEEE Transactions on Visualization and Computer Graphics"
   year: 2025
+  doi: "10.1109/TVCG.2025.3557453"
   #url: "https://example.com/paper"
   bibtex: |
   @ARTICLE{10948171,
