@@ -20,12 +20,10 @@ author_profile: true
     {% if pub.url %}
       <a href="{{ pub.url }}">[PDF]</a>
     {% endif %}
-
     {% if pub.bibtex %}
       <button onclick="copyBibtex('bibtex-{{ forloop.index }}')">Copy BibTeX</button>
       <pre id="bibtex-{{ forloop.index }}" style="display: none;">{{ pub.bibtex }}</pre>
     {% endif %}
-
   </li>
 {% endfor %}
 </ul>
@@ -41,6 +39,10 @@ author_profile: true
     {% if pub.url %}
       <a href="{{ pub.url }}">[PDF]</a>
     {% endif %}
+    {% if pub.bibtex %}
+      <button onclick="copyBibtex('bibtex-{{ forloop.index }}')">Copy BibTeX</button>
+      <pre id="bibtex-{{ forloop.index }}" style="display: none;">{{ pub.bibtex }}</pre>
+    {% endif %}    
   </li>
 {% endfor %}
 </ul>
@@ -56,6 +58,10 @@ author_profile: true
     {% if pub.url %}
       <a href="{{ pub.url }}">[PDF]</a>
     {% endif %}
+    {% if pub.bibtex %}
+      <button onclick="copyBibtex('bibtex-{{ forloop.index }}')">Copy BibTeX</button>
+      <pre id="bibtex-{{ forloop.index }}" style="display: none;">{{ pub.bibtex }}</pre>
+    {% endif %}    
   </li>
 {% endfor %}
 </ul>
