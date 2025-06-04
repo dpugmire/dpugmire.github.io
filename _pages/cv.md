@@ -15,12 +15,12 @@ redirect_from:
 
 ## 📚 Education
 
-**Ph.D. in Computer Science**, University of Utah, 2000  
-**Ph.D. Committee**:
+**Ph.D. in Computer Science**, University of Utah, 2000
 
-- [Elaine Cohen](https://www.cs.utah.edu/~cohen), Distinguished Professor of Computer Science
-- [Richard Riesenfeld](https://www.cs.utah.edu/~riesenfe), Professor of Computer Science
-- [Christopher Johnson](https://www.sci.utah.edu/people/crj.html), Distinguished Professor of Computer Science
+- **Ph.D. Committee**:
+  - [Elaine Cohen](https://www.cs.utah.edu/~cohen), Distinguished Professor of Computer Science
+  - [Richard Riesenfeld](https://www.cs.utah.edu/~riesenfe), Professor of Computer Science
+  - [Christopher Johnson](https://www.sci.utah.edu/people/crj.html), Distinguished Professor of Computer Science
 
 **B.S. in Computer Science**, University of Utah, 1992
 
