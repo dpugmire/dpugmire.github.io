@@ -1,3 +1,11 @@
+- title: "Fast GPU-Based Ray Tracing2"
+  authors: "Dave Pugmire, Alice Smith"
+  journal: "IEEE TVCG"
+  year: 2023
+  url: "https://example.com/paper"
+  citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
+
+
 - title: "Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead"
   authors: "Zhe Wang, Kenneth Moreland, Matthew Larsen, James Kress, Hank Childs, David Pugmire"
   journal: "IEEE Transactions on Visualization and Computer Graphics"
@@ -7,8 +15,8 @@
   bibtex: |
   @ARTICLE{10948171,
   author={Wang, Zhe and Moreland, Kenneth and Larsen, Matthew and Kress, James and Childs, Hank and Pugmire, David},
-  journal={IEEE Transactions on Visualization and Computer Graphics}, 
-  title={Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead}, 
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  title={Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead},
   year={2025},
   volume={},
   number={},
@@ -16,9 +24,3 @@
   keywords={Partitioning algorithms;Measurement;Distributed databases;Data visualization;Trajectory;Computational modeling;Kernel;Heuristic algorithms;Vectors;Software algorithms;Scientific Visualization;Particle Advection;Parallel over Data},
   doi={10.1109/TVCG.2025.3557453}}
 
-- title: "Fast GPU-Based Ray Tracing2"
-  authors: "Dave Pugmire, Alice Smith"
-  journal: "IEEE TVCG"
-  year: 2023
-  url: "https://example.com/paper"
-  citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
