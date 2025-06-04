@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-### 📄 [Download Full CV (PDF)](/files/Dave_Pugmire_CV.pdf)
+### 📄 [Full CV](/files/Dave_Pugmire_CV.pdf) (Updated October 2024)
 
 ---
 
@@ -26,7 +26,7 @@ redirect_from:
 
 ---
 
-# Work experience
+## Work experience
 
 - 2021-Present: Distinguished Research Scientist, Oak Ridge National Laboratory
 - 2020-Present: Visualization Group Leader, Oak Ridge National Laboratory
@@ -37,6 +37,10 @@ redirect_from:
 - 2000-2003: Design Manager, IronCAD, LLC, Atlanta, GA
 - 1997-2000: Lead Software Engineer: IronCAD, LLC, Atlanta, GA
 
-# Service and leadership
+## Awards
 
-- Currently signed in to 43 different slack teams
+- Add awards
+
+## Professional Activities
+
+- Add all kinds of stuff.
