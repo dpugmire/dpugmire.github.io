@@ -9,7 +9,7 @@ author_profile: true
 {% assign conferences = site.data.publications_conferences %}
 {% assign books = site.data.publications_books %}
 
-### 📘 Journal Articles
+### 📘 Journal Articles pub
 
 <ul>
 {% for pub in journals %}
