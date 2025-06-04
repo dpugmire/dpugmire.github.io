@@ -9,56 +9,28 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+# Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- Ph.D in Computer Science, University of Utah 2000
+  ** PhD Commitee:**
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  - [Elaine Cohen](https://www.cs.utah.edu/~cohen), Distinguished Professor of Computer Science
+  - [Richard Riesenfeld](https://www.cs.utah.edu/~riesenfe), Professor of Computer Science
+  - [Christopher Johnson](https://www.sci.utah.edu/people/crj.html), Distinguished Professor of Computer Science
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- B.S. in Computer Science, University of Utah 1992
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+# Work experience
+
+- 2021-Present: Distinguished Research Scientist, Oak Ridge National Laboratory
+- 2020-Present: Visualization Group Leader, Oak Ridge National Laboratory
+- 2016-Present: Joint Faculty Professor, EE and CS Department, University of Tennessee
+- 2015-2021: Senior Research Scientist, Oak Ridge National Laboratory
+- 2007-2015: Research Scientist, Oak Ridge National Laboratory
+- 2003-2007: Research Scientist: Los Alamos National Laboratory
+- 2000-2003: Design Manager, IronCAD, LLC, Atlanta, GA
+- 1997-2000: Lead Software Engineer: IronCAD, LLC, Atlanta, GA
+
+# Service and leadership
+
+- Currently signed in to 43 different slack teams
