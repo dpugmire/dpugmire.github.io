@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-#Software
+# Software
 
 Viskores (formerly VTK-m)
 ======
