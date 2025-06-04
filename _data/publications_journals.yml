@@ -13,14 +13,14 @@
   doi: "10.1109/TVCG.2025.3557453"
   #url: "https://example.com/paper"
   bibtex: |
-  @ARTICLE{10948171,
-  author={Wang, Zhe and Moreland, Kenneth and Larsen, Matthew and Kress, James and Childs, Hank and Pugmire, David},
-  journal={IEEE Transactions on Visualization and Computer Graphics},
-  title={Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead},
-  year={2025},
-  volume={},
-  number={},
-  pages={1-13},
-  keywords={Partitioning algorithms;Measurement;Distributed databases;Data visualization;Trajectory;Computational modeling;Kernel;Heuristic algorithms;Vectors;Software algorithms;Scientific Visualization;Particle Advection;Parallel over Data},
-  doi={10.1109/TVCG.2025.3557453}}
+    @ARTICLE{10948171,
+    author={Wang, Zhe and Moreland, Kenneth and Larsen, Matthew and Kress, James and Childs, Hank and Pugmire, David},
+    journal={IEEE Transactions on Visualization and Computer Graphics},
+    title={Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead},
+    year={2025},
+    volume={},
+    number={},
+    pages={1-13},
+    keywords={Partitioning algorithms;Measurement;Distributed databases;Data visualization;Trajectory;Computational modeling;Kernel;Heuristic algorithms;Vectors;Software algorithms;Scientific Visualization;Particle Advection;Parallel over Data},
+    doi={10.1109/TVCG.2025.3557453}}
 
