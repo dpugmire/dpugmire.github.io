@@ -9,18 +9,18 @@ redirect_from:
 
 {% include base_path %}
 
-### [📄 Full CV (PDF)](/files/Dave_Pugmire_CV.pdf)
+### 📄 [Download Full CV (PDF)](/files/Dave_Pugmire_CV.pdf)
 
-# Education
+## Education
 
-- Ph.D in Computer Science, University of Utah 2000
-  ** PhD Commitee:**
+- **Ph.D. in Computer Science**, University of Utah, 2000  
+  **PhD Committee:**
 
   - [Elaine Cohen](https://www.cs.utah.edu/~cohen), Distinguished Professor of Computer Science
   - [Richard Riesenfeld](https://www.cs.utah.edu/~riesenfe), Professor of Computer Science
   - [Christopher Johnson](https://www.sci.utah.edu/people/crj.html), Distinguished Professor of Computer Science
 
-- B.S. in Computer Science, University of Utah 1992
+- **B.S. in Computer Science**, University of Utah, 1992
 
 # Work experience
 
