@@ -5,11 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-This is a test.
-
-{{ site.data.publications_journals | jsonify }}
-
-
 {% assign journals = site.data.publications_journals %}
 {% assign conferences = site.data.publications_conferences %}
 {% assign books = site.data.publications_books %}

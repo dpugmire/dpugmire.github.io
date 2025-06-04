@@ -3,7 +3,7 @@
   journal: "IEEE TVCG"
   year: 2023
   url: "https://example.com/paper"
-  citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
+  #citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
 
 
 - title: "Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead"
