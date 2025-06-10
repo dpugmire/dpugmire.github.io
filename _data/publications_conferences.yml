@@ -1,14 +1,185 @@
-- title: "In Situ Workload Estimation for Block Assignment and Duplication in Parallelization‐Over‐Data Particle Advection"
-  authors: "Zhe Wang, Kenneth Moreland, Matthew Larsen, James Kress, Hank Childs, Guan Li, Guihua Shan, David Pugmire"
-  journal: "Eurovis 2025"
-  year: 2025
-  doi: "https://doi.org/10.1111/cgf.70108"
-  #url: "https://example.com/paper"
-  #citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
-
-- title: "22 Fast GPU-Based Ray Tracing 2"
-  authors: "Dave Pugmire, Alice Smith"
-  journal: "IEEE TVCG"
-  year: 2023
-  url: "https://example.com/paper"
-  citation: "Pugmire, D. et al. Fast GPU-Based Ray Tracing. IEEE TVCG, 2023."
+- title: A Personalized AI Assistant For Intuition-Driven Visual Explorations
+  citation: Hammer, James, Hobson, Tanner, Pugmire, David, Klasky, Scott, Moreland, Kenneth, Huang, Jian. 2024 IEEE 20th International Conference on e-Science (e-Science), pp. 1–10, 2024.
+  bibtex: '@article{Hammer_2024, title={A Personalized AI Assistant For Intuition-Driven Visual Explorations}, url={http://dx.doi.org/10.1109/e-science62913.2024.10678681}, DOI={10.1109/e-science62913.2024.10678681}, journal={2024 IEEE 20th International Conference on e-Science (e-Science)}, publisher={IEEE}, author={Hammer, James and Hobson, Tanner and Pugmire, David and Klasky, Scott and Moreland, Kenneth and Huang, Jian}, year={2024}, month=sep, pages={1–10} }'
+  doi: 10.1109/e-science62913.2024.10678681
+- title: 'FunM2C: A Filter for Uncertainty Visualization of Multivariate Data on Multi-Core Devices'
+  citation: 'Hari, Gautam, Joshi, Nrushad, Wang, Zhe, Gong, Qian, Pugmire, Dave, Moreland, Kenneth, Johnson, Chris R., Klasky, Scott, Podhorszki, Norbert, Athawale, Tushar M.. 2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks, pp. 43–47, 2024.'
+  bibtex: '@article{Hari_2024, title={FunM2C: A Filter for Uncertainty Visualization of Multivariate Data on Multi-Core Devices}, url={http://dx.doi.org/10.1109/uncertaintyvisualization63963.2024.00010}, DOI={10.1109/uncertaintyvisualization63963.2024.00010}, journal={2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks}, publisher={IEEE}, author={Hari, Gautam and Joshi, Nrushad and Wang, Zhe and Gong, Qian and Pugmire, Dave and Moreland, Kenneth and Johnson, Chris R. and Klasky, Scott and Podhorszki, Norbert and Athawale, Tushar M.}, year={2024}, month=oct, pages={43–47} }'
+  doi: 10.1109/uncertaintyvisualization63963.2024.00010
+- title: An Entropy-Based Test and Development Framework for Uncertainty Modeling in Level-Set Visualizations
+  citation: 'Sisneros, Robert, Athawale, Tushar, Pugmire, David, Moreland, Kenneth. 2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks, pp. 78–83, 2024.'
+  bibtex: '@article{Sisneros_2024, title={An Entropy-Based Test and Development Framework for Uncertainty Modeling in Level-Set Visualizations}, url={http://dx.doi.org/10.1109/uncertaintyvisualization63963.2024.00015}, DOI={10.1109/uncertaintyvisualization63963.2024.00015}, journal={2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks}, publisher={IEEE}, author={Sisneros, Robert and Athawale, Tushar and Pugmire, David and Moreland, Kenneth}, year={2024}, month=oct, pages={78–83} }'
+  doi: 10.1109/uncertaintyvisualization63963.2024.00015
+- title: Uncertainty-Informed Volume Visualization using Implicit Neural Representation
+  citation: 'Saklani, Shanu, Goel, Chitwan, Bansal, Shrey, Wang, Zhe, Dutta, Soumya, Athawale, Tushar M., Pugmire, David, Johnson, Christopher R.. 2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks, pp. 62–72, 2024.'
+  bibtex: '@article{Saklani_2024, title={Uncertainty-Informed Volume Visualization using Implicit Neural Representation}, url={http://dx.doi.org/10.1109/uncertaintyvisualization63963.2024.00013}, DOI={10.1109/uncertaintyvisualization63963.2024.00013}, journal={2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks}, publisher={IEEE}, author={Saklani, Shanu and Goel, Chitwan and Bansal, Shrey and Wang, Zhe and Dutta, Soumya and Athawale, Tushar M. and Pugmire, David and Johnson, Christopher R.}, year={2024}, month=oct, pages={62–72} }'
+  doi: 10.1109/uncertaintyvisualization63963.2024.00013
+- title: Top Research Challenges and Opportunities for Near Real-Time Extreme-Scale Visualization of Scientific Data
+  citation: Pugmire, David, Moreland, Kenneth, Athawale, Tushar M., Hammer, James, Huang, Jian. 2024 IEEE 20th International Conference on e-Science (e-Science), pp. 1–6, 2024.
+  bibtex: '@article{Pugmire_2024, title={Top Research Challenges and Opportunities for Near Real-Time Extreme-Scale Visualization of Scientific Data}, url={http://dx.doi.org/10.1109/e-science62913.2024.10678727}, DOI={10.1109/e-science62913.2024.10678727}, journal={2024 IEEE 20th International Conference on e-Science (e-Science)}, publisher={IEEE}, author={Pugmire, David and Moreland, Kenneth and Athawale, Tushar M. and Hammer, James and Huang, Jian}, year={2024}, month=sep, pages={1–6} }'
+  doi: 10.1109/e-science62913.2024.10678727
+- title: 3D/6DOF Particle Filtering Location Algorithm Based on GPU Parallel Acceleration
+  citation: Yang, Yuhang, Zhang, Weimin, Li, Fangxing, Zhang, Di, Liu, Yonghui. 2023 IEEE International Conference on Mechatronics and Automation (ICMA), pp. 1527–1532, 2023.
+  bibtex: '@article{Yang_2023, title={3D/6DOF Particle Filtering Location Algorithm Based on GPU Parallel Acceleration}, url={http://dx.doi.org/10.1109/icma57826.2023.10215779}, DOI={10.1109/icma57826.2023.10215779}, journal={2023 IEEE International Conference on Mechatronics and Automation (ICMA)}, publisher={IEEE}, author={Yang, Yuhang and Zhang, Weimin and Li, Fangxing and Zhang, Di and Liu, Yonghui}, year={2023}, month=aug, pages={1527–1532} }'
+  doi: 10.1109/icma57826.2023.10215779
+- title: 'Advancing Comprehension of Quantum Application Outputs: A Visualization Technique'
+  citation: Senapati, Priyabrata, Athawale, Tushar M., Pugmire, David, Guan, Qiang. Proceedings of the 2023 International Workshop on Quantum Classical Cooperative, pp. 25–28, 2023.
+  bibtex: '@article{Senapati_2023, title={Advancing Comprehension of Quantum Application Outputs: A Visualization Technique}, url={http://dx.doi.org/10.1145/3588983.3596689}, DOI={10.1145/3588983.3596689}, journal={Proceedings of the 2023 International Workshop on Quantum Classical Cooperative}, publisher={ACM}, author={Senapati, Priyabrata and Athawale, Tushar M. and Pugmire, David and Guan, Qiang}, year={2023}, month=aug, pages={25–28} }'
+  doi: 10.1145/3588983.3596689
+- title: Understanding Node Allocation on Leadership-Class Supercomputers with Graph Analytics
+  citation: Trinh, Andy, Sheth, Shivam, Gaihre, Anil, Ding, Caiwen, Chen, Jieyang, Wang, Feiyi, Pugmire, David, Klasky, Scott, Liu, Hang, Wan, Lipeng. 2023 IEEE International Conference on High Performance Computing &amp;amp; Communications, Data Science &amp;amp; Systems, Smart City &amp;amp; Dependability in Sensor, Cloud &amp;amp; Big Data Systems &amp;amp; Application (HPCC/DSS/SmartCity/DependSys), pp. 780–787, 2023.
+  bibtex: '@article{Trinh_2023, title={Understanding Node Allocation on Leadership-Class Supercomputers with Graph Analytics}, url={http://dx.doi.org/10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113}, DOI={10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113}, journal={2023 IEEE International Conference on High Performance Computing &amp;amp; Communications, Data Science &amp;amp; Systems, Smart City &amp;amp; Dependability in Sensor, Cloud &amp;amp; Big Data Systems &amp;amp; Application (HPCC/DSS/SmartCity/DependSys)}, publisher={IEEE}, author={Trinh, Andy and Sheth, Shivam and Gaihre, Anil and Ding, Caiwen and Chen, Jieyang and Wang, Feiyi and Pugmire, David and Klasky, Scott and Liu, Hang and Wan, Lipeng}, year={2023}, month=dec, pages={780–787} }'
+  doi: 10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113
+- title: Hybrid Analysis of Fusion Data for Online Understanding of Complex Science on Extreme Scale Computers
+  citation: Suchyta, Eric et al.. 2022 IEEE International Conference on Cluster Computing (CLUSTER), pp. 218–229, 2022.
+  bibtex: '@article{Suchyta_2022, title={Hybrid Analysis of Fusion Data for Online Understanding of Complex Science on Extreme Scale Computers}, url={http://dx.doi.org/10.1109/cluster51413.2022.00035}, DOI={10.1109/cluster51413.2022.00035}, journal={2022 IEEE International Conference on Cluster Computing (CLUSTER)}, publisher={IEEE}, author={Suchyta, Eric and Choi, Jong Youl and Ku, Seung-Hoe and Pugmire, David and Gainaru, Ana and Huck, Kevin and Kube, Ralph and Scheinberg, Aaron and Suter, Frederic and Chang, Choongseock and Munson, Todd and Podhorszki, Norbert and Klasky, Scott}, year={2022}, month=sep, pages={218–229} }'
+  doi: 10.1109/cluster51413.2022.00035
+- title: The Need for Pervasive In Situ Analysis and Visualization (P-ISAV)
+  citation: Pugmire, David, Huang, Jian, Moreland, Kenneth, Klasky, Scott. High Performance Computing. ISC High Performance 2022 International Workshops, pp. 306–316, 2022.
+  bibtex: '@article{Pugmire_2022, title={The Need for Pervasive In Situ Analysis and Visualization (P-ISAV)}, ISBN={9783031232206}, ISSN={1611-3349}, url={http://dx.doi.org/10.1007/978-3-031-23220-6_21}, DOI={10.1007/978-3-031-23220-6_21}, journal={High Performance Computing. ISC High Performance 2022 International Workshops}, publisher={Springer International Publishing}, author={Pugmire, David and Huang, Jian and Moreland, Kenneth and Klasky, Scott}, year={2022}, pages={306–316} }'
+  doi: 10.1007/978-3-031-23220-6_21
+- title: Crosscut ECP Integration (Pele, ExaLearn, ALPINE).
+  citation: Salinas, Jorge, Souza Soriano, Bruno, Rieth, Martin, Chen, Jacqueline, Kolla, Hemanth, Arienti, Marco, Bennett, Janine. Proposed for presentation at the Eurographics Symposium on Parallel Graphics and Visualization (EGPGV) in ,, 2022.
+  bibtex: '@article{Salinas_2022, title={Crosscut ECP Integration (Pele, ExaLearn, ALPINE).}, url={http://dx.doi.org/10.2172/2003484}, DOI={10.2172/2003484}, journal={Proposed for presentation at the Eurographics Symposium on Parallel Graphics and Visualization (EGPGV) in ,}, publisher={US DOE}, author={Salinas, Jorge and Souza Soriano, Bruno and Rieth, Martin and Chen, Jacqueline and Kolla, Hemanth and Arienti, Marco and Bennett, Janine}, year={2022}, month=jun }'
+  doi: 10.2172/2003484
+- title: Weapons Program at Los Alamos and Sandia National Laboratories.
+  citation: Girrens, Steve, Owens, James. Proposed for presentation at the Contractor Audit Executive Council Conference in Santa Fe, New Mexico, 2022.
+  bibtex: '@article{Girrens_2022, title={Weapons Program at Los Alamos and Sandia National Laboratories.}, url={http://dx.doi.org/10.2172/2004230}, DOI={10.2172/2004230}, journal={Proposed for presentation at the Contractor Audit Executive Council Conference in Santa Fe, New Mexico}, publisher={US DOE}, author={Girrens, Steve and Owens, James}, year={2022}, month=jul }'
+  doi: 10.2172/2004230
+- title: Accelerating Multigrid-based Hierarchical Scientific Data Refactoring on GPUs
+  citation: Chen, Jieyang et al.. 2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS), pp. 859–868, 2021.
+  bibtex: '@article{Chen_2021, title={Accelerating Multigrid-based Hierarchical Scientific Data Refactoring on GPUs}, url={http://dx.doi.org/10.1109/ipdps49936.2021.00095}, DOI={10.1109/ipdps49936.2021.00095}, journal={2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, publisher={IEEE}, author={Chen, Jieyang and Wan, Lipeng and Liang, Xin and Whitney, Ben and Liu, Qing and Pugmire, David and Thompson, Nicholas and Choi, Jong Youl and Wolf, Matthew and Munson, Todd and Foster, Ian and Klasky, Scott}, year={2021}, month=may, pages={859–868} }'
+  doi: 10.1109/ipdps49936.2021.00095
+- title: Error-controlled, progressive, and adaptable retrieval of scientific data with multilevel decomposition
+  citation: Liang, Xin, Gong, Qian, Chen, Jieyang, Whitney, Ben, Wan, Lipeng, Liu, Qing, Pugmire, David, Archibald, Rick, Podhorszki, Norbert, Klasky, Scott. Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 1–13, 2021.
+  bibtex: '@article{Liang_2021, title={Error-controlled, progressive, and adaptable retrieval of scientific data with multilevel decomposition}, url={http://dx.doi.org/10.1145/3458817.3476179}, DOI={10.1145/3458817.3476179}, journal={Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis}, publisher={ACM}, author={Liang, Xin and Gong, Qian and Chen, Jieyang and Whitney, Ben and Wan, Lipeng and Liu, Qing and Pugmire, David and Archibald, Rick and Podhorszki, Norbert and Klasky, Scott}, year={2021}, month=nov, pages={1–13} }'
+  doi: 10.1145/3458817.3476179
+- title: Uncertainty Visualization of the Marching Squares and Marching Cubes Topology Cases
+  citation: Athawale, Tushar M., Sane, Sudhanshu, Johnson, Chris R.. 2021 IEEE Visualization Conference (VIS), 2021.
+  bibtex: '@article{Athawale_2021, title={Uncertainty Visualization of the Marching Squares and Marching Cubes Topology Cases}, url={http://dx.doi.org/10.1109/vis49827.2021.9623267}, DOI={10.1109/vis49827.2021.9623267}, journal={2021 IEEE Visualization Conference (VIS)}, publisher={IEEE}, author={Athawale, Tushar M. and Sane, Sudhanshu and Johnson, Chris R.}, year={2021}, month=oct }'
+  doi: 10.1109/vis49827.2021.9623267
+- title: Comparing Time-to-Solution for In Situ Visualization Paradigms at Scale
+  citation: Kress, James, Larsen, Matthew, Choi, Jong, Kim, Mark, Wolf, Matthew, Podhorszki, Norbert, Klasky, Scott, Childs, Hank, Pugmire, David. 2020 IEEE 10th Symposium on Large Data Analysis and Visualization (LDAV), pp. 22–26, 2020.
+  bibtex: '@article{Kress_2020, title={Comparing Time-to-Solution for In Situ Visualization Paradigms at Scale}, url={http://dx.doi.org/10.1109/ldav51489.2020.00009}, DOI={10.1109/ldav51489.2020.00009}, journal={2020 IEEE 10th Symposium on Large Data Analysis and Visualization (LDAV)}, publisher={IEEE}, author={Kress, James and Larsen, Matthew and Choi, Jong and Kim, Mark and Wolf, Matthew and Podhorszki, Norbert and Klasky, Scott and Childs, Hank and Pugmire, David}, year={2020}, month=oct, pages={22–26} }'
+  doi: 10.1109/ldav51489.2020.00009
+- title: Parallel Particle Advection Bake-Off for Scientific Visualization Workloads
+  citation: Binyahib, Roba, Pugmire, David, Yenpure, Abhishek, Childs, Hank. 2020 IEEE International Conference on Cluster Computing (CLUSTER), pp. 381–391, 2020.
+  bibtex: '@article{Binyahib_2020, title={Parallel Particle Advection Bake-Off for Scientific Visualization Workloads}, url={http://dx.doi.org/10.1109/cluster49012.2020.00048}, DOI={10.1109/cluster49012.2020.00048}, journal={2020 IEEE International Conference on Cluster Computing (CLUSTER)}, publisher={IEEE}, author={Binyahib, Roba and Pugmire, David and Yenpure, Abhishek and Childs, Hank}, year={2020}, month=sep, pages={381–391} }'
+  doi: 10.1109/cluster49012.2020.00048
+- title: A Lifeline-Based Approach for Work Requesting and Parallel Particle Advection
+  citation: Binyahib, Roba, Pugmire, David, Norris, Boyana, Childs, Hank. 2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV), pp. 52–61, 2019.
+  bibtex: '@article{Binyahib_2019, title={A Lifeline-Based Approach for Work Requesting and Parallel Particle Advection}, url={http://dx.doi.org/10.1109/ldav48142.2019.8944355}, DOI={10.1109/ldav48142.2019.8944355}, journal={2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV)}, publisher={IEEE}, author={Binyahib, Roba and Pugmire, David and Norris, Boyana and Childs, Hank}, year={2019}, month=oct, pages={52–61} }'
+  doi: 10.1109/ldav48142.2019.8944355
+- title: Understanding Performance-Quality Trade-offs in Scientific Visualization Workflows with Lossy Compression
+  citation: Chen, Jieyang, Pugmire, David, Wolf, Matthew, Thompson, Nicholas, Logan, Jeremy, Mehta, Kshitij, Wan, Lipeng, Choi, Jong Youl, Whitney, Ben, Klasky, Scott. 2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5), pp. 1–7, 2019.
+  bibtex: '@article{Chen_2019, title={Understanding Performance-Quality Trade-offs in Scientific Visualization Workflows with Lossy Compression}, url={http://dx.doi.org/10.1109/drbsd-549595.2019.00006}, DOI={10.1109/drbsd-549595.2019.00006}, journal={2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)}, publisher={IEEE}, author={Chen, Jieyang and Pugmire, David and Wolf, Matthew and Thompson, Nicholas and Logan, Jeremy and Mehta, Kshitij and Wan, Lipeng and Choi, Jong Youl and Whitney, Ben and Klasky, Scott}, year={2019}, month=nov, pages={1–7} }'
+  doi: 10.1109/drbsd-549595.2019.00006
+- title: In situ particle advection via parallelizing over particles
+  citation: Binyahib, Roba, Pugmire, David, Childs, Hank. Proceedings of the Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization, pp. 29–33, 2019.
+  bibtex: '@article{Binyahib_2019, title={In situ particle advection via parallelizing over particles}, url={http://dx.doi.org/10.1145/3364228.3364235}, DOI={10.1145/3364228.3364235}, journal={Proceedings of the Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization}, publisher={ACM}, author={Binyahib, Roba and Pugmire, David and Childs, Hank}, year={2019}, month=nov, pages={29–33} }'
+  doi: 10.1145/3364228.3364235
+- title: 'PAVE: An In Situ Framework for Scientific Visualization and Machine Learning Coupling'
+  citation: Leventhal, Samuel, Kim, Mark, Pugmire, David. 2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5), pp. 8–15, 2019.
+  bibtex: '@article{Leventhal_2019, title={PAVE: An In Situ Framework for Scientific Visualization and Machine Learning Coupling}, url={http://dx.doi.org/10.1109/drbsd-549595.2019.00007}, DOI={10.1109/drbsd-549595.2019.00007}, journal={2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)}, publisher={IEEE}, author={Leventhal, Samuel and Kim, Mark and Pugmire, David}, year={2019}, month=nov, pages={8–15} }'
+  doi: 10.1109/drbsd-549595.2019.00007
+- title: 'Coupling Exascale Multiphysics Applications: Methods and Lessons Learned'
+  citation: Choi, Jong Youl et al.. 2018 IEEE 14th International Conference on e-Science (e-Science), pp. 442–452, 2018.
+  bibtex: '@article{Choi_2018, title={Coupling Exascale Multiphysics Applications: Methods and Lessons Learned}, url={http://dx.doi.org/10.1109/escience.2018.00133}, DOI={10.1109/escience.2018.00133}, journal={2018 IEEE 14th International Conference on e-Science (e-Science)}, publisher={IEEE}, author={Choi, Jong Youl and Churchill, Michael and Davis, Philip and Di, Sheng and Eisenhauer, Greg and Ethier, Stephane and Foster, Ian and Geveci, Berk and Guo, Hanqi and Huck, Kevin and Jenko, Frank and Chang, Choong-Seock and Kim, Mark and Kress, James and Ku, Seung-Hoe and Liu, Qing and Logan, Jeremy and Malony, Allen and Mehta, Kshitij and Moreland, Kenneth and Munson, Todd and Parashar, Manish and Dominski, Julien and Peterka, Tom and Podhorszki, Norbert and Pugmire, Dave and Tugluk, Ozan and Wang, Ruonan and Whitney, Ben and Wolf, Matthew and Wood, Chad and Klasky, Scott and Merlo, Gabriele and Suchyta, Eric and Ainsworth, Mark and Allen, Bryce and Cappello, Franck}, year={2018}, month=oct,
+    pages={442–452} }'
+  doi: 10.1109/escience.2018.00133
+- title: 'A View from ORNL: Scientific Data Research Opportunities in the Big Data Age'
+  citation: Klasky, Scott et al.. 2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS), pp. 1357–1368, 2018.
+  bibtex: '@article{Klasky_2018, title={A View from ORNL: Scientific Data Research Opportunities in the Big Data Age}, url={http://dx.doi.org/10.1109/icdcs.2018.00136}, DOI={10.1109/icdcs.2018.00136}, journal={2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS)}, publisher={IEEE}, author={Klasky, Scott and Wolf, Matthew and Ainsworth, Mark and Atkins, Chuck and Choi, Jong and Eisenhauer, Greg and Geveci, Berk and Godoy, William and Kim, Mark and Kress, James and Kurc, Tahsin and Liu, Qing and Logan, Jeremy and Maccabe, Arthur B. and Mehta, Kshitij and Ostrouchov, George and Parashar, Manish and Podhorszki, Norbert and Pugmire, David and Suchyta, Eric and Wan, Lipeng and Wang, Ruonan}, year={2018}, month=jul, pages={1357–1368} }'
+  doi: 10.1109/icdcs.2018.00136
+- title: 'Canopus: A Paradigm Shift Towards Elastic Extreme-Scale Data Analytics on HPC Storage'
+  citation: Lu, Tao, Suchyta, Eric, Pugmire, Dave, Choi, Jong, Klasky, Scott, Liu, Qing, Podhorszki, Norbert, Ainsworth, Mark, Wolf, Matthew. 2017 IEEE International Conference on Cluster Computing (CLUSTER), pp. 58–69, 2017.
+  bibtex: '@article{Lu_2017, title={Canopus: A Paradigm Shift Towards Elastic Extreme-Scale Data Analytics on HPC Storage}, url={http://dx.doi.org/10.1109/cluster.2017.62}, DOI={10.1109/cluster.2017.62}, journal={2017 IEEE International Conference on Cluster Computing (CLUSTER)}, publisher={IEEE}, author={Lu, Tao and Suchyta, Eric and Pugmire, Dave and Choi, Jong and Klasky, Scott and Liu, Qing and Podhorszki, Norbert and Ainsworth, Mark and Wolf, Matthew}, year={2017}, month=sep, pages={58–69} }'
+  doi: 10.1109/cluster.2017.62
+- title: 'Exacution: Enhancing Scientific Data Management for Exascale'
+  citation: Klasky, Scott et al.. 2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS), pp. 1927–1937, 2017.
+  bibtex: '@article{Klasky_2017, title={Exacution: Enhancing Scientific Data Management for Exascale}, url={http://dx.doi.org/10.1109/icdcs.2017.256}, DOI={10.1109/icdcs.2017.256}, journal={2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS)}, publisher={IEEE}, author={Klasky, Scott and Suchyta, Eric and Ainsworth, Mark and Liu, Qing and Whitney, Ben and Wolf, Matthew and Choi, Jong and Foster, Ian and Kim, Mark and Logan, Jeremy and Mehta, Kshitij and Munson, Todd and Ostrouchov, George and Parashar, Manish and Podhorszki, Norbert and Pugmire, David and Wan, Lipeng}, year={2017}, month=jun, pages={1927–1937} }'
+  doi: 10.1109/icdcs.2017.256
+- title: In Situ Visualization of Radiation Transport Geometry
+  citation: Kim, Mark, Evans, Tom, Klasky, Scott, Pugmire, David. Proceedings of the In Situ Infrastructures on Enabling Extreme-Scale Analysis and Visualization, pp. 7–11, 2017.
+  bibtex: '@article{Kim_2017, title={In Situ Visualization of Radiation Transport Geometry}, url={http://dx.doi.org/10.1145/3144769.3144770}, DOI={10.1145/3144769.3144770}, journal={Proceedings of the In Situ Infrastructures on Enabling Extreme-Scale Analysis and Visualization}, publisher={ACM}, author={Kim, Mark and Evans, Tom and Klasky, Scott and Pugmire, David}, year={2017}, month=nov, pages={7–11} }'
+  doi: 10.1145/3144769.3144770
+- title: Performance Modeling of In Situ Rendering
+  citation: 'Larsen, Matthew, Harrison, Cyrus, Kress, James, Pugmire, David, Meredith, Jeremy S., Childs, Hank. SC16: International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 276–287, 2016.'
+  bibtex: '@article{Larsen_2016, title={Performance Modeling of In Situ Rendering}, url={http://dx.doi.org/10.1109/sc.2016.23}, DOI={10.1109/sc.2016.23}, journal={SC16: International Conference for High Performance Computing, Networking, Storage and Analysis}, publisher={IEEE}, author={Larsen, Matthew and Harrison, Cyrus and Kress, James and Pugmire, David and Meredith, Jeremy S. and Childs, Hank}, year={2016}, month=nov, pages={276–287} }'
+  doi: 10.1109/sc.2016.23
+- title: Visualization and Analysis Requirements for In Situ Processing for a Large-Scale Fusion Simulation Code
+  citation: Kress, James, Pugmire, David, Klasky, Scott, Childs, Hank. 2016 Second Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization (ISAV), pp. 45–50, 2016.
+  bibtex: '@article{Kress_2016, title={Visualization and Analysis Requirements for In Situ Processing for a Large-Scale Fusion Simulation Code}, url={http://dx.doi.org/10.1109/isav.2016.014}, DOI={10.1109/isav.2016.014}, journal={2016 Second Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization (ISAV)}, publisher={IEEE}, author={Kress, James and Pugmire, David and Klasky, Scott and Childs, Hank}, year={2016}, month=nov, pages={45–50} }'
+  doi: 10.1109/isav.2016.014
+- title: 'Tuned to Terrible: A Study of Parallel Particle Advection State of the Practice'
+  citation: Sisneros, Robert, Pugmire, David. 2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), pp. 1058–1067, 2016.
+  bibtex: '@article{Sisneros_2016, title={Tuned to Terrible: A Study of Parallel Particle Advection State of the Practice}, url={http://dx.doi.org/10.1109/ipdpsw.2016.173}, DOI={10.1109/ipdpsw.2016.173}, journal={2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, publisher={IEEE}, author={Sisneros, Robert and Pugmire, David}, year={2016}, month=may, pages={1058–1067} }'
+  doi: 10.1109/ipdpsw.2016.173
+- title: Visualization and Analysis for Near-Real-Time Decision Making in Distributed Workflows
+  citation: Pugmire, David et al.. 2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), pp. 1007–1013, 2016.
+  bibtex: '@article{Pugmire_2016, title={Visualization and Analysis for Near-Real-Time Decision Making in Distributed Workflows}, url={http://dx.doi.org/10.1109/ipdpsw.2016.175}, DOI={10.1109/ipdpsw.2016.175}, journal={2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)}, publisher={IEEE}, author={Pugmire, David and Kress, James and Choi, Jong and Klasky, Scott and Kurc, Tahsin and Churchill, Randy Michael and Wolf, Matthew and Eisenhower, Greg and Childs, Hank and Wu, Kesheng and Sim, Alexander and Gu, Junmin and Low, Jonathan}, year={2016}, month=may, pages={1007–1013} }'
+  doi: 10.1109/ipdpsw.2016.175
+- title: Loosely Coupled In Situ Visualization
+  citation: Kress, James, Klasky, Scott, Podhorszki, Norbert, Choi, Jong, Childs, Hank, Pugmire, David. Proceedings of the First Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization, pp. 1–6, 2015.
+  bibtex: '@article{Kress_2015, title={Loosely Coupled In Situ Visualization}, url={http://dx.doi.org/10.1145/2828612.2828623}, DOI={10.1145/2828612.2828623}, journal={Proceedings of the First Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization}, publisher={ACM}, author={Kress, James and Klasky, Scott and Podhorszki, Norbert and Choi, Jong and Childs, Hank and Pugmire, David}, year={2015}, month=nov, pages={1–6} }'
+  doi: 10.1145/2828612.2828623
+- title: Particle advection performance over varied architectures and workloads
+  citation: Childs, Hank, Biersdorff, Scott, Poliakoff, David, Camp, David, Malony, Allen D.. 2014 21st International Conference on High Performance Computing (HiPC), pp. 1–10, 2014.
+  bibtex: '@article{Childs_2014, title={Particle advection performance over varied architectures and workloads}, url={http://dx.doi.org/10.1109/hipc.2014.7116900}, DOI={10.1109/hipc.2014.7116900}, journal={2014 21st International Conference on High Performance Computing (HiPC)}, publisher={IEEE}, author={Childs, Hank and Biersdorff, Scott and Poliakoff, David and Camp, David and Malony, Allen D.}, year={2014}, month=dec, pages={1–10} }'
+  doi: 10.1109/hipc.2014.7116900
+- title: Analysis of applying time-dependent clustering model to BEOL TDDB
+  citation: Achanta, Ravi, Wu, Ernest, Li, Baozhen, McLaughlin, Paul. IEEE International Interconnect Technology Conference, pp. 219–222, 2014.
+  bibtex: '@article{Achanta_2014, title={Analysis of applying time-dependent clustering model to BEOL TDDB}, url={http://dx.doi.org/10.1109/iitc.2014.6831874}, DOI={10.1109/iitc.2014.6831874}, journal={IEEE International Interconnect Technology Conference}, publisher={IEEE}, author={Achanta, Ravi and Wu, Ernest and Li, Baozhen and McLaughlin, Paul}, year={2014}, month=may, pages={219–222} }'
+  doi: 10.1109/iitc.2014.6831874
+- title: 'ADIOS Visualization Schema: A First Step Towards Improving Interdisciplinary Collaboration in High Performance Computing'
+  citation: Tchoua, Roselyne et al.. 2013 IEEE 9th International Conference on e-Science, pp. 27–34, 2013.
+  bibtex: '@article{Tchoua_2013, title={ADIOS Visualization Schema: A First Step Towards Improving Interdisciplinary Collaboration in High Performance Computing}, url={http://dx.doi.org/10.1109/escience.2013.24}, DOI={10.1109/escience.2013.24}, journal={2013 IEEE 9th International Conference on e-Science}, publisher={IEEE}, author={Tchoua, Roselyne and Choi, Jong and Klasky, Scott and Liu, Qing and Logan, Jeremy and Moreland, Kenneth and Mu, Jingqing and Parashar, Manish and Podhorszki, Norbert and Pugmire, David and Wolf, Matthew}, year={2013}, month=oct, pages={27–34} }'
+  doi: 10.1109/escience.2013.24
+- title: Distributed parallel particle advection using work requesting
+  citation: Muller, Cornelius, Camp, David, Hentschel, Bernd, Garth, Christoph. 2013 IEEE Symposium on Large-Scale Data Analysis and Visualization (LDAV), pp. 1–6, 2013.
+  bibtex: '@article{Muller_2013, title={Distributed parallel particle advection using work requesting}, url={http://dx.doi.org/10.1109/ldav.2013.6675152}, DOI={10.1109/ldav.2013.6675152}, journal={2013 IEEE Symposium on Large-Scale Data Analysis and Visualization (LDAV)}, publisher={IEEE}, author={Muller, Cornelius and Camp, David and Hentschel, Bernd and Garth, Christoph}, year={2013}, month=oct, pages={1–6} }'
+  doi: 10.1109/ldav.2013.6675152
+- title: Exploring Collaborative HPC Visualization Workflows using VisIt and Python
+  citation: Krishnan, Hari, Harrison, Cyrus, Whitlock, Brad, Pugmire, David, Childs, Hank. Proceedings of the 12th Python in Science Conference, pp. 65–69, 2013.
+  bibtex: '@article{Krishnan_2013, title={Exploring Collaborative HPC Visualization Workflows using VisIt and Python}, ISSN={2575-9752}, url={http://dx.doi.org/10.25080/majora-8b375195-00b}, DOI={10.25080/majora-8b375195-00b}, journal={Proceedings of the 12th Python in Science Conference}, publisher={SciPy}, author={Krishnan, Hari and Harrison, Cyrus and Whitlock, Brad and Pugmire, David and Childs, Hank}, year={2013}, pages={65–69} }'
+  doi: 10.25080/majora-8b375195-00b
+- title: Parallel stream surface computation for large data sets
+  citation: Camp, David, Childs, Hank, Garth, Christoph, Pugmire, David, Joy, Kenneth I.. IEEE Symposium on Large Data Analysis and Visualization (LDAV), pp. 39–47, 2012.
+  bibtex: '@article{Camp_2012, title={Parallel stream surface computation for large data sets}, url={http://dx.doi.org/10.1109/ldav.2012.6378974}, DOI={10.1109/ldav.2012.6378974}, journal={IEEE Symposium on Large Data Analysis and Visualization (LDAV)}, publisher={IEEE}, author={Camp, David and Childs, Hank and Garth, Christoph and Pugmire, David and Joy, Kenneth I.}, year={2012}, month=oct, pages={39–47} }'
+  doi: 10.1109/ldav.2012.6378974
+- title: A distributed data-parallel framework for analysis and visualization algorithm development
+  citation: Meredith, Jeremy S., Sisneros, Robert, Pugmire, David, Ahern, Sean. Proceedings of the 5th Annual Workshop on General Purpose Processing with Graphics Processing Units, pp. 11–19, 2012.
+  bibtex: '@article{Meredith_2012, title={A distributed data-parallel framework for analysis and visualization algorithm development}, url={http://dx.doi.org/10.1145/2159430.2159432}, DOI={10.1145/2159430.2159432}, journal={Proceedings of the 5th Annual Workshop on General Purpose Processing with Graphics Processing Units}, publisher={ACM}, author={Meredith, Jeremy S. and Sisneros, Robert and Pugmire, David and Ahern, Sean}, year={2012}, month=mar, pages={11–19} }'
+  doi: 10.1145/2159430.2159432
+- title: Collaborative monitoring and visualization of HPC data
+  citation: Tchoua, Roselyne, Abbasi, Hasan, Klasky, Scott, Liu, Qing, Podhorszki, Norbert, Pugmire, David, Tian, Yuan, Wolf, Matthew. 2012 International Conference on Collaboration Technologies and Systems (CTS), pp. 397–403, 2012.
+  bibtex: '@article{Tchoua_2012, title={Collaborative monitoring and visualization of HPC data}, url={http://dx.doi.org/10.1109/cts.2012.6261083}, DOI={10.1109/cts.2012.6261083}, journal={2012 International Conference on Collaboration Technologies and Systems (CTS)}, publisher={IEEE}, author={Tchoua, Roselyne and Abbasi, Hasan and Klasky, Scott and Liu, Qing and Podhorszki, Norbert and Pugmire, David and Tian, Yuan and Wolf, Matthew}, year={2012}, month=may, pages={397–403} }'
+  doi: 10.1109/cts.2012.6261083
+- title: Mining hidden mixture context with ADIOS-P to improve predictive pre-fetcher accuracy
+  citation: Choi, Jong Youl, Abbasi, Hasan, Pugmire, David, Podhorszki, Norbert, Klasky, Scott, Capdevila, Cristian, Parashar, Manish, Wolf, Matthew, Qiu, Judy, Fox, Geoffrey. 2012 IEEE 8th International Conference on E-Science, pp. 1–8, 2012.
+  bibtex: '@article{Choi_2012, title={Mining hidden mixture context with ADIOS-P to improve predictive pre-fetcher accuracy}, url={http://dx.doi.org/10.1109/escience.2012.6404418}, DOI={10.1109/escience.2012.6404418}, journal={2012 IEEE 8th International Conference on E-Science}, publisher={IEEE}, author={Choi, Jong Youl and Abbasi, Hasan and Pugmire, David and Podhorszki, Norbert and Klasky, Scott and Capdevila, Cristian and Parashar, Manish and Wolf, Matthew and Qiu, Judy and Fox, Geoffrey}, year={2012}, month=oct, pages={1–8} }'
+  doi: 10.1109/escience.2012.6404418
+- title: Dense flow visualization using wave interference
+  citation: Matvienko, Victor, Kruger, Jens. 2012 IEEE Pacific Visualization Symposium, pp. 129–136, 2012.
+  bibtex: '@article{Matvienko_2012, title={Dense flow visualization using wave interference}, url={http://dx.doi.org/10.1109/pacificvis.2012.6183583}, DOI={10.1109/pacificvis.2012.6183583}, journal={2012 IEEE Pacific Visualization Symposium}, publisher={IEEE}, author={Matvienko, Victor and Kruger, Jens}, year={2012}, month=feb, pages={129–136} }'
+  doi: 10.1109/pacificvis.2012.6183583
+- title: Magnetic field outflows from active galactic nuclei
+  citation: Pugmire, David, Sutter, Paul, Ricker, Paul, Yang, Hsiang-Yi (Karen), Foreman, George. Proceedings of the 2011 companion on High Performance Computing Networking, Storage and Analysis Companion, pp. 129–130, 2011.
+  bibtex: '@article{Pugmire_2011, title={Magnetic field outflows from active galactic nuclei}, url={http://dx.doi.org/10.1145/2148600.2148668}, DOI={10.1145/2148600.2148668}, journal={Proceedings of the 2011 companion on High Performance Computing Networking, Storage and Analysis Companion}, publisher={ACM}, author={Pugmire, David and Sutter, Paul and Ricker, Paul and Yang, Hsiang-Yi (Karen) and Foreman, George}, year={2011}, month=nov, pages={129–130} }'
+  doi: 10.1145/2148600.2148668
+- title: Scalable computation of streamlines on very large datasets
+  citation: Pugmire, Dave, Childs, Hank, Garth, Christoph, Ahern, Sean, Weber, Gunther H.. Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis, pp. 1–12, 2009.
+  bibtex: '@article{Pugmire_2009, title={Scalable computation of streamlines on very large datasets}, url={http://dx.doi.org/10.1145/1654059.1654076}, DOI={10.1145/1654059.1654076}, journal={Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis}, publisher={ACM}, author={Pugmire, Dave and Childs, Hank and Garth, Christoph and Ahern, Sean and Weber, Gunther H.}, year={2009}, month=nov, pages={1–12} }'
+  doi: 10.1145/1654059.1654076
+- title: Occam’s razor and petascale visual data analysis
+  citation: 'Bethel, E W et al.. Journal of Physics: Conference Series, Vol. 180, pp. 012084, 2009.'
+  bibtex: '@article{Bethel_2009, title={Occam’s razor and petascale visual data analysis}, volume={180}, ISSN={1742-6596}, url={http://dx.doi.org/10.1088/1742-6596/180/1/012084}, DOI={10.1088/1742-6596/180/1/012084}, journal={Journal of Physics: Conference Series}, publisher={IOP Publishing}, author={Bethel, E W and Johnson, C and Ahern, S and Bell, J and Bremer, P-T and Childs, H and Cormier-Michel, E and Day, M and Deines, E and Fogal, T and Garth, C and Geddes, C G R and Hagen, H and Hamann, B and Hansen, C and Jacobsen, J and Joy, K and Krüger, J and Meredith, J and Messmer, P and Ostrouchov, G and Pascucci, V and Potter, K and Prabhat and Pugmire, D and Rübel, O and Sanderson, A and Silva, C and Ushizima, D and Weber, G and Whitlock, B and Wu, K}, year={2009}, month=jul, pages={012084} }'
+  doi: 10.1088/1742-6596/180/1/012084
+- title: Information visualization for utilizing distributed information resources
+  citation: Sugimoto, Masanori, Katayama, Norio. Proceedings of the 1998 workshop on New paradigms in information visualization and manipulation, pp. 73–77, 1998.
+  bibtex: '@article{Sugimoto_1998, title={Information visualization for utilizing distributed information resources}, url={http://dx.doi.org/10.1145/324332.324349}, DOI={10.1145/324332.324349}, journal={Proceedings of the 1998 workshop on New paradigms in information visualization and manipulation}, publisher={ACM}, author={Sugimoto, Masanori and Katayama, Norio}, year={1998}, month=nov, pages={73–77} }'
+  doi: 10.1145/324332.324349
+- title: Visual interfaces for solids modeling
+  citation: Grimm, Cindy, Pugmire, David. Proceedings of the 8th annual ACM symposium on User interface and software technology, pp. 51–60, 1995.
+  bibtex: '@article{Grimm_1995, title={Visual interfaces for solids modeling}, url={http://dx.doi.org/10.1145/215585.215652}, DOI={10.1145/215585.215652}, journal={Proceedings of the 8th annual ACM symposium on User interface and software technology}, publisher={ACM}, author={Grimm, Cindy and Pugmire, David}, year={1995}, month=dec, pages={51–60} }'
+  doi: 10.1145/215585.215652

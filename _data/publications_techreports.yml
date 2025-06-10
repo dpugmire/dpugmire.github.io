@@ -1,0 +1,40 @@
+- title: 'Plasma Surface Interactions: Predicting the Performance and Impact of Dynamic PFC Surfaces'
+  citation: Maroudas, Dimitrios. Office of Scientific and Technical Information (OSTI), 2024.
+  bibtex: '@book{2024, title={Plasma Surface Interactions: Predicting the Performance and Impact of Dynamic PFC Surfaces}, url={http://dx.doi.org/10.2172/2279204}, DOI={10.2172/2279204}, institution={Office of Scientific and Technical Information (OSTI)}, author={Maroudas, Dimitrios}, year={2024}, month=jan }'
+  doi: 10.2172/2279204
+- title: The Exploitation of Data Reduction for Visualization
+  citation: Moreland, Ken and Pugmire, Dave and Chen, Jieyang. Office of Scientific and Technical Information (OSTI), 2022.
+  bibtex: '@book{Moreland_2022, title={The Exploitation of Data Reduction for Visualization}, url={http://dx.doi.org/10.2172/1881112}, DOI={10.2172/1881112}, institution={Office of Scientific and Technical Information (OSTI)}, author={Moreland, Ken and Pugmire, Dave and Chen, Jieyang}, year={2022}, month=aug }'
+  doi: 10.2172/1881112
+- title: The Importance of Scientific Visualization on Novel Hardware
+  citation: Moreland, Kenneth and Pugmire, Dave and Geveci, Berk and Lo, Li-Ta and Childs, Hank and Bolstad, Mark and Shah, Ruchi and Wu, Panruo. Office of Scientific and Technical Information (OSTI), 2022.
+  bibtex: '@book{Moreland_2022, title={The Importance of Scientific Visualization on Novel Hardware}, url={http://dx.doi.org/10.2172/1885308}, DOI={10.2172/1885308}, institution={Office of Scientific and Technical Information (OSTI)}, author={Moreland, Kenneth and Pugmire, Dave and Geveci, Berk and Lo, Li-Ta and Childs, Hank and Bolstad, Mark and Shah, Ruchi and Wu, Panruo}, year={2022}, month=sep }'
+  doi: 10.2172/1885308
+- title: 'XVis: Visualization for the Extreme-Scale Scientific Computation Ecosystem. Final Report'
+  citation: Moreland, Kenneth and Pugmire, David and Rogers, David and Childs, Hank and Ma, Kwan-Liu and Geveci, Berk. Office of Scientific and Technical Information (OSTI), 2019.
+  bibtex: '@book{Moreland_2019, title={XVis: Visualization for the Extreme-Scale Scientific Computation Ecosystem. Final Report}, url={http://dx.doi.org/10.2172/1762947}, DOI={10.2172/1762947}, institution={Office of Scientific and Technical Information (OSTI)}, author={Moreland, Kenneth and Pugmire, David and Rogers, David and Childs, Hank and Ma, Kwan-Liu and Geveci, Berk}, year={2019}, month=aug }'
+  doi: 10.2172/1762947
+- title: STDA05-18 P6 Milestone Delivery
+  citation: Moreland, Kenneth and Pugmire, David and Rogers, David and Childs, Hank. Office of Scientific and Technical Information (OSTI), 2019.
+  bibtex: '@book{Moreland_2019, title={STDA05-18 P6 Milestone Delivery}, url={http://dx.doi.org/10.2172/1761961}, DOI={10.2172/1761961}, institution={Office of Scientific and Technical Information (OSTI)}, author={Moreland, Kenneth and Pugmire, David and Rogers, David and Childs, Hank}, year={2019}, month=apr }'
+  doi: 10.2172/1761961
+- title: In Situ Visualization for Computational Science
+  citation: Bennett, Janine and Childs, Hank and Garth, Christoph and Hentschel, Bernd. Office of Scientific and Technical Information (OSTI), 2019.
+  bibtex: '@book{Bennett_2019, title={In Situ Visualization for Computational Science}, url={http://dx.doi.org/10.2172/1493824}, DOI={10.2172/1493824}, institution={Office of Scientific and Technical Information (OSTI)}, author={Bennett, Janine and Childs, Hank and Garth, Christoph and Hentschel, Bernd}, year={2019}, month=feb }'
+  doi: 10.2172/1493824
+- title: ECP FY18 AD Project Review; ECP Project ExaWind (WBS 1.2.1.07) [PowerPoint]
+  citation: Sprague, Michael and Crozier, Paul and Ananthan, Shreyas. Office of Scientific and Technical Information (OSTI), 2018.
+  bibtex: '@book{Sprague_2018, title={ECP FY18 AD Project Review; ECP Project ExaWind (WBS 1.2.1.07) [PowerPoint]}, url={http://dx.doi.org/10.2172/1734509}, DOI={10.2172/1734509}, institution={Office of Scientific and Technical Information (OSTI)}, author={Sprague, Michael and Crozier, Paul and Ananthan, Shreyas}, year={2018}, month=sep }'
+  doi: 10.2172/1734509
+- title: ECP Milestone Report WBS 2.3.4.13 ECP/VTK-m FY18Q1 [MS-18/01-03] Multiblock / Gradients / Release STDA05-5.
+  citation: Moreland, Kenneth and Pugmire, David and Geveci, Berk. Office of Scientific and Technical Information (OSTI), 2017.
+  bibtex: '@book{Moreland_2017, title={ECP Milestone Report WBS 2.3.4.13 ECP/VTK-m FY18Q1 [MS-18/01-03] Multiblock / Gradients / Release STDA05-5.}, url={http://dx.doi.org/10.2172/1414661}, DOI={10.2172/1414661}, institution={Office of Scientific and Technical Information (OSTI)}, author={Moreland, Kenneth and Pugmire, David and Geveci, Berk}, year={2017}, month=dec }'
+  doi: 10.2172/1414661
+- title: 'XVis: Visualization for the Extreme-Scale Scientific-Computation Ecosystem: Year-end report FY17.'
+  citation: Moreland, Kenneth and Pugmire, David and Rogers, David and Childs, Hank and Ma, Kwan-Liu and Geveci, Berk. Office of Scientific and Technical Information (OSTI), 2017.
+  bibtex: '@book{Moreland_2017, title={XVis: Visualization for the Extreme-Scale Scientific-Computation Ecosystem: Year-end report FY17.}, url={http://dx.doi.org/10.2172/1408391}, DOI={10.2172/1408391}, institution={Office of Scientific and Technical Information (OSTI)}, author={Moreland, Kenneth and Pugmire, David and Rogers, David and Childs, Hank and Ma, Kwan-Liu and Geveci, Berk}, year={2017}, month=oct }'
+  doi: 10.2172/1408391
+- title: SciDAC - Center for Plasma Edge Simulation - Project Summary
+  citation: Parker, Scott. Office of Scientific and Technical Information (OSTI), 2014.
+  bibtex: '@book{Parker_2014, title={SciDAC - Center for Plasma Edge Simulation - Project Summary}, url={http://dx.doi.org/10.2172/1168614}, DOI={10.2172/1168614}, institution={Office of Scientific and Technical Information (OSTI)}, author={Parker, Scott}, year={2014}, month=nov }'
+  doi: 10.2172/1168614
