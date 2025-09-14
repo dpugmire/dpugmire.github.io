@@ -1,0 +1,40 @@
+To run things locally
+
+One-time setup:
+# Xcode command line tools (needed for native gems)
+xcode-select --install
+
+# Recommended: rbenv (keeps Ruby separate from macOS)
+brew install rbenv ruby-build
+rbenv install 3.2.4
+rbenv local 3.2.4
+
+cd to website dir.
+# Bundler + project gems
+gem install bundler
+bundle install
+
+
+# first time populate publications:
+
+export SERPAPI_API_KEY="90d9e00138f7ee858b38f2335629db5e9b293a368a8a15703263b5e84de866ee"
+export SCHOLAR_ID="FmxWGN0AAAAJ"
+python scripts/update_publications.py
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install scholarly PyYAML requests
+# Optional: export SERPAPI_API_KEY="your_key"  # improves reliability
+python scripts/update_publications.py
+
+
+
+## run jekyl locally
+
+export PAGES_REPO_NWO="dpugmire/dpugmire.github.io"
+## or to make it persistent, add this line to _config.yml
+repository: dpugmire/dpugmire.github.io
+
+
+bundle exec jekyll serve --livereload
+open http://localhost::4000

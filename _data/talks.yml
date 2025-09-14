@@ -1,0 +1,30 @@
+# Add your talks here (lat/lon required)
+- title: "Oak Ridge National Laboratory Seminar"
+  date: "2024-03-15"
+  location: "Oak Ridge, TN, USA"
+  lat: 35.93
+  lon: -84.31
+
+- title: "EuroVis 2025 Keynote"
+  date: "2025-06-02"
+  location: "Luxembourg City, Luxembourg"
+  lat: 49.61
+  lon: 6.13
+
+- title: "Talk title"
+  date: "2024-06-08"
+  location: "Luxembourg City, Luxembourg"
+  lat: 49.61
+  lon: 6.13
+
+- title: "Another talk title"
+  date: "2024-07-15"
+  location: "Oxford University, Oxford UK"
+  lat: 51.7570
+  lon: -1.2545
+
+- title: "Yet another talk title"
+  date: "2024-09-10"
+  location: "Cambridge University, Cambridge, UK"
+  lat: 52.2054
+  lon: -0.1132

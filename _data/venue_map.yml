@@ -1,0 +1,13 @@
+# Optional venue/type overrides. Key is a substring match (case-insensitive).
+# type must be one of: journal, conference, bookchapter
+overrides:
+  - match: "supercomputing"
+    type: conference
+  - match: "sc "
+    type: conference
+  - match: "ieee transactions"
+    type: journal
+  - match: "eurovis"
+    type: conference
+  - match: "springer book"
+    type: bookchapter

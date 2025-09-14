@@ -1,0 +1,5 @@
+/* Tweak spacing and readability */
+.site-title { font-weight: 700; }
+.page-content { max-width: 900px; margin: auto; }
+h1, h2, h3 { scroll-margin-top: 80px; }
+#mapid { border-radius: 12px; }
