@@ -1,0 +1,43 @@
+# -------------------------
+# Jekyll build artifacts
+# -------------------------
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# -------------------------
+# Editor / IDE
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*~
+
+# -------------------------
+# OS / misc
+# -------------------------
+.DS_Store
+Thumbs.db
+
