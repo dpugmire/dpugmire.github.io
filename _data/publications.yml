@@ -4,22 +4,30 @@
   venue: 2025 IEEE International Conference on Quantum Software (QSW)
   year: 2025
   type: conference
+  title_url: https://doi.org/10.1109/qsw67625.2025.00011
+  bibfile: assets/bib/visualizationofnoisyandlessnoisycomputationalbasisstatesinquantumcomputing_2025.bib
+  bibfile_txt: assets/bib/visualizationofnoisyandlessnoisycomputationalbasisstatesinquantumcomputing_2025.bib.txt
   doi: 10.1109/qsw67625.2025.00011
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:mel-f30kHHgC
 - title: 'The ECP ALPINE project: In situ and post hoc visualization infrastructure
     and analysis capabilities for exascale'
   authors: J Ahrens, M Arienti, U Ayachit, J Bennett, R Binyahib, A Biswas, ...
-  venue: The International Journal of High Performance Computing Applications 39 (1
-    …, 2025
+  venue: The International Journal of High Performance Computing Applications
   year: 2025
   type: journal
-  doi: 10.36227/techrxiv.173834937.72763339/v1
+  title_url: https://doi.org/10.1177/10943420241286521
+  bibfile: assets/bib/theecpalpineprojectinsituandposthocvisualizationinfrastructureandanalysiscapabil_2025.bib
+  bibfile_txt: assets/bib/theecpalpineprojectinsituandposthocvisualizationinfrastructureandanalysiscapabil_2025.bib.txt
+  doi: 10.1177/10943420241286521
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:unp9ATQDT5gC
 - title: Steady-state Particle Advection Speed-ups from GPU and CPU Parallelism
   authors: A Yenpure, D Pugmire, H Childs
   venue: Electronic Imaging
   year: 2025
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.2352/ei.2025.37.12.hpci-179
+  bibfile: assets/bib/steadystateparticleadvectionspeedupsfromgpuandcpuparallelism_2025.bib
+  bibfile_txt: assets/bib/steadystateparticleadvectionspeedupsfromgpuandcpuparallelism_2025.bib.txt
   doi: 10.2352/ei.2025.37.12.hpci-179
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:4aZ_i-5WJEQC
 - title: 'Parallelize Over Data Particle Advection: Participation, Ping Pong Particles,
@@ -28,6 +36,9 @@
   venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2025
   type: journal
+  title_url: https://doi.org/10.1109/tvcg.2025.3557453
+  bibfile: assets/bib/parallelizeoverdataparticleadvectionparticipationpingpongparticlesandoverhead_2025.bib
+  bibfile_txt: assets/bib/parallelizeoverdataparticleadvectionparticipationpingpongparticlesandoverhead_2025.bib.txt
   doi: 10.1109/tvcg.2025.3557453
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:CNPyR2KL9-0C
 - title: In Situ Workload Estimation for Block Assignment and Duplication in Parallelization‐Over‐Data
@@ -36,6 +47,9 @@
   venue: Computer Graphics Forum
   year: 2025
   type: journal
+  title_url: https://doi.org/10.1111/cgf.70108
+  bibfile: assets/bib/insituworkloadestimationforblockassignmentandduplicationinparallelizationoverdat_2025.bib
+  bibfile_txt: assets/bib/insituworkloadestimationforblockassignmentandduplicationinparallelizationoverdat_2025.bib.txt
   doi: 10.1111/cgf.70108
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:hvmnpdAuIbkC
 - title: 'Visualization at exascale: Making it all work with VTK-m'
@@ -43,6 +57,9 @@
   venue: The International Journal of High Performance Computing Applications
   year: 2024
   type: journal
+  title_url: https://doi.org/10.1177/10943420241270969
+  bibfile: assets/bib/visualizationatexascalemakingitallworkwithvtkm_2024.bib
+  bibfile_txt: assets/bib/visualizationatexascalemakingitallworkwithvtkm_2024.bib.txt
   doi: 10.1177/10943420241270969
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:-6RzNnnwWf8C
 - title: Uncertainty-Informed Volume Visualization using Implicit Neural Representation
@@ -51,22 +68,31 @@
     Software, and Decision Frameworks'
   year: 2024
   type: conference
+  title_url: https://doi.org/10.1109/uncertaintyvisualization63963.2024.00013
+  bibfile: assets/bib/uncertaintyinformedvolumevisualizationusingimplicitneuralrepresentation_2024.bib
+  bibfile_txt: assets/bib/uncertaintyinformedvolumevisualizationusingimplicitneuralrepresentation_2024.bib.txt
   doi: 10.1109/uncertaintyvisualization63963.2024.00013
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:T_ojBgVMvoEC
 - title: Uncertainty Visualization of Critical Points of 2D Scalar Fields for Parametric
     and Nonparametric Probabilistic Models
   authors: TM Athawale, Z Wang, D Pugmire, K Moreland, Q Gong, S Klasky, ...
-  venue: 2024 IEEE Topological Data Analysis and Visualization (TopoInVis)
+  venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2024
-  type: conference
-  doi: 10.1109/topoinvis64104.2024.00007
+  type: journal
+  title_url: https://doi.org/10.1109/tvcg.2024.3456393
+  bibfile: assets/bib/uncertaintyvisualizationofcriticalpointsof2dscalarfieldsforparametricandnonparam_2024.bib
+  bibfile_txt: assets/bib/uncertaintyvisualizationofcriticalpointsof2dscalarfieldsforparametricandnonparam_2024.bib.txt
+  doi: 10.1109/tvcg.2024.3456393
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:D_tqNUsBuKoC
 - title: Turbulent homoclinic tangle and its role in the integrated pedestal and heat
     exhaust problem for a stationary-operation tokamak fusion reactor
   authors: CS Chang, SH Ku, R Hager, J Choi, D Pugmire, S Klasky, A Loarte, ...
   venue: Nuclear Fusion
   year: 2024
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1088/1741-4326/ad3b1e
+  bibfile: assets/bib/turbulenthomoclinictangleanditsroleintheintegratedpedestalandheatexhaustproblemf_2024.bib
+  bibfile_txt: assets/bib/turbulenthomoclinictangleanditsroleintheintegratedpedestalandheatexhaustproblemf_2024.bib.txt
   doi: 10.1088/1741-4326/ad3b1e
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:c1e4I3QdEKYC
 - title: Top Research Challenges and Opportunities for Near Real-Time Extreme-Scale
@@ -75,6 +101,9 @@
   venue: 2024 IEEE 20th International Conference on e-Science (e-Science)
   year: 2024
   type: conference
+  title_url: https://doi.org/10.1109/e-science62913.2024.10678727
+  bibfile: assets/bib/topresearchchallengesandopportunitiesfornearrealtimeextremescalevisualizationofs_2024.bib
+  bibfile_txt: assets/bib/topresearchchallengesandopportunitiesfornearrealtimeextremescalevisualizationofs_2024.bib.txt
   doi: 10.1109/e-science62913.2024.10678727
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:zwpXiJ37cpgC
 - title: Role of turbulent separatrix tangle in the improvement of the integrated
@@ -82,15 +111,21 @@
   authors: CS Chang, S Ku, R Hager, J Choi, D Pugmire, S Klasky, A Loarte, RA Pitts
   venue: Nuclear Fusion
   year: 2024
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1088/1741-4326/ad3b1e
+  bibfile: assets/bib/roleofturbulentseparatrixtangleintheimprovementoftheintegratedpedestalandheatexh_2024.bib
+  bibfile_txt: assets/bib/roleofturbulentseparatrixtangleintheimprovementoftheintegratedpedestalandheatexh_2024.bib.txt
   doi: 10.1088/1741-4326/ad3b1e
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:C33y2ycGS3YC
 - title: Performance Improvements of Poincaré Analysis for Exascale Fusion Simulations
   authors: D Pugmire, JY Choi, S Klasky, K Moreland, E Suchyta, T Athawale, ...
-  venue: Proceedings of the 21st ACM International Conference on Computing Frontiers
+  venue: Nature Reviews Physics
   year: 2024
   type: conference
-  doi: 10.1145/3649153.3660495
+  title_url: https://doi.org/10.1038/s42254-025-00830-8
+  bibfile: assets/bib/performanceimprovementsofpoincaréanalysisforexascalefusionsimulations_2024.bib
+  bibfile_txt: assets/bib/performanceimprovementsofpoincaréanalysisforexascalefusionsimulations_2024.bib.txt
+  doi: 10.1038/s42254-025-00830-8
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:qE4H1tSSYIIC
 - title: 'GLAD-M35: a joint P and S global tomographic model with uncertainty quantification'
   authors: C Cui, W Lei, Q Liu, D Peter, E Bozdağ, J Tromp, J Hill, N Podhorszki,
@@ -98,6 +133,9 @@
   venue: Geophysical Journal International
   year: 2024
   type: journal
+  title_url: https://doi.org/10.1093/gji/ggae270
+  bibfile: assets/bib/gladm35ajointpandsglobaltomographicmodelwithuncertaintyquantification_2024.bib
+  bibfile_txt: assets/bib/gladm35ajointpandsglobaltomographicmodelwithuncertaintyquantification_2024.bib.txt
   doi: 10.1093/gji/ggae270
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:SAZ1SQo2q1kC
 - title: 'FunM2C: A Filter for Uncertainty Visualization of Multivariate Data on Multi-Core
@@ -107,24 +145,33 @@
     Software, and Decision Frameworks'
   year: 2024
   type: conference
+  title_url: https://doi.org/10.1109/uncertaintyvisualization63963.2024.00010
+  bibfile: assets/bib/funm2cafilterforuncertaintyvisualizationofmultivariatedataonmulticoredevices_2024.bib
+  bibfile_txt: assets/bib/funm2cafilterforuncertaintyvisualizationofmultivariatedataonmulticoredevices_2024.bib.txt
   doi: 10.1109/uncertaintyvisualization63963.2024.00010
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:ZqE1mSdD_DYC
 - title: 'Enhancing Boundary Plasma Simulations: Key Advances from the ABOUND SciDAC
     Project'
   authors: B Dudson, N Li, B Zhu, Y Chen, J Cheng, L Casali, T Taczak, X Tang, Y Li,
     ...
-  venue: Annals of Nuclear Energy
+  venue: Microscopy and Microanalysis
   year: 2024
-  type: journal
-  doi: 10.1016/j.anucene.2024.110772
+  type: conference
+  title_url: https://doi.org/10.1093/mam/ozae044.039
+  bibfile: assets/bib/enhancingboundaryplasmasimulationskeyadvancesfromtheaboundscidacproject_2024.bib
+  bibfile_txt: assets/bib/enhancingboundaryplasmasimulationskeyadvancesfromtheaboundscidacproject_2024.bib.txt
+  doi: 10.1093/mam/ozae044.039
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:__bU50VfleQC
 - title: Data-Driven Computation of Probabilistic Marching Cubes for Efficient Visualization
     of Level-Set Uncertainty
   authors: T Athawale, J Wang, C Johnson, D Pugmire
-  venue: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States), 2024
+  venue: Frontiers in Physics
   year: 2024
   type: conference
-  doi: 10.2139/ssrn.4892143
+  title_url: https://doi.org/10.3389/fphy.2022.958364
+  bibfile: assets/bib/datadrivencomputationofprobabilisticmarchingcubesforefficientvisualizationofleve_2024.bib
+  bibfile_txt: assets/bib/datadrivencomputationofprobabilisticmarchingcubesforefficientvisualizationofleve_2024.bib.txt
+  doi: 10.3389/fphy.2022.958364
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Wq2b2clWBLsC
 - title: An Entropy-Based Test and Development Framework for Uncertainty Modeling
     in Level-Set Visualizations
@@ -133,6 +180,9 @@
     Software, and Decision Frameworks'
   year: 2024
   type: conference
+  title_url: https://doi.org/10.1109/uncertaintyvisualization63963.2024.00015
+  bibfile: assets/bib/anentropybasedtestanddevelopmentframeworkforuncertaintymodelinginlevelsetvisuali_2024.bib
+  bibfile_txt: assets/bib/anentropybasedtestanddevelopmentframeworkforuncertaintymodelinginlevelsetvisuali_2024.bib.txt
   doi: 10.1109/uncertaintyvisualization63963.2024.00015
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:-yGd096yOn8C
 - title: A personalized AI assistant for intuition-driven visual explorations
@@ -140,16 +190,21 @@
   venue: 2024 IEEE 20th International Conference on e-Science (e-Science)
   year: 2024
   type: conference
+  title_url: https://doi.org/10.1109/e-science62913.2024.10678681
+  bibfile: assets/bib/apersonalizedaiassistantforintuitiondrivenvisualexplorations_2024.bib
+  bibfile_txt: assets/bib/apersonalizedaiassistantforintuitiondrivenvisualexplorations_2024.bib.txt
   doi: 10.1109/e-science62913.2024.10678681
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:NxmKEeNBbOMC
 - title: 'VTK-m: Visualization for the Exascale Era and Beyond'
   authors: M Bolstad, K Moreland, D Pugmire, D Rogers, LT Lo, B Geveci, H Childs,
     ...
-  venue: ACM SIGGRAPH - los angeles, California, United States of America - August
-    - 2023
+  venue: ACM SIGGRAPH 2023 Talks
   year: 2023
   type: conference
-  doi: 10.2172/2430458
+  title_url: https://doi.org/10.1145/3587421.3595466
+  bibfile: assets/bib/vtkmvisualizationfortheexascaleeraandbeyond_2023.bib
+  bibfile_txt: assets/bib/vtkmvisualizationfortheexascaleeraandbeyond_2023.bib.txt
+  doi: 10.1145/3587421.3595466
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:2ywjKiB__4kC
 - title: Understanding Node Allocation on Leadership-Class Supercomputers with Graph
     Analytics
@@ -160,31 +215,44 @@
     in Sensor, Cloud &amp;amp; Big Data Systems &amp;amp; Application (HPCC/DSS/SmartCity/DependSys)
   year: 2023
   type: conference
+  title_url: https://doi.org/10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113
+  bibfile: assets/bib/understandingnodeallocationonleadershipclasssupercomputerswithgraphanalytics_2023.bib
+  bibfile_txt: assets/bib/understandingnodeallocationonleadershipclasssupercomputerswithgraphanalytics_2023.bib.txt
   doi: 10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:AYInfyleIOsC
 - title: The role of turbulent separatrix tangle in the improvement of the integrated
     pedestal/heat exhaust issue for stationary operation in ITER and Fusion Reactors
   authors: C Chang, SH Ku, R Hager, J Choi, D Pugmire, S Klasky, A Loarte, R Pitts,
     ...
-  venue: Handbook of Generation IV Nuclear Reactors
+  venue: Nuclear Fusion
   year: 2023
-  type: bookchapter
-  doi: 10.1016/b978-0-12-820588-4.00030-x
+  type: conference
+  title_url: https://doi.org/10.1088/1741-4326/ad3b1e
+  bibfile: assets/bib/theroleofturbulentseparatrixtangleintheimprovementoftheintegratedpedestalheatexh_2023.bib
+  bibfile_txt: assets/bib/theroleofturbulentseparatrixtangleintheimprovementoftheintegratedpedestalheatexh_2023.bib.txt
+  doi: 10.1088/1741-4326/ad3b1e
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:eAlLMO4JVmQC
 - title: State‐of‐the‐Art Report on Optimizing Particle Advection Performance
   authors: A Yenpure, S Sane, R Binyahib, D Pugmire, C Garth, H Childs
   venue: Computer Graphics Forum
   year: 2023
   type: journal
+  title_url: https://doi.org/10.1111/cgf.14858
+  bibfile: assets/bib/stateoftheartreportonoptimizingparticleadvectionperformance_2023.bib
+  bibfile_txt: assets/bib/stateoftheartreportonoptimizingparticleadvectionperformance_2023.bib.txt
   doi: 10.1111/cgf.14858
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:wE-fMHVdjMkC
 - title: 'FunMC^ 2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core
     Devices'
   authors: J Wang, T Athawale, K Moreland, J Chen, C Johnson, D Pugmire
-  venue: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States), 2023
+  venue: '2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques,
+    Software, and Decision Frameworks'
   year: 2023
   type: conference
-  doi: 10.2139/ssrn.4624601
+  title_url: https://doi.org/10.1109/uncertaintyvisualization63963.2024.00010
+  bibfile: assets/bib/funmc2afilterforuncertaintyvisualizationofmarchingcubesonmulticoredevices_2023.bib
+  bibfile_txt: assets/bib/funmc2afilterforuncertaintyvisualizationofmarchingcubesonmulticoredevices_2023.bib.txt
+  doi: 10.1109/uncertaintyvisualization63963.2024.00010
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:ghEM2AJqZyQC
 - title: 'Advancing comprehension of quantum application outputs: A visualization
     technique'
@@ -192,61 +260,83 @@
   venue: Proceedings of the 2023 International Workshop on Quantum Classical Cooperative
   year: 2023
   type: conference
+  title_url: https://doi.org/10.1145/3588983.3596689
+  bibfile: assets/bib/advancingcomprehensionofquantumapplicationoutputsavisualizationtechnique_2023.bib
+  bibfile_txt: assets/bib/advancingcomprehensionofquantumapplicationoutputsavisualizationtechnique_2023.bib.txt
   doi: 10.1145/3588983.3596689
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:RJOyoaXV5v8C
 - title: A comparative study of the perceptual sensitivity of topological visualizations
     to feature variations
   authors: TM Athawale, B Triana, T Kotha, D Pugmire, P Rosen
-  venue: IEEE Transactions on Visualization and Computer Graphics 30 (1), 1074-1084,
-    2023
+  venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2023
   type: journal
-  doi: 10.2139/ssrn.4467895
+  title_url: https://doi.org/10.1109/tvcg.2023.3326592
+  bibfile: assets/bib/acomparativestudyoftheperceptualsensitivityoftopologicalvisualizationstofeaturev_2023.bib
+  bibfile_txt: assets/bib/acomparativestudyoftheperceptualsensitivityoftopologicalvisualizationstofeaturev_2023.bib.txt
+  doi: 10.1109/tvcg.2023.3326592
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:0aBXIfxlw9sC
 - title: 2022 review of data-driven plasma science
   authors: R Anirudh, R Archibald, MS Asif, MM Becker, S Benkadda, PT Bremer, ...
-  venue: 2023 IEEE International Conference on Plasma Science (ICOPS)
+  venue: IEEE Transactions on Plasma Science
   year: 2023
-  type: conference
-  doi: 10.1109/icops45740.2023.10481327
+  type: journal
+  title_url: https://doi.org/10.1109/tps.2023.3268170
+  bibfile: assets/bib/2022reviewofdatadrivenplasmascience_2023.bib
+  bibfile_txt: assets/bib/2022reviewofdatadrivenplasmascience_2023.bib.txt
+  doi: 10.1109/tps.2023.3268170
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:aIdbFUkbNIkC
 - title: Understanding the impact of data staging for coupled scientific workflows
   authors: A Gainaru, L Wan, R Wang, E Suchyta, J Chen, N Podhorszki, J Kress, ...
   venue: IEEE Transactions on Parallel and Distributed Systems
   year: 2022
   type: journal
+  title_url: https://doi.org/10.1109/tpds.2022.3179989
+  bibfile: assets/bib/understandingtheimpactofdatastagingforcoupledscientificworkflows_2022.bib
+  bibfile_txt: assets/bib/understandingtheimpactofdatastagingforcoupledscientificworkflows_2022.bib.txt
   doi: 10.1109/tpds.2022.3179989
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:silx2ntsSuwC
 - title: Tool and Processing Portability at Scale
   authors: P O'Leary, D Pugmire, S Rizzi, D Thompson
   venue: Mathematics and Visualization
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-81627-8_13
+  bibfile: assets/bib/toolandprocessingportabilityatscale_2022.bib
+  bibfile_txt: assets/bib/toolandprocessingportabilityatscale_2022.bib.txt
   doi: 10.1007/978-3-030-81627-8_13
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Zh0EY9V9P6UC
 - title: The need for pervasive in situ analysis and visualization (p-isav)
   authors: D Pugmire, J Huang, K Moreland, S Klasky
   venue: Lecture Notes in Computer Science
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-031-23220-6_21
+  bibfile: assets/bib/theneedforpervasiveinsituanalysisandvisualizationpisav_2022.bib
+  bibfile_txt: assets/bib/theneedforpervasiveinsituanalysisandvisualizationpisav_2022.bib.txt
   doi: 10.1007/978-3-031-23220-6_21
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:v6i8RKmR8ToC
 - title: 'The exascale framework for high fidelity coupled simulations (effis): Enabling
     whole device modeling in fusion science'
   authors: E Suchyta, S Klasky, N Podhorszki, M Wolf, A Adesoji, CS Chang, J Choi,
     ...
-  venue: The International Journal of High Performance Computing Applications 36 (1
-    …, 2022
+  venue: The International Journal of High Performance Computing Applications
   year: 2022
   type: journal
-  doi: 10.52843/cassyni.rds074
+  title_url: https://doi.org/10.1177/10943420211019119
+  bibfile: assets/bib/theexascaleframeworkforhighfidelitycoupledsimulationseffisenablingwholedevicemod_2022.bib
+  bibfile_txt: assets/bib/theexascaleframeworkforhighfidelitycoupledsimulationseffisenablingwholedevicemod_2022.bib.txt
+  doi: 10.1177/10943420211019119
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:SGW5VrABaM0C
 - title: The adaptable io system (adios)
   authors: D Pugmire, N Podhorszki, S Klasky, M Wolf, J Kress, M Kim, N Thompson,
     ...
   venue: Mathematics and Visualization
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-81627-8_11
+  bibfile: assets/bib/theadaptableiosystemadios_2022.bib
+  bibfile_txt: assets/bib/theadaptableiosystemadios_2022.bib.txt
   doi: 10.1007/978-3-030-81627-8_11
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:UuEBAcK4md4C
 - title: 'The SENSEI Generic In Situ Interface: Tool and Processing Portability at
@@ -255,7 +345,10 @@
     ...
   venue: Mathematics and Visualization
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-81627-8_13
+  bibfile: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscalebookchapter_2022.bib
+  bibfile_txt: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscalebookchapter_2022.bib.txt
   doi: 10.1007/978-3-030-81627-8_13
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:AzKEL7Gb_04C
 - title: 'The SENSEI Generic In Situ Interface: Tool and Processing Portability at
@@ -264,7 +357,10 @@
     ...
   venue: Mathematics and Visualization
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-81627-8_13
+  bibfile: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscale_2022.bib
+  bibfile_txt: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscale_2022.bib.txt
   doi: 10.1007/978-3-030-81627-8_13
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:QsaTk4IG4EwC
 - title: The Importance of Scientific Visualization on Novel Hardware
@@ -272,6 +368,9 @@
   venue: null
   year: 2022
   type: conference
+  title_url: https://doi.org/10.2172/1885308
+  bibfile: assets/bib/theimportanceofscientificvisualizationonnovelhardware_2022.bib
+  bibfile_txt: assets/bib/theimportanceofscientificvisualizationonnovelhardware_2022.bib.txt
   doi: 10.2172/1885308
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:MIg0yeAD4ggC
 - title: The Exploitation of Data Reduction for Visualization
@@ -279,6 +378,9 @@
   venue: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States), 2022
   year: 2022
   type: conference
+  title_url: https://doi.org/10.2172/1881112
+  bibfile: assets/bib/theexploitationofdatareductionforvisualization_2022.bib
+  bibfile_txt: assets/bib/theexploitationofdatareductionforvisualization_2022.bib.txt
   doi: 10.2172/1881112
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:8Xgff_V0N9gC
 - title: Proximity Portability and in Transit, M-to-N Data Partitioning and Movement
@@ -286,7 +388,10 @@
   authors: E Bethel, B Loring, U Ayachit, EPN Duque, N Ferrier, J Insley, J Gu, ...
   venue: Mathematics and Visualization
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-81627-8_20
+  bibfile: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsenseibookchapt_2022.bib
+  bibfile_txt: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsenseibookchapt_2022.bib.txt
   doi: 10.1007/978-3-030-81627-8_20
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:H_jBuBxbQIAC
 - title: Proximity Portability and in Transit, M-to-N Data Partitioning and Movement
@@ -294,22 +399,32 @@
   authors: EW Bethel, B Loring, U Ayachit, EPN Duque, N Ferrier, J Insley, J Gu, ...
   venue: Mathematics and Visualization
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-81627-8_20
+  bibfile: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsensei_2022.bib
+  bibfile_txt: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsensei_2022.bib.txt
   doi: 10.1007/978-3-030-81627-8_20
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Hck25ST_3aIC
 - title: Proximity Portability and in Transit, M-to-N Data Partitioning and Movement
   authors: D Pugmire, S Rizzi, D Thompson, W Usher, GH Weber
   venue: Mathematics and Visualization
   year: 2022
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-81627-8_20
+  bibfile: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovement_2022.bib
+  bibfile_txt: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovement_2022.bib.txt
   doi: 10.1007/978-3-030-81627-8_20
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:RuPIJ_LgqDgC
 - title: Message from the Workshop Chairs
   authors: D Pugmire, S Ziegeler, M Larsen, A Huebl
-  venue: 2022 Workshop on Accelerator Programming Using Directives (WACCPD)
+  venue: 2022 IEEE/ACM International Workshop on In Situ Infrastructures for Enabling
+    Extreme-Scale Analysis and Visualization (ISAV)
   year: 2022
   type: conference
-  doi: 10.1109/waccpd56842.2022.00004
+  title_url: https://doi.org/10.1109/isav56555.2022.00004
+  bibfile: assets/bib/messagefromtheworkshopchairs_2022.bib
+  bibfile_txt: assets/bib/messagefromtheworkshopchairs_2022.bib.txt
+  doi: 10.1109/isav56555.2022.00004
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:z6xuaG2dYH0C
 - title: Hybrid analysis of fusion data for online understanding of complex science
     on extreme scale computers
@@ -317,23 +432,32 @@
   venue: 2022 IEEE International Conference on Cluster Computing (CLUSTER)
   year: 2022
   type: conference
+  title_url: https://doi.org/10.1109/cluster51413.2022.00035
+  bibfile: assets/bib/hybridanalysisoffusiondataforonlineunderstandingofcomplexscienceonextremescaleco_2022.bib
+  bibfile_txt: assets/bib/hybridanalysisoffusiondataforonlineunderstandingofcomplexscienceonextremescaleco_2022.bib.txt
   doi: 10.1109/cluster51413.2022.00035
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:hSRAE-fF4OAC
 - title: Fiber uncertainty visualization for bivariate data with parametric and nonparametric
     noise models
   authors: TM Athawale, CR Johnson, S Sane, D Pugmire
-  venue: Journal of Nonparametric Statistics
+  venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2022
   type: journal
-  doi: 10.1080/10485252.2022.2085265
+  title_url: https://doi.org/10.1109/tvcg.2022.3209424
+  bibfile: assets/bib/fiberuncertaintyvisualizationforbivariatedatawithparametricandnonparametricnoise_2022.bib
+  bibfile_txt: assets/bib/fiberuncertaintyvisualizationforbivariatedatawithparametricandnonparametricnoise_2022.bib.txt
+  doi: 10.1109/tvcg.2022.3209424
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Xz60mAmATU4C
 - title: Discovery of micro-turbulent homoclinic tangle near magnetic X-point from
     the XGC total-f electromagnetic simulation
   authors: C Chang, SH Ku, M Churchill, R Kube, R Hager, H Guo, J Choi, ...
-  venue: Physics of Plasmas
+  venue: Cosmic Research
   year: 2022
-  type: journal
-  doi: 10.1063/5.0097855
+  type: conference
+  title_url: https://doi.org/10.1134/s0010952522700149
+  bibfile: assets/bib/discoveryofmicroturbulenthomoclinictanglenearmagneticxpointfromthexgctotalfelect_2022.bib
+  bibfile_txt: assets/bib/discoveryofmicroturbulenthomoclinictanglenearmagneticxpointfromthexgctotalfelect_2022.bib.txt
+  doi: 10.1134/s0010952522700149
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:2v_ZtQDX9iAC
 - title: Accelerated probabilistic marching cubes by deep learning for time-varying
     scalar ensembles
@@ -341,21 +465,30 @@
   venue: 2022 IEEE Visualization and Visual Analytics (VIS)
   year: 2022
   type: conference
+  title_url: https://doi.org/10.1109/vis54862.2022.00040
+  bibfile: assets/bib/acceleratedprobabilisticmarchingcubesbydeeplearningfortimevaryingscalarensembles_2022.bib
+  bibfile_txt: assets/bib/acceleratedprobabilisticmarchingcubesbydeeplearningfortimevaryingscalarensembles_2022.bib.txt
   doi: 10.1109/vis54862.2022.00040
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:CYCckWUYoCcC
 - title: A Guide to Particle Advection Performance
   authors: A Yenpure, S Sane, R Binyahib, D Pugmire, C Garth, H Childs
-  venue: CSRN
+  venue: Computer Graphics Forum
   year: 2022
   type: conference
-  doi: 10.24132/csrn.3201.2
+  title_url: https://doi.org/10.1111/cgf.14858
+  bibfile: assets/bib/aguidetoparticleadvectionperformance_2022.bib
+  bibfile_txt: assets/bib/aguidetoparticleadvectionperformance_2022.bib.txt
+  doi: 10.1111/cgf.14858
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:PkcyUWeTMh0C
 - title: Spatial coupling of gyrokinetic simulations, a generalized scheme based on
     first-principles
   authors: J Dominski, J Cheng, G Merlo, V Carey, R Hager, L Ricketson, J Choi, ...
   venue: Physics of Plasmas
   year: 2021
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1063/5.0027160
+  bibfile: assets/bib/spatialcouplingofgyrokineticsimulationsageneralizedschemebasedonfirstprinciples_2021.bib
+  bibfile_txt: assets/bib/spatialcouplingofgyrokineticsimulationsageneralizedschemebasedonfirstprinciples_2021.bib.txt
   doi: 10.1063/5.0027160
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:EPG8bYD4jVwC
 - title: Scalable Multigrid-based Hierarchical Scientific Data Refactoring on GPUs
@@ -363,67 +496,94 @@
   venue: 2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)
   year: 2021
   type: conference
+  title_url: https://doi.org/10.1109/ipdps49936.2021.00095
+  bibfile: assets/bib/scalablemultigridbasedhierarchicalscientificdatarefactoringongpus_2021.bib
+  bibfile_txt: assets/bib/scalablemultigridbasedhierarchicalscientificdatarefactoringongpus_2021.bib.txt
   doi: 10.1109/ipdps49936.2021.00095
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:DkZNVXde3BIC
 - title: Neural data compression for physics plasma simulation
   authors: J Choi, M Churchill, Q Gong, SH Ku, J Lee, A Rangarajan, S Ranka, ...
-  venue: 2021 Data Compression Conference (DCC)
+  venue: Monthly Notices of the Royal Astronomical Society
   year: 2021
   type: conference
-  doi: 10.1109/dcc50243.2021.00048
+  title_url: https://doi.org/10.1093/mnras/staa2589
+  bibfile: assets/bib/neuraldatacompressionforphysicsplasmasimulation_2021.bib
+  bibfile_txt: assets/bib/neuraldatacompressionforphysicsplasmasimulation_2021.bib.txt
+  doi: 10.1093/mnras/staa2589
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:An6A6Jpfc1oC
 - title: Minimizing development costs for efficient many-core visualization using
     MCD3
   authors: K Moreland, R Maynard, D Pugmire, A Yenpure, A Vacanti, M Larsen, ...
   venue: Parallel Computing
   year: 2021
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1016/j.parco.2021.102834
+  bibfile: assets/bib/minimizingdevelopmentcostsforefficientmanycorevisualizationusingmcd3_2021.bib
+  bibfile_txt: assets/bib/minimizingdevelopmentcostsforefficientmanycorevisualizationusingmcd3_2021.bib.txt
   doi: 10.1016/j.parco.2021.102834
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:TlpoogIpr_IC
 - title: 'Mgard+: Optimizing multilevel methods for error-bounded scientific data
     reduction'
   authors: X Liang, B Whitney, J Chen, L Wan, Q Liu, D Tao, J Kress, D Pugmire, ...
-  venue: 2021 IEEE 37th International Conference on Data Engineering (ICDE)
+  venue: IEEE Transactions on Computers
   year: 2021
-  type: conference
-  doi: 10.1109/icde51399.2021.00145
+  type: journal
+  title_url: https://doi.org/10.1109/tc.2021.3092201
+  bibfile: assets/bib/mgardoptimizingmultilevelmethodsforerrorboundedscientificdatareduction_2021.bib
+  bibfile_txt: assets/bib/mgardoptimizingmultilevelmethodsforerrorboundedscientificdatareduction_2021.bib.txt
+  doi: 10.1109/tc.2021.3092201
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:mWEH9CqjF64C
 - title: 'Maintaining trust in reduction: Preserving the accuracy of quantities of
     interest for lossy compression'
   authors: Q Gong, X Liang, B Whitney, JY Choi, J Chen, L Wan, S Ethier, SH Ku, ...
-  venue: 2021 7th International Workshop on Data Analysis and Reduction for Big Scientific
-    Data (DRBSD-7)
+  venue: Communications in Computer and Information Science
   year: 2021
   type: conference
-  doi: 10.1109/drbsd754563.2021.00010
+  title_url: https://doi.org/10.1007/978-3-030-96498-6_2
+  bibfile: assets/bib/maintainingtrustinreductionpreservingtheaccuracyofquantitiesofinterestforlossyco_2021.bib
+  bibfile_txt: assets/bib/maintainingtrustinreductionpreservingtheaccuracyofquantitiesofinterestforlossyco_2021.bib.txt
+  doi: 10.1007/978-3-030-96498-6_2
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:zGdJYJv2LkUC
 - title: Machine Learning-Based Autotuning for Parallel Particle Advection.
   authors: SD Schwartz, H Childs, D Pugmire
-  venue: 2021 Workshop on Exascale MPI (ExaMPI)
+  venue: 2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV)
   year: 2021
   type: conference
-  doi: 10.1109/exampi54564.2021.00010
+  title_url: https://doi.org/10.1109/ldav48142.2019.8944355
+  bibfile: assets/bib/machinelearningbasedautotuningforparallelparticleadvection_2021.bib
+  bibfile_txt: assets/bib/machinelearningbasedautotuningforparallelparticleadvection_2021.bib.txt
+  doi: 10.1109/ldav48142.2019.8944355
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:eO3_k5sD8BwC
 - title: Improving parallel particle advection performance with machine learning
   authors: SD Schwartz, H Childs, D Pugmire
-  venue: Parallel Computing
+  venue: Proceedings of the Eurographics Symposium on Parallel Graphics and …, 2021
   year: 2021
-  type: journal
-  doi: 10.1016/j.parco.2021.102813
+  type: conference
+  title_url: https://doi.org/10.2172/1670544
+  bibfile: assets/bib/improvingparallelparticleadvectionperformancewithmachinelearning_2021.bib
+  bibfile_txt: assets/bib/improvingparallelparticleadvectionperformancewithmachinelearning_2021.bib.txt
+  doi: 10.2172/1670544
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:BrOSOlqYqPUC
 - title: 'HyLiPoD: Parallel Particle Advection Via a Hybrid of Lifeline Scheduling
     and Parallelization-Over-Data.'
   authors: R Binyahib, D Pugmire, H Childs, M Larsen, F Sadlo
-  venue: Algorithms
+  venue: Proceedings of the Workshop on In Situ Infrastructures for Enabling Extreme-Scale
+    Analysis and Visualization
   year: 2021
-  type: journal
-  doi: 10.3390/a14090262
+  type: conference
+  title_url: https://doi.org/10.1145/3364228.3364235
+  bibfile: assets/bib/hylipodparallelparticleadvectionviaahybridoflifelineschedulingandparallelization_2021.bib
+  bibfile_txt: assets/bib/hylipodparallelparticleadvectionviaahybridoflifelineschedulingandparallelization_2021.bib.txt
+  doi: 10.1145/3364228.3364235
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:69ZgNCALVd0C
 - title: 'Fides: a general purpose data model library for streaming data'
   authors: D Pugmire, C Ross, N Thompson, J Kress, C Atkins, S Klasky, B Geveci
   venue: Lecture Notes in Computer Science
   year: 2021
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-90539-2_34
+  bibfile: assets/bib/fidesageneralpurposedatamodellibraryforstreamingdata_2021.bib
+  bibfile_txt: assets/bib/fidesageneralpurposedatamodellibraryforstreamingdata_2021.bib.txt
   doi: 10.1007/978-3-030-90539-2_34
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:JTqpx9DYBaYC
 - title: Error-controlled, progressive, and adaptable retrieval of scientific data
@@ -433,15 +593,21 @@
     Networking, Storage and Analysis
   year: 2021
   type: conference
+  title_url: https://doi.org/10.1145/3458817.3476179
+  bibfile: assets/bib/errorcontrolledprogressiveandadaptableretrievalofscientificdatawithmultileveldec_2021.bib
+  bibfile_txt: assets/bib/errorcontrolledprogressiveandadaptableretrievalofscientificdatawithmultileveldec_2021.bib.txt
   doi: 10.1145/3458817.3476179
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:wvYxNZNCP7wC
 - title: Co-design center for exascale machine learning technologies (exalearn)
   authors: FJ Alexander, J Ang, JA Bilbrey, J Balewski, T Casey, R Chard, J Choi,
     ...
-  venue: Proposed for presentation at the ECP Annual Meeting (2020).
+  venue: The International Journal of High Performance Computing Applications
   year: 2021
-  type: conference
-  doi: 10.2172/1869755
+  type: journal
+  title_url: https://doi.org/10.1177/10943420211029302
+  bibfile: assets/bib/codesigncenterforexascalemachinelearningtechnologiesexalearn_2021.bib
+  bibfile_txt: assets/bib/codesigncenterforexascalemachinelearningtechnologiesexalearn_2021.bib.txt
+  doi: 10.1177/10943420211029302
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:DrR-2ekChdkC
 - title: Accelerating multigrid-based hierarchical scientific data refactoring on
     gpus
@@ -449,27 +615,39 @@
   venue: 2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)
   year: 2021
   type: conference
+  title_url: https://doi.org/10.1109/ipdps49936.2021.00095
+  bibfile: assets/bib/acceleratingmultigridbasedhierarchicalscientificdatarefactoringongpus_2021.bib
+  bibfile_txt: assets/bib/acceleratingmultigridbasedhierarchicalscientificdatarefactoringongpus_2021.bib.txt
   doi: 10.1109/ipdps49936.2021.00095
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:w0F2JDEymm0C
 - title: Visualization as a service for scientific data
   authors: D Pugmire, J Kress, J Chen, H Childs, J Choi, D Ganyushin, B Geveci, ...
-  venue: Practical Python Data Visualization
+  venue: Communications in Computer and Information Science
   year: 2020
-  type: bookchapter
-  doi: 10.1007/978-1-4842-6455-3_4
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-63393-6_11
+  bibfile: assets/bib/visualizationasaserviceforscientificdata_2020.bib
+  bibfile_txt: assets/bib/visualizationasaserviceforscientificdata_2020.bib.txt
+  doi: 10.1007/978-3-030-63393-6_11
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:kF1pexMAQbMC
 - title: Towards 1ULP evaluation of Daubechies Wavelets
   authors: N Thompson, J Maddock, G Ostrouchov, J Logan, D Pugmire, S Klasky
-  venue: Introduction to Wavelet Transforms
+  venue: 'IEEE Transactions on Circuits and Systems I: Regular Papers'
   year: 2020
-  type: bookchapter
-  doi: 10.1201/9781003006626-5
+  type: journal
+  title_url: https://doi.org/10.1109/tcsi.2018.2799006
+  bibfile: assets/bib/towards1ulpevaluationofdaubechieswavelets_2020.bib
+  bibfile_txt: assets/bib/towards1ulpevaluationofdaubechieswavelets_2020.bib.txt
+  doi: 10.1109/tcsi.2018.2799006
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:uVUOdF_882EC
 - title: The moving target of visualization software for an increasingly complex world
   authors: G Reina, H Childs, K Matković, K Bühler, M Waldner, D Pugmire, ...
   venue: Computers &amp; Graphics
   year: 2020
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1016/j.cag.2020.01.005
+  bibfile: assets/bib/themovingtargetofvisualizationsoftwareforanincreasinglycomplexworld_2020.bib
+  bibfile_txt: assets/bib/themovingtargetofvisualizationsoftwareforanincreasinglycomplexworld_2020.bib.txt
   doi: 10.1016/j.cag.2020.01.005
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:ce2CqMG-AY4C
 - title: Parallel particle advection bake-off for scientific visualization workloads
@@ -477,51 +655,72 @@
   venue: 2020 IEEE International Conference on Cluster Computing (CLUSTER)
   year: 2020
   type: conference
+  title_url: https://doi.org/10.1109/cluster49012.2020.00048
+  bibfile: assets/bib/parallelparticleadvectionbakeoffforscientificvisualizationworkloads_2020.bib
+  bibfile_txt: assets/bib/parallelparticleadvectionbakeoffforscientificvisualizationworkloads_2020.bib.txt
   doi: 10.1109/cluster49012.2020.00048
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:-nhnvRiOwuoC
 - title: Optimizing multi-grid based reduction for efficient scientific data management
   authors: X Liang, B Whitney, J Chen, L Wan, Q Liu, D Tao, J Kress, D Pugmire, ...
-  venue: International Journal for Numerical Methods in Engineering
+  venue: 2021 IEEE 28th International Conference on High Performance Computing, Data,
+    and Analytics (HiPC)
   year: 2020
-  type: journal
-  doi: 10.1002/nme.6425
+  type: conference
+  title_url: https://doi.org/10.1109/hipc53243.2021.00036
+  bibfile: assets/bib/optimizingmultigridbasedreductionforefficientscientificdatamanagement_2020.bib
+  bibfile_txt: assets/bib/optimizingmultigridbasedreductionforefficientscientificdatamanagement_2020.bib.txt
+  doi: 10.1109/hipc53243.2021.00036
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:oi2SiIJ9l4AC
 - title: Opportunities for cost savings with in-transit visualization
   authors: J Kress, M Larsen, J Choi, M Kim, M Wolf, N Podhorszki, S Klasky, ...
   venue: Lecture Notes in Computer Science
   year: 2020
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-50743-5_8
+  bibfile: assets/bib/opportunitiesforcostsavingswithintransitvisualization_2020.bib
+  bibfile_txt: assets/bib/opportunitiesforcostsavingswithintransitvisualization_2020.bib.txt
   doi: 10.1007/978-3-030-50743-5_8
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:pAkWuXOU-OoC
 - title: I/o performance characterization and prediction through machine learning
     on hpc systems
   authors: L Wan, M Wolf, F Wang, JY Choi, G Ostrouchov, J Chen, N Podhorszki, ...
-  venue: Advances in Computational Intelligence and Robotics
+  venue: IEEE Transactions on Parallel and Distributed Systems
   year: 2020
-  type: bookchapter
-  doi: 10.4018/978-1-7998-0301-0.ch007
+  type: journal
+  title_url: https://doi.org/10.1109/tpds.2018.2870403
+  bibfile: assets/bib/ioperformancecharacterizationandpredictionthroughmachinelearningonhpcsystems_2020.bib
+  bibfile_txt: assets/bib/ioperformancecharacterizationandpredictionthroughmachinelearningonhpcsystems_2020.bib.txt
+  doi: 10.1109/tpds.2018.2870403
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:WAzi4Gm8nLoC
 - title: Global adjoint tomography—model GLAD-M25
   authors: W Lei, Y Ruan, E Bozdağ, D Peter, M Lefebvre, D Komatitsch, J Tromp, ...
   venue: Geophysical Journal International
   year: 2020
   type: journal
+  title_url: https://doi.org/10.1093/gji/ggaa253
+  bibfile: assets/bib/globaladjointtomographymodelgladm25_2020.bib
+  bibfile_txt: assets/bib/globaladjointtomographymodelgladm25_2020.bib.txt
   doi: 10.1093/gji/ggaa253
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:QyXJ3EUuO1IC
 - title: Extending the publish/subscribe abstraction for high-performance I/O and
     data management at extreme scale
   authors: J Logan, M Ainsworth, C Atkins, J Chen, JY Choi, J Gu, JM Kress, ...
-  venue: Proceedings of the 17th International Joint Conference on e-Business and
-    Telecommunications
+  venue: IEEE Access
   year: 2020
   type: conference
-  doi: 10.5220/0009833204050414
+  title_url: https://doi.org/10.1109/access.2020.3038921
+  bibfile: assets/bib/extendingthepublishsubscribeabstractionforhighperformanceioanddatamanagementatex_2020.bib
+  bibfile_txt: assets/bib/extendingthepublishsubscribeabstractionforhighperformanceioanddatamanagementatex_2020.bib.txt
+  doi: 10.1109/access.2020.3038921
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:O0nohqN1r9EC
 - title: Estimating lossy compressibility of scientific data using deep neural networks
   authors: Z Qin, J Wang, Q Liu, J Chen, D Pugmire, N Podhorszki, S Klasky
   venue: IEEE Letters of the Computer Society
   year: 2020
   type: journal
+  title_url: https://doi.org/10.1109/locs.2020.2971940
+  bibfile: assets/bib/estimatinglossycompressibilityofscientificdatausingdeepneuralnetworks_2020.bib
+  bibfile_txt: assets/bib/estimatinglossycompressibilityofscientificdatausingdeepneuralnetworks_2020.bib.txt
   doi: 10.1109/locs.2020.2971940
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:-95Q15plzcUC
 - title: Comparing time-to-solution for in situ visualization paradigms at scale
@@ -529,6 +728,9 @@
   venue: 2020 IEEE 10th Symposium on Large Data Analysis and Visualization (LDAV)
   year: 2020
   type: conference
+  title_url: https://doi.org/10.1109/ldav51489.2020.00009
+  bibfile: assets/bib/comparingtimetosolutionforinsituvisualizationparadigmsatscale_2020.bib
+  bibfile_txt: assets/bib/comparingtimetosolutionforinsituvisualizationparadigmsatscale_2020.bib.txt
   doi: 10.1109/ldav51489.2020.00009
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:kzcSZmkxUKAC
 - title: 'Adios 2: The adaptable input output system. a framework for high-performance
@@ -537,7 +739,10 @@
     ...
   venue: SoftwareX
   year: 2020
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1016/j.softx.2020.100561
+  bibfile: assets/bib/adios2theadaptableinputoutputsystemaframeworkforhighperformancedatamanagement_2020.bib
+  bibfile_txt: assets/bib/adios2theadaptableinputoutputsystemaframeworkforhighperformancedatamanagement_2020.bib.txt
   doi: 10.1016/j.softx.2020.100561
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:FiDNX6EVdGUC
 - title: 'ADIOS 2: the adaptable input output system. A framework for high-performance
@@ -546,21 +751,30 @@
     ...
   venue: SoftwareX
   year: 2020
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1016/j.softx.2020.100561
+  bibfile: assets/bib/adios2theadaptableinputoutputsystemaframeworkforhighperformancedatamanagementsof_2020.bib
+  bibfile_txt: assets/bib/adios2theadaptableinputoutputsystemaframeworkforhighperformancedatamanagementsof_2020.bib.txt
   doi: 10.1016/j.softx.2020.100561
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:k_7cPK9k7w8C
 - title: A terminology for in situ visualization and analysis systems
   authors: H Childs, SD Ahern, J Ahrens, AC Bauer, J Bennett, EW Bethel, ...
-  venue: ISAV'20 In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization
+  venue: The International Journal of High Performance Computing Applications
   year: 2020
-  type: conference
-  doi: 10.1145/3426462.3426463
+  type: journal
+  title_url: https://doi.org/10.1177/1094342020935991
+  bibfile: assets/bib/aterminologyforinsituvisualizationandanalysissystems_2020.bib
+  bibfile_txt: assets/bib/aterminologyforinsituvisualizationandanalysissystems_2020.bib.txt
+  doi: 10.1177/1094342020935991
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:3bvyWxjaHKcC
 - title: 'XVis: Visualization for the extreme-scale scientific computation ecosystem'
   authors: K Moreland, D Pugmire, D Rogers, H Childs, KL Ma, B Geveci
   venue: Univ. of Oregon, Eugene, OR (United States), 2019
   year: 2019
   type: conference
+  title_url: https://doi.org/10.2172/1762947
+  bibfile: assets/bib/xvisvisualizationfortheextremescalescientificcomputationecosystem_2019.bib
+  bibfile_txt: assets/bib/xvisvisualizationfortheextremescalescientificcomputationecosystem_2019.bib.txt
   doi: 10.2172/1762947
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:tHtfpZlB6tUC
 - title: 'XVis: Visualization for the Extreme-Scale Scientific Computation Ecosystem.
@@ -569,15 +783,22 @@
   venue: Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2019
   year: 2019
   type: conference
+  title_url: https://doi.org/10.2172/1762947
+  bibfile: assets/bib/xvisvisualizationfortheextremescalescientificcomputationecosystemfinalreport_2019.bib
+  bibfile_txt: assets/bib/xvisvisualizationfortheextremescalescientificcomputationecosystemfinalreport_2019.bib.txt
   doi: 10.2172/1762947
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:MAUkC_7iAq8C
 - title: 'Virtual and Augmented Reality for Visualization of Big Data: Examples from
     Deep Earth to Subsurface'
   authors: S Duzgun, E Isleyen, DC Demirkan, R Orsvuran, E Bozdag, D Pugmire
-  venue: ACM SIGGRAPH 2019 Virtual, Augmented, and Mixed Reality
+  venue: 2019 International Conference on Computational Science and Computational
+    Intelligence (CSCI)
   year: 2019
   type: conference
-  doi: 10.1145/3306449.3328826
+  title_url: https://doi.org/10.1109/csci49370.2019.00238
+  bibfile: assets/bib/virtualandaugmentedrealityforvisualizationofbigdataexamplesfromdeepearthtosubsur_2019.bib
+  bibfile_txt: assets/bib/virtualandaugmentedrealityforvisualizationofbigdataexamplesfromdeepearthtosubsur_2019.bib.txt
+  doi: 10.1109/csci49370.2019.00238
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:OBSaB-F7qqsC
 - title: Understanding performance-quality trade-offs in scientific visualization
     workflows with lossy compression
@@ -586,6 +807,9 @@
     Big Scientific Data (DRBSD-5)
   year: 2019
   type: conference
+  title_url: https://doi.org/10.1109/drbsd-549595.2019.00006
+  bibfile: assets/bib/understandingperformancequalitytradeoffsinscientificvisualizationworkflowswithlo_2019.bib
+  bibfile_txt: assets/bib/understandingperformancequalitytradeoffsinscientificvisualizationworkflowswithlo_2019.bib.txt
   doi: 10.1109/drbsd-549595.2019.00006
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:U_HPUtbDl20C
 - title: STDA05-18 P6 Milestone Delivery
@@ -593,6 +817,9 @@
   venue: Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2019
   year: 2019
   type: conference
+  title_url: https://doi.org/10.2172/1761961
+  bibfile: assets/bib/stda0518p6milestonedelivery_2019.bib
+  bibfile_txt: assets/bib/stda0518p6milestonedelivery_2019.bib.txt
   doi: 10.2172/1761961
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:SIv7DqKytYAC
 - title: 'Pave: An in situ framework for scientific visualization and machine learning
@@ -602,6 +829,9 @@
     Big Scientific Data (DRBSD-5)
   year: 2019
   type: conference
+  title_url: https://doi.org/10.1109/drbsd-549595.2019.00007
+  bibfile: assets/bib/paveaninsituframeworkforscientificvisualizationandmachinelearningcoupling_2019.bib
+  bibfile_txt: assets/bib/paveaninsituframeworkforscientificvisualizationandmachinelearningcoupling_2019.bib.txt
   doi: 10.1109/drbsd-549595.2019.00007
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:RoXSNcbkSzsC
 - title: In situ particle advection via parallelizing over particles
@@ -610,13 +840,19 @@
     Analysis and Visualization
   year: 2019
   type: conference
+  title_url: https://doi.org/10.1145/3364228.3364235
+  bibfile: assets/bib/insituparticleadvectionviaparallelizingoverparticles_2019.bib
+  bibfile_txt: assets/bib/insituparticleadvectionviaparallelizingoverparticles_2019.bib.txt
   doi: 10.1145/3364228.3364235
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:PyEswDtIyv0C
 - title: Comparing the efficiency of in situ visualization paradigms at scale
   authors: J Kress, M Larsen, J Choi, M Kim, M Wolf, N Podhorszki, S Klasky, ...
   venue: Lecture Notes in Computer Science
   year: 2019
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-20656-7_6
+  bibfile: assets/bib/comparingtheefficiencyofinsituvisualizationparadigmsatscale_2019.bib
+  bibfile_txt: assets/bib/comparingtheefficiencyofinsituvisualizationparadigmsatscale_2019.bib.txt
   doi: 10.1007/978-3-030-20656-7_6
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:KaMxkj08jr0C
 - title: A lifeline-based approach for work requesting and parallel particle advection
@@ -624,107 +860,152 @@
   venue: 2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV)
   year: 2019
   type: conference
+  title_url: https://doi.org/10.1109/ldav48142.2019.8944355
+  bibfile: assets/bib/alifelinebasedapproachforworkrequestingandparallelparticleadvection_2019.bib
+  bibfile_txt: assets/bib/alifelinebasedapproachforworkrequestingandparallelparticleadvection_2019.bib.txt
   doi: 10.1109/ldav48142.2019.8944355
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:HGTzPopzzJcC
 - title: A New Generation of Earth Mantle Model from Global Adjoint Tomography
   authors: Y Ruan, W Lei, M Lefebvre, R Modrak, J Smith, R Orsvuran, E Bozdag, ...
   venue: Acta Geologica Sinica - English Edition
   year: 2019
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1111/1755-6724.13991
+  bibfile: assets/bib/anewgenerationofearthmantlemodelfromglobaladjointtomography_2019.bib
+  bibfile_txt: assets/bib/anewgenerationofearthmantlemodelfromglobaladjointtomography_2019.bib.txt
   doi: 10.1111/1755-6724.13991
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:1Ye0OR6EYb4C
 - title: 4.8 Cost Models
   authors: D Pugmire, R Sisneros, T Carrard, S Frey, M Larsen, K Isaacs, BM Gauger,
     ...
-  venue: International Journal of Innovative Technology and Exploring Engineering
+  venue: The Economics of Non-Market Goods and Resources
   year: 2019
-  type: journal
-  doi: 10.35940/ijitee.b1127.1292s19
+  type: conference
+  title_url: https://doi.org/10.1007/978-94-007-7104-8_6
+  bibfile: assets/bib/48costmodels_2019.bib
+  bibfile_txt: assets/bib/48costmodels_2019.bib.txt
+  doi: 10.1007/978-94-007-7104-8_6
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:-mN3Mh-tlDkC
 - title: 4.5 Algorithmic Challenges
   authors: C Garth, D Pugmire, T Carrard, B Muite, K Moreland, U Rüde, ...
-  venue: Algorithmic Regulation
+  venue: 'Electronic Nose: Algorithmic Challenges'
   year: 2019
-  type: bookchapter
-  doi: 10.1093/oso/9780198838494.003.0007
+  type: conference
+  title_url: https://doi.org/10.1007/978-981-13-2167-2_2
+  bibfile: assets/bib/45algorithmicchallenges_2019.bib
+  bibfile_txt: assets/bib/45algorithmicchallenges_2019.bib.txt
+  doi: 10.1007/978-981-13-2167-2_2
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:prdVHNxh-e8C
 - title: 4.3 Workflow Execution
   authors: J Patchett, H Childs, A Bauer, PT Bremer, T Carrard, M Dorier, KH Garth,
     ...
-  venue: 2019 IEEE 27th International Conference on Network Protocols (ICNP)
+  venue: Synthesis Lectures on Data Management
   year: 2019
   type: conference
-  doi: 10.1109/icnp.2019.8888119
+  title_url: https://doi.org/10.1007/978-3-031-01872-5_4
+  bibfile: assets/bib/43workflowexecution_2019.bib
+  bibfile_txt: assets/bib/43workflowexecution_2019.bib.txt
+  doi: 10.1007/978-3-031-01872-5_4
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:XUvXOeBm_78C
 - title: 3.17 ECP ALPINE Algorithm Overview
   authors: R Westermann, T Carrard, I Hotz, C Hansen, D Pugmire, K Heitmann, ...
-  venue: In Situ Visualization for Computational Science, 11, 2019
+  venue: Communications in Computer and Information Science
   year: 2019
   type: conference
-  doi: 10.2172/1489415
+  title_url: https://doi.org/10.1007/978-981-13-1648-7_48
+  bibfile: assets/bib/317ecpalpinealgorithmoverview_2019.bib
+  bibfile_txt: assets/bib/317ecpalpinealgorithmoverview_2019.bib.txt
+  doi: 10.1007/978-981-13-1648-7_48
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:q-HalDI95KYC
 - title: The in situ terminology project
   authors: H Childs, SD Ahern, J Ahrens, AC Bauer, J Bennett, EW Bethel, ...
   venue: Implementing Project and Program Benefit Management
   year: 2018
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1201/9780429052972-13
+  bibfile: assets/bib/theinsituterminologyproject_2018.bib
+  bibfile_txt: assets/bib/theinsituterminologyproject_2018.bib.txt
   doi: 10.1201/9780429052972-13
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:mKu_rENv82IC
 - title: Performance-portable particle advection with VTK-m
   authors: D Pugmire, A Yenpure, MB Kim, JM Kress, R Maynard, H Childs, ...
-  venue: Oak Ridge National Lab.(ORNL), Oak Ridge, TN (United States), 2018
+  venue: 'Environmental Science: Processes &amp; Impacts'
   year: 2018
   type: conference
-  doi: 10.2172/1481597
+  title_url: https://doi.org/10.1039/c7em00336f
+  bibfile: assets/bib/performanceportableparticleadvectionwithvtkm_2018.bib
+  bibfile_txt: assets/bib/performanceportableparticleadvectionwithvtkm_2018.bib.txt
+  doi: 10.1039/c7em00336f
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:CB2v5VPnA5kC
 - title: 'October 2018 ECP ST Project Review: ECP Project WBS 2.3. 4.13 VTK-m/ECP.'
   authors: KD Moreland, D Pugmire, D Rogers, H Childs, B Geveci
   venue: Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2018
   year: 2018
   type: conference
-  doi: 10.2172/1734509
+  title_url: https://doi.org/10.2172/1415115
+  bibfile: assets/bib/october2018ecpstprojectreviewecpprojectwbs23413vtkmecp_2018.bib
+  bibfile_txt: assets/bib/october2018ecpstprojectreviewecpprojectwbs23413vtkmecp_2018.bib.txt
+  doi: 10.2172/1415115
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:sszUF3NjhM4C
 - title: 'In situ analysis and visualization of fusion simulations: lessons learned'
   authors: M Kim, J Kress, J Choi, N Podhorszki, S Klasky, M Wolf, K Mehta, K Huck,
     ...
   venue: Lecture Notes in Computer Science
   year: 2018
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-02465-9_16
+  bibfile: assets/bib/insituanalysisandvisualizationoffusionsimulationslessonslearned_2018.bib
+  bibfile_txt: assets/bib/insituanalysisandvisualizationoffusionsimulationslessonslearned_2018.bib.txt
   doi: 10.1007/978-3-030-02465-9_16
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:3NQIlFlcGxIC
 - title: In Situ Visualization for Computational Science
   authors: A Bauer, H Childs, S Frey, M Larsen, D Pugmire
-  venue: 2018 IEEE 8th Symposium on Large Data Analysis and Visualization (LDAV)
+  venue: IEEE Computer Graphics and Applications
   year: 2018
   type: conference
-  doi: 10.1109/ldav.2018.8739172
+  title_url: https://doi.org/10.1109/mcg.2019.2936674
+  bibfile: assets/bib/insituvisualizationforcomputationalscience_2018.bib
+  bibfile_txt: assets/bib/insituvisualizationforcomputationalscience_2018.bib.txt
+  doi: 10.1109/mcg.2019.2936674
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:jE2MZjpN3IcC
 - title: Global adjoint tomography-new generation earth mantle model
   authors: Y Ruan, W Lei, MP Lefebvre, R Modrak, JA Smith, R Orsvuran, E Bozdag, ...
-  venue: 'Journal of Geophysical Research: Solid Earth'
+  venue: Geophysical Journal International
   year: 2018
-  type: journal
-  doi: 10.1002/2017jb015019
+  type: conference
+  title_url: https://doi.org/10.1093/gji/ggw356
+  bibfile: assets/bib/globaladjointtomographynewgenerationearthmantlemodel_2018.bib
+  bibfile_txt: assets/bib/globaladjointtomographynewgenerationearthmantlemodel_2018.bib.txt
+  doi: 10.1093/gji/ggw356
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:rHJHxKgnXwkC
 - title: Exploring Earth’s interior in collaborative immersive VR environments
   authors: E Isleyen, R Orsvuran, E Bozdag, S Duzgun, D Pugmire, W Lei, Y Ruan, ...
-  venue: AGU Fall Meeting 2018, 2018
+  venue: Communications in Computer and Information Science
   year: 2018
   type: conference
-  doi: 10.1109/3dcve44211.2018
+  title_url: https://doi.org/10.1007/978-3-319-41769-1_1
+  bibfile: assets/bib/exploringearthsinteriorincollaborativeimmersivevrenvironments_2018.bib
+  bibfile_txt: assets/bib/exploringearthsinteriorincollaborativeimmersivevrenvironments_2018.bib.txt
+  doi: 10.1007/978-3-319-41769-1_1
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:1DsIQWDZLl8C
 - title: Dense Texture Flow Visualization using Data-Parallel Primitives.
   authors: M Kim, S Klasky, D Pugmire
-  venue: 2018 IEEE 8th Symposium on Large Data Analysis and Visualization (LDAV)
+  venue: 2017 IEEE 7th Symposium on Large Data Analysis and Visualization (LDAV)
   year: 2018
   type: conference
-  doi: 10.1109/ldav.2018.8739239
+  title_url: https://doi.org/10.1109/ldav.2017.8231847
+  bibfile: assets/bib/densetextureflowvisualizationusingdataparallelprimitives_2018.bib
+  bibfile_txt: assets/bib/densetextureflowvisualizationusingdataparallelprimitives_2018.bib.txt
+  doi: 10.1109/ldav.2017.8231847
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:owLR8QvbtFgC
 - title: 'Coupling exascale multiphysics applications: Methods and lessons learned'
   authors: JY Choi, CS Chang, J Dominski, S Klasky, G Merlo, E Suchyta, ...
   venue: 2018 IEEE 14th International Conference on e-Science (e-Science)
   year: 2018
   type: conference
+  title_url: https://doi.org/10.1109/escience.2018.00133
+  bibfile: assets/bib/couplingexascalemultiphysicsapplicationsmethodsandlessonslearned_2018.bib
+  bibfile_txt: assets/bib/couplingexascalemultiphysicsapplicationsmethodsandlessonslearned_2018.bib.txt
   doi: 10.1109/escience.2018.00133
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:L1USKYWJimsC
 - title: Binning based data reduction for vector field data of a particle-in-cell
@@ -732,7 +1013,10 @@
   authors: J Kress, J Choi, S Klasky, M Churchill, H Childs, D Pugmire
   venue: Lecture Notes in Computer Science
   year: 2018
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-030-02465-9_15
+  bibfile: assets/bib/binningbaseddatareductionforvectorfielddataofaparticleincellfusionsimulation_2018.bib
+  bibfile_txt: assets/bib/binningbaseddatareductionforvectorfielddataofaparticleincellfusionsimulation_2018.bib.txt
   doi: 10.1007/978-3-030-02465-9_15
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:jU7OWUQzBzMC
 - title: 'A view from ORNL: Scientific data research opportunities in the big data
@@ -743,6 +1027,9 @@
     (ICDCS)
   year: 2018
   type: conference
+  title_url: https://doi.org/10.1109/icdcs.2018.00136
+  bibfile: assets/bib/aviewfromornlscientificdataresearchopportunitiesinthebigdataage_2018.bib
+  bibfile_txt: assets/bib/aviewfromornlscientificdataresearchopportunitiesinthebigdataage_2018.bib.txt
   doi: 10.1109/icdcs.2018.00136
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Ade32sEp0pkC
 - title: 'XVis: Visualization for the Extreme-Scale Scientific-Computation Ecosystem:
@@ -751,22 +1038,30 @@
   venue: Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2017
   year: 2017
   type: conference
+  title_url: https://doi.org/10.2172/1408391
+  bibfile: assets/bib/xvisvisualizationfortheextremescalescientificcomputationecosystemyearendreportfy_2017.bib
+  bibfile_txt: assets/bib/xvisvisualizationfortheextremescalescientificcomputationecosystemyearendreportfy_2017.bib.txt
   doi: 10.2172/1408391
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:IaI1MmNe2tcC
 - title: Visualising Earth's Mantle based on Global Adjoint Tomography
   authors: E Bozdag, D Pugmire, MP Lefebvre, J Hill, D Komatitsch, DB Peter, ...
-  venue: Earth and Planetary Science Letters
+  venue: Geophysical Journal International
   year: 2017
-  type: journal
-  doi: 10.1016/j.epsl.2016.12.029
+  type: conference
+  title_url: https://doi.org/10.1093/gji/ggu492
+  bibfile: assets/bib/visualisingearthsmantlebasedonglobaladjointtomography_2017.bib
+  bibfile_txt: assets/bib/visualisingearthsmantlebasedonglobaladjointtomography_2017.bib.txt
+  doi: 10.1093/gji/ggu492
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:7wO8s98CvbsC
 - title: 'Pillars of the mantle: Imaging the interior of the earth with adjoint tomography'
   authors: D Pugmire, E Bozdağ, M Lefebvre, J Tromp, D Komatitsch, D Peter, ...
-  venue: 'Practice and Experience in Advanced Research Computing 2017: Sustainability,
-    Success and Impact'
+  venue: Geophysical Journal International
   year: 2017
   type: conference
-  doi: 10.1145/3093338.3104170
+  title_url: https://doi.org/10.1093/gji/ggu492
+  bibfile: assets/bib/pillarsofthemantleimagingtheinterioroftheearthwithadjointtomography_2017.bib
+  bibfile_txt: assets/bib/pillarsofthemantleimagingtheinterioroftheearthwithadjointtomography_2017.bib.txt
+  doi: 10.1093/gji/ggu492
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:LdasjJ6CEcoC
 - title: Pillars of the Mantle
   authors: D Pugmire, E Bozdağ, M Lefebvre, J Tromp, D Komatitsch, D Peter, ...
@@ -774,6 +1069,9 @@
     Success and Impact'
   year: 2017
   type: conference
+  title_url: https://doi.org/10.1145/3093338.3104170
+  bibfile: assets/bib/pillarsofthemantle_2017.bib
+  bibfile_txt: assets/bib/pillarsofthemantle_2017.bib.txt
   doi: 10.1145/3093338.3104170
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:CdxZDUztZiMC
 - title: In situ visualization of radiation transport geometry
@@ -782,6 +1080,9 @@
     and Visualization
   year: 2017
   type: conference
+  title_url: https://doi.org/10.1145/3144769.3144770
+  bibfile: assets/bib/insituvisualizationofradiationtransportgeometry_2017.bib
+  bibfile_txt: assets/bib/insituvisualizationofradiationtransportgeometry_2017.bib.txt
   doi: 10.1145/3144769.3144770
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:1taIhTC69MYC
 - title: 'Exacution: Enhancing scientific data management for exascale'
@@ -790,15 +1091,21 @@
     (ICDCS)
   year: 2017
   type: conference
+  title_url: https://doi.org/10.1109/icdcs.2017.256
+  bibfile: assets/bib/exacutionenhancingscientificdatamanagementforexascale_2017.bib
+  bibfile_txt: assets/bib/exacutionenhancingscientificdatamanagementforexascale_2017.bib.txt
   doi: 10.1109/icdcs.2017.256
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:MpfHP-DdYjUC
 - title: 'ECP/VTK-m: Updating HPC Visualization Software for Exascale-Era Processors
     (ECP 2017 Annual Meeting Poster).'
   authors: KD Moreland, D Pugmire, D Rogers, B Geveci, H Childs
-  venue: Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2017
+  venue: Proceedings of the Indian National Science Academy
   year: 2017
   type: conference
-  doi: 10.2172/1414661
+  title_url: https://doi.org/10.16943/ptinsa/2017/49125
+  bibfile: assets/bib/ecpvtkmupdatinghpcvisualizationsoftwareforexascaleeraprocessorsecp2017annualmeet_2017.bib
+  bibfile_txt: assets/bib/ecpvtkmupdatinghpcvisualizationsoftwareforexascaleeraprocessorsecp2017annualmeet_2017.bib.txt
+  doi: 10.16943/ptinsa/2017/49125
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:1yWc8FF-_SYC
 - title: ECP Milestone Report WBS 2.3. 4.13 ECP/VTK-m FY18Q1 [MS-18/01-03] Multiblock/Gradients/Release
     STDA05-5.
@@ -806,6 +1113,9 @@
   venue: Sandia National Lab.(SNL-NM), Albuquerque, NM (United States), 2017
   year: 2017
   type: conference
+  title_url: https://doi.org/10.2172/1414661
+  bibfile: assets/bib/ecpmilestonereportwbs23413ecpvtkmfy18q1ms180103multiblockgradientsreleasestda055_2017.bib
+  bibfile_txt: assets/bib/ecpmilestonereportwbs23413ecpvtkmfy18q1ms180103multiblockgradientsreleasestda055_2017.bib.txt
   doi: 10.2172/1414661
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:SnGPuo6Feq8C
 - title: 'Canopus: Enabling {Extreme-Scale} Data Analytics on Big {HPC} Storage via
@@ -815,6 +1125,9 @@
   venue: 2017 IEEE International Conference on Cluster Computing (CLUSTER)
   year: 2017
   type: conference
+  title_url: https://doi.org/10.1109/cluster.2017.62
+  bibfile: assets/bib/canopusenablingextremescaledataanalyticsonbighpcstorageviaprogressiverefactoring_2017.bib
+  bibfile_txt: assets/bib/canopusenablingextremescaledataanalyticsonbighpcstorageviaprogressiverefactoring_2017.bib.txt
   doi: 10.1109/cluster.2017.62
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:BzfGm06jWhQC
 - title: 'Canopus: A paradigm shift towards elastic extreme-scale data analytics on
@@ -823,6 +1136,9 @@
   venue: 2017 IEEE International Conference on Cluster Computing (CLUSTER)
   year: 2017
   type: conference
+  title_url: https://doi.org/10.1109/cluster.2017.62
+  bibfile: assets/bib/canopusaparadigmshifttowardselasticextremescaledataanalyticsonhpcstorage_2017.bib
+  bibfile_txt: assets/bib/canopusaparadigmshifttowardselasticextremescaledataanalyticsonhpcstorage_2017.bib.txt
   doi: 10.1109/cluster.2017.62
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:FiytvqdAVhgC
 - title: 'Canopus: A Paradigm Shift Towards Elastic Extreme-Scale Data Analytics on
@@ -831,13 +1147,19 @@
   venue: 2017 IEEE International Conference on Cluster Computing (CLUSTER)
   year: 2017
   type: conference
+  title_url: https://doi.org/10.1109/cluster.2017.62
+  bibfile: assets/bib/canopusaparadigmshifttowardselasticextremescaledataanalyticsonhpc_2017.bib
+  bibfile_txt: assets/bib/canopusaparadigmshifttowardselasticextremescaledataanalyticsonhpc_2017.bib.txt
   doi: 10.1109/cluster.2017.62
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:hsZV8lGYWTMC
 - title: 'Vtk-m: Accelerating the visualization toolkit for massively threaded architectures'
   authors: K Moreland, C Sewell, W Usher, L Lo, J Meredith, D Pugmire, J Kress, ...
   venue: IEEE Computer Graphics and Applications
   year: 2016
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1109/mcg.2016.48
+  bibfile: assets/bib/vtkmacceleratingthevisualizationtoolkitformassivelythreadedarchitectures_2016.bib
+  bibfile_txt: assets/bib/vtkmacceleratingthevisualizationtoolkitformassivelythreadedarchitectures_2016.bib.txt
   doi: 10.1109/mcg.2016.48
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:jL-93Qbq4QoC
 - title: Visualization and analysis requirements for in situ processing for a large-scale
@@ -847,6 +1169,9 @@
     Analysis and Visualization (ISAV)
   year: 2016
   type: conference
+  title_url: https://doi.org/10.1109/isav.2016.014
+  bibfile: assets/bib/visualizationandanalysisrequirementsforinsituprocessingforalargescalefusionsimul_2016.bib
+  bibfile_txt: assets/bib/visualizationandanalysisrequirementsforinsituprocessingforalargescalefusionsimul_2016.bib.txt
   doi: 10.1109/isav.2016.014
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:ubry08Y2EpUC
 - title: Visualization and analysis for near-real-time decision making in distributed
@@ -856,6 +1181,9 @@
     (IPDPSW)
   year: 2016
   type: conference
+  title_url: https://doi.org/10.1109/ipdpsw.2016.175
+  bibfile: assets/bib/visualizationandanalysisfornearrealtimedecisionmakingindistributedworkflows_2016.bib
+  bibfile_txt: assets/bib/visualizationandanalysisfornearrealtimedecisionmakingindistributedworkflows_2016.bib.txt
   doi: 10.1109/ipdpsw.2016.175
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:otzGkya1bYkC
 - title: 'Tuned to terrible: A study of parallel particle advection state of the practice'
@@ -864,6 +1192,9 @@
     (IPDPSW)
   year: 2016
   type: conference
+  title_url: https://doi.org/10.1109/ipdpsw.2016.173
+  bibfile: assets/bib/tunedtoterribleastudyofparallelparticleadvectionstateofthepractice_2016.bib
+  bibfile_txt: assets/bib/tunedtoterribleastudyofparallelparticleadvectionstateofthepractice_2016.bib.txt
   doi: 10.1109/ipdpsw.2016.173
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:CaZNVDsoPx4C
 - title: Stream processing for near real-time scientific data analysis
@@ -871,6 +1202,9 @@
   venue: 2016 New York Scientific Data Summit (NYSDS)
   year: 2016
   type: conference
+  title_url: https://doi.org/10.1109/nysds.2016.7747804
+  bibfile: assets/bib/streamprocessingfornearrealtimescientificdataanalysis_2016.bib
+  bibfile_txt: assets/bib/streamprocessingfornearrealtimescientificdataanalysis_2016.bib.txt
   doi: 10.1109/nysds.2016.7747804
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:ALROH1vI_8AC
 - title: Preparing for in situ processing on upcoming leading-edge supercomputers
@@ -878,16 +1212,23 @@
   venue: Supercomputing Frontiers and Innovations
   year: 2016
   type: conference
+  title_url: https://doi.org/10.14529/jsfi160404
+  bibfile: assets/bib/preparingforinsituprocessingonupcomingleadingedgesupercomputers_2016.bib
+  bibfile_txt: assets/bib/preparingforinsituprocessingonupcomingleadingedgesupercomputers_2016.bib.txt
   doi: 10.14529/jsfi160404
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:zCSUwVk65WsC
 - title: 'Pillars of the Mantle: Imaging the Interior of the Earth with Adjoint Tomography.
     In: PEARC17 Proceedings of the Practice and Experience in Advanced Research Computing
     2017 on …'
   authors: D Pugmire, E Bozdağ, M Lefebvre, J Tromp, D Komatitsch, D Peter, ...
-  venue: Solid Earth
+  venue: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States). Oak
+    …, 2016
   year: 2016
-  type: journal
-  doi: 10.5194/se-7-1141-2016
+  type: conference
+  title_url: https://doi.org/10.1145/3093338
+  bibfile: assets/bib/pillarsofthemantleimagingtheinterioroftheearthwithadjointtomographyinpearc17proc_2016.bib
+  bibfile_txt: assets/bib/pillarsofthemantleimagingtheinterioroftheearthwithadjointtomographyinpearc17proc_2016.bib.txt
+  doi: 10.1145/3093338
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:KNjnJ3z-R6IC
 - title: Performance modeling of in situ rendering
   authors: M Larsen, C Harrison, J Kress, D Pugmire, JS Meredith, H Childs
@@ -895,21 +1236,31 @@
     Storage and Analysis'
   year: 2016
   type: conference
+  title_url: https://doi.org/10.1109/sc.2016.23
+  bibfile: assets/bib/performancemodelingofinsiturendering_2016.bib
+  bibfile_txt: assets/bib/performancemodelingofinsiturendering_2016.bib.txt
   doi: 10.1109/sc.2016.23
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:lgwcVrK6X84C
 - title: 'Global adjoint tomography: first-generation model'
   authors: E Bozdağ, D Peter, M Lefebvre, D Komatitsch, J Tromp, J Hill, ...
   venue: Geophysical Journal International
   year: 2016
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1093/gji/ggw356
+  bibfile: assets/bib/globaladjointtomographyfirstgenerationmodel_2016.bib
+  bibfile_txt: assets/bib/globaladjointtomographyfirstgenerationmodel_2016.bib.txt
   doi: 10.1093/gji/ggw356
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:48xauSegjOkC
 - title: Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf
   authors: A Rossberg, K Domaschke, C Lucks, S Tsushima
-  venue: Christian-Albrechts-Universität zu Kiel
+  venue: 2013 38th International Conference on Infrared, Millimeter, and Terahertz
+    Waves (IRMMW-THz)
   year: 2015
-  type: bookchapter
-  doi: 10.38071/publ-10157
+  type: conference
+  title_url: https://doi.org/10.1109/irmmw-thz.2013.6665462
+  bibfile: assets/bib/publicationsrepositoryhelmholtzzentrumdresdenrossendorf_2015.bib
+  bibfile_txt: assets/bib/publicationsrepositoryhelmholtzzentrumdresdenrossendorf_2015.bib.txt
+  doi: 10.1109/irmmw-thz.2013.6665462
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:s9ia6_kGH2AC
 - title: 'Loosely coupled in situ visualization: A perspective on why it''s here to
     stay'
@@ -918,6 +1269,9 @@
     Extreme-Scale Analysis and Visualization
   year: 2015
   type: conference
+  title_url: https://doi.org/10.1145/2828612.2828623
+  bibfile: assets/bib/looselycoupledinsituvisualizationaperspectiveonwhyitsheretostay_2015.bib
+  bibfile_txt: assets/bib/looselycoupledinsituvisualizationaperspectiveonwhyitsheretostay_2015.bib.txt
   doi: 10.1145/2828612.2828623
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:F1b5ZUV5XREC
 - title: Visualizing the radiation of the Kelvin-Helmholtz instability
@@ -925,22 +1279,32 @@
   venue: IEEE Transactions on Plasma Science
   year: 2014
   type: journal
+  title_url: https://doi.org/10.1109/tps.2014.2327392
+  bibfile: assets/bib/visualizingtheradiationofthekelvinhelmholtzinstability_2014.bib
+  bibfile_txt: assets/bib/visualizingtheradiationofthekelvinhelmholtzinstability_2014.bib.txt
   doi: 10.1109/tps.2014.2327392
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:tH6gc1N1XXoC
 - title: Towards scalable visualization plugins for data staging workflows
   authors: D Pugmire, J Kress, J Meredith, N Podhorszki, J Choi, S Klasky
-  venue: Mathematics and Visualization
+  venue: Proceedings of the 2012 ACM SIGMOD International Conference on Management
+    of Data
   year: 2014
-  type: bookchapter
-  doi: 10.1007/978-1-4471-6497-5_16
+  type: conference
+  title_url: https://doi.org/10.1145/2213836.2213970
+  bibfile: assets/bib/towardsscalablevisualizationpluginsfordatastagingworkflows_2014.bib
+  bibfile_txt: assets/bib/towardsscalablevisualizationpluginsfordatastagingworkflows_2014.bib.txt
+  doi: 10.1145/2213836.2213970
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:LgRImbQfgY4C
 - title: Ultrascale visualization of climate data
   authors: DN Williams, T Bremer, C Doutriaux, J Patchett, S Williams, G Shipman,
     ...
-  venue: Computer 46 (9), 68-76, 2013
+  venue: Computer
   year: 2013
   type: conference
-  doi: 10.1145/2535571
+  title_url: https://doi.org/10.1109/mc.2013.119
+  bibfile: assets/bib/ultrascalevisualizationofclimatedata_2013.bib
+  bibfile_txt: assets/bib/ultrascalevisualizationofclimatedata_2013.bib.txt
+  doi: 10.1109/mc.2013.119
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:fbc8zXXH2BUC
 - title: 'The Ultra-scale Visualization Climate Data Analysis Tools (UV-CDAT): Data
     Analysis and Visualization for Geoscience Data'
@@ -949,30 +1313,42 @@
   venue: Computer 99 (1), 1, 2013
   year: 2013
   type: conference
-  doi: 10.2172/1328687
+  title_url: https://doi.org/10.2172/1136155
+  bibfile: assets/bib/theultrascalevisualizationclimatedataanalysistoolsuvcdatdataanalysisandvisualiza_2013.bib
+  bibfile_txt: assets/bib/theultrascalevisualizationclimatedataanalysistoolsuvcdatdataanalysisandvisualiza_2013.bib.txt
+  doi: 10.2172/1136155
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:kw52XkFRtyQC
 - title: GPU Acceleration of Particle AdvectionWorkloads in a Parallel, Distributed
     Memory Setting
   authors: D Camp
-  venue: 2013 International Conference on Parallel and Distributed Systems
+  venue: Computers &amp; Fluids
   year: 2013
   type: conference
-  doi: 10.1109/icpads.2013.21
+  title_url: https://doi.org/10.1016/j.compfluid.2011.08.004
+  bibfile: assets/bib/gpuaccelerationofparticleadvectionworkloadsinaparalleldistributedmemorysetting_2013.bib
+  bibfile_txt: assets/bib/gpuaccelerationofparticleadvectionworkloadsinaparalleldistributedmemorysetting_2013.bib.txt
+  doi: 10.1016/j.compfluid.2011.08.004
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:u-coK7KVo8oC
 - title: Exploring Collaborative HPC Visualization Workflows using VisIt and Python.
   authors: H Krishnan, C Harrison, B Whitlock, D Pugmire, H Childs
   venue: Proceedings of the Python in Science Conference
   year: 2013
   type: conference
+  title_url: https://doi.org/10.25080/majora-8b375195-00b
+  bibfile: assets/bib/exploringcollaborativehpcvisualizationworkflowsusingvisitandpython_2013.bib
+  bibfile_txt: assets/bib/exploringcollaborativehpcvisualizationworkflowsusingvisitandpython_2013.bib.txt
   doi: 10.25080/majora-8b375195-00b
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:GFxP56DSvIMC
 - title: Computation and volume rendering of large-scale EOF coherent modes in rotating
     turbulent flow data
   authors: G Ostrouchov, D Pugmire, DL Rosenberg, W Chen, A Pouquet
-  venue: 2013 IEEE Symposium on Large-Scale Data Analysis and Visualization (LDAV)
+  venue: The Astrophysical Journal
   year: 2013
   type: conference
-  doi: 10.1109/ldav.2013.6675156
+  title_url: https://doi.org/10.1088/0004-637x/742/1/34
+  bibfile: assets/bib/computationandvolumerenderingoflargescaleeofcoherentmodesinrotatingturbulentflow_2013.bib
+  bibfile_txt: assets/bib/computationandvolumerenderingoflargescaleeofcoherentmodesinrotatingturbulentflow_2013.bib.txt
+  doi: 10.1088/0004-637x/742/1/34
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:5icHVeHT4IsC
 - title: 'ADIOS visualization schema: A first step towards improving interdisciplinary
     collaboration in high performance computing'
@@ -980,6 +1356,9 @@
   venue: 2013 IEEE 9th International Conference on e-Science
   year: 2013
   type: conference
+  title_url: https://doi.org/10.1109/escience.2013.24
+  bibfile: assets/bib/adiosvisualizationschemaafirststeptowardsimprovinginterdisciplinarycollaboration_2013.bib
+  bibfile_txt: assets/bib/adiosvisualizationschemaafirststeptowardsimprovinginterdisciplinarycollaboration_2013.bib.txt
   doi: 10.1109/escience.2013.24
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:8xutWZnSdmoC
 - title: A parallel EM algorithm for model-based clustering applied to the exploration
@@ -987,57 +1366,81 @@
   authors: WC Chen, G Ostrouchov, D Pugmire, Prabhat, M Wehner
   venue: Technometrics
   year: 2013
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1080/00401706.2013.826146
+  bibfile: assets/bib/aparallelemalgorithmformodelbasedclusteringappliedtotheexplorationoflargespatiot_2013.bib
+  bibfile_txt: assets/bib/aparallelemalgorithmformodelbasedclusteringappliedtotheexplorationoflargespatiot_2013.bib.txt
   doi: 10.1080/00401706.2013.826146
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:lvd772isFD0C
 - title: Visualization at Extreme Scale Concurrency.
   authors: H Childs, D Pugmire, S Ahern, B Whitlock, M Howison, GH Weber, ...
   venue: High Performance Visualization
   year: 2012
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1201/b12985-25
+  bibfile: assets/bib/visualizationatextremescaleconcurrency_2012.bib
+  bibfile_txt: assets/bib/visualizationatextremescaleconcurrency_2012.bib.txt
   doi: 10.1201/b12985-25
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:rTD5ala9j4wC
 - title: 'VisIt: An end-user tool for visualizing and analyzing very large data'
   authors: H Childs, E Brugger, B Whitlock, J Meredith, S Ahern, D Pugmire, ...
   venue: High Performance Visualization
   year: 2012
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1201/b12985-29
+  bibfile: assets/bib/visitanendusertoolforvisualizingandanalyzingverylargedata_2012.bib
+  bibfile_txt: assets/bib/visitanendusertoolforvisualizingandanalyzingverylargedata_2012.bib.txt
   doi: 10.1201/b12985-29
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:0EnyYjriUFMC
 - title: VisIt.
   authors: H Childs, E Brugger, B Whitlock, JS Meredith, S Ahern, D Pugmire, ...
-  venue: 'Kit Guyatt Films: President Johnson’s Visit, Balmain and the Phallic Forest'
+  venue: Ploughshares
   year: 2012
   type: conference
-  doi: 10.5040/9781350899797
+  title_url: https://doi.org/10.1353/plo.2012.0099
+  bibfile: assets/bib/visit_2012.bib
+  bibfile_txt: assets/bib/visit_2012.bib.txt
+  doi: 10.1353/plo.2012.0099
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:IsPWOBWtZBwC
 - title: Parallel stream surface computation for large data sets
   authors: D Camp, H Childs, C Garth, D Pugmire, KI Joy
   venue: IEEE Symposium on Large Data Analysis and Visualization (LDAV)
   year: 2012
   type: conference
+  title_url: https://doi.org/10.1109/ldav.2012.6378974
+  bibfile: assets/bib/parallelstreamsurfacecomputationforlargedatasets_2012.bib
+  bibfile_txt: assets/bib/parallelstreamsurfacecomputationforlargedatasets_2012.bib.txt
   doi: 10.1109/ldav.2012.6378974
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:5MTHONV0fEkC
 - title: Parallel Statistical Extreme Value Analysis of Climate Data
   authors: C Paciorek
-  venue: Computational Statistics &amp; Data Analysis
+  venue: Korean Journal of Applied Statistics
   year: 2012
-  type: journal
-  doi: 10.1016/j.csda.2012.03.016
+  type: conference
+  title_url: https://doi.org/10.5351/kjas.2011.24.5.833
+  bibfile: assets/bib/parallelstatisticalextremevalueanalysisofclimatedata_2012.bib
+  bibfile_txt: assets/bib/parallelstatisticalextremevalueanalysisofclimatedata_2012.bib.txt
+  doi: 10.5351/kjas.2011.24.5.833
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:7Hz3ACDFbsoC
 - title: Parallel Integral Curves.
   authors: D Pugmire, T Peterka, C Garth
   venue: High Performance Visualization
   year: 2012
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1201/b12985-16
+  bibfile: assets/bib/parallelintegralcurves_2012.bib
+  bibfile_txt: assets/bib/parallelintegralcurves_2012.bib.txt
   doi: 10.1201/b12985-16
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:_OXeSy2IsFwC
 - title: 'PATC Course: Large scale data visualization with Visit'
   authors: C Harrison, J Favre, H Childs, D Pugmire, B Whitlock, H Krishnan
-  venue: null
+  venue: Mathematical Modelling and Analysis
   year: 2012
   type: conference
-  doi: 10.2172/1057192
+  title_url: https://doi.org/10.3846/13926292.2011.580381
+  bibfile: assets/bib/patccourselargescaledatavisualizationwithvisit_2012.bib
+  bibfile_txt: assets/bib/patccourselargescaledatavisualizationwithvisit_2012.bib.txt
+  doi: 10.3846/13926292.2011.580381
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:NDuN12AVoxsC
 - title: Mining hidden mixture context with ADIOS-P to improve predictive pre-fetcher
     accuracy
@@ -1045,6 +1448,9 @@
   venue: 2012 IEEE 8th International Conference on E-Science
   year: 2012
   type: conference
+  title_url: https://doi.org/10.1109/escience.2012.6404418
+  bibfile: assets/bib/mininghiddenmixturecontextwithadiosptoimprovepredictiveprefetcheraccuracy_2012.bib
+  bibfile_txt: assets/bib/mininghiddenmixturecontextwithadiosptoimprovepredictiveprefetcheraccuracy_2012.bib.txt
   doi: 10.1109/escience.2012.6404418
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:WF5omc3nYNoC
 - title: Integrated Radiation Transport and Nuclear Fuel Performance for Assembly-Level
@@ -1054,44 +1460,62 @@
   venue: null
   year: 2012
   type: conference
+  title_url: https://doi.org/10.2172/1034694
+  bibfile: assets/bib/integratedradiationtransportandnuclearfuelperformanceforassemblylevelsimulations_2012.bib
+  bibfile_txt: assets/bib/integratedradiationtransportandnuclearfuelperformanceforassemblylevelsimulations_2012.bib.txt
   doi: 10.2172/1034694
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:A8cqit5AE6sC
 - title: Hybrid Parallelism.
   authors: EW Bethel, D Camp, H Childs, C Garth, M Howison, KI Joy, D Pugmire
   venue: High Performance Visualization
   year: 2012
-  type: bookchapter
+  type: conference
+  title_url: https://doi.org/10.1201/b12985-24
+  bibfile: assets/bib/hybridparallelism_2012.bib
+  bibfile_txt: assets/bib/hybridparallelism_2012.bib.txt
   doi: 10.1201/b12985-24
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:wKETBy42zhYC
 - title: 'EAVL: the extreme-scale analysis and visualization library'
   authors: JS Meredith, S Ahern, D Pugmire, R Sisneros
-  venue: High Performance Visualization
+  venue: Frontiers in Neuroinformatics
   year: 2012
-  type: bookchapter
-  doi: 10.1201/b12985-25
+  type: conference
+  title_url: https://doi.org/10.3389/conf.fninf.2013.09.00107
+  bibfile: assets/bib/eavltheextremescaleanalysisandvisualizationlibrary_2012.bib
+  bibfile_txt: assets/bib/eavltheextremescaleanalysisandvisualizationlibrary_2012.bib.txt
+  doi: 10.3389/conf.fninf.2013.09.00107
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:2osOgNQ5qMEC
 - title: Collaborative monitoring and visualization of HPC data
   authors: R Tchoua, H Abbasi, S Klasky, Q Liu, N Podhorszki, D Pugmire, Y Tian, ...
   venue: 2012 International Conference on Collaboration Technologies and Systems (CTS)
   year: 2012
   type: conference
+  title_url: https://doi.org/10.1109/cts.2012.6261083
+  bibfile: assets/bib/collaborativemonitoringandvisualizationofhpcdata_2012.bib
+  bibfile_txt: assets/bib/collaborativemonitoringandvisualizationofhpcdata_2012.bib.txt
   doi: 10.1109/cts.2012.6261083
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:LkGwnXOMwfcC
 - title: Applying Model-Based Clustering for Analysis of Community Atmospheric Model
     Output
   authors: WC Chen
-  venue: Russian Meteorology and Hydrology
+  venue: Lecture Notes in Computer Science
   year: 2012
-  type: journal
-  doi: 10.3103/s106837391203003x
+  type: conference
+  title_url: https://doi.org/10.1007/978-3-642-24082-9_81
+  bibfile: assets/bib/applyingmodelbasedclusteringforanalysisofcommunityatmosphericmodeloutput_2012.bib
+  bibfile_txt: assets/bib/applyingmodelbasedclusteringforanalysisofcommunityatmosphericmodeloutput_2012.bib.txt
+  doi: 10.1007/978-3-642-24082-9_81
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:U4n9YNQMCAIC
 - title: An examination of magnetized outflows from active galactic nuclei in galaxy
     clusters
   authors: PM Sutter, HYK Yang, PM Ricker, G Foreman, D Pugmire
-  venue: AIP Conference Proceedings
+  venue: Monthly Notices of the Royal Astronomical Society
   year: 2012
   type: conference
-  doi: 10.1063/1.3701363
+  title_url: https://doi.org/10.1111/j.1365-2966.2011.19875.x
+  bibfile: assets/bib/anexaminationofmagnetizedoutflowsfromactivegalacticnucleiingalaxyclusters_2012.bib
+  bibfile_txt: assets/bib/anexaminationofmagnetizedoutflowsfromactivegalacticnucleiingalaxyclusters_2012.bib.txt
+  doi: 10.1111/j.1365-2966.2011.19875.x
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:eQOLeE2rZwMC
 - title: A distributed data-parallel framework for analysis and visualization algorithm
     development
@@ -1100,14 +1524,21 @@
     Graphics Processing Units
   year: 2012
   type: conference
+  title_url: https://doi.org/10.1145/2159430.2159432
+  bibfile: assets/bib/adistributeddataparallelframeworkforanalysisandvisualizationalgorithmdevelopment_2012.bib
+  bibfile_txt: assets/bib/adistributeddataparallelframeworkforanalysisandvisualizationalgorithmdevelopment_2012.bib.txt
   doi: 10.1145/2159430.2159432
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:YsMSGLbcyi4C
 - title: A data centric view of large-scale seismic imaging workflows
   authors: M Lefebvre, E Bozdag, HF Calandra, JC Hill, N Podhorszki, D Pugmire, ...
-  venue: 2012 Ninth Web Information Systems and Applications Conference
+  venue: Proceedings of the 1st International Workshop on Workflow Approaches to New
+    Data-centric Science
   year: 2012
   type: conference
-  doi: 10.1109/wisa.2012.27
+  title_url: https://doi.org/10.1145/1833398.1833399
+  bibfile: assets/bib/adatacentricviewoflargescaleseismicimagingworkflows_2012.bib
+  bibfile_txt: assets/bib/adatacentricviewoflargescaleseismicimagingworkflows_2012.bib.txt
+  doi: 10.1145/1833398.1833399
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Aul-kAQHnToC
 - title: Simulation of High-Harmonic Fast-Wave Heating on the National Spherical Tokamak
     Experiment
@@ -1115,14 +1546,20 @@
   venue: IEEE Transactions on Plasma Science
   year: 2011
   type: journal
+  title_url: https://doi.org/10.1109/tps.2011.2160370
+  bibfile: assets/bib/simulationofhighharmonicfastwaveheatingonthenationalsphericaltokamakexperiment_2011.bib
+  bibfile_txt: assets/bib/simulationofhighharmonicfastwaveheatingonthenationalsphericaltokamakexperiment_2011.bib.txt
   doi: 10.1109/tps.2011.2160370
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:UebtZRa9Y70C
 - title: Pattern Detection and Extreme Value Analysis on Large Climate Data
   authors: M Prabhat, S Byna, C Paciorek, G Weber, K Wu, T Yopes, MF Wehner, ...
-  venue: 2011 IEEE Symposium on Large Data Analysis and Visualization
+  venue: Korean Journal of Applied Statistics
   year: 2011
   type: conference
-  doi: 10.1109/ldav.2011.6092333
+  title_url: https://doi.org/10.5351/kjas.2011.24.5.833
+  bibfile: assets/bib/patterndetectionandextremevalueanalysisonlargeclimatedata_2011.bib
+  bibfile_txt: assets/bib/patterndetectionandextremevalueanalysisonlargeclimatedata_2011.bib.txt
+  doi: 10.5351/kjas.2011.24.5.833
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:ufrVoPGSRksC
 - title: Magnetic field outflows from active galactic nuclei
   authors: D Pugmire, P Sutter, P Ricker, HY Yang, G Foreman
@@ -1130,6 +1567,9 @@
     Storage and Analysis Companion
   year: 2011
   type: conference
+  title_url: https://doi.org/10.1145/2148600.2148668
+  bibfile: assets/bib/magneticfieldoutflowsfromactivegalacticnuclei_2011.bib
+  bibfile_txt: assets/bib/magneticfieldoutflowsfromactivegalacticnuclei_2011.bib.txt
   doi: 10.1145/2148600.2148668
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:roLk4NBRz8UC
 - title: 'An examination of magnetized outflows from active galactic nuclei in galaxy
@@ -1137,29 +1577,41 @@
   authors: PM Sutter, HYK Yang, PM Ricker, G Foreman, D Pugmire
   venue: Monthly Notices of the Royal Astronomical Society
   year: 2011
-  type: journal
+  type: conference
+  title_url: https://doi.org/10.1111/j.1365-2966.2011.19875.x
+  bibfile: assets/bib/anexaminationofmagnetizedoutflowsfromactivegalacticnucleiingalaxyclustersmagneti_2011.bib
+  bibfile_txt: assets/bib/anexaminationofmagnetizedoutflowsfromactivegalacticnucleiingalaxyclustersmagneti_2011.bib.txt
   doi: 10.1111/j.1365-2966.2011.19875.x
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:VN7nJs4JPk0C
 - title: Streamline integration using MPI-hybrid parallelism on a large multicore
     architecture
   authors: D Camp, C Garth, H Childs, D Pugmire, K Joy
-  venue: 2010 2nd International Conference on Software Technology and Engineering
+  venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2010
-  type: conference
-  doi: 10.1109/icste.2010.5608971
+  type: journal
+  title_url: https://doi.org/10.1109/tvcg.2010.259
+  bibfile: assets/bib/streamlineintegrationusingmpihybridparallelismonalargemulticorearchitecture_2010.bib
+  bibfile_txt: assets/bib/streamlineintegrationusingmpihybridparallelismonalargemulticorearchitecture_2010.bib.txt
+  doi: 10.1109/tvcg.2010.259
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:u-x6o8ySG0sC
 - title: Extreme scaling of production visualization software on diverse architectures
   authors: H Childs, D Pugmire, S Ahern, B Whitlock, M Howison, GH Weber, ...
   venue: IEEE Computer Graphics and Applications
   year: 2010
-  type: journal
-  doi: 10.1109/mcg.2010.51
+  type: conference
+  title_url: https://doi.org/10.1109/mcg.2011.31
+  bibfile: assets/bib/extremescalingofproductionvisualizationsoftwareondiversearchitectures_2010.bib
+  bibfile_txt: assets/bib/extremescalingofproductionvisualizationsoftwareondiversearchitectures_2010.bib.txt
+  doi: 10.1109/mcg.2011.31
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:zYLM7Y9cAGgC
 - title: Analysis of recurrent patterns in toroidal magnetic fields
   authors: A Sanderson, G Chen, X Tricoche, D Pugmire, S Kruger, J Breslau
   venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2010
   type: journal
+  title_url: https://doi.org/10.1109/tvcg.2010.133
+  bibfile: assets/bib/analysisofrecurrentpatternsintoroidalmagneticfields_2010.bib
+  bibfile_txt: assets/bib/analysisofrecurrentpatternsintoroidalmagneticfields_2010.bib.txt
   doi: 10.1109/tvcg.2010.133
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Y0pCki6q_DkC
 - title: A case study of collaborative facilities use in engineering design
@@ -1167,28 +1619,40 @@
   venue: SPIE Proceedings
   year: 2010
   type: conference
+  title_url: https://doi.org/10.1117/12.839511
+  bibfile: assets/bib/acasestudyofcollaborativefacilitiesuseinengineeringdesign_2010.bib
+  bibfile_txt: assets/bib/acasestudyofcollaborativefacilitiesuseinengineeringdesign_2010.bib.txt
   doi: 10.1117/12.839511
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Se3iqnhoufwC
 - title: Vector field visual data analysis technologies for petascale computational
     science
   authors: C Garth, E Deines, KI Joy, E Bethel, H Childs, G Weber, S Ahern, ...
-  venue: Computational Statistics &amp; Data Analysis
+  venue: 'Bulletin of the Polish Academy of Sciences: Technical Sciences'
   year: 2009
-  type: journal
-  doi: 10.1016/j.csda.2008.10.037
+  type: conference
+  title_url: https://doi.org/10.2478/v10175-010-0037-z
+  bibfile: assets/bib/vectorfieldvisualdataanalysistechnologiesforpetascalecomputationalscience_2009.bib
+  bibfile_txt: assets/bib/vectorfieldvisualdataanalysistechnologiesforpetascalecomputationalscience_2009.bib.txt
+  doi: 10.2478/v10175-010-0037-z
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:G1UMdFYMoxkC
 - title: Vector Field Visual Data Analysis for Petascale
   authors: C Garth, E Deines, K Joy, H Childs, GH Weber, W Bethel, S Ahern, ...
-  venue: null
+  venue: 'Journal of Physics: Conference Series'
   year: 2009
   type: conference
-  doi: 10.2172/1020344
+  title_url: https://doi.org/10.1088/1742-6596/180/1/012084
+  bibfile: assets/bib/vectorfieldvisualdataanalysisforpetascale_2009.bib
+  bibfile_txt: assets/bib/vectorfieldvisualdataanalysisforpetascale_2009.bib.txt
+  doi: 10.1088/1742-6596/180/1/012084
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:9yKSN-GCB0IC
 - title: 'VISMASHUP: streamlining the creation of custom visualization applications'
   authors: JP Ahrens, E Santos, L Lins, J Freire, CT Silva
   venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2009
   type: journal
+  title_url: https://doi.org/10.1109/tvcg.2009.195
+  bibfile: assets/bib/vismashupstreamliningthecreationofcustomvisualizationapplications_2009.bib
+  bibfile_txt: assets/bib/vismashupstreamliningthecreationofcustomvisualizationapplications_2009.bib.txt
   doi: 10.1109/tvcg.2009.195
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:_FxGoFyzp5QC
 - title: Scalable computation of streamlines on very large datasets
@@ -1197,41 +1661,60 @@
     and Analysis
   year: 2009
   type: conference
+  title_url: https://doi.org/10.1145/1654059.1654076
+  bibfile: assets/bib/scalablecomputationofstreamlinesonverylargedatasets_2009.bib
+  bibfile_txt: assets/bib/scalablecomputationofstreamlinesonverylargedatasets_2009.bib.txt
   doi: 10.1145/1654059.1654076
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:u5HHmVD_uO8C
 - title: Parallel visualization and analysis with ParaView on a Cray Xt4
   authors: J Patchett, J Ahrens, S Ahern, D Pugmire
-  venue: Parallel Processing Letters
+  venue: Computers &amp; Graphics
   year: 2009
-  type: journal
-  doi: 10.1142/s0129626409000444
+  type: conference
+  title_url: https://doi.org/10.1016/j.cag.2007.12.004
+  bibfile: assets/bib/parallelvisualizationandanalysiswithparaviewonacrayxt4_2009.bib
+  bibfile_txt: assets/bib/parallelvisualizationandanalysiswithparaviewonacrayxt4_2009.bib.txt
+  doi: 10.1016/j.cag.2007.12.004
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:d1gkVwhDpl0C
 - title: Occam's razor and petascale visual data analysis
   authors: EW Bethel, C Johnson, S Ahern, J Bell, PT Bremer, H Childs, ...
-  venue: 'Journal of Physics: Conference Series 180 (1), 012084, 2009'
+  venue: 'Journal of Physics: Conference Series'
   year: 2009
   type: journal
-  doi: 10.2172/1020344
+  title_url: https://doi.org/10.1088/1742-6596/180/1/012084
+  bibfile: assets/bib/occamsrazorandpetascalevisualdataanalysis_2009.bib
+  bibfile_txt: assets/bib/occamsrazorandpetascalevisualdataanalysis_2009.bib.txt
+  doi: 10.1088/1742-6596/180/1/012084
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:5nxA0vEk-isC
 - title: Seeing the Unseeable
   authors: E Bethel
-  venue: PsycEXTRA Dataset
+  venue: 'Geography and Vision: Seeing, Imagining and Representing the World'
   year: 2008
   type: conference
-  doi: 10.1037/e501382012-044
+  title_url: https://doi.org/10.5040/9780755620791.ch-012
+  bibfile: assets/bib/seeingtheunseeable_2008.bib
+  bibfile_txt: assets/bib/seeingtheunseeable_2008.bib.txt
+  doi: 10.5040/9780755620791.ch-012
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:qjMakFHDy7sC
 - title: 'Pick-n-Place: A Virtual Reality Assembly Tool'''
   authors: D Pugmire, D Modi, L Monroe
-  venue: Assembly Automation
+  venue: Proceedings of the 3rd international conference on Computer graphics and
+    interactive techniques in Australasia and South East Asia
   year: 2007
-  type: journal
-  doi: 10.1108/aa.2007.03327aad.004
+  type: conference
+  title_url: https://doi.org/10.1145/1101389.1101464
+  bibfile: assets/bib/picknplaceavirtualrealityassemblytool_2007.bib
+  bibfile_txt: assets/bib/picknplaceavirtualrealityassemblytool_2007.bib.txt
+  doi: 10.1145/1101389.1101464
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:gKiMpY-AVTkC
 - title: Npu-based image compositing in a distributed visualization system
   authors: D Pugmire, L Monroe, CC Davenport, A DuBois, D DuBois, S Poole
   venue: IEEE Transactions on Visualization and Computer Graphics
   year: 2007
   type: journal
+  title_url: https://doi.org/10.1109/tvcg.2007.1026
+  bibfile: assets/bib/npubasedimagecompositinginadistributedvisualizationsystem_2007.bib
+  bibfile_txt: assets/bib/npubasedimagecompositinginadistributedvisualizationsystem_2007.bib.txt
   doi: 10.1109/tvcg.2007.1026
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:W7OEmFMy1HYC
 - title: Visual interfaces for solids modeling
@@ -1240,13 +1723,19 @@
     technology
   year: 1995
   type: conference
+  title_url: https://doi.org/10.1145/215585.215652
+  bibfile: assets/bib/visualinterfacesforsolidsmodeling_1995.bib
+  bibfile_txt: assets/bib/visualinterfacesforsolidsmodeling_1995.bib.txt
   doi: 10.1145/215585.215652
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:Tyk-4Ss8FVUC
 - title: Supplemental Material for Accelerated Probabilistic Marching Cubes by Deep
     Learning for Time-Varying Scalar Ensembles
   authors: M Han, TM Athawale, D Pugmire, CR Johnson
-  venue: Harvard Law Review
+  venue: Royal United Services Institution. Journal
   year: 1912
-  type: journal
-  doi: 10.2307/1324045
+  type: conference
+  title_url: https://doi.org/10.1080/03071841209425516
+  bibfile: assets/bib/supplementalmaterialforacceleratedprobabilisticmarchingcubesbydeeplearningfortim_1912.bib
+  bibfile_txt: assets/bib/supplementalmaterialforacceleratedprobabilisticmarchingcubesbydeeplearningfortim_1912.bib.txt
+  doi: 10.1080/03071841209425516
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:qwy9JoKyICEC

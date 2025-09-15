@@ -1,5 +1,97 @@
 /* Tweak spacing and readability */
-.site-title { font-weight: 700; }
-.page-content { max-width: 900px; margin: auto; }
-h1, h2, h3 { scroll-margin-top: 80px; }
-#mapid { border-radius: 12px; }
+.site-title {
+  font-weight: 700;
+}
+.page-content {
+  max-width: 900px;
+  margin: auto;
+}
+h1,
+h2,
+h3 {
+  scroll-margin-top: 80px; /* avoid anchor jump under sticky header */
+}
+#mapid {
+  border-radius: 12px;
+}
+
+/* Publications — left sidebar layout */
+.pubs-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Sticky side nav */
+.pubs-sidenav {
+  position: sticky;
+  top: 72px; /* keep visible under the site header */
+  align-self: start;
+  border-right: 1px solid #eee;
+  padding-right: 1rem;
+}
+.pubs-sidenav__title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.pubs-sidenav a {
+  display: block;
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+}
+.pubs-sidenav a:hover {
+  text-decoration: underline;
+}
+.pubs-sidenav a.active {
+  font-weight: 700;
+  border-left-color: #333;
+}
+
+/* Publications content */
+.pubs-content h2,
+.pubs-content h3 {
+  scroll-margin-top: 80px;
+}
+.pubs-content ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.pubs-content li {
+  margin: 0.25rem 0; /* compact bullets */
+}
+
+/* Title links: force black + underlined (all states) */
+.pubs-content a.title-link,
+.pubs-content a.title-link:visited,
+.pubs-content a.title-link:hover,
+.pubs-content a.title-link:active {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+/* Smooth anchor scrolling across the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile: collapse to single column and move nav above content */
+@media (max-width: 900px) {
+  .pubs-layout {
+    grid-template-columns: 1fr;
+  }
+  .pubs-sidenav {
+    position: static;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+    padding: 0 0 0.75rem 0;
+    margin-bottom: 1rem;
+  }
+  .pubs-sidenav a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    border-left: 0;
+    padding-left: 0;
+  }
+}

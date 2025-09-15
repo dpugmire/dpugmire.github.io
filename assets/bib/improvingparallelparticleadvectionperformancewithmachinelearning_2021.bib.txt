@@ -1,0 +1,1 @@
+@book{Heinz_2020, title={Improving High-Energy Particle Detectors with Machine Learning}, url={http://dx.doi.org/10.2172/1670544}, DOI={10.2172/1670544}, institution={Office of Scientific and Technical Information (OSTI)}, author={Heinz, Michael and Angerami, Aaron and Karande, Piyush and Soltz, Ron}, year={2020}, month=sep }

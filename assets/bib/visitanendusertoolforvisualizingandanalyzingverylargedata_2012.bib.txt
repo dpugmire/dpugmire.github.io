@@ -1,0 +1,1 @@
+@inbook{2012, ISBN={9780429105357}, url={http://dx.doi.org/10.1201/b12985-29}, DOI={10.1201/b12985-29}, booktitle={High Performance Visualization}, publisher={Chapman and Hall/CRC}, year={2012}, month=oct, pages={395–410} }

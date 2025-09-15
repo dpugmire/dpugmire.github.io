@@ -1,0 +1,1 @@
+@article{Renwick_1912, title={Our Supplies of Food Stuffs and Raw Material in Time of War}, volume={56}, ISSN={0035-9289}, url={http://dx.doi.org/10.1080/03071841209425516}, DOI={10.1080/03071841209425516}, number={410}, journal={Royal United Services Institution. Journal}, publisher={Informa UK Limited}, author={Renwick, George}, year={1912}, month=apr, pages={483–514} }

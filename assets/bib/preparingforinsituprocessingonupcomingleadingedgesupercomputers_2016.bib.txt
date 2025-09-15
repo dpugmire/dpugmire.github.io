@@ -1,0 +1,1 @@
+@article{2016, volume={3}, ISSN={2313-8734}, url={http://dx.doi.org/10.14529/jsfi160404}, DOI={10.14529/jsfi160404}, number={4}, journal={Supercomputing Frontiers and Innovations}, publisher={FSAEIHE South Ural State University (National Research University)}, year={2016}, month=dec }

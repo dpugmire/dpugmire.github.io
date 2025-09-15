@@ -1,0 +1,1 @@
+@inbook{Zhang_2018, title={E-Nose Algorithms and Challenges}, ISBN={9789811321672}, url={http://dx.doi.org/10.1007/978-981-13-2167-2_2}, DOI={10.1007/978-981-13-2167-2_2}, booktitle={Electronic Nose: Algorithmic Challenges}, publisher={Springer Singapore}, author={Zhang, Lei and Tian, Fengchun and Zhang, David}, year={2018}, pages={11–20} }

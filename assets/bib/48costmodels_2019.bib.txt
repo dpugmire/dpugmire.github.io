@@ -1,0 +1,1 @@
+@inbook{Parsons_2017, title={Travel Cost Models}, ISBN={9789400771048}, ISSN={1571-487X}, url={http://dx.doi.org/10.1007/978-94-007-7104-8_6}, DOI={10.1007/978-94-007-7104-8_6}, booktitle={A Primer on Nonmarket Valuation}, publisher={Springer Netherlands}, author={Parsons, George R.}, year={2017}, pages={187–233} }
