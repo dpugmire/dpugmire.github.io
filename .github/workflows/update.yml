@@ -1,0 +1,42 @@
+name: Update Publications (Weekly)
+
+on:
+  schedule:
+    - cron: "0 3 * * 0"   # Sundays 03:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # allow the workflow to commit updated files
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install PyYAML requests
+
+      - name: Update publications
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          SCHOLAR_ID: ${{ vars.SCHOLAR_ID }}
+        run: python scripts/update_publications.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/publications.yml assets/publications.bib assets/publications.bib.txt assets/bib || true
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Auto-update publications (YAML + BibTeX + TXT)"
+            git push
+          fi
