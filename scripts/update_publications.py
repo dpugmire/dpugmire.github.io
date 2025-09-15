@@ -13,8 +13,11 @@ BIB_OUT = Path("assets/publications.bib")
 BIB_OUT_TXT = Path("assets/publications.bib.txt")
 BIB_DIR = Path("assets/bib")
 VENUE_MAP_FILE = Path("_data/venue_map.yml")
+VENUE_REPORT = Path("assets/venue_mismatches.txt")
 
-# Known preprint DOI prefixes to avoid when we expect a journal
+# -------------------------
+# Known preprint DOI prefixes
+# -------------------------
 PREPRINT_PREFIXES = (
     "10.48550",  # arXiv (DataCite)
     "10.1101",   # bioRxiv/medRxiv
@@ -22,7 +25,7 @@ PREPRINT_PREFIXES = (
     "10.21203",  # ResearchSquare
     "10.31219",  # OSF Preprints
     "10.2139",   # SSRN
-    "10.5281",   # Zenodo (generic repository)
+    "10.5281",   # Zenodo
     "10.22541",  # Preprints.org
 )
 
@@ -307,11 +310,17 @@ def main():
         records.append(rec)
         bib_chunks.append(bib)
 
+    # Sort and write YAML + BibTeX
     records.sort(key=lambda r: (r.get("year", 0), r.get("title", "")), reverse=True)
     safe_write(YAML_OUT, yaml.dump(records, sort_keys=False, allow_unicode=True))
     agg_bib = "\n\n".join(bib_chunks)
     safe_write(BIB_OUT, agg_bib)
     safe_write(BIB_OUT_TXT, agg_bib + "\n")
+
+    # Venue mismatch report
+    venue_report = [f"{rec.get('year')} | {rec.get('venue')} -> {rec.get('type')}" for rec in records]
+    report_text = "\n".join(sorted(set(venue_report)))
+    safe_write(VENUE_REPORT, report_text)
 
 if __name__ == "__main__":
     main()

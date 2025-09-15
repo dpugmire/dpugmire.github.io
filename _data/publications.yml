@@ -300,7 +300,7 @@
   authors: P O'Leary, D Pugmire, S Rizzi, D Thompson
   venue: Mathematics and Visualization
   year: 2022
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1007/978-3-030-81627-8_13
   bibfile: assets/bib/toolandprocessingportabilityatscale_2022.bib
   bibfile_txt: assets/bib/toolandprocessingportabilityatscale_2022.bib.txt
@@ -333,7 +333,7 @@
     ...
   venue: Mathematics and Visualization
   year: 2022
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1007/978-3-030-81627-8_11
   bibfile: assets/bib/theadaptableiosystemadios_2022.bib
   bibfile_txt: assets/bib/theadaptableiosystemadios_2022.bib.txt
@@ -345,7 +345,7 @@
     ...
   venue: Mathematics and Visualization
   year: 2022
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1007/978-3-030-81627-8_13
   bibfile: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscalebookchapter_2022.bib
   bibfile_txt: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscalebookchapter_2022.bib.txt
@@ -357,7 +357,7 @@
     ...
   venue: Mathematics and Visualization
   year: 2022
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1007/978-3-030-81627-8_13
   bibfile: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscale_2022.bib
   bibfile_txt: assets/bib/thesenseigenericinsituinterfacetoolandprocessingportabilityatscale_2022.bib.txt
@@ -388,7 +388,7 @@
   authors: E Bethel, B Loring, U Ayachit, EPN Duque, N Ferrier, J Insley, J Gu, ...
   venue: Mathematics and Visualization
   year: 2022
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1007/978-3-030-81627-8_20
   bibfile: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsenseibookchapt_2022.bib
   bibfile_txt: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsenseibookchapt_2022.bib.txt
@@ -399,7 +399,7 @@
   authors: EW Bethel, B Loring, U Ayachit, EPN Duque, N Ferrier, J Insley, J Gu, ...
   venue: Mathematics and Visualization
   year: 2022
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1007/978-3-030-81627-8_20
   bibfile: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsensei_2022.bib
   bibfile_txt: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovementinsensei_2022.bib.txt
@@ -409,7 +409,7 @@
   authors: D Pugmire, S Rizzi, D Thompson, W Usher, GH Weber
   venue: Mathematics and Visualization
   year: 2022
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1007/978-3-030-81627-8_20
   bibfile: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovement_2022.bib
   bibfile_txt: assets/bib/proximityportabilityandintransitmtondatapartitioningandmovement_2022.bib.txt
@@ -451,13 +451,13 @@
 - title: Discovery of micro-turbulent homoclinic tangle near magnetic X-point from
     the XGC total-f electromagnetic simulation
   authors: C Chang, SH Ku, M Churchill, R Kube, R Hager, H Guo, J Choi, ...
-  venue: Cosmic Research
+  venue: Contributions to Plasma Physics
   year: 2022
   type: conference
-  title_url: https://doi.org/10.1134/s0010952522700149
+  title_url: https://doi.org/10.1002/ctpp.202000135
   bibfile: assets/bib/discoveryofmicroturbulenthomoclinictanglenearmagneticxpointfromthexgctotalfelect_2022.bib
   bibfile_txt: assets/bib/discoveryofmicroturbulenthomoclinictanglenearmagneticxpointfromthexgctotalfelect_2022.bib.txt
-  doi: 10.1134/s0010952522700149
+  doi: 10.1002/ctpp.202000135
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FmxWGN0AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=FmxWGN0AAAAJ:2v_ZtQDX9iAC
 - title: Accelerated probabilistic marching cubes by deep learning for time-varying
     scalar ensembles
@@ -1376,7 +1376,7 @@
   authors: H Childs, D Pugmire, S Ahern, B Whitlock, M Howison, GH Weber, ...
   venue: High Performance Visualization
   year: 2012
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1201/b12985-25
   bibfile: assets/bib/visualizationatextremescaleconcurrency_2012.bib
   bibfile_txt: assets/bib/visualizationatextremescaleconcurrency_2012.bib.txt
@@ -1386,7 +1386,7 @@
   authors: H Childs, E Brugger, B Whitlock, J Meredith, S Ahern, D Pugmire, ...
   venue: High Performance Visualization
   year: 2012
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1201/b12985-29
   bibfile: assets/bib/visitanendusertoolforvisualizingandanalyzingverylargedata_2012.bib
   bibfile_txt: assets/bib/visitanendusertoolforvisualizingandanalyzingverylargedata_2012.bib.txt
@@ -1426,7 +1426,7 @@
   authors: D Pugmire, T Peterka, C Garth
   venue: High Performance Visualization
   year: 2012
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1201/b12985-16
   bibfile: assets/bib/parallelintegralcurves_2012.bib
   bibfile_txt: assets/bib/parallelintegralcurves_2012.bib.txt
@@ -1469,7 +1469,7 @@
   authors: EW Bethel, D Camp, H Childs, C Garth, M Howison, KI Joy, D Pugmire
   venue: High Performance Visualization
   year: 2012
-  type: conference
+  type: bookchapter
   title_url: https://doi.org/10.1201/b12985-24
   bibfile: assets/bib/hybridparallelism_2012.bib
   bibfile_txt: assets/bib/hybridparallelism_2012.bib.txt

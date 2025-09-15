@@ -11,3 +11,7 @@ overrides:
     type: conference
   - match: "springer book"
     type: bookchapter
+  - match: "High Performance Visualization"
+    type: bookchapter
+  - match: "Mathematics and Visualization"
+    type: bookchapter
