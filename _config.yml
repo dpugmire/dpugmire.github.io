@@ -30,3 +30,7 @@ author:
 
 # Build
 markdown: kramdown
+
+# Add custom CSS
+include:
+  - assets/css/custom.css
