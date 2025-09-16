@@ -4,10 +4,21 @@
 .site-title {
   font-weight: 700;
 }
-.page-content {
-  max-width: 1100px; /* wider to fit sidebar + content */
-  margin: auto;
+
+/* Override Minima wrapper so content spans full width */
+.wrapper {
+  max-width: 100% !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+
+/* Page content should follow wrapper, not limit width */
+.page-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0; /* rely on .wrapper for side padding */
+}
+
 h1,
 h2,
 h3 {
@@ -18,11 +29,40 @@ h3 {
 }
 
 /* ==============================
+   Navigation bar
+   ============================== */
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0.75rem 2rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* spacing between nav links */
+}
+
+.site-title {
+  font-size: 1.3rem;
+  margin: 0;
+  margin-right: 2rem; /* space between name and nav links */
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
    Publications layout
    ============================== */
 .pubs-layout {
   display: grid;
-  grid-template-columns: 240px 1fr; /* slightly wider sidebar */
+  grid-template-columns: 200px 1fr; /* narrower sidebar, more room for content */
   gap: 2rem;
   align-items: start;
 }
@@ -101,6 +141,20 @@ html {
    Responsive (mobile)
    ============================== */
 @media (max-width: 900px) {
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .site-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .pubs-layout {
     grid-template-columns: 1fr;
   }
