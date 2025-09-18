@@ -1,9 +1,8 @@
 ---
 layout: home
-title: "David Pugmire"
-subtitle: "Distinguished Scientist, Oak Ridge National Laboratory"
+title: ""
+permalink: /
+nav_exclude: true # Minima respects this
 ---
 
-Welcome to my professional website.
-
-I am a Distinguished Scientist at Oak Ridge National Laboratory. My research focuses on scientific visualization, high‑performance computing, and AI‑driven methods for understanding large‑scale scientific data.
+Hello. Welcome.
