@@ -15,3 +15,5 @@ overrides:
     type: bookchapter
   - match: "Mathematics and Visualization"
     type: bookchapter
+  - match: "Electronic Imaging"
+    type: journal

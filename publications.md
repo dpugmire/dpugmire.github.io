@@ -14,13 +14,13 @@ title: "Publications"
   <!-- Left sidebar -->
   <nav class="pubs-sidenav">
     <div class="pubs-sidenav__title">Publications</div>
-    <a href="#journals">Journals ({{ journals | size }})</a>
-    <a href="#conferences">Conferences ({{ conferences | size }})</a>
-    <a href="#book-chapters">Book Chapters ({{ books | size }})</a>
-    <a href="#techreports">Technical Reports ({{ techreports | size }})</a>
+    <a href="#journals">Journals </a>
+    <a href="#conferences">Conferences </a>
+    <a href="#book-chapters">Book Chapters</a>
+    <a href="#techreports">Technical Reports </a>
     <hr>
-    <a href="{{ '/assets/publications.bib.txt' | relative_url }}" target="_blank" rel="noopener">Open BibTeX (all)</a>
     <a href="https://scholar.google.com/citations?user={{ site.scholar_id }}" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="{{ '/assets/publications.bib.txt' | relative_url }}" target="_blank" rel="noopener">Download BibTeX (all)</a>
   </nav>
 
   <!-- Main content -->
