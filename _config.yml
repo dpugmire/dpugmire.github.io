@@ -11,6 +11,8 @@ plugins:
 
 # Header Navigation
 nav:
+- title: "Home"
+    url: /
   - title: "Projects"
     url: /projects
   - title: "Publications"
