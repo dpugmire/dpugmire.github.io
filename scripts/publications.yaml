@@ -1,29 +1,28 @@
 # publications.yaml
-# Edit this file to manage your publications
-# The website will automatically read and display them
-# Generated from ORCID on 2025-12-01 08:48:16
+# Generated from ORCID + Google Scholar (SerpAPI) + CrossRef on 2025-12-01 13:47:49
 
 publications:
+
   # CONFERENCE - 2025
   - id: wang2025orbit
     title: "ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling"
     authors: "Wang, X., Choi, J., Kurihaya, T., Lyngaas, I., Yoon, H., Xiao, X., Pugmire, D., Fan, M., Nafi, N., Tsaris, A., et al."
     venue: "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
     year: 2025
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     doi: "10.1145/3712285.3771989"
     paper_url: "https://doi.org/10.1145/3712285.3771989"
     # summary: ""  # Add a one-sentence summary of the paper
-    image: "ed.jpg" # Optional - add image file to images/papers/
+    # image: "wang2025orbit.jpg"  # Optional - add image file to images/papers/
 
-  # WORKSHOP - 2025
+  # JOURNAL - 2025
   - id: wang2025parallelize
     title: "Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead"
     authors: "Wang, Z., Moreland, K., Larsen, M., Kress, J., Childs, H., Pugmire, D."
     venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2025
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/TVCG.2025.3557453"
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tvcg.2025.3557453"
     paper_url: "https://doi.org/10.1109/tvcg.2025.3557453"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "wang2025parallelize.jpg"  # Optional - add image file to images/papers/
@@ -34,10 +33,10 @@ publications:
     authors: "Athawale, T., Wang, Z., Pugmire, D., Moreland, K., Gong, Q., Klasky, S., Johnson, C., Rosen, P."
     venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2025
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/TVCG.2024.3456393"
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tvcg.2024.3456393"
     paper_url: "https://doi.org/10.1109/tvcg.2024.3456393"
-    summary: "This paper introduces a closed-form, parallel, and ParaView-integrated framework to efficiently compute and visualize critical point uncertainty in 2D scalar fields, avoiding expensive Monte Carlo sampling."
+    # summary: ""  # Add a one-sentence summary of the paper
     # image: "athawale2025uncertainty.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2024
@@ -46,19 +45,19 @@ publications:
     authors: "Athawale, T., Triana, B., Kotha, T., Pugmire, D., Rosen, P."
     venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2024
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/TVCG.2023.3326592"
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tvcg.2023.3326592"
     paper_url: "https://doi.org/10.1109/tvcg.2023.3326592"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "athawale2024comparative.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2023
   - id: senapati2023advancing
-    title: "Advancing Comprehension of Quantum Application Outputs: A Visualization Technique"
+    title: "Advancing comprehension of quantum application outputs: A visualization technique"
     authors: "Senapati, P., Athawale, T., Pugmire, D., Guan, Q."
     venue: "Proceedings of the 2023 International Workshop on Quantum Classical Cooperative"
     year: 2023
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     doi: "10.1145/3588983.3596689"
     paper_url: "https://doi.org/10.1145/3588983.3596689"
     # summary: ""  # Add a one-sentence summary of the paper
@@ -70,8 +69,8 @@ publications:
     authors: "Athawale, T., Johnson, C., Sane, S., Pugmire, D."
     venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2023
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/TVCG.2022.3209424"
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tvcg.2022.3209424"
     paper_url: "https://doi.org/10.1109/tvcg.2022.3209424"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "athawale2023fiber.jpg"  # Optional - add image file to images/papers/
@@ -82,10 +81,10 @@ publications:
     authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
     venue: "Computer Graphics Forum"
     year: 2023
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     doi: "10.1111/cgf.14858"
     paper_url: "https://doi.org/10.1111/cgf.14858"
-    summary: "AbstractThe computational work to perform particle advection‐based flow visualization techniques varies based on many factors, including number of particles, duration, and mesh type"
+    # summary: ""  # Add a one-sentence summary of the paper
     # image: "yenpure2023state.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2023
@@ -94,7 +93,7 @@ publications:
     authors: "Bolstad, M., Moreland, K., Pugmire, D., Rogers, D., Lo, L., Geveci, B., Childs, H., Rizzi, S."
     venue: "ACM SIGGRAPH 2023 Talks"
     year: 2023
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     doi: "10.1145/3587421.3595466"
     paper_url: "https://doi.org/10.1145/3587421.3595466"
     # summary: ""  # Add a one-sentence summary of the paper
@@ -106,8 +105,8 @@ publications:
     authors: "Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., et al."
     venue: "IEEE Transactions on Computers"
     year: 2022
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/TC.2021.3092201"
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tc.2021.3092201"
     paper_url: "https://doi.org/10.1109/tc.2021.3092201"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "liang2022mgard.jpg"  # Optional - add image file to images/papers/
@@ -116,9 +115,9 @@ publications:
   - id: moreland2022exploitation
     title: "The Exploitation of Data Reduction for Visualization"
     authors: "Moreland, K., Pugmire, D., Chen, J."
-    venue: "Unknown Venue"
+    venue: "K Moreland, D Pugmire, J Chen - 2022 - osti.gov"
     year: 2022
-    type: workshop # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     doi: "10.2172/1881112"
     paper_url: "https://doi.org/10.2172/1881112"
     # summary: ""  # Add a one-sentence summary of the paper
@@ -128,9 +127,9 @@ publications:
   - id: moreland2022importance
     title: "The Importance of Scientific Visualization on Novel Hardware"
     authors: "Moreland, K., Pugmire, D., Geveci, B., Lo, L., Childs, H., Bolstad, M., Shah, R., Wu, P."
-    venue: "Unknown Venue"
+    venue: "K Moreland, D Pugmire, B Geveci, LT Lo, H Childs… - 2022 - osti.gov"
     year: 2022
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     doi: "10.2172/1885308"
     paper_url: "https://doi.org/10.2172/1885308"
     # summary: ""  # Add a one-sentence summary of the paper
@@ -138,1017 +137,1107 @@ publications:
 
   # JOURNAL - 2022
   - id: gainaru2022understanding
-    title: "Understanding the Impact of Data Staging for Coupled Scientific Workflows"
+    title: "Understanding the impact of data staging for coupled scientific workflows"
     authors: "Gainaru, A., Wan, L., Wang, R., Suchyta, E., Chen, J., Podhorszki, N., Kress, J., Pugmire, D., Klasky, S."
     venue: "IEEE Transactions on Parallel and Distributed Systems"
     year: 2022
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/TPDS.2022.3179989"
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tpds.2022.3179989"
     paper_url: "https://doi.org/10.1109/tpds.2022.3179989"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "gainaru2022understanding.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: authorsnotavailable2021design
-    title: "Co-design center for exascale machine learning technologies (ExaLearn)"
-    authors: "Authors not available"
-    venue: "The International Journal of High Performance Computing Applications"
+  - id: alexander2021design
+    title: "Co-design center for exascale machine learning technologies (exalearn)"
+    authors: "Alexander, F., Foster, I., Sweeney, C., Nugent, P., Van Essen, B., Seal, S., Ang, J., Wolf, M."
+    venue: "Proposed for presentation at the ECP Annual Meeting (2021)."
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1869758"
+    paper_url: "https://doi.org/10.2172/1869758"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021design.jpg"  # Optional - add image file to images/papers/
+    # image: "alexander2021design.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: authorsnotavailable2021error
+  - id: liang2021error
     title: "Error-controlled, progressive, and adaptable retrieval of scientific data with multilevel decomposition"
-    authors: "Authors not available"
+    authors: "Liang, X., Gong, Q., Chen, J., Whitney, B., Wan, L., Liu, Q., Pugmire, D., Archibald, R., Podhorszki, N., Klasky, S."
     venue: "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3458817.3476179"
+    paper_url: "https://doi.org/10.1145/3458817.3476179"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021error.jpg"  # Optional - add image file to images/papers/
+    # image: "liang2021error.jpg"  # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2021
   - id: pugmire2021fides
-    title: "Fides: A General Purpose Data Model Library for Streaming Data"
+    title: "Fides: a general purpose data model library for streaming data"
     authors: "Pugmire, D., Ross, C., Thompson, N., Kress, J., Atkins, C., Klasky, S., Geveci, B."
     venue: "Lecture Notes in Computer Science"
     year: 2021
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
+    type: book-chapter  # journal, conference, workshop, book-chapter, preprint, other
     doi: "10.1007/978-3-030-90539-2_34"
     paper_url: "https://doi.org/10.1007/978-3-030-90539-2_34"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "pugmire2021fides.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: authorsnotavailable2021fides
-    title: "Fides: A General Purpose Data Model Library for Streaming Data"
-    authors: "Authors not available"
-    venue: "International Conference on High Performance Computing"
+  - id: pugmire2021fides
+    title: "Fides: a general purpose data model library for streaming data"
+    authors: "Pugmire, D., Ross, C., Thompson, N., Kress, J., Atkins, C., Klasky, S., Geveci, B."
+    venue: "Lecture Notes in Computer Science"
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1007/978-3-030-90539-2_34"
+    paper_url: "https://doi.org/10.1007/978-3-030-90539-2_34"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021fides.jpg"  # Optional - add image file to images/papers/
+    # image: "pugmire2021fides.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: authorsnotavailable2021hylipod
-    title: "HyLiPoD: Parallel Particle Advection Via a Hybrid of Lifeline Scheduling and Parallelization-Over-Data"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: binyahib2021hylipod
+    title: "HyLiPoD: Parallel Particle Advection Via a Hybrid of Lifeline Scheduling and Parallelization-Over-Data."
+    authors: "Binyahib, R., Pugmire, D., Norris, B., Childs, H."
+    venue: "2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV)"
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ldav48142.2019.8944355"
+    paper_url: "https://doi.org/10.1109/ldav48142.2019.8944355"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021hylipod.jpg"  # Optional - add image file to images/papers/
+    # image: "binyahib2021hylipod.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: authorsnotavailable2021improving
+  - id: schwartz2021improving
     title: "Improving parallel particle advection performance with machine learning"
-    authors: "Authors not available"
-    venue: "Proc. Eurographics Symposium on Parallel Graphics and Visualization"
+    authors: "Schwartz, M."
+    venue: "Harvard Data Science Review"
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1162/99608f92.beeb1183"
+    paper_url: "https://doi.org/10.1162/99608f92.beeb1183"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021improving.jpg"  # Optional - add image file to images/papers/
+    # image: "schwartz2021improving.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: authorsnotavailable2021machine
-    title: "Machine Learning-Based Autotuning for Parallel Particle Advection"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: schwartz2021machine
+    title: "Machine Learning-Based Autotuning for Parallel Particle Advection."
+    authors: "Schwartz, M."
+    venue: "Harvard Data Science Review"
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1162/99608f92.beeb1183"
+    paper_url: "https://doi.org/10.1162/99608f92.beeb1183"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021machine.jpg"  # Optional - add image file to images/papers/
+    # image: "schwartz2021machine.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: authorsnotavailable2021minimizing
+  - id: moreland2021minimizing
     title: "Minimizing development costs for efficient many-core visualization using MCD3"
-    authors: "Authors not available"
+    authors: "Moreland, K., Maynard, R., Pugmire, D., Yenpure, A., Vacanti, A., Larsen, M., Childs, H."
     venue: "Parallel Computing"
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1016/j.parco.2021.102834"
+    paper_url: "https://doi.org/10.1016/j.parco.2021.102834"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021minimizing.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2021minimizing.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: authorsnotavailable2021neural
+  - id: puchala2021neural
     title: "Neural data compression for physics plasma simulation"
-    authors: "Authors not available"
-    venue: "Neural Compression: From Information Theory to Applications--Workshop@ ICLR 2021"
+    authors: "Puchala, D., Stokfiszewski, K."
+    venue: "2021 Data Compression Conference (DCC)"
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/dcc50243.2021.00048"
+    paper_url: "https://doi.org/10.1109/dcc50243.2021.00048"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021neural.jpg"  # Optional - add image file to images/papers/
+    # image: "puchala2021neural.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: authorsnotavailable2021scalable
+  - id: chen2021scalable
     title: "Scalable Multigrid-based Hierarchical Scientific Data Refactoring on GPUs"
-    authors: "Authors not available"
-    venue: "arXiv preprint arXiv:2105.12764"
+    authors: "Chen, J., Wan, L., Liang, X., Whitney, B., Liu, Q., Pugmire, D., Thompson, N., Choi, J., Wolf, M., Munson, T., et al."
+    venue: "2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)"
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ipdps49936.2021.00095"
+    paper_url: "https://doi.org/10.1109/ipdps49936.2021.00095"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021scalable.jpg"  # Optional - add image file to images/papers/
+    # image: "chen2021scalable.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: authorsnotavailable2021spatial
+  - id: dominski2021spatial
     title: "Spatial coupling of gyrokinetic simulations, a generalized scheme based on first-principles"
-    authors: "Authors not available"
+    authors: "Dominski, J., Cheng, J., Merlo, G., Carey, V., Hager, R., Ricketson, L., Choi, J., Ethier, S., Germaschewski, K., Ku, S., et al."
     venue: "Physics of Plasmas"
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1063/5.0027160"
+    paper_url: "https://doi.org/10.1063/5.0027160"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021spatial.jpg"  # Optional - add image file to images/papers/
+    # image: "dominski2021spatial.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: authorsnotavailable2021exascale
+  - id: suchyta2021exascale
     title: "The Exascale Framework for High Fidelity coupled Simulations (EFFIS): Enabling whole device modeling in fusion science"
-    authors: "Authors not available"
+    authors: "Suchyta, E., Klasky, S., Podhorszki, N., Wolf, M., Adesoji, A., Chang, C., Choi, J., Davis, P., Dominski, J., Ethier, S., et al."
     venue: "The International Journal of High Performance Computing Applications"
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1177/10943420211019119"
+    paper_url: "https://doi.org/10.1177/10943420211019119"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2021exascale.jpg"  # Optional - add image file to images/papers/
+    # image: "suchyta2021exascale.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020terminology
+  - id: kawakami2020terminology
     title: "A terminology for in situ visualization and analysis systems"
-    authors: "Authors not available"
-    venue: "The International Journal of High Performance Computing Applications"
+    authors: "Kawakami, Y., Marsaglia, N., Larsen, M., Childs, H."
+    venue: "ISAV'20 In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3426462.3426469"
+    paper_url: "https://doi.org/10.1145/3426462.3426469"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020terminology.jpg"  # Optional - add image file to images/papers/
+    # image: "kawakami2020terminology.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020adios
-    title: "ADIOS 2: The Adaptable Input Output System. A framework for high-performance data management"
-    authors: "Authors not available"
+  - id: chen2020accelerating
+    title: "Accelerating Multigrid-based Hierarchical Scientific Data Refactoring on GPUs"
+    authors: "Chen, J., Wan, L., Liang, X., Whitney, B., Liu, Q., Pugmire, D., Thompson, N., Choi, J., Wolf, M., Munson, T., et al."
+    venue: "2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)"
+    year: 2020
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ipdps49936.2021.00095"
+    paper_url: "https://doi.org/10.1109/ipdps49936.2021.00095"
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: "chen2020accelerating.jpg"  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2020
+  - id: godoy2020adios
+    title: "Adios 2: The adaptable input output system. a framework for high-performance data management"
+    authors: "Godoy, W., Podhorszki, N., Wang, R., Atkins, C., Eisenhauer, G., Gu, J., Davis, P., Choi, J., Germaschewski, K., Huck, K., et al."
     venue: "SoftwareX"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1016/j.softx.2020.100561"
+    paper_url: "https://doi.org/10.1016/j.softx.2020.100561"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020adios.jpg"  # Optional - add image file to images/papers/
-
-  # JOURNAL - 2020
-  - id: authorsnotavailable2020accelerating
-    title: "Accelerating Multigrid-based Hierarchical Scientific Data Refactoring on GPUs"
-    authors: "Authors not available"
-    venue: "arXiv preprint arXiv:2007.04457"
-    year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020accelerating.jpg"  # Optional - add image file to images/papers/
+    # image: "godoy2020adios.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
-  - id: authorsnotavailable2020comparing
-    title: "Comparing Time-to-Solution for In Situ Visualization Paradigms at Scale"
-    authors: "Authors not available"
+  - id: kress2020comparing
+    title: "Comparing time-to-solution for in situ visualization paradigms at scale"
+    authors: "Kress, J., Larsen, M., Choi, J., Kim, M., Wolf, M., Podhorszki, N., Klasky, S., Childs, H., Pugmire, D."
     venue: "2020 IEEE 10th Symposium on Large Data Analysis and Visualization (LDAV)"
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ldav51489.2020.00009"
+    paper_url: "https://doi.org/10.1109/ldav51489.2020.00009"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020comparing.jpg"  # Optional - add image file to images/papers/
+    # image: "kress2020comparing.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020estimating
-    title: "Estimating Lossy Compressibility of Scientific Data Using Deep Neural Networks"
-    authors: "Authors not available"
+  - id: qin2020estimating
+    title: "Estimating lossy compressibility of scientific data using deep neural networks"
+    authors: "Qin, Z., Wang, J., Liu, Q., Chen, J., Pugmire, D., Podhorszki, N., Klasky, S."
     venue: "IEEE Letters of the Computer Society"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/locs.2020.2971940"
+    paper_url: "https://doi.org/10.1109/locs.2020.2971940"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020estimating.jpg"  # Optional - add image file to images/papers/
+    # image: "qin2020estimating.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020extending
+  - id: farooq2020extending
     title: "Extending the publish/subscribe abstraction for high-performance I/O and data management at extreme scale"
-    authors: "Authors not available"
-    venue: "Bulletin of the IEEE Technical Committee on Data Engineering"
+    authors: "Farooq, U."
+    venue: "J Logan, M Ainsworth, C Atkins, J Chen, JY Choi… - Bulletin of the IEEE …, 2020 - osti.gov"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.22215/etd/2003-05586"
+    paper_url: "https://doi.org/10.22215/etd/2003-05586"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020extending.jpg"  # Optional - add image file to images/papers/
+    # image: "farooq2020extending.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020global
+  - id: lei2020global
     title: "Global adjoint tomography—model GLAD-M25"
-    authors: "Authors not available"
+    authors: "Lei, W., Ruan, Y., Bozdağ, E., Peter, D., Lefebvre, M., Komatitsch, D., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D."
     venue: "Geophysical Journal International"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1093/gji/ggaa253"
+    paper_url: "https://doi.org/10.1093/gji/ggaa253"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020global.jpg"  # Optional - add image file to images/papers/
+    # image: "lei2020global.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
-  - id: authorsnotavailable2020performance
+  - id: gunda2020performance
     title: "I/o performance characterization and prediction through machine learning on hpc systems"
-    authors: "Authors not available"
-    venue: "CUG2020 Proceedings"
+    authors: "Gunda, S."
+    venue: "Advances in Systems Analysis, Software Engineering, and High Performance Computing"
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.4018/978-1-6684-3795-7.ch009"
+    paper_url: "https://doi.org/10.4018/978-1-6684-3795-7.ch009"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020performance.jpg"  # Optional - add image file to images/papers/
+    # image: "gunda2020performance.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020mgard
+  - id: liang2020mgard
     title: "MGARD+: Optimizing multilevel methods for error-bounded scientific data reduction"
-    authors: "Authors not available"
-    venue: "arXiv preprint arXiv:2010.05872"
+    authors: "Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., et al."
+    venue: "IEEE Transactions on Computers"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tc.2021.3092201"
+    paper_url: "https://doi.org/10.1109/tc.2021.3092201"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020mgard.jpg"  # Optional - add image file to images/papers/
+    # image: "liang2020mgard.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
-  - id: authorsnotavailable2020opportunities
+  - id: kress2020opportunities
     title: "Opportunities for cost savings with in-transit visualization"
-    authors: "Authors not available"
-    venue: "International Conference on High Performance Computing"
+    authors: "Kress, J., Larsen, M., Choi, J., Kim, M., Wolf, M., Podhorszki, N., Klasky, S., Childs, H., Pugmire, D."
+    venue: "Lecture Notes in Computer Science"
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1007/978-3-030-50743-5_8"
+    paper_url: "https://doi.org/10.1007/978-3-030-50743-5_8"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020opportunities.jpg"  # Optional - add image file to images/papers/
+    # image: "kress2020opportunities.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020optimizing
+  - id: fei2020optimizing
     title: "Optimizing multi-grid based reduction for efficient scientific data management"
-    authors: "Authors not available"
-    venue: "arXiv preprint arXiv:2010.05872"
+    authors: "Fei, G., Liang, W., Bingxin, J., Zhonghua, X."
+    venue: "2020 International Conference on Urban Engineering and Management Science (ICUEMS)"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/icuems50872.2020.00063"
+    paper_url: "https://doi.org/10.1109/icuems50872.2020.00063"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020optimizing.jpg"  # Optional - add image file to images/papers/
+    # image: "fei2020optimizing.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
-  - id: authorsnotavailable2020parallel
-    title: "Parallel Particle Advection Bake-Off for Scientific Visualization Workloads"
-    authors: "Authors not available"
+  - id: binyahib2020parallel
+    title: "Parallel particle advection bake-off for scientific visualization workloads"
+    authors: "Binyahib, R., Pugmire, D., Yenpure, A., Childs, H."
     venue: "2020 IEEE International Conference on Cluster Computing (CLUSTER)"
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/cluster49012.2020.00048"
+    paper_url: "https://doi.org/10.1109/cluster49012.2020.00048"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020parallel.jpg"  # Optional - add image file to images/papers/
+    # image: "binyahib2020parallel.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2020
-  - id: authorsnotavailable2020parallel
-    title: "Parallel Particle Advection Bake-Off for Scientific Visualization Workloads"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: binyahib2020parallel
+    title: "Parallel particle advection bake-off for scientific visualization workloads"
+    authors: "Binyahib, R., Pugmire, D., Yenpure, A., Childs, H."
+    venue: "2020 IEEE International Conference on Cluster Computing (CLUSTER)"
     year: 2020
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/cluster49012.2020.00048"
+    paper_url: "https://doi.org/10.1109/cluster49012.2020.00048"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020parallel.jpg"  # Optional - add image file to images/papers/
+    # image: "binyahib2020parallel.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020moving
+  - id: reina2020moving
     title: "The Moving Target of Visualization Software for an Ever More Complex World"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Reina, G., Childs, H., Matković, K., Bühler, K., Waldner, M., Pugmire, D., Kozlíková, B., Ropinski, T., Ljung, P., Itoh, T., et al."
+    venue: "Computers & Graphics"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1016/j.cag.2020.01.005"
+    paper_url: "https://doi.org/10.1016/j.cag.2020.01.005"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020moving.jpg"  # Optional - add image file to images/papers/
+    # image: "reina2020moving.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020moving
+  - id: reina2020moving
     title: "The moving target of visualization software for an increasingly complex world"
-    authors: "Authors not available"
-    venue: "Computers & graphics"
+    authors: "Reina, G., Childs, H., Matković, K., Bühler, K., Waldner, M., Pugmire, D., Kozlíková, B., Ropinski, T., Ljung, P., Itoh, T., et al."
+    venue: "Computers & Graphics"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1016/j.cag.2020.01.005"
+    paper_url: "https://doi.org/10.1016/j.cag.2020.01.005"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020moving.jpg"  # Optional - add image file to images/papers/
+    # image: "reina2020moving.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: authorsnotavailable2020towards
+  - id: bhatnagar2020towards
     title: "Towards 1ULP evaluation of Daubechies Wavelets"
-    authors: "Authors not available"
-    venue: "arXiv preprint arXiv:2005.05424"
+    authors: "Bhatnagar, N."
+    venue: "Introduction to Wavelet Transforms"
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1201/9781003006626-5"
+    paper_url: "https://doi.org/10.1201/9781003006626-5"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020towards.jpg"  # Optional - add image file to images/papers/
+    # image: "bhatnagar2020towards.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
-  - id: authorsnotavailable2020visualization
-    title: "Visualization as a Service for Scientific Data"
-    authors: "Authors not available"
-    venue: "Smoky Mountains Computational Sciences and Engineering Conference"
+  - id: leventhal2020visualization
+    title: "Visualization as a service for scientific data"
+    authors: "Leventhal, S., Kim, M., Pugmire, D."
+    venue: "2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)"
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/drbsd-549595.2019.00007"
+    paper_url: "https://doi.org/10.1109/drbsd-549595.2019.00007"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2020visualization.jpg"  # Optional - add image file to images/papers/
+    # image: "leventhal2020visualization.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2019
-  - id: authorsnotavailable2019alpine
+  - id: moreland2019alpine
     title: "3.17 ECP ALPINE Algorithm Overview"
-    authors: "Authors not available"
-    venue: "In Situ Visualization for Computational Science"
+    authors: "Moreland, K."
+    venue: "R Westermann, T Carrard, I Hotz… - In Situ Visualization …, 2019 - drops.dagstuhl.de"
     year: 2019
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1489415"
+    paper_url: "https://doi.org/10.2172/1489415"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019alpine.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2019alpine.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2019
-  - id: authorsnotavailable2019workflow
+  - id: khademi2019workflow
     title: "4.3 Workflow Execution"
-    authors: "Authors not available"
-    venue: "In Situ Visualization for Computational Science"
+    authors: "Khademi, H."
+    venue: "J Patchett, H Childs, A Bauer, PT Bremer… - In Situ Visualization …, 2019 - drops.dagstuhl.de"
     year: 2019
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.32657/10356/19300"
+    paper_url: "https://doi.org/10.32657/10356/19300"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019workflow.jpg"  # Optional - add image file to images/papers/
+    # image: "khademi2019workflow.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2019
-  - id: authorsnotavailable2019algorithmic
+  - id: griffiths2019algorithmic
     title: "4.5 Algorithmic Challenges"
-    authors: "Authors not available"
-    venue: "In Situ Visualization for Computational Science"
+    authors: "Griffiths, A."
+    venue: "Algorithmic Regulation"
     year: 2019
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1093/oso/9780198838494.003.0007"
+    paper_url: "https://doi.org/10.1093/oso/9780198838494.003.0007"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019algorithmic.jpg"  # Optional - add image file to images/papers/
+    # image: "griffiths2019algorithmic.jpg"  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2019
+  - id: ruan2019generation
+    title: "A New Generation of Earth Mantle Model from Global Adjoint Tomography"
+    authors: "Ruan, Y., Lei, W., Lefebvre, M., Modrak, R., Smith, J., Orsvuran, R., Bozdag, E., Hill, J., Podhorszki, N., Pugmire, D., et al."
+    venue: "Acta Geologica Sinica - English Edition"
+    year: 2019
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1111/1755-6724.13991"
+    paper_url: "https://doi.org/10.1111/1755-6724.13991"
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: "ruan2019generation.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2019
-  - id: authorsnotavailable2019lifeline
-    title: "A Lifeline-Based Approach for Work Requesting and Parallel Particle Advection"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
-    year: 2019
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019lifeline.jpg"  # Optional - add image file to images/papers/
-
-  # JOURNAL - 2019
-  - id: authorsnotavailable2019generation
-    title: "A New Generation of Earth Mantle Model from Global Adjoint Tomography"
-    authors: "Authors not available"
-    venue: "Acta Geologica Sinica (Beijing)"
-    year: 2019
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019generation.jpg"  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2019
-  - id: authorsnotavailable2019lifeline
+  - id: binyahib2019lifeline
     title: "A lifeline-based approach for work requesting and parallel particle advection"
-    authors: "Authors not available"
+    authors: "Binyahib, R., Pugmire, D., Norris, B., Childs, H."
     venue: "2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV)"
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ldav48142.2019.8944355"
+    paper_url: "https://doi.org/10.1109/ldav48142.2019.8944355"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019lifeline.jpg"  # Optional - add image file to images/papers/
+    # image: "binyahib2019lifeline.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2019
-  - id: authorsnotavailable2019comparing
+  - id: binyahib2019lifeline
+    title: "A lifeline-based approach for work requesting and parallel particle advection"
+    authors: "Binyahib, R., Pugmire, D., Norris, B., Childs, H."
+    venue: "2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV)"
+    year: 2019
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ldav48142.2019.8944355"
+    paper_url: "https://doi.org/10.1109/ldav48142.2019.8944355"
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: "binyahib2019lifeline.jpg"  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2019
+  - id: kress2019comparing
     title: "Comparing the efficiency of in situ visualization paradigms at scale"
-    authors: "Authors not available"
-    venue: "International Conference on High Performance Computing"
+    authors: "Kress, J., Larsen, M., Choi, J., Kim, M., Wolf, M., Podhorszki, N., Klasky, S., Childs, H., Pugmire, D."
+    venue: "2020 IEEE 10th Symposium on Large Data Analysis and Visualization (LDAV)"
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ldav51489.2020.00009"
+    paper_url: "https://doi.org/10.1109/ldav51489.2020.00009"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019comparing.jpg"  # Optional - add image file to images/papers/
+    # image: "kress2019comparing.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2019
-  - id: authorsnotavailable2019situ
+  - id: chopra2019situ
     title: "In Situ Analysis and Visualization of Fusion Simulations: Lessons Learned"
-    authors: "Authors not available"
-    venue: "High Performance Computing: ISC High Performance 2018 International Workshops, Frankfurt/Main, Germany, June 28, 2018, Revised Selected Papers"
+    authors: "Chopra, P., Meyer, J., Fernandez, A."
+    venue: "IEEE Visualization, 2002. VIS 2002."
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/visual.2002.1183814"
+    paper_url: "https://doi.org/10.1109/visual.2002.1183814"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019situ.jpg"  # Optional - add image file to images/papers/
+    # image: "chopra2019situ.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2019
-  - id: authorsnotavailable2019situ
+  - id: binyahib2019situ
     title: "In situ particle advection via parallelizing over particles"
-    authors: "Authors not available"
+    authors: "Binyahib, R., Pugmire, D., Childs, H."
     venue: "Proceedings of the Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization"
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3364228.3364235"
+    paper_url: "https://doi.org/10.1145/3364228.3364235"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019situ.jpg"  # Optional - add image file to images/papers/
+    # image: "binyahib2019situ.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2019
-  - id: authorsnotavailable2019situ
+  - id: binyahib2019situ
     title: "In situ particle advection via parallelizing over particles"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Binyahib, R., Pugmire, D., Childs, H."
+    venue: "Proceedings of the Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization"
     year: 2019
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3364228.3364235"
+    paper_url: "https://doi.org/10.1145/3364228.3364235"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019situ.jpg"  # Optional - add image file to images/papers/
+    # image: "binyahib2019situ.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2019
-  - id: authorsnotavailable2019pave
-    title: "PAVE: An In Situ Framework for Scientific Visualization and Machine Learning Coupling"
-    authors: "Authors not available"
+  - id: leventhal2019pave
+    title: "Pave: An in situ framework for scientific visualization and machine learning coupling"
+    authors: "Leventhal, S., Kim, M., Pugmire, D."
     venue: "2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)"
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/drbsd-549595.2019.00007"
+    paper_url: "https://doi.org/10.1109/drbsd-549595.2019.00007"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019pave.jpg"  # Optional - add image file to images/papers/
+    # image: "leventhal2019pave.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2019
-  - id: authorsnotavailable2019pave
-    title: "PAVE: An In Situ Framework for Scientific Visualization and Machine Learning Coupling"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
-    year: 2019
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019pave.jpg"  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2019
-  - id: authorsnotavailable2019understanding
-    title: "Understanding Performance-Quality Trade-offs in Scientific Visualization Workflows with Lossy Compression"
-    authors: "Authors not available"
+  - id: leventhal2019pave
+    title: "Pave: An in situ framework for scientific visualization and machine learning coupling"
+    authors: "Leventhal, S., Kim, M., Pugmire, D."
     venue: "2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)"
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/drbsd-549595.2019.00007"
+    paper_url: "https://doi.org/10.1109/drbsd-549595.2019.00007"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019understanding.jpg"  # Optional - add image file to images/papers/
+    # image: "leventhal2019pave.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2019
-  - id: authorsnotavailable2019virtual
-    title: "Virtual and Augmented Reality for Visualization of Big Data: Examples from Deep Earth to Subsurface"
-    authors: "Authors not available"
-    venue: "AGU Fall Meeting Abstracts"
+  - id: chen2019understanding
+    title: "Understanding performance-quality trade-offs in scientific visualization workflows with lossy compression"
+    authors: "Chen, J., Pugmire, D., Wolf, M., Thompson, N., Logan, J., Mehta, K., Wan, L., Choi, J., Whitney, B., Klasky, S."
+    venue: "2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)"
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/drbsd-549595.2019.00006"
+    paper_url: "https://doi.org/10.1109/drbsd-549595.2019.00006"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019virtual.jpg"  # Optional - add image file to images/papers/
+    # image: "chen2019understanding.jpg"  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2019
+  - id: yoo2019virtual
+    title: "Virtual and Augmented Reality for Visualization of Big Data: Examples from Deep Earth to Subsurface"
+    authors: "Yoo, K., Foster, D."
+    venue: "ACM SIGGRAPH 2019 Virtual, Augmented, and Mixed Reality"
+    year: 2019
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3306449.3328826"
+    paper_url: "https://doi.org/10.1145/3306449.3328826"
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: "yoo2019virtual.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2019
-  - id: authorsnotavailable2019xvis
-    title: "XVis: Visualization for the Extreme-Scale Scientific Computation Ecosystem Final Report."
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: moreland2019xvis
+    title: "XVis: Visualization for the Extreme-Scale Scientific Computation Ecosystem. Final Report"
+    authors: "Moreland, K., Pugmire, D., Rogers, D., Childs, H., Ma, K., Geveci, B."
+    venue: "KD Moreland, D Pugmire, D Rogers, H Childs, KL Ma… - 2019 - osti.gov"
     year: 2019
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1762947"
+    paper_url: "https://doi.org/10.2172/1762947"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2019xvis.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2019xvis.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018view
+  - id: klasky2018view
     title: "A view from ORNL: Scientific data research opportunities in the big data age"
-    authors: "Authors not available"
+    authors: "Klasky, S., Wolf, M., Ainsworth, M., Atkins, C., Choi, J., Eisenhauer, G., Geveci, B., Godoy, W., Kim, M., Kress, J., et al."
     venue: "2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS)"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/icdcs.2018.00136"
+    paper_url: "https://doi.org/10.1109/icdcs.2018.00136"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018view.jpg"  # Optional - add image file to images/papers/
+    # image: "klasky2018view.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2018
-  - id: authorsnotavailable2018atdm
+  - id: moreland2018atdm
     title: "ATDM/ECP Milestone Memo WBS 2.3. 4.04/SNL ATDM Data and Visualization Projects STDV04-21-[MS1/YR2] Q3: Prototype Catalyst/ParaView in-situ viz for unsteady RV flow on ATS-1"
-    authors: "Authors not available"
+    authors: "Moreland, K."
     venue: "Unknown Venue"
     year: 2018
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1481596"
+    paper_url: "https://doi.org/10.2172/1481596"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018atdm.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2018atdm.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018binning
-    title: "Binning Based Data Reduction for Vector Field Data of a Particle-In-Cell Fusion Simulation"
-    authors: "Authors not available"
-    venue: "International Conference on High Performance Computing"
+  - id: kress2018binning
+    title: "Binning based data reduction for vector field data of a particle-in-cell fusion simulation"
+    authors: "Kress, J., Choi, J., Klasky, S., Churchill, M., Childs, H., Pugmire, D."
+    venue: "Lecture Notes in Computer Science"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1007/978-3-030-02465-9_15"
+    paper_url: "https://doi.org/10.1007/978-3-030-02465-9_15"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018binning.jpg"  # Optional - add image file to images/papers/
+    # image: "kress2018binning.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018coupling
+  - id: choi2018coupling
     title: "Coupling exascale multiphysics applications: Methods and lessons learned"
-    authors: "Authors not available"
+    authors: "Choi, J., Churchill, M., Davis, P., Di, S., Eisenhauer, G., Ethier, S., Foster, I., Geveci, B., Guo, H., Huck, K., et al."
     venue: "2018 IEEE 14th International Conference on e-Science (e-Science)"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/escience.2018.00133"
+    paper_url: "https://doi.org/10.1109/escience.2018.00133"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018coupling.jpg"  # Optional - add image file to images/papers/
+    # image: "choi2018coupling.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018dense
+  - id: lessley2018dense
     title: "Dense Texture Flow Visualization using Data-Parallel Primitives."
-    authors: "Authors not available"
-    venue: "EGPGV@ EuroVis"
+    authors: "Lessley, B., Perciano, T., Heinemann, C., Camp, D., Childs, H., Bethel, E."
+    venue: "2018 IEEE 8th Symposium on Large Data Analysis and Visualization (LDAV)"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ldav.2018.8739239"
+    paper_url: "https://doi.org/10.1109/ldav.2018.8739239"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018dense.jpg"  # Optional - add image file to images/papers/
+    # image: "lessley2018dense.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018exploring
+  - id: he2018exploring
     title: "Exploring Earth's interior in collaborative immersive VR environments"
-    authors: "Authors not available"
-    venue: "AGU Fall Meeting Abstracts"
+    authors: "He, T., Chen, X., Chen, Z., Li, Y., Liu, S., Hou, J., He, Y."
+    venue: "2017 IEEE Virtual Reality (VR)"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/vr.2017.7892299"
+    paper_url: "https://doi.org/10.1109/vr.2017.7892299"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018exploring.jpg"  # Optional - add image file to images/papers/
+    # image: "he2018exploring.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018exploring
-    title: "Exploring Earth’s interior in collaborative immersive VR environments"
-    authors: "Authors not available"
-    venue: "AGU Fall Meeting 2018"
+  - id: he2018exploring
+    title: "Exploring Earth's interior in collaborative immersive VR environments"
+    authors: "He, T., Chen, X., Chen, Z., Li, Y., Liu, S., Hou, J., He, Y."
+    venue: "2017 IEEE Virtual Reality (VR)"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/vr.2017.7892299"
+    paper_url: "https://doi.org/10.1109/vr.2017.7892299"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018exploring.jpg"  # Optional - add image file to images/papers/
+    # image: "he2018exploring.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018global
+  - id: ruan2018global
     title: "Global adjoint tomography-new generation earth mantle model"
-    authors: "Authors not available"
-    venue: "AGU Fall Meeting Abstracts"
+    authors: "Ruan, Y., Lei, W., Lefebvre, M., Modrak, R., Smith, J., Orsvuran, R., Bozdag, E., Hill, J., Podhorszki, N., Pugmire, D., et al."
+    venue: "Acta Geologica Sinica - English Edition"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1111/1755-6724.13991"
+    paper_url: "https://doi.org/10.1111/1755-6724.13991"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018global.jpg"  # Optional - add image file to images/papers/
+    # image: "ruan2018global.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2018
-  - id: authorsnotavailable2018situ
+  - id: moreland2018situ
     title: "In Situ Visualization for Computational Science"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Moreland, K., Bauer, A., Geveci, B., O’Leary, P., Whitlock, B."
+    venue: "Mathematics and Visualization"
     year: 2018
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1007/978-3-030-81627-8_10"
+    paper_url: "https://doi.org/10.1007/978-3-030-81627-8_10"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018situ.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2018situ.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
-  - id: authorsnotavailable2018situ
-    title: "In situ analysis and visualization of fusion simulations: Lessons learned"
-    authors: "Authors not available"
-    venue: "International Conference on High Performance Computing"
+  - id: kim2018situ
+    title: "In situ analysis and visualization of fusion simulations: lessons learned"
+    authors: "Kim, M., Kress, J., Choi, J., Podhorszki, N., Klasky, S., Wolf, M., Mehta, K., Huck, K., Geveci, B., Phillip, S., et al."
+    venue: "Lecture Notes in Computer Science"
     year: 2018
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1007/978-3-030-02465-9_16"
+    paper_url: "https://doi.org/10.1007/978-3-030-02465-9_16"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018situ.jpg"  # Optional - add image file to images/papers/
+    # image: "kim2018situ.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2018
-  - id: authorsnotavailable2018october
+  - id: moreland2018october
     title: "October 2018 ECP ST Project Review: ECP Project WBS 2.3. 4.13 VTK-m/ECP."
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Moreland, K."
+    venue: "KD Moreland, D Pugmire, D Rogers, H Childs… - 2018 - osti.gov"
     year: 2018
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1528807"
+    paper_url: "https://doi.org/10.2172/1528807"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018october.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2018october.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2018
-  - id: authorsnotavailable2018performance
-    title: "Performance-portable particle advection with vtk-m"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: yenpure2018performance
+    title: "Performance-portable particle advection with VTK-m"
+    authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
+    venue: "Computer Graphics Forum"
     year: 2018
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1111/cgf.14858"
+    paper_url: "https://doi.org/10.1111/cgf.14858"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2018performance.jpg"  # Optional - add image file to images/papers/
+    # image: "yenpure2018performance.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2017
-  - id: authorsnotavailable2017canopus
+  - id: lu2017canopus
     title: "Canopus: A Paradigm Shift Towards Elastic Extreme-Scale Data Analytics on HPC"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
-    year: 2017
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017canopus.jpg"  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2017
-  - id: authorsnotavailable2017canopus
-    title: "Canopus: A paradigm shift towards elastic extreme-scale data analytics on hpc storage"
-    authors: "Authors not available"
+    authors: "Lu, T., Suchyta, E., Pugmire, D., Choi, J., Klasky, S., Liu, Q., Podhorszki, N., Ainsworth, M., Wolf, M."
     venue: "2017 IEEE International Conference on Cluster Computing (CLUSTER)"
     year: 2017
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/cluster.2017.62"
+    paper_url: "https://doi.org/10.1109/cluster.2017.62"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017canopus.jpg"  # Optional - add image file to images/papers/
+    # image: "lu2017canopus.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2017
-  - id: authorsnotavailable2017canopus
-    title: "Canopus: Enabling extreme-scale data analytics on big ${$HPC$}$ storage via progressive refactoring"
-    authors: "Authors not available"
-    venue: "9th ${$USENIX$}$ Workshop on Hot Topics in Storage and File Systems (HotStorage 17)"
+  - id: lu2017canopus
+    title: "Canopus: A paradigm shift towards elastic extreme-scale data analytics on hpc storage"
+    authors: "Lu, T., Suchyta, E., Pugmire, D., Choi, J., Klasky, S., Liu, Q., Podhorszki, N., Ainsworth, M., Wolf, M."
+    venue: "2017 IEEE International Conference on Cluster Computing (CLUSTER)"
     year: 2017
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/cluster.2017.62"
+    paper_url: "https://doi.org/10.1109/cluster.2017.62"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017canopus.jpg"  # Optional - add image file to images/papers/
+    # image: "lu2017canopus.jpg"  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2017
+  - id: lu2017canopus
+    title: "Canopus: Enabling {Extreme-Scale} Data Analytics on Big {HPC} Storage via Progressive Refactoring"
+    authors: "Lu, T., Suchyta, E., Pugmire, D., Choi, J., Klasky, S., Liu, Q., Podhorszki, N., Ainsworth, M., Wolf, M."
+    venue: "2017 IEEE International Conference on Cluster Computing (CLUSTER)"
+    year: 2017
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/cluster.2017.62"
+    paper_url: "https://doi.org/10.1109/cluster.2017.62"
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: "lu2017canopus.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2017
-  - id: authorsnotavailable2017milestone
-    title: "ECP Milestone Report WBS 2.3. 4.13 ECP/VTK-m FY18Q1 [MS-18/01-03] Multiblock/Gradients/Release STDA05-5."
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: moreland2017milestone
+    title: "ECP Milestone Report WBS 2.3. 4.13 ECP/VTK-m FY18Q1 Multiblock/Gradients/Release STDA05-5."
+    authors: "Moreland, K., Pugmire, D., Geveci, B."
+    venue: "KD Moreland, D Pugmire, B Geveci - 2017 - osti.gov"
     year: 2017
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1414661"
+    paper_url: "https://doi.org/10.2172/1414661"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017milestone.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2017milestone.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2017
-  - id: authorsnotavailable2017summary
+  - id: moreland2017summary
     title: "ECP/VTK-m (ECP-ST Summary Slide)."
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Moreland, K."
+    venue: "KD Moreland - 2017 - osti.gov"
     year: 2017
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1434574"
+    paper_url: "https://doi.org/10.2172/1434574"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017summary.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2017summary.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2017
-  - id: authorsnotavailable2017exacution
+  - id: klasky2017exacution
     title: "Exacution: Enhancing scientific data management for exascale"
-    authors: "Authors not available"
+    authors: "Klasky, S., Suchyta, E., Ainsworth, M., Liu, Q., Whitney, B., Wolf, M., Choi, J., Foster, I., Kim, M., Logan, J., et al."
     venue: "2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS)"
     year: 2017
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/icdcs.2017.256"
+    paper_url: "https://doi.org/10.1109/icdcs.2017.256"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017exacution.jpg"  # Optional - add image file to images/papers/
+    # image: "klasky2017exacution.jpg"  # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2017
-  - id: authorsnotavailable2017situ
-    title: "In Situ Visualization of Radiation Transport Geometry"
-    authors: "Authors not available"
+  - id: kim2017situ
+    title: "In situ visualization of radiation transport geometry"
+    authors: "Kim, M., Evans, T., Klasky, S., Pugmire, D."
     venue: "Proceedings of the In Situ Infrastructures on Enabling Extreme-Scale Analysis and Visualization"
     year: 2017
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: book-chapter  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3144769.3144770"
+    paper_url: "https://doi.org/10.1145/3144769.3144770"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017situ.jpg"  # Optional - add image file to images/papers/
+    # image: "kim2017situ.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2017
-  - id: authorsnotavailable2017pillars
+  - id: pugmire2017pillars
     title: "Pillars of the Mantle"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Pugmire, D., Bozdağ, E., Lefebvre, M., Tromp, J., Komatitsch, D., Peter, D., Podhorszki, N., Hill, J."
+    venue: "Practice and Experience in Advanced Research Computing 2017: Sustainability, Success and Impact"
     year: 2017
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3093338.3104170"
+    paper_url: "https://doi.org/10.1145/3093338.3104170"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017pillars.jpg"  # Optional - add image file to images/papers/
-
-  # BOOK-CHAPTER - 2017
-  - id: authorsnotavailable2017pillars
-    title: "Pillars of the Mantle: Imaging the Interior of the Earth with Adjoint Tomography"
-    authors: "Authors not available"
-    venue: "Proceedings of the Practice and Experience in Advanced Research Computing 2017 on Sustainability, Success and Impact"
-    year: 2017
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017pillars.jpg"  # Optional - add image file to images/papers/
+    # image: "pugmire2017pillars.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2017
-  - id: authorsnotavailable2017pillars
-    title: "Pillars of the Mantle: Imaging the Interior of the Earth with Adjoint Tomography. In: PEARC17 Proceedings of the Practice and Experience in Advanced Research Computing 2017 on Sustainability, Success and Impact, Article No. 75"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: pugmire2017pillars
+    title: "Pillars of the Mantle: Imaging the Interior of the Earth with Adjoint Tomography. In: PEARC17 Proceedings of the Practice and Experience in Advanced Research …"
+    authors: "Pugmire, D., Bozdağ, E., Lefebvre, M., Tromp, J., Komatitsch, D., Peter, D., Podhorszki, N., Hill, J."
+    venue: "Practice and Experience in Advanced Research Computing 2017: Sustainability, Success and Impact"
     year: 2017
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3093338.3104170"
+    paper_url: "https://doi.org/10.1145/3093338.3104170"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017pillars.jpg"  # Optional - add image file to images/papers/
+    # image: "pugmire2017pillars.jpg"  # Optional - add image file to images/papers/
+
+  # BOOK-CHAPTER - 2017
+  - id: pugmire2017pillars
+    title: "Pillars of the mantle: Imaging the interior of the earth with adjoint tomography"
+    authors: "Pugmire, D., Bozdağ, E., Lefebvre, M., Tromp, J., Komatitsch, D., Peter, D., Podhorszki, N., Hill, J."
+    venue: "Practice and Experience in Advanced Research Computing 2017: Sustainability, Success and Impact"
+    year: 2017
+    type: book-chapter  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/3093338.3104170"
+    paper_url: "https://doi.org/10.1145/3093338.3104170"
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: "pugmire2017pillars.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2017
-  - id: authorsnotavailable2017visualising
+  - id: bozdag2017visualising
     title: "Visualising Earth's Mantle based on Global Adjoint Tomography"
-    authors: "Authors not available"
-    venue: "AGU Fall Meeting Abstracts"
+    authors: "Bozdag, E., Orsvuran, R., Liu, L., Peter, D."
+    venue: "E Bozdag, D Pugmire, MP Lefebvre… - AGU Fall Meeting …, 2017 - ui.adsabs.harvard.edu"
     year: 2017
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.5194/egusphere-egu24-13005"
+    paper_url: "https://doi.org/10.5194/egusphere-egu24-13005"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2017visualising.jpg"  # Optional - add image file to images/papers/
+    # image: "bozdag2017visualising.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2016
-  - id: authorsnotavailable2016global
+  - id: bozda2016global
     title: "Global adjoint tomography: first-generation model"
-    authors: "Authors not available"
+    authors: "Bozdağ, E., Peter, D., Lefebvre, M., Komatitsch, D., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D."
     venue: "Geophysical Journal International"
     year: 2016
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1093/gji/ggw356"
+    paper_url: "https://doi.org/10.1093/gji/ggw356"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016global.jpg"  # Optional - add image file to images/papers/
+    # image: "bozda2016global.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2016
-  - id: authorsnotavailable2016situ
+  - id: foucar2016situ
     title: "In situ terminology project"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Foucar, E."
+    venue: "JAMA Oncology"
     year: 2016
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1001/jamaoncol.2015.4843"
+    paper_url: "https://doi.org/10.1001/jamaoncol.2015.4843"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016situ.jpg"  # Optional - add image file to images/papers/
+    # image: "foucar2016situ.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2016
-  - id: authorsnotavailable2016performance
+  - id: larsen2016performance
     title: "Performance modeling of in situ rendering"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Larsen, M., Harrison, C., Kress, J., Pugmire, D., Meredith, J., Childs, H."
+    venue: "SC16: International Conference for High Performance Computing, Networking, Storage and Analysis"
     year: 2016
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/sc.2016.23"
+    paper_url: "https://doi.org/10.1109/sc.2016.23"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016performance.jpg"  # Optional - add image file to images/papers/
+    # image: "larsen2016performance.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2016
   - id: authorsnotavailable2016preparing
     title: "Preparing for in situ processing on upcoming leading-edge supercomputers"
     authors: "Authors not available"
-    venue: "Supercomputing frontiers and innovations"
+    venue: "Supercomputing Frontiers and Innovations"
     year: 2016
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.14529/jsfi160404"
+    paper_url: "https://doi.org/10.14529/jsfi160404"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2016preparing.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2016
-  - id: authorsnotavailable2016stream
+  - id: choi2016stream
     title: "Stream processing for near real-time scientific data analysis"
-    authors: "Authors not available"
+    authors: "Choi, J., Kurc, T., Logan, J., Wolf, M., Suchyta, E., Kress, J., Pugmire, D., Podhorszki, N., Byun, E., Ainsworth, M., et al."
     venue: "2016 New York Scientific Data Summit (NYSDS)"
     year: 2016
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/nysds.2016.7747804"
+    paper_url: "https://doi.org/10.1109/nysds.2016.7747804"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016stream.jpg"  # Optional - add image file to images/papers/
+    # image: "choi2016stream.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2016
-  - id: authorsnotavailable2016tuned
+  - id: sisneros2016tuned
     title: "Tuned to terrible: A study of parallel particle advection state of the practice"
-    authors: "Authors not available"
+    authors: "Sisneros, R., Pugmire, D."
     venue: "2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)"
     year: 2016
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ipdpsw.2016.173"
+    paper_url: "https://doi.org/10.1109/ipdpsw.2016.173"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016tuned.jpg"  # Optional - add image file to images/papers/
+    # image: "sisneros2016tuned.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2016
-  - id: authorsnotavailable2016visualization
+  - id: pugmire2016visualization
     title: "Visualization and analysis for near-real-time decision making in distributed workflows"
-    authors: "Authors not available"
+    authors: "Pugmire, D., Kress, J., Choi, J., Klasky, S., Kurc, T., Churchill, R., Wolf, M., Eisenhower, G., Childs, H., Wu, K., et al."
     venue: "2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)"
     year: 2016
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ipdpsw.2016.175"
+    paper_url: "https://doi.org/10.1109/ipdpsw.2016.175"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016visualization.jpg"  # Optional - add image file to images/papers/
+    # image: "pugmire2016visualization.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2016
-  - id: authorsnotavailable2016visualization
+  - id: kress2016visualization
     title: "Visualization and analysis requirements for in situ processing for a large-scale fusion simulation code"
-    authors: "Authors not available"
+    authors: "Kress, J., Pugmire, D., Klasky, S., Childs, H."
     venue: "2016 Second Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization (ISAV)"
     year: 2016
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/isav.2016.014"
+    paper_url: "https://doi.org/10.1109/isav.2016.014"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016visualization.jpg"  # Optional - add image file to images/papers/
+    # image: "kress2016visualization.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2016
-  - id: authorsnotavailable2016accelerating
+  - id: moreland2016accelerating
     title: "Vtk-m: Accelerating the visualization toolkit for massively threaded architectures"
-    authors: "Authors not available"
-    venue: "IEEE computer graphics and applications"
+    authors: "Moreland, K., Sewell, C., Usher, W., Lo, L., Meredith, J., Pugmire, D., Kress, J., Schroots, H., Ma, K., Childs, H., et al."
+    venue: "IEEE Computer Graphics and Applications"
     year: 2016
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/mcg.2016.48"
+    paper_url: "https://doi.org/10.1109/mcg.2016.48"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016accelerating.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2016accelerating.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2016
-  - id: authorsnotavailable2016xvis
+  - id: moreland2016xvis
     title: "XVis: Visualization for the Extreme-Scale Scientific-Computation Ecosystem: Year-end report FY16 Q4."
-    authors: "Authors not available"
+    authors: "Moreland, K., Sewell, C., Childs, H., Ma, K., Geveci, B., Pugmire, D."
     venue: "Unknown Venue"
     year: 2016
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1562428"
+    paper_url: "https://doi.org/10.2172/1562428"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2016xvis.jpg"  # Optional - add image file to images/papers/
+    # image: "moreland2016xvis.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2015
-  - id: authorsnotavailable2015loosely
+  - id: kress2015loosely
     title: "Loosely coupled in situ visualization: A perspective on why it's here to stay"
-    authors: "Authors not available"
+    authors: "Kress, J., Klasky, S., Podhorszki, N., Choi, J., Childs, H., Pugmire, D."
     venue: "Proceedings of the First Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization"
     year: 2015
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/2828612.2828623"
+    paper_url: "https://doi.org/10.1145/2828612.2828623"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2015loosely.jpg"  # Optional - add image file to images/papers/
+    # image: "kress2015loosely.jpg"  # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2014
-  - id: authorsnotavailable2014improving
+  - id: mittal2014improving
     title: "Improving Cache Energy Efficiency for Green Computing"
-    authors: "Authors not available"
+    authors: "Mittal, S."
     venue: "Encyclopedia of Business Analytics and Optimization"
     year: 2014
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: book-chapter  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.4018/978-1-4666-5202-6.ch106"
+    paper_url: "https://doi.org/10.4018/978-1-4666-5202-6.ch106"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2014improving.jpg"  # Optional - add image file to images/papers/
+    # image: "mittal2014improving.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2014
-  - id: authorsnotavailable2014towards
+  - id: hofmeister2014towards
     title: "Towards scalable visualization plugins for data staging workflows"
-    authors: "Authors not available"
-    venue: "Big Data Analytics: Challenges and Opportunities (BDAC-14) Workshop at Supercomputing Conference"
+    authors: "Hofmeister, B., Schmitz, R."
+    venue: "D Pugmire, J Kress, J Meredith… - Big Data Analytics …, 2014 - cdux.cs.uoregon.edu"
     year: 2014
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1101/212654"
+    paper_url: "https://doi.org/10.1101/212654"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2014towards.jpg"  # Optional - add image file to images/papers/
+    # image: "hofmeister2014towards.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2014
-  - id: authorsnotavailable2014visualizing
-    title: "Visualizing the Radiation of the Kelvin-Helmholtz Instability"
-    authors: "Authors not available"
+  - id: huebl2014visualizing
+    title: "Visualizing the radiation of the Kelvin-Helmholtz instability"
+    authors: "Huebl, A., Pugmire, D., Schmitt, F., Pausch, R., Bussmann, M."
     venue: "IEEE Transactions on Plasma Science"
     year: 2014
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/tps.2014.2327392"
+    paper_url: "https://doi.org/10.1109/tps.2014.2327392"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2014visualizing.jpg"  # Optional - add image file to images/papers/
+    # image: "huebl2014visualizing.jpg"  # Optional - add image file to images/papers/
 
   # OTHER - 2013
-  - id: authorsnotavailable2013data
+  - id: marozzo2013data
     title: "A data centric view of large-scale seismic imaging workflows"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Marozzo, F., Talia, D., Trunfio, P."
+    venue: "Proceedings of the 8th Workshop on Workflows in Support of Large-Scale Science"
     year: 2013
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/2534248.2534261"
+    paper_url: "https://doi.org/10.1145/2534248.2534261"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013data.jpg"  # Optional - add image file to images/papers/
+    # image: "marozzo2013data.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2013
-  - id: authorsnotavailable2013parallel
+  - id: chen2013parallel
     title: "A parallel EM algorithm for model-based clustering applied to the exploration of large spatio-temporal data"
-    authors: "Authors not available"
+    authors: "Chen, W., Ostrouchov, G., Pugmire, D., Prabhat, Wehner, M."
     venue: "Technometrics"
     year: 2013
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1080/00401706.2013.826146"
+    paper_url: "https://doi.org/10.1080/00401706.2013.826146"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013parallel.jpg"  # Optional - add image file to images/papers/
+    # image: "chen2013parallel.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2013
-  - id: authorsnotavailable2013adios
-    title: "Adios visualization schema: A first step towards improving interdisciplinary collaboration in high performance computing"
-    authors: "Authors not available"
+  - id: tchoua2013adios
+    title: "ADIOS visualization schema: A first step towards improving interdisciplinary collaboration in high performance computing"
+    authors: "Tchoua, R., Choi, J., Klasky, S., Liu, Q., Logan, J., Moreland, K., Mu, J., Parashar, M., Podhorszki, N., Pugmire, D., et al."
     venue: "2013 IEEE 9th International Conference on e-Science"
     year: 2013
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/escience.2013.24"
+    paper_url: "https://doi.org/10.1109/escience.2013.24"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013adios.jpg"  # Optional - add image file to images/papers/
+    # image: "tchoua2013adios.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2013
-  - id: authorsnotavailable2013computation
+  - id: leaf2013computation
     title: "Computation and volume rendering of large-scale EOF coherent modes in rotating turbulent flow data"
-    authors: "Authors not available"
-    venue: "AGU Fall Meeting Abstracts"
+    authors: "Leaf, N., Vishwanath, V., Insley, J., Hereld, M., Papka, M., Ma, K."
+    venue: "2013 IEEE Symposium on Large-Scale Data Analysis and Visualization (LDAV)"
     year: 2013
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/ldav.2013.6675156"
+    paper_url: "https://doi.org/10.1109/ldav.2013.6675156"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013computation.jpg"  # Optional - add image file to images/papers/
+    # image: "leaf2013computation.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2013
-  - id: authorsnotavailable2013exploring
-    title: "Exploring Collaborative HPC Visualization Workflows using VisIt and Python"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+  - id: krishnan2013exploring
+    title: "Exploring Collaborative HPC Visualization Workflows using VisIt and Python."
+    authors: "Krishnan, H., Harrison, C., Whitlock, B., Pugmire, D., Childs, H."
+    venue: "Proceedings of the Python in Science Conference"
     year: 2013
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.25080/majora-8b375195-00b"
+    paper_url: "https://doi.org/10.25080/majora-8b375195-00b"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013exploring.jpg"  # Optional - add image file to images/papers/
+    # image: "krishnan2013exploring.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2013
-  - id: authorsnotavailable2013acceleration
+  - id: ferraz2013acceleration
     title: "GPU Acceleration of Particle AdvectionWorkloads in a Parallel, Distributed Memory Setting"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Ferraz, S., Moreano, N."
+    venue: "2013 International Conference on Parallel and Distributed Systems"
     year: 2013
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1109/icpads.2013.21"
+    paper_url: "https://doi.org/10.1109/icpads.2013.21"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013acceleration.jpg"  # Optional - add image file to images/papers/
+    # image: "ferraz2013acceleration.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2013
-  - id: authorsnotavailable2013ultra
+  - id: williams2013ultra
     title: "The Ultra-scale Visualization Climate Data Analysis Tools (UV-CDAT): Data Analysis and Visualization for Geoscience Data"
-    authors: "Authors not available"
-    venue: "Computer"
+    authors: "Williams, D."
+    venue: "DP Bremer, EW Bethel, H Childs, BG Prabhat, A Bauer… - 2013 - dav.lbl.gov"
     year: 2013
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1022945"
+    paper_url: "https://doi.org/10.2172/1022945"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013ultra.jpg"  # Optional - add image file to images/papers/
+    # image: "williams2013ultra.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2013
-  - id: authorsnotavailable2013ultrascale
+  - id: williams2013ultrascale
     title: "Ultrascale visualization of climate data"
-    authors: "Authors not available"
-    venue: "Computer"
+    authors: "Williams, D."
+    venue: "DN Williams, T Bremer, C Doutriaux, J Patchett… - Computer, 2013 - ieeexplore.ieee.org"
     year: 2013
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.2172/1136155"
+    paper_url: "https://doi.org/10.2172/1136155"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2013ultrascale.jpg"  # Optional - add image file to images/papers/
+    # image: "williams2013ultrascale.jpg"  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2012
-  - id: authorsnotavailable2012distributed
+  - id: meredith2012distributed
     title: "A distributed data-parallel framework for analysis and visualization algorithm development"
-    authors: "Authors not available"
+    authors: "Meredith, J., Sisneros, R., Pugmire, D., Ahern, S."
     venue: "Proceedings of the 5th Annual Workshop on General Purpose Processing with Graphics Processing Units"
     year: 2012
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/2159430.2159432"
+    paper_url: "https://doi.org/10.1145/2159430.2159432"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2012distributed.jpg"  # Optional - add image file to images/papers/
+    # image: "meredith2012distributed.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2012
-  - id: authorsnotavailable2012distributed
+  - id: meredith2012distributed
     title: "A distributed data-parallel framework for analysis and visualization algorithm development"
-    authors: "Authors not available"
-    venue: "Unknown Venue"
+    authors: "Meredith, J., Sisneros, R., Pugmire, D., Ahern, S."
+    venue: "Proceedings of the 5th Annual Workshop on General Purpose Processing with Graphics Processing Units"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    # paper_url: ""  # Add direct link to paper if available
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+    doi: "10.1145/2159430.2159432"
+    paper_url: "https://doi.org/10.1145/2159430.2159432"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: "authorsnotavailable2012distributed.jpg"  # Optional - add image file to images/papers/
+    # image: "meredith2012distributed.jpg"  # Optional - add image file to images/papers/
 
   # JOURNAL - 2012
   - id: authorsnotavailable2012examination
@@ -1156,7 +1245,7 @@ publications:
     authors: "Authors not available"
     venue: "Monthly Notices of the Royal Astronomical Society"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012examination.jpg"  # Optional - add image file to images/papers/
@@ -1167,7 +1256,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012applying.jpg"  # Optional - add image file to images/papers/
@@ -1178,7 +1267,7 @@ publications:
     authors: "Authors not available"
     venue: "2012 International Conference on Collaboration Technologies and Systems (CTS)"
     year: 2012
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012collaborative.jpg"  # Optional - add image file to images/papers/
@@ -1189,7 +1278,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012eavl.jpg"  # Optional - add image file to images/papers/
@@ -1200,7 +1289,7 @@ publications:
     authors: "Authors not available"
     venue: "High Performance Visualization"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012accelerated.jpg"  # Optional - add image file to images/papers/
@@ -1211,7 +1300,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012high.jpg"  # Optional - add image file to images/papers/
@@ -1222,7 +1311,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012hybrid.jpg"  # Optional - add image file to images/papers/
@@ -1233,7 +1322,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012mining.jpg"  # Optional - add image file to images/papers/
@@ -1244,7 +1333,7 @@ publications:
     authors: "Authors not available"
     venue: "2012 IEEE 8th International Conference on E-Science"
     year: 2012
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012mining.jpg"  # Optional - add image file to images/papers/
@@ -1255,7 +1344,7 @@ publications:
     authors: "Authors not available"
     venue: "High Performance Visualization: Enabling Extreme-Scale Scientific Insight"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012oliver.jpg"  # Optional - add image file to images/papers/
@@ -1266,7 +1355,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012patc.jpg"  # Optional - add image file to images/papers/
@@ -1277,7 +1366,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012parallel.jpg"  # Optional - add image file to images/papers/
@@ -1288,7 +1377,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012parallel.jpg"  # Optional - add image file to images/papers/
@@ -1299,7 +1388,7 @@ publications:
     authors: "Authors not available"
     venue: "Ieee symposium on large data analysis and visualization (ldav)"
     year: 2012
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012parallel.jpg"  # Optional - add image file to images/papers/
@@ -1310,7 +1399,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012visit.jpg"  # Optional - add image file to images/papers/
@@ -1321,7 +1410,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2012visualization.jpg"  # Optional - add image file to images/papers/
@@ -1332,7 +1421,7 @@ publications:
     authors: "Authors not available"
     venue: "Monthly Notices of the Royal Astronomical Society"
     year: 2011
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2011examination.jpg"  # Optional - add image file to images/papers/
@@ -1343,7 +1432,7 @@ publications:
     authors: "Authors not available"
     venue: "Proceedings of the 2011 companion on High Performance Computing Networking, Storage and Analysis Companion"
     year: 2011
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
+    type: book-chapter  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2011magnetic.jpg"  # Optional - add image file to images/papers/
@@ -1354,7 +1443,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2011
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2011insights.jpg"  # Optional - add image file to images/papers/
@@ -1365,7 +1454,7 @@ publications:
     authors: "Authors not available"
     venue: "AGU Fall Meeting Abstracts"
     year: 2011
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2011pattern.jpg"  # Optional - add image file to images/papers/
@@ -1376,7 +1465,7 @@ publications:
     authors: "Authors not available"
     venue: "IEEE Transactions on Plasma Science"
     year: 2011
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2011simulation.jpg"  # Optional - add image file to images/papers/
@@ -1387,7 +1476,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2011
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2011ultra.jpg"  # Optional - add image file to images/papers/
@@ -1398,7 +1487,7 @@ publications:
     authors: "Authors not available"
     venue: "The Engineering Reality of Virtual Reality 2010"
     year: 2010
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2010case.jpg"  # Optional - add image file to images/papers/
@@ -1409,7 +1498,7 @@ publications:
     authors: "Authors not available"
     venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2010
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2010analysis.jpg"  # Optional - add image file to images/papers/
@@ -1420,7 +1509,7 @@ publications:
     authors: "Authors not available"
     venue: "IEEE Computer Graphics and Applications"
     year: 2010
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2010extreme.jpg"  # Optional - add image file to images/papers/
@@ -1431,7 +1520,7 @@ publications:
     authors: "Authors not available"
     venue: "IEEE Computer Graphics and Applications"
     year: 2010
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2010extreme.jpg"  # Optional - add image file to images/papers/
@@ -1442,7 +1531,7 @@ publications:
     authors: "Authors not available"
     venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2010
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2010streamline.jpg"  # Optional - add image file to images/papers/
@@ -1453,7 +1542,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2010
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2010vismashup.jpg"  # Optional - add image file to images/papers/
@@ -1464,7 +1553,7 @@ publications:
     authors: "Authors not available"
     venue: "Journal of Physics: Conference Series"
     year: 2009
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2009occam.jpg"  # Optional - add image file to images/papers/
@@ -1475,7 +1564,7 @@ publications:
     authors: "Authors not available"
     venue: "Cray User Group"
     year: 2009
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2009parallel.jpg"  # Optional - add image file to images/papers/
@@ -1486,7 +1575,7 @@ publications:
     authors: "Authors not available"
     venue: "Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis"
     year: 2009
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2009scalable.jpg"  # Optional - add image file to images/papers/
@@ -1497,7 +1586,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2009
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2009vector.jpg"  # Optional - add image file to images/papers/
@@ -1508,7 +1597,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: 2008
-    type: other # journal, conference, workshop, book-chapter, preprint, other
+    type: other  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2008seeing.jpg"  # Optional - add image file to images/papers/
@@ -1519,7 +1608,7 @@ publications:
     authors: "Authors not available"
     venue: "Computers & Geosciences"
     year: 2008
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2008visim.jpg"  # Optional - add image file to images/papers/
@@ -1530,7 +1619,7 @@ publications:
     authors: "Authors not available"
     venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2007
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2007based.jpg"  # Optional - add image file to images/papers/
@@ -1541,7 +1630,7 @@ publications:
     authors: "Authors not available"
     venue: "NW Highlights"
     year: 2007
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2007pick.jpg"  # Optional - add image file to images/papers/
@@ -1552,7 +1641,7 @@ publications:
     authors: "Authors not available"
     venue: "ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY"
     year: 2000
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2000adsorption.jpg"  # Optional - add image file to images/papers/
@@ -1563,7 +1652,7 @@ publications:
     authors: "Authors not available"
     venue: "ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY"
     year: 2000
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable2000adsorption.jpg"  # Optional - add image file to images/papers/
@@ -1574,7 +1663,7 @@ publications:
     authors: "Authors not available"
     venue: "UIST"
     year: 1995
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable1995visual.jpg"  # Optional - add image file to images/papers/
@@ -1585,7 +1674,7 @@ publications:
     authors: "Authors not available"
     venue: "Proceedings of the 8th annual ACM symposium on User interface and software technology"
     year: 1995
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
+    type: conference  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable1995visual.jpg"  # Optional - add image file to images/papers/
@@ -1596,7 +1685,7 @@ publications:
     authors: "Authors not available"
     venue: "In Situ Visualization for Computational Science"
     year: 1989
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailable1989cost.jpg"  # Optional - add image file to images/papers/
@@ -1607,7 +1696,7 @@ publications:
     authors: "Authors not available"
     venue: "In Situ Visualization for Computational Science"
     year: Unknown
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailableUnknownstrategy.jpg"  # Optional - add image file to images/papers/
@@ -1618,7 +1707,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: Unknown
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailableUnknownanalysis.jpg"  # Optional - add image file to images/papers/
@@ -1629,7 +1718,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: Unknown
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailableUnknowncompressible.jpg"  # Optional - add image file to images/papers/
@@ -1640,7 +1729,7 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: Unknown
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailableUnknownupdating.jpg"  # Optional - add image file to images/papers/
@@ -1651,14 +1740,15 @@ publications:
     authors: "Authors not available"
     venue: "Unknown Venue"
     year: Unknown
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
+    type: journal  # journal, conference, workshop, book-chapter, preprint, other
     # paper_url: ""  # Add direct link to paper if available
     # summary: ""  # Add a one-sentence summary of the paper
     # image: "authorsnotavailableUnknownyearly.jpg"  # Optional - add image file to images/papers/
+
+
 # --------------------------------------------------
 # TEMPLATE: Copy this to add a new publication
 # --------------------------------------------------
-#
 #  - id: lastname2024keyword
 #    title: "Your Paper Title"
 #    authors: "Last, F., Last, F., Last, F."
@@ -1667,5 +1757,5 @@ publications:
 #    type: journal  # journal, conference, workshop, book-chapter, preprint, other
 #    doi: "10.xxxx/xxxxx"
 #    paper_url: "https://..."
-#    summary: "One sentence summary of the paper."
-#    image: "lastname2024keyword.jpg"  # Optional
+#    # summary: "One sentence summary of the paper."
+#    # image: "lastname2024keyword.jpg"  # Optional
