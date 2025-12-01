@@ -8,6 +8,9 @@
     <!-- js-yaml for loading YAML data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 
+    <!-- marked.js for rendering Markdown (professional activities) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <!-- Leaflet CSS & JS for talk map -->
     <link
       rel="stylesheet"
@@ -87,6 +90,24 @@
         .talk-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
         .talk-details { color: #666; font-size: 0.95rem; }
 
+        /* Professional Activities markdown container */
+        .markdown-body {
+            line-height: 1.7;
+        }
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .markdown-body ul {
+            margin-left: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .markdown-body p {
+            margin-bottom: 0.75rem;
+        }
+
         footer { text-align: center; padding: 2rem; background: white; color: #666; margin-top: 3rem; }
         .loading { text-align: center; padding: 2rem; color: #666; }
         .pub-header { position: sticky; top: 165px; background: white; padding: 1rem 0; border-bottom: 3px solid #0066cc; z-index: 50; display: flex; align-items: center; gap: 2rem; }
@@ -117,6 +138,7 @@
             <li><a href="#publications" class="nav-link">Publications</a></li>
             <li><a href="#talks" class="nav-link">Talks</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#professional-activities" class="nav-link">Professional Activities</a></li>
         </ul>
     </nav>
     <main>
@@ -151,12 +173,18 @@
             <h2>Projects & Code</h2>
             <p>Coming soon...</p>
         </section>
+        <section id="professional-activities">
+            <h2>Professional Activities</h2>
+            <div id="professional-activities-content" class="markdown-body">
+                <p>Loading professional activities…</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Dr. Your Name. All rights reserved.</p>
     </footer>
     <script>
-        // Navigation: show/hide sections
+        // Navigation: show/hide sections (only for in-page nav links)
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -398,8 +426,26 @@
             }
         }
 
+        async function renderProfessionalActivities() {
+            const container = document.getElementById('professional-activities-content');
+            try {
+                const resp = await fetch('data/professional-activities.md');
+                if (!resp.ok) {
+                    container.innerHTML = '<p>Could not load professional activities. Ensure data/professional-activities.md exists.</p>';
+                    return;
+                }
+                const text = await resp.text();
+                container.innerHTML = marked.parse(text);
+            } catch (err) {
+                console.error('Error loading professional activities:', err);
+                container.innerHTML = '<p>Error loading professional activities.</p>';
+            }
+        }
+
         let publicationsLoaded = false;
         let talksLoaded = false;
+        let professionalActivitiesLoaded = false;
+
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 const target = e.target.getAttribute('href').substring(1);
@@ -411,8 +457,15 @@
                     renderTalks();
                     talksLoaded = true;
                 }
+                if (target === 'professional-activities' && !professionalActivitiesLoaded) {
+                    renderProfessionalActivities();
+                    professionalActivitiesLoaded = true;
+                }
             });
         });
+
+        // Optionally, you could preload professional activities on first load:
+        // renderProfessionalActivities(); professionalActivitiesLoaded = true;
     </script>
 </body>
 </html>

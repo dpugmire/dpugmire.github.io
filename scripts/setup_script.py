@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 """
 Academic Website Setup Script
-Creates complete folder structure and all necessary files
-Usage: python setup_academic_website.py
+
+Creates the folder structure, index.html, README, and (optionally) template
+files for publications, talks, and professional activities.
+
+Usage:
+    python setup_academic_website.py
+    python setup_academic_website.py --reset-templates
 """
 
 import os
 import sys
+import argparse
+
 
 def create_directory_structure():
-    """Create all necessary directories"""
+    """Create all necessary directories."""
     dirs = [
         'data',
         'images/papers',
@@ -17,17 +24,18 @@ def create_directory_structure():
         'scripts',
         'cv'
     ]
-    
+
     print("Creating directory structure...")
     for d in dirs:
         os.makedirs(d, exist_ok=True)
-        print(f"  ✓ Created {d}/")
+        print(f"  ✓ Ensured {d}/ exists")
     print()
 
+
 def create_index_html():
-    """Create the main website HTML file"""
+    """Create the main website HTML file (always overwritten)."""
     print("Creating index.html...")
-    
+
     # Reading the HTML as a raw string to avoid escape issues
     html_content = r'''<!DOCTYPE html>
 <html lang="en">
@@ -38,6 +46,9 @@ def create_index_html():
 
     <!-- js-yaml for loading YAML data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
+    <!-- marked.js for rendering Markdown (professional activities) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <!-- Leaflet CSS & JS for talk map -->
     <link
@@ -118,6 +129,24 @@ def create_index_html():
         .talk-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
         .talk-details { color: #666; font-size: 0.95rem; }
 
+        /* Professional Activities markdown container */
+        .markdown-body {
+            line-height: 1.7;
+        }
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .markdown-body ul {
+            margin-left: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .markdown-body p {
+            margin-bottom: 0.75rem;
+        }
+
         footer { text-align: center; padding: 2rem; background: white; color: #666; margin-top: 3rem; }
         .loading { text-align: center; padding: 2rem; color: #666; }
         .pub-header { position: sticky; top: 165px; background: white; padding: 1rem 0; border-bottom: 3px solid #0066cc; z-index: 50; display: flex; align-items: center; gap: 2rem; }
@@ -148,6 +177,7 @@ def create_index_html():
             <li><a href="#publications" class="nav-link">Publications</a></li>
             <li><a href="#talks" class="nav-link">Talks</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#professional-activities" class="nav-link">Professional Activities</a></li>
         </ul>
     </nav>
     <main>
@@ -182,12 +212,18 @@ def create_index_html():
             <h2>Projects & Code</h2>
             <p>Coming soon...</p>
         </section>
+        <section id="professional-activities">
+            <h2>Professional Activities</h2>
+            <div id="professional-activities-content" class="markdown-body">
+                <p>Loading professional activities…</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Dr. Your Name. All rights reserved.</p>
     </footer>
     <script>
-        // Navigation: show/hide sections
+        // Navigation: show/hide sections (only for in-page nav links)
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -429,8 +465,26 @@ def create_index_html():
             }
         }
 
+        async function renderProfessionalActivities() {
+            const container = document.getElementById('professional-activities-content');
+            try {
+                const resp = await fetch('data/professional-activities.md');
+                if (!resp.ok) {
+                    container.innerHTML = '<p>Could not load professional activities. Ensure data/professional-activities.md exists.</p>';
+                    return;
+                }
+                const text = await resp.text();
+                container.innerHTML = marked.parse(text);
+            } catch (err) {
+                console.error('Error loading professional activities:', err);
+                container.innerHTML = '<p>Error loading professional activities.</p>';
+            }
+        }
+
         let publicationsLoaded = false;
         let talksLoaded = false;
+        let professionalActivitiesLoaded = false;
+
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 const target = e.target.getAttribute('href').substring(1);
@@ -442,21 +496,30 @@ def create_index_html():
                     renderTalks();
                     talksLoaded = true;
                 }
+                if (target === 'professional-activities' && !professionalActivitiesLoaded) {
+                    renderProfessionalActivities();
+                    professionalActivitiesLoaded = true;
+                }
             });
         });
+
+        // Optionally, you could preload professional activities on first load:
+        // renderProfessionalActivities(); professionalActivitiesLoaded = true;
     </script>
 </body>
 </html>'''
-    
+
     with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html_content)
-    
-    print("  ✓ Created index.html")
 
-def create_publications_yaml():
-    """Create publications.yaml template"""
-    print("Creating data/publications.yaml...")
-    
+    print("  ✓ Created index.html\n")
+
+
+def create_publications_yaml(overwrite=False):
+    """Create or overwrite publications.yaml template."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/publications.yaml...")
+
     yaml_content = '''# publications.yaml
 # Edit this file to manage your publications
 
@@ -492,16 +555,19 @@ publications:
 #    summary: "One sentence summary."
 #    image: "yourname2024.jpg"
 '''
-    
+
+    os.makedirs('data', exist_ok=True)
     with open('data/publications.yaml', 'w', encoding='utf-8') as f:
         f.write(yaml_content)
-    
-    print("  ✓ Created data/publications.yaml")
 
-def create_talks_yaml():
-    """Create talks.yaml template"""
-    print("Creating data/talks.yaml...")
-    
+    print("  ✓ Wrote data/publications.yaml\n")
+
+
+def create_talks_yaml(overwrite=False):
+    """Create or overwrite talks.yaml template."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/talks.yaml...")
+
     yaml_content = '''# talks.yaml
 # Edit this file to manage your talks
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
@@ -536,38 +602,170 @@ talks:
 #    # optional:
 #    # location: "Custom location label for popup"
 '''
-    
+
+    os.makedirs('data', exist_ok=True)
     with open('data/talks.yaml', 'w', encoding='utf-8') as f:
         f.write(yaml_content)
-    
-    print("  ✓ Created data/talks.yaml")
+
+    print("  ✓ Wrote data/talks.yaml\n")
+
+
+def create_professional_activities_md(overwrite=False):
+    """Create or overwrite data/professional-activities.md template."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/professional-activities.md...")
+
+    content = '''---
+title: "Professional Activities"
+# layout: page   # Kept for compatibility if you ever move this to a standalone Jekyll page
+---
+
+# Professional Activities
+
+This page summarizes my professional service, leadership roles, and community activities.
+
+---
+
+## Leadership & Service Roles
+
+- **[Role Title]**, [Organization or Conference], [Years]  
+  Short one-line description of what you did.
+
+- **[Role Title]**, [Organization], [Years]  
+  Short description.
+
+---
+
+## Conference & Workshop Organization
+
+### General Chair / Co-Chair
+
+- **[Conference / Workshop Name]**, [Year], [Location]  
+  Role: General Chair / Co-Chair  
+  Notes: Brief description (e.g., size, focus area, notable aspects).
+
+### Program Chair / Co-Chair
+
+- **[Conference / Workshop Name]**, [Year], [Location]  
+  Role: Program Chair / Co-Chair  
+  Notes: Brief description (e.g., oversaw technical program, # papers, etc.).
+
+### Other Organizing Roles
+
+- **[Conference / Workshop Name]**, [Year]  
+  Role: [Area Chair, Poster Chair, Doctoral Colloquium Chair, etc.]  
+  Notes: One-line summary.
+
+---
+
+## Editorial Boards & Reviewing
+
+### Editorial Boards
+
+- **[Journal Name]** — [Editorial Role], [Years]  
+  Brief description (e.g., handled submissions in visualization and HCI).
+
+### Journal Reviewing
+
+Regular reviewer for:
+
+- **[Journal 1]**
+- **[Journal 2]**
+- **[Journal 3]**
+
+### Conference Reviewing
+
+Regular PC / reviewer for:
+
+- **[Conference 1]** (years: 20XX–20YY)
+- **[Conference 2]** (years: 20XX–20YY)
+- **[Conference 3]**
+
+---
+
+## Panels, Tutorials, and Short Courses
+
+- **[Title of Panel or Tutorial]**  
+  Event: [Conference / Venue], [Year]  
+  Role: [Panelist / Organizer / Tutorial Instructor]  
+  Notes: One-line summary of topic and audience.
+
+- **[Title]**, [Conference], [Year] — [Short description]
+
+---
+
+## Grants, Committees, and Review Panels
+
+- **[Agency / Program Name]**, [Year(s)]  
+  Role: [Panelist / Reviewer / Committee Member]  
+  Brief description of scope (e.g., reviewed proposals in scientific computing and AI).
+
+- **[Internal / Institutional Committee]**, [Institution], [Years]  
+  Role and a one-line description.
+
+---
+
+## Professional Memberships
+
+- Member, **[Society 1]** (since [Year])
+- Member, **[Society 2]**
+- [Any senior / fellow status]
+
+---
+
+## Outreach, Mentoring, and Community
+
+- **Mentoring**  
+  - [Description: e.g., mentor for graduate students, undergraduate research, REU programs, etc.]
+
+- **Outreach & Public Engagement**  
+  - [Talks to general audiences, school visits, podcasts, public lectures, etc.]
+
+- **Diversity, Equity, and Inclusion Activities**  
+  - [Committees, initiatives, mentoring programs, etc.]
+
+---
+
+_Last updated: YYYY-MM-DD_
+'''
+
+    os.makedirs('data', exist_ok=True)
+    with open('data/professional-activities.md', 'w', encoding='utf-8') as f:
+        f.write(content)
+
+    print("  ✓ Wrote data/professional-activities.md\n")
+
 
 def create_readme():
-    """Create README"""
+    """Create README (always overwritten)."""
     print("Creating README.md...")
-    
+
     readme = '''# Academic Website
 
 ## Quick Start
 
 1. Edit `data/publications.yaml` with your publications
 2. Edit `data/talks.yaml` with your talks (including lat/lon for the map)
-3. Run locally: `python -m http.server 8000`
-4. Open: http://localhost:8000
+3. Edit `data/professional-activities.md` with your professional service
+4. Run locally: `python -m http.server 8000`
+5. Open: http://localhost:8000
 
 ## Structure
 
-- `index.html` - Main website (don't edit)
-- `data/publications.yaml` - Your publications
-- `data/talks.yaml` - Your talks (drives the Leaflet map and talk list)
-- `images/papers/` - Paper images
-- `slides/` - Talk PDFs
+- `index.html`                     - Main website (single-page app)
+- `data/publications.yaml`         - Your publications
+- `data/talks.yaml`                - Your talks (drives the Leaflet map and talk list)
+- `data/professional-activities.md`- Professional activities in Markdown (rendered into the SPA)
+- `images/papers/`                 - Paper images
+- `slides/`                        - Talk PDFs
+- `scripts/`                       - Helper scripts (e.g., ORCID export, LaTeX CV)
+- `cv/`                            - CV and related documents
 
 ## Scripts
 
 Download full versions from artifacts:
 - `scripts/orcid_exporter.py` - Export from ORCID
-- `scripts/yaml_to_latex.py` - Generate LaTeX CV
+- `scripts/yaml_to_latex.py`  - Generate LaTeX CV
 
 ## Customization
 
@@ -577,35 +775,73 @@ Edit the header in `index.html` to update:
 - Institution
 - Email
 - Links
+
+Edit `data/professional-activities.md` to keep your service/leadership record up to date.
 '''
-    
+
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(readme)
-    
-    print("  ✓ Created README.md")
 
-def main():
-    print("\n" + "="*60)
+    print("  ✓ Created README.md\n")
+
+
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Set up an academic website (HTML, YAML/Markdown templates, and structure)."
+    )
+    parser.add_argument(
+        '--reset-templates',
+        action='store_true',
+        help="Recreate data/publications.yaml, data/talks.yaml, and data/professional-activities.md even if they already exist."
+    )
+    return parser.parse_args(argv)
+
+
+def main(argv=None):
+    args = parse_args(argv)
+
+    print("\n" + "=" * 60)
     print("Academic Website Setup")
-    print("="*60 + "\n")
-    
+    print("=" * 60 + "\n")
+
     create_directory_structure()
     create_index_html()
-    create_publications_yaml()
-    create_talks_yaml()
     create_readme()
-    
-    print("\n" + "="*60)
+
+    # Handle template files with conditional overwrite
+    # publications.yaml
+    pubs_path = 'data/publications.yaml'
+    if args.reset_templates or not os.path.exists(pubs_path):
+        create_publications_yaml(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {pubs_path} (already exists). Use --reset-templates to regenerate.\n")
+
+    # talks.yaml
+    talks_path = 'data/talks.yaml'
+    if args.reset_templates or not os.path.exists(talks_path):
+        create_talks_yaml(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {talks_path} (already exists). Use --reset-templates to regenerate.\n")
+
+    # professional-activities markdown
+    pa_path = 'data/professional-activities.md'
+    if args.reset_templates or not os.path.exists(pa_path):
+        create_professional_activities_md(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {pa_path} (already exists). Use --reset-templates to regenerate.\n")
+
+    print("\n" + "=" * 60)
     print("✅ Setup Complete!")
-    print("="*60)
+    print("=" * 60)
     print("\nNext steps:")
-    print("1. Edit data/publications.yaml with your publications")
-    print("2. Edit data/talks.yaml with your talks (lat/lon for the map)")
-    print("3. Test locally: python -m http.server 8000")
-    print("4. Download full scripts from artifacts:")
-    print("   - orcid_exporter.py")
-    print("   - yaml_to_latex.py")
-    print("\nHappy publishing! 🎓\n")
+    print("1. Edit data/publications.yaml with your publications (if created/skipped above).")
+    print("2. Edit data/talks.yaml with your talks (lat/lon for the map).")
+    print("3. Edit data/professional-activities.md with your professional service.")
+    print("4. Test locally: python -m http.server 8000")
+    print("5. Push to GitHub and enable GitHub Pages.")
+    print("\nTo regenerate the YAML/Markdown templates, run:")
+    print("   python setup_academic_website.py --reset-templates\n")
+
 
 if __name__ == '__main__':
     main()
