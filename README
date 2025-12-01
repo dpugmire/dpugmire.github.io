@@ -36,5 +36,6 @@ export PAGES_REPO_NWO="dpugmire/dpugmire.github.io"
 repository: dpugmire/dpugmire.github.io
 
 
+bundle exec jekyll clean
 bundle exec jekyll serve --livereload
 open http://localhost::4000

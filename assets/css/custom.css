@@ -200,4 +200,32 @@ html {
     background: #333;
     color: #fff;
   }
+  /* ==============================
+   Carousel with max size
+   ============================== */
+  .carousel {
+    position: relative;
+    max-width: 960px; /* limit width */
+    max-height: 500px; /* limit height */
+    margin: 2rem auto; /* center on page */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* inherit height from carousel */
+  }
+
+  .carousel img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+    max-height: 500px;
+    object-fit: cover; /* or cover if you want cropping */
+    display: block;
+  }
 }
