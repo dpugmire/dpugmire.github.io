@@ -199,7 +199,7 @@ def create_index_html():
                     <a href="#pub-journal">Journal Articles</a>
                     <a href="#pub-conference">Conference Papers</a>
                     <a href="#pub-workshop">Workshop Papers</a>
-                    <a href="#pub-book">Book Chapters</a>
+                    <a href="#pub-book-chapter">Book Chapters</a>
                 </div>
             </div>
             <div id="publications-content" style="margin-top: 1.5rem;"></div>
@@ -247,15 +247,33 @@ def create_index_html():
         }
 
         function generateBibtex(pub) {
-            const typeMap = { 'journal': 'article', 'conference': 'inproceedings', 'workshop': 'inproceedings', 'book-chapter': 'incollection', 'preprint': 'misc', 'other': 'misc' };
+            const typeMap = {
+                'journal': 'article',
+                'conference': 'inproceedings',
+                'workshop': 'inproceedings',
+                'book-chapter': 'incollection',
+                'preprint': 'misc',
+                'other': 'misc'
+            };
             const entryType = typeMap[pub.type] || 'misc';
             const venueKey = pub.type === 'journal' ? 'journal' : 'booktitle';
+
             let bibtex = '@' + entryType + '{' + pub.id + ',\n';
             bibtex += '  title = {' + pub.title + '},\n';
             bibtex += '  author = {' + pub.authors + '},\n';
+
+            // Include editors if present (especially for book chapters)
+            if (pub.editors) {
+                bibtex += '  editor = {' + pub.editors + '},\n';
+            }
+
             bibtex += '  ' + venueKey + ' = {' + pub.venue + '},\n';
             bibtex += '  year = {' + pub.year + '}';
-            if (pub.doi) bibtex += ',\n  doi = {' + pub.doi + '}';
+
+            if (pub.doi) {
+                bibtex += ',\n  doi = {' + pub.doi + '}';
+            }
+
             bibtex += '\n}';
             return bibtex;
         }
@@ -718,7 +736,7 @@ Regular PC / reviewer for:
 - **Mentoring**  
   - [Description: e.g., mentor for graduate students, undergraduate research, REU programs, etc.]
 
-- **Outreach & Public Engagement**  
+- **Outreach & Public Engagement**
   - [Talks to general audiences, school visits, podcasts, public lectures, etc.]
 
 - **Diversity, Equity, and Inclusion Activities**  

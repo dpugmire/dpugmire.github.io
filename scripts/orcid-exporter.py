@@ -46,11 +46,21 @@ def safe_get(obj, *keys, default=""):
 
 
 def normalize_doi(doi):
-    """Normalize DOI: strip URL prefixes, lowercase."""
+    """
+    Normalize DOI:
+    - Extract the core 10.xxxx/... pattern from any surrounding URL/prefix.
+    - Lowercase the result.
+    """
     if not doi:
         return None
     doi = doi.strip()
-    doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
+
+    # Look for an embedded DOI pattern anywhere in the string
+    m = re.search(r"10\.\d{4,9}/\S+", doi, flags=re.IGNORECASE)
+    if m:
+        return m.group(0).lower()
+
+    # Fallback: just lowercase whatever we got
     return doi.lower()
 
 
@@ -103,6 +113,9 @@ def get_orcid_publications(orcid_id):
 
 # ----------------- SerpAPI / Google Scholar ----------------- #
 
+SERPAPI_DISABLED = False  # global flag to stop using SerpAPI after 429
+
+
 def get_serpapi_key():
     """Return SerpAPI key from common env var names."""
     return (
@@ -113,7 +126,19 @@ def get_serpapi_key():
 
 
 def search_scholar_by_title(title, year=None, serpapi_key=None):
-    """Search Google Scholar (via SerpAPI) by title (+ optional year)."""
+    """
+    Search Google Scholar (via SerpAPI) by title (+ optional year).
+
+    This:
+      - Respects a global SERPAPI_DISABLED flag.
+      - Sleeps after each successful call to help with rate limiting.
+      - Disables SerpAPI for the rest of the run on 429.
+    """
+    global SERPAPI_DISABLED
+
+    if SERPAPI_DISABLED:
+        return None
+
     if not serpapi_key:
         return None
 
@@ -128,8 +153,18 @@ def search_scholar_by_title(title, year=None, serpapi_key=None):
 
     try:
         resp = requests.get("https://serpapi.com/search", params=params, timeout=20)
+
+        if resp.status_code == 429:
+            print("    ⚠️  SerpAPI rate limit (429). Disabling further Scholar lookups for this run.")
+            SERPAPI_DISABLED = True
+            return None
+
         resp.raise_for_status()
         data = resp.json()
+
+        # Sleep after each SerpAPI request to avoid hitting QPS limits
+        time.sleep(1.0)
+
         return data.get("organic_results", [])
     except requests.RequestException as e:
         print(f"    ⚠️  SerpAPI/Scholar error: {e}")
@@ -162,6 +197,7 @@ def best_scholar_match(orcid_title, results):
         return None
     return best
 
+
 def enrich_from_scholar(title, year, serpapi_key):
     """Return dict with metadata from Scholar for a given title/year."""
     results = search_scholar_by_title(title, year, serpapi_key)
@@ -173,7 +209,9 @@ def enrich_from_scholar(title, year, serpapi_key):
         return None
 
     pub_info = match.get("publication_info", {}) or {}
-    authors_field = pub_info.get("authors", [])
+
+    # More robust author extraction: try pub_info.authors, then top-level match.authors
+    authors_field = pub_info.get("authors") or match.get("authors") or []
 
     authors_list = []
     if isinstance(authors_field, list):
@@ -244,7 +282,6 @@ def find_doi_with_crossref(title, authors=None, year=None):
     params = {
         "query.bibliographic": query,
         "rows": 1,
-        # polite but optional; fill with your email if you want
         # "mailto": "you@example.com",
     }
 
@@ -265,7 +302,10 @@ def find_doi_with_crossref(title, authors=None, year=None):
 # ----------------- Core processing ----------------- #
 
 def process_publications(orcid_data, serpapi_key):
-    """Process ORCID works, enrich with Scholar+CrossRef, and produce pub dicts."""
+    """
+    Process ORCID works, enrich with CrossRef first, then SerpAPI/Scholar as backup,
+    and produce pub dicts.
+    """
     if not orcid_data or "group" not in orcid_data:
         return []
 
@@ -309,36 +349,28 @@ def process_publications(orcid_data, serpapi_key):
             paper_url = None
 
             print(f"[{i}/{total}] {title[:70]}...")
-            # --- Enrich with Scholar ---
-            scholar_meta = enrich_from_scholar(title, year_str, serpapi_key)
-            if scholar_meta:
-                print("    Using Google Scholar metadata")
-                title = clean_text(scholar_meta["title"])
-                venue = clean_text(scholar_meta["venue"]) or venue
-                year_str = scholar_meta["year"] or year_str
-                scholar_authors_raw = scholar_meta["authors_raw"]
-                paper_url = scholar_meta["scholar_url"]
-            else:
-                scholar_authors_raw = None
+            print(f"    DOI from ORCID (normalized): {doi}")
 
-            # --- Enrich with CrossRef ---
+            # ---------- 1) CrossRef first (DOI or title) ----------
+
             crossref_data = None
+
             if doi:
                 print("    CrossRef lookup by DOI...")
                 try:
-                    resp = requests.get(
-                        f"https://api.crossref.org/works/{doi}", timeout=10
-                    )
+                    resp = requests.get(f"https://api.crossref.org/works/{doi}", timeout=10)
                     if resp.ok:
                         crossref_data = resp.json().get("message", None)
                 except Exception:
                     crossref_data = None
-            else:
-                print("    No DOI in ORCID; CrossRef lookup by title...")
-                # Use Scholar authors if we have them to help the query
-                doi, crossref_data = find_doi_with_crossref(
-                    title, authors=scholar_authors_raw, year=year_str
-                )
+
+            if not crossref_data:
+                print("    CrossRef lookup by title...")
+                doi2, cr_data2 = find_doi_with_crossref(title, authors=None, year=year_str)
+                if cr_data2:
+                    crossref_data = cr_data2
+                    if not doi:
+                        doi = doi2
 
             # If CrossRef returned metadata, use it for authors/venue/url
             if crossref_data:
@@ -357,10 +389,37 @@ def process_publications(orcid_data, serpapi_key):
                 # Use DOI from CrossRef if we didn't have one
                 if not doi:
                     doi = normalize_doi(crossref_data.get("DOI"))
-            else:
-                # If no CrossRef authors but we have Scholar authors, use those
-                if scholar_authors_raw:
-                    authors = scholar_authors_raw
+
+            # ---------- 2) SerpAPI/Scholar backup (only if needed) ----------
+
+            need_authors = (not authors) or (authors == "Authors not available")
+            need_url = not paper_url
+            need_venue = (not venue) or (venue == "Unknown Venue")
+
+            scholar_authors_raw = None
+
+            if (need_authors or need_url or need_venue) and serpapi_key:
+                scholar_meta = enrich_from_scholar(title, year_str, serpapi_key)
+                if scholar_meta:
+                    print("    Using Google Scholar metadata as backup")
+                    # Prefer Scholar title if CrossRef didn't already override it
+                    title = clean_text(scholar_meta["title"]) or title
+
+                    scholar_authors_raw = scholar_meta["authors_raw"]
+                    if need_authors and scholar_authors_raw:
+                        authors = scholar_authors_raw
+
+                    if need_venue and scholar_meta["venue"]:
+                        venue = clean_text(scholar_meta["venue"]) or venue
+
+                    if need_url and scholar_meta["scholar_url"]:
+                        paper_url = scholar_meta["scholar_url"]
+
+                    # If CrossRef didn't give a year, use Scholar's
+                    if year_str == "Unknown" and scholar_meta["year"]:
+                        year_str = scholar_meta["year"]
+
+            # ---------- Final fallback ----------
 
             if not authors:
                 authors = "Authors not available"
@@ -379,8 +438,9 @@ def process_publications(orcid_data, serpapi_key):
             }
 
             publications.append(pub)
-            # be nice to APIs
-            time.sleep(0.3)
+
+            # NOTE: we no longer sleep per-publication here; the only sleep
+            # is inside SerpAPI calls to throttle those specifically.
 
         except Exception as e:
             print(f"    ⚠️  Error processing group {i}: {e}")
@@ -406,7 +466,7 @@ def write_yaml(publications, filename="publications.yaml"):
 
     with open(filename, "w", encoding="utf-8") as f:
         f.write("# publications.yaml\n")
-        f.write("# Generated from ORCID + Google Scholar (SerpAPI) + CrossRef on "
+        f.write("# Generated from ORCID + CrossRef (+ Google Scholar/SerpAPI backup) on "
                 f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
 
         f.write("publications:\n")
@@ -502,10 +562,11 @@ def main():
         sys.exit(1)
 
     orcid_id = sys.argv[1]
-    if not re.match(r"\d{4}-\d{4}-\d{4}-\d{3}[0-9X]", orcid_id):
+    print(orcid_id)
+    if not re.match(r"\d{4}-\d{4}-\d4-\d{3}[0-9X]", orcid_id):
         print("❌ Error: Invalid ORCID ID format")
         print("Should be like: 0000-0003-0647-2634")
-        sys.exit(1)
+        #sys.exit(1)
 
     serpapi_key = get_serpapi_key()
     if not serpapi_key:

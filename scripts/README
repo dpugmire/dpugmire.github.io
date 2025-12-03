@@ -1,0 +1,6 @@
+Download citations from google scholar. Run bibtex_to_yaml.py to create base_publications.yaml file.
+This will have a lot of errors in it. Add new papers to publications.yaml. Use the snippet script to help with converstion of single citations.
+
+python bibtex_to_yaml.py scholar.bib -o base_publications.yaml
+
+manually edit base_publications.yaml as new papers are published.
