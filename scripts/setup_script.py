@@ -78,7 +78,7 @@ def create_index_html():
         h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: #222; border-bottom: 3px solid #0066cc; padding-bottom: 0.5rem; }
         h3 { font-size: 1.3rem; margin: 2rem 0 1rem 0; color: #444; }
 
-        .category-header { display: flex; align-items: center; gap: 1rem; border-left: 4px solid #0066cc; padding-left: 1rem; }
+        .category-header { display: flex; align-items: center; gap: 1rem; border-left: 4px solid #0066cc; padding-left: 1rem; margin-top: 2rem; }
         .category-count { background: #0066cc; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.9rem; }
 
         .publication { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px; transition: box-shadow 0.3s; }
@@ -151,7 +151,7 @@ def create_index_html():
         .loading { text-align: center; padding: 2rem; color: #666; }
         .pub-header { position: sticky; top: 165px; background: white; padding: 1rem 0; border-bottom: 3px solid #0066cc; z-index: 50; display: flex; align-items: center; gap: 2rem; }
         .pub-header h2 { font-size: 1.8rem; margin: 0; color: #222; border: none; padding: 0; }
-        .pub-nav { display: flex; gap: 1rem; align-items: center; }
+        .pub-nav { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
         .pub-nav a { color: #0066cc; text-decoration: none; padding: 0.25rem 0.5rem; border-radius: 4px; transition: background 0.3s; font-size: 0.95rem; }
         .pub-nav a:hover { background: #f0f0f0; }
     </style>
@@ -195,12 +195,7 @@ def create_index_html():
         <section id="publications">
             <div class="pub-header">
                 <h2>Publications</h2>
-                <div id="publication-links" class="pub-nav" style="display:none;">
-                    <a href="#pub-journal">Journal Articles</a>
-                    <a href="#pub-conference">Conference Papers</a>
-                    <a href="#pub-workshop">Workshop Papers</a>
-                    <a href="#pub-book-chapter">Book Chapters</a>
-                </div>
+                <div id="publication-links" class="pub-nav" style="display:none;"></div>
             </div>
             <div id="publications-content" style="margin-top: 1.5rem;"></div>
         </section>
@@ -251,7 +246,9 @@ def create_index_html():
                 'journal': 'article',
                 'conference': 'inproceedings',
                 'workshop': 'inproceedings',
-                'book-chapter': 'incollection',
+                'bookchapter': 'incollection',
+                'techreport': 'techreport',
+                'abstract': 'misc',
                 'preprint': 'misc',
                 'other': 'misc'
             };
@@ -298,47 +295,108 @@ def create_index_html():
                 container.innerHTML = '<p>No publications found. Check data/publications.yaml</p>';
                 return;
             }
+
             const pubs = data.publications;
+
+            // Categories corresponding to BibTeX pubtype values:
+            // journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
             const types = {
-                'journal': { name: 'Journal Articles', color: '#0066cc', pubs: [] },
-                'conference': { name: 'Conference Papers', color: '#10b981', pubs: [] },
-                'workshop': { name: 'Workshop Papers', color: '#f59e0b', pubs: [] },
-                'book-chapter': { name: 'Book Chapters', color: '#8b5cf6', pubs: [] },
-                'preprint': { name: 'Preprints', color: '#ec4899', pubs: [] },
-                'other': { name: 'Other Publications', color: '#6b7280', pubs: [] }
+                'journal':   { name: 'Journal Articles',   color: '#0066cc', pubs: [] },
+                'conference':{ name: 'Conference Papers',  color: '#10b981', pubs: [] },
+                'workshop':  { name: 'Workshop Papers',    color: '#f59e0b', pubs: [] },
+                'techreport':{ name: 'Technical Reports',  color: '#ef4444', pubs: [] },
+                'abstract':  { name: 'Abstracts',          color: '#0ea5e9', pubs: [] },
+                'bookchapter':{ name: 'Book Chapters',     color: '#8b5cf6', pubs: [] },
+                'preprint':  { name: 'Preprints',          color: '#ec4899', pubs: [] },
+                'other':     { name: 'Other Publications', color: '#6b7280', pubs: [] }
             };
+
+            // Bucket publications by type
             pubs.forEach(pub => {
-                const type = pub.type || 'other';
-                if (types[type]) types[type].pubs.push(pub);
+                const t = (pub.type || 'other').toLowerCase();
+                if (types[t]) {
+                    types[t].pubs.push(pub);
+                } else {
+                    // Unknown types fall back to "other"
+                    types['other'].pubs.push(pub);
+                }
             });
+
+            // Sort each bucket by year (desc) then title
             Object.values(types).forEach(type => {
-                type.pubs.sort((a, b) => b.year - a.year);
+                type.pubs.sort((a, b) => {
+                    const ya = parseInt(a.year || '0', 10) || 0;
+                    const yb = parseInt(b.year || '0', 10) || 0;
+                    if (yb !== ya) return yb - ya;
+                    return (a.title || '').localeCompare(b.title || '');
+                });
             });
+
             let html = '';
+            const navLinks = [];
+
+            // Render categories in a consistent order
             Object.entries(types).forEach(([key, type]) => {
                 if (type.pubs.length === 0) return;
-                html += '<div id="pub-' + key + '" class="category-header" style="border-left-color: ' + type.color + '"><h3>' + type.name + '</h3><span class="category-count" style="background: ' + type.color + '">' + type.pubs.length + '</span></div>';
+
+                // Add nav link for this category
+                navLinks.push('<a href="#pub-' + key + '">' + type.name + '</a>');
+
+                // Category header
+                html += '<div id="pub-' + key + '" class="category-header" style="border-left-color: ' + type.color + '">';
+                html += '<h3>' + type.name + '</h3>';
+                html += '<span class="category-count" style="background: ' + type.color + '">' + type.pubs.length + '</span>';
+                html += '</div>';
+
+                // Publications in this category
                 type.pubs.forEach(pub => {
                     const bibtex = generateBibtex(pub);
                     const paperUrl = pub.paper_url || (pub.doi ? 'https://doi.org/' + pub.doi : '#');
-                    html += '<div class="publication"><div class="pub-image">';
-                    html += pub.image ? '<img src="images/papers/' + pub.image + '" alt="' + pub.title + '">' : 'No image';
-                    html += '</div><div class="pub-content"><div class="pub-title">' + pub.title + '</div>';
+
+                    html += '<div class="publication">';
+                    html += '<div class="pub-image">';
+                    if (pub.image) {
+                        html += '<img src="images/papers/' + pub.image + '" alt="' + pub.title + '">';
+                    } else {
+                        html += 'No image';
+                    }
+                    html += '</div>'; // pub-image
+
+                    html += '<div class="pub-content">';
+                    html += '<div class="pub-title">' + pub.title + '</div>';
                     html += '<div class="pub-authors">' + pub.authors + '</div>';
                     html += '<div class="pub-venue">' + pub.venue + ', ' + pub.year + '</div>';
-                    if (pub.summary) html += '<div class="pub-summary">' + pub.summary + '</div>';
+                    if (pub.summary) {
+                        html += '<div class="pub-summary">' + pub.summary + '</div>';
+                    }
+
                     html += '<div class="pub-actions">';
-                    if (paperUrl !== '#') html += '<a href="' + paperUrl + '" class="btn btn-primary" target="_blank">📄 View Paper</a>';
-                    html += '<button class="btn btn-secondary" onclick="toggleBibtex(\'' + pub.id + '\')">📋 BibTeX</button></div>';
+                    if (paperUrl !== '#') {
+                        html += '<a href="' + paperUrl + '" class="btn btn-primary" target="_blank">📄 View Paper</a>';
+                    }
+                    html += '<button class="btn btn-secondary" onclick="toggleBibtex(\'' + pub.id + '\')">📋 BibTeX</button>';
+                    html += '</div>'; // pub-actions
+
                     html += '<div id="bibtex-' + pub.id + '" class="bibtex-container">';
                     html += '<div class="bibtex-header"><strong>BibTeX Citation</strong>';
-                    html += '<button id="copy-btn-' + pub.id + '" class="btn btn-secondary" onclick="copyBibtex(\'' + pub.id + '\', `' + bibtex.replace(/`/g, '\\`') + '`)">Copy</button></div>';
-                    html += '<div class="bibtex-code">' + bibtex + '</div></div></div></div>';
+                    html += '<button id="copy-btn-' + pub.id + '" class="btn btn-secondary" onclick="copyBibtex(\'' + pub.id + '\', `' + bibtex.replace(/`/g, '\\`') + '`)">Copy</button>';
+                    html += '</div>'; // bibtex-header
+                    html += '<div class="bibtex-code">' + bibtex + '</div>';
+                    html += '</div>'; // bibtex-container
+
+                    html += '</div>'; // pub-content
+                    html += '</div>'; // publication
                 });
             });
+
             container.innerHTML = html;
-            const links = document.getElementById('publication-links');
-            if (links) links.style.display = 'block';
+
+            // Build the dynamic publication type nav (above the list)
+            const linksBar = document.getElementById('publication-links');
+            if (linksBar && navLinks.length > 0) {
+                linksBar.innerHTML = navLinks.join('');
+                linksBar.style.display = 'flex';
+            }
         }
 
         // HTML-escape helper for map popups
@@ -503,6 +561,7 @@ def create_index_html():
         let talksLoaded = false;
         let professionalActivitiesLoaded = false;
 
+        // Lazy loading hooks
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 const target = e.target.getAttribute('href').substring(1);
@@ -521,7 +580,7 @@ def create_index_html():
             });
         });
 
-        // Optionally, you could preload professional activities on first load:
+        // Optionally preload professional activities on first load:
         // renderProfessionalActivities(); professionalActivitiesLoaded = true;
     </script>
 </body>
@@ -539,7 +598,10 @@ def create_publications_yaml(overwrite=False):
     print(f"{action} data/publications.yaml...")
 
     yaml_content = '''# publications.yaml
-# Edit this file to manage your publications
+# Edit this file to manage your publications.
+#
+# Valid types (pubtype) are:
+#   journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
 
 publications:
   - id: smith2024neural
@@ -551,7 +613,7 @@ publications:
     doi: "10.1038/nm.2024.001"
     paper_url: "https://doi.org/10.1038/nm.2024.001"
     summary: "We develop a deep learning framework for cancer detection."
-    
+
   - id: smith2023vision
     title: "Vision Transformers at Scale"
     authors: "Smith, J., Davis, C."
@@ -567,11 +629,11 @@ publications:
 #    authors: "Last, F., Last, F."
 #    venue: "Journal or Conference"
 #    year: 2024
-#    type: journal  # or conference, workshop, book-chapter, preprint
+#    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
 #    doi: "10.xxxx/xxxxx"
 #    paper_url: "https://..."
 #    summary: "One sentence summary."
-#    image: "yourname2024.jpg"
+#    image: "yourname2024keyword.jpg"
 '''
 
     os.makedirs('data', exist_ok=True)
@@ -599,7 +661,7 @@ talks:
     lat: 37.4275
     lon: -122.1697
     slides: "stanford2024.pdf"
-    
+
   - title: "Neural Networks Tutorial"
     venue: "MIT CSAIL"
     city: "Cambridge, MA"
