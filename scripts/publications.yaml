@@ -1,1184 +1,1533 @@
 # publications.yaml
-# Generated from BibTeX on 2025-12-03 07:43:09
+# Generated from BibTeX on 2025-12-09 15:15:22
 
 publications:
+
   # PREPRINT - 2025
-  - id: "ouermi2025efficient"
-    title: "Efficient Probabilistic Visualization of Local Divergence of 2D Vector Fields with Independent Gaussian Uncertainty"
-    authors: "Ouermi, T., Li, E., Moreland, K., Pugmire, D., Johnson, C., Athawale, T."
-    venue: "arXiv preprint arXiv:2510.01190"
+  - id: 'ouermi2025efficient'
+    title: 'Efficient Probabilistic Visualization of Local Divergence of 2D Vector Fields with Independent Gaussian Uncertainty'
+    authors: 'Ouermi, T., Li, E., Moreland, K., Pugmire, D., Johnson, C., Athawale, T.'
+    venue: 'Unknown Venue'
     year: 2025
-    type: preprint # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/uncertaintyvisualization63963.2024.00014"
-    paper_url: "https://doi.org/10.1109/uncertaintyvisualization63963.2024.00014"
+    type: preprint  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2024.3456393/mm2'
+    paper_url: 'https://arxiv.org/abs/2510.01190'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'ouermi2025efficient.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2025
-  - id: "wang2025situ"
-    title: "In Situ Workload Estimation for Block Assignment and Duplication in Parallelization-Over-Data Particle Advection"
-    authors: "Wang, Z., Moreland, K., Larsen, M., Kress, J., Childs, H., Li, G., Shan, G., Pugmire, D."
-    venue: "Computer Graphics Forum"
+  # JOURNAL - 2025
+  - id: 'wang2025situ'
+    title: 'In Situ Workload Estimation for Block Assignment and Duplication in Parallelization-Over-Data Particle Advection'
+    authors: 'Wang, Z., Moreland, K., Larsen, M., Kress, J., Childs, H., Li, G., Shan, G., Pugmire, D.'
+    venue: 'Computer Graphics Forum'
     year: 2025
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1111/cgf.70108"
-    paper_url: "https://doi.org/10.1111/cgf.70108"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1111/cgf.70108'
+    paper_url: 'https://doi.org/10.1111/cgf.70108'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'wang2025situ.jpg'  # Optional - add image file to images/papers/
 
-  # PREPRINT - 2025
-  - id: "wang2025orbit"
-    title: "ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling"
-    authors: "Wang, X., Choi, J., Kurihaya, T., Lyngaas, I., Yoon, H., Xiao, X., Pugmire, D., Fan, M., Nafi, N., Tsaris, A., others"
-    venue: "arXiv preprint arXiv:2505.04802"
+  # CONFERENCE - 2025
+  - id: 'wang2025orbit'
+    title: 'ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling'
+    authors: 'Wang, X., Choi, J., Kurihaya, T., Lyngaas, I., Yoon, H., Xiao, X., Pugmire, D., Fan, M., Nafi, N., Tsaris, A., Aji, A., Hossain, M., Wahib, M., Wang, D., Thornton, P., Balaprakash, P., Ashfaq, M., Lu, D.'
+    venue: 'Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis'
     year: 2025
-    type: preprint # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/3712285.3771989"
-    paper_url: "https://doi.org/10.1145/3712285.3771989"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3712285.3771989'
+    paper_url: 'https://doi.org/10.1145/3712285.3771989'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'wang2025orbit.jpg'  # Optional - add image file to images/papers/
+
+  # PREPRINT - 2025
+  - id: 'wang2025orbit'
+    title: 'ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling'
+    authors: 'Wang, X., Choi, J., Kurihaya, T., Lyngaas, I., Yoon, H., Xiao, X., Pugmire, D., Fan, M., Nafi, N., Tsaris, A., others'
+    venue: 'arXiv preprint arXiv:2505.04802'
+    year: 2025
+    type: preprint  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3712285.3771989'
+    paper_url: 'https://doi.org/10.1145/3712285.3771989'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'wang2025orbit.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2025
-  - id: "wang2025parallelize"
-    title: "Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead"
-    authors: "Wang, Z., Moreland, K., Larsen, M., Kress, J., Childs, H., Pugmire, D."
-    venue: "IEEE Transactions on Visualization and Computer Graphics"
+  - id: 'wang2025parallelize'
+    title: 'Parallelize Over Data Particle Advection: Participation, Ping Pong Particles, and Overhead'
+    authors: 'Wang, Z., Moreland, K., Larsen, M., Kress, J., Childs, H., Pugmire, D.'
+    venue: 'IEEE Transactions on Visualization and Computer Graphics'
     year: 2025
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tvcg.2025.3557453"
-    paper_url: "https://doi.org/10.1109/tvcg.2025.3557453"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2025.3557453'
+    paper_url: 'https://doi.org/10.1109/tvcg.2025.3557453'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'wang2025parallelize.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2025
-  - id: "yenpure2025steady"
-    title: "Steady-state Particle Advection Speed-ups from GPU and CPU Parallelism"
-    authors: "Yenpure, A., Pugmire, D., Childs, H."
-    venue: "Electronic Imaging"
+  - id: 'ahrens2025alpine'
+    title: 'The ECP ALPINE project: In situ and post hoc visualization infrastructure and analysis capabilities for exascale'
+    authors: 'Ahrens, J., Arienti, M., Ayachit, U., Bennett, J., Binyahib, R., Biswas, A., Bremer, P., Brugger, E., Bujack, R., Carr, H., Chen, J., Childs, H., Dutta, S., Essiari, A., Geveci, B., Harrison, C., Hazarika, S., Hickman Fulp, M., Hristov, P., Huang, X., et al.'
+    venue: 'The International Journal of High Performance Computing Applications'
     year: 2025
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2352/ei.2025.37.12.hpci-179"
-    paper_url: "https://doi.org/10.2352/ei.2025.37.12.hpci-179"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'yenpure2025steady.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 2025
-  - id: "ahrens2025alpine"
-    title: "The ECP ALPINE project: In situ and post hoc visualization infrastructure and analysis capabilities for exascale"
-    authors: "Ahrens, J., Arienti, M., Ayachit, U., Bennett, J., Binyahib, R., Biswas, A., Bremer, P., Brugger, E., Bujack, R., Carr, H., others"
-    venue: "The International Journal of High Performance Computing Applications"
-    year: 2025
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1463232"
-    paper_url: "https://doi.org/10.2172/1463232"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1177/10943420241286521'
+    paper_url: 'https://doi.org/10.1177/10943420241286521'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'ahrens2025alpine.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2025
-  - id: "senapati2025visualization"
-    title: "Visualization of Noisy and Less Noisy Computational Basis States in Quantum Computing"
-    authors: "Senapati, P., Guan, Q., Pugmire, D., Lu, C., Athawale, T."
-    venue: "2025 IEEE International Conference on Quantum Software (QSW)"
+  # JOURNAL - 2025
+  - id: 'athawale2025uncertainty'
+    title: 'Uncertainty Visualization of Critical Points of 2D Scalar Fields for Parametric and Nonparametric Probabilistic Models'
+    authors: 'Athawale, T., Wang, Z., Pugmire, D., Moreland, K., Gong, Q., Klasky, S., Johnson, C., Rosen, P.'
+    venue: 'IEEE Transactions on Visualization and Computer Graphics'
     year: 2025
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/qsw67625.2025.00011"
-    paper_url: "https://doi.org/10.1109/qsw67625.2025.00011"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2024.3456393'
+    paper_url: 'https://doi.org/10.1109/tvcg.2024.3456393'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'athawale2025uncertainty.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2025
+  - id: 'senapati2025visualization'
+    title: 'Visualization of Noisy and Less Noisy Computational Basis States in Quantum Computing'
+    authors: 'Senapati, P., Guan, Q., Pugmire, D., Lu, C., Athawale, T.'
+    venue: '2025 IEEE International Conference on Quantum Software (QSW)'
+    year: 2025
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/qsw67625.2025.00011'
+    paper_url: 'https://doi.ieeecomputersociety.org/10.1109/QSW67625.2025.00011'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'senapati2025visualization.jpg'  # Optional - add image file to images/papers/
 
-  # OTHER - 2024
-  - id: "moreland2024personalized"
-    title: "A Personalized AI Assistant for Intuition-Driven Visual Explorations"
-    authors: "Moreland, K., Klasky, S., Huang, J., Hammer, J., Pugmire, D."
-    venue: "Unknown Venue"
+  # JOURNAL - 2024
+  - id: 'athawale2024comparative'
+    title: 'A Comparative Study of the Perceptual Sensitivity of Topological Visualizations to Feature Variations'
+    authors: 'Athawale, T., Triana, B., Kotha, T., Pugmire, D., Rosen, P.'
+    venue: 'IEEE Transactions on Visualization and Computer Graphics'
     year: 2024
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/e-science62913.2024.10678681"
-    paper_url: "https://doi.org/10.1109/e-science62913.2024.10678681"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2023.3326592'
+    paper_url: 'https://doi.org/10.1109/tvcg.2023.3326592'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2024personalized.jpg'  # Optional - add image file to images/papers/
+    # image: 'athawale2024comparative.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2024
-  - id: "hammer2024personalized"
-    title: "A personalized AI assistant for intuition-driven visual explorations"
-    authors: "Hammer, J., Hobson, T., Pugmire, D., Klasky, S., Moreland, K., Huang, J."
-    venue: "2024 IEEE 20th International Conference on e-Science (e-Science)"
+  - id: 'hammer2024personalized'
+    title: 'A Personalized AI Assistant For Intuition-Driven Visual Explorations'
+    authors: 'Hammer, J., Hobson, T., Pugmire, D., Klasky, S., Moreland, K., Huang, J.'
+    venue: '2024 IEEE 20th International Conference on e-Science (e-Science)'
     year: 2024
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/e-science62913.2024.10678681"
-    paper_url: "https://doi.org/10.1109/e-science62913.2024.10678681"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/e-science62913.2024.10678681'
+    paper_url: 'https://doi.org/10.1109/e-science62913.2024.10678681'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'hammer2024personalized.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2024
-  - id: "sisneros2024entropy"
-    title: "An Entropy-Based Test and Development Framework for Uncertainty Modeling in Level-Set Visualizations"
-    authors: "Sisneros, R., Athawale, T., Pugmire, D., Moreland, K."
-    venue: "2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks"
+  # WORKSHOP - 2024
+  - id: 'sisneros2024entropy'
+    title: 'An Entropy-Based Test and Development Framework for Uncertainty Modeling in Level-Set Visualizations'
+    authors: 'Sisneros, R., Athawale, T., Pugmire, D., Moreland, K.'
+    venue: '2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks'
     year: 2024
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/uncertaintyvisualization63963.2024.00015"
-    paper_url: "https://doi.org/10.1109/uncertaintyvisualization63963.2024.00015"
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/uncertaintyvisualization63963.2024.00015'
+    paper_url: 'https://doi.org/10.1109/uncertaintyvisualization63963.2024.00015'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'sisneros2024entropy.jpg'  # Optional - add image file to images/papers/
 
-  # OTHER - 2024
-  - id: "athawale2024data"
-    title: "Data-Driven Computation of Probabilistic Marching Cubes for Efficient Visualization of Level-Set Uncertainty"
-    authors: "Athawale, T., Wang, J., Johnson, C., Pugmire, D."
-    venue: "Unknown Venue"
+  # CONFERENCE - 2024
+  - id: 'athawale2024data'
+    title: 'Data-Driven Computation of Probabilistic Marching Cubes for Efficient Visualization of Level-Set Uncertainty'
+    authors: 'Athawale, T., Wang, Z., Johnson, C., Pugmire, D.'
+    venue: 'EuroVis 2024 - Short Papers'
     year: 2024
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/vis49827.2021.9623267"
-    paper_url: "https://doi.org/10.1109/vis49827.2021.9623267"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2312/evs.20241071'
+    paper_url: 'https://doi.org/10.2312/evs.20241071'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'athawale2024data.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2024
-  - id: "dudson2024enhancing"
-    title: "Enhancing Boundary Plasma Simulations: Key Advances from the ABOUND SciDAC Project"
-    authors: "Dudson, B., Li, N., Zhu, B., Chen, Y., Cheng, J., Casali, L., Taczak, T., Tang, X., Li, Y., Zhang, Y., others"
-    venue: "Bulletin of the American Physical Society"
+  # ABSTRACT - 2024
+  - id: 'dudson2024enhancing'
+    title: 'Enhancing Boundary Plasma Simulations: Key Advances from the ABOUND SciDAC Project'
+    authors: 'Dudson, B., Li, N., Zhu, B., Chen, Y., Cheng, J., Casali, L., Taczak, T., Tang, X., Li, Y., Zhang, Y., others'
+    venue: 'Bulletin of the American Physical Society'
     year: 2024
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1168614"
-    paper_url: "https://doi.org/10.2172/1168614"
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2172/1168614'
+    paper_url: 'https://doi.org/10.2172/1168614'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'dudson2024enhancing.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2024
-  - id: "hari2024funm"
-    title: "FunM 2 C: A Filter for Uncertainty Visualization of Multivariate Data on Multi-Core Devices"
-    authors: "Hari, G., Joshi, N., Wang, Z., Gong, Q., Pugmire, D., Moreland, K., Johnson, C., Klasky, S., Podhorszki, N., Athawale, T."
-    venue: "2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks"
+  # WORKSHOP - 2024
+  - id: 'hari2024filter'
+    title: 'FunM2C: A Filter for Uncertainty Visualization of Multivariate Data on Multi-Core Devices'
+    authors: 'Hari, G., Joshi, N., Wang, Z., Gong, Q., Pugmire, D., Moreland, K., Johnson, C., Klasky, S., Podhorszki, N., Athawale, T.'
+    venue: '2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks'
     year: 2024
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/uncertaintyvisualization63963.2024.00010"
-    paper_url: "https://doi.org/10.1109/uncertaintyvisualization63963.2024.00010"
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/uncertaintyvisualization63963.2024.00010'
+    paper_url: 'https://doi.org/10.1109/uncertaintyvisualization63963.2024.00010'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'hari2024funm.jpg'  # Optional - add image file to images/papers/
+    # image: 'hari2024filter.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2024
-  - id: "cui2024glad"
-    title: "GLAD-M35: a joint P and S global tomographic model with uncertainty quantification"
-    authors: 'Cui, C., Lei, W., Liu, Q., Peter, D., Bozda\ug, E., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D.'
-    venue: "Geophysical Journal International"
+  - id: 'cui2024glad'
+    title: 'GLAD-M35: a joint P and S global tomographic model with uncertainty quantification'
+    authors: 'Cui, C., Lei, W., Liu, Q., Peter, D., Bozdağ, E., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D.'
+    venue: 'Geophysical Journal International'
     year: 2024
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1093/gji/ggae270"
-    paper_url: "https://doi.org/10.1093/gji/ggae270"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1093/gji/ggae270'
+    paper_url: 'https://doi.org/10.1093/gji/ggae270'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'cui2024glad.jpg'  # Optional - add image file to images/papers/
 
-  # OTHER - 2024
-  - id: "pugmire2024performance"
-    title: "Performance Improvements of Poincaré Analysis for Exascale Fusion Simulations"
-    authors: "Pugmire, D., Choi, J., Klasky, S., Moreland, K., Suchyta, E., Athawale, T., Wang, J., Chang, C., Ku, S., Hager, R."
-    venue: "Unknown Venue"
+  # WORKSHOP - 2024
+  - id: 'pugmire2024performance'
+    title: 'Performance Improvements of Poincaré Analysis for Exascale Fusion Simulations'
+    authors: 'Pugmire, D., Choi, J., Klasky, S., Moreland, K., Suchyta, E., Athawale, T., Wang, Z., Chang, C., Ku, S., Hager, R.'
+    venue: 'VisGap - The Gap between Visualization Research and Visualization Software'
     year: 2024
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.3030/101093261"
-    paper_url: "https://doi.org/10.3030/101093261"
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2312/visgap.20241120'
+    paper_url: 'https://doi.org/10.2312/visgap.20241120'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2024performance.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2024
-  - id: "chang2024role"
-    title: "Role of turbulent separatrix tangle in the improvement of the integrated pedestal and heat exhaust issue for stationary-operation tokamak fusion reactors"
-    authors: "Chang, C., Ku, S., Hager, R., Choi, J., Pugmire, D., Klasky, S., Loarte, A., Pitts, R."
-    venue: "Nuclear Fusion"
-    year: 2024
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1088/1741-4326/ad3b1e"
-    paper_url: "https://doi.org/10.1088/1741-4326/ad3b1e"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'chang2024role.jpg'  # Optional - add image file to images/papers/
-
   # CONFERENCE - 2024
-  - id: "pugmire2024research"
-    title: "Top Research Challenges and Opportunities for Near Real-Time Extreme-Scale Visualization of Scientific Data"
-    authors: "Pugmire, D., Moreland, K., Athawale, T., Hammer, J., Huang, J."
-    venue: "2024 IEEE 20th International Conference on e-Science (e-Science)"
+  - id: 'pugmire2024research'
+    title: 'Top Research Challenges and Opportunities for Near Real-Time Extreme-Scale Visualization of Scientific Data'
+    authors: 'Pugmire, D., Moreland, K., Athawale, T., Hammer, J., Huang, J.'
+    venue: '2024 IEEE 20th International Conference on e-Science (e-Science)'
     year: 2024
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/e-science62913.2024.10678727"
-    paper_url: "https://doi.org/10.1109/e-science62913.2024.10678727"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/e-science62913.2024.10678727'
+    paper_url: 'https://doi.org/10.1109/e-science62913.2024.10678727'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2024research.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2024
-  - id: "chang2024turbulent"
-    title: "Turbulent homoclinic tangle and its role in the integrated pedestal and heat exhaust problem for a stationary-operation tokamak fusion reactor"
-    authors: "Chang, C., Ku, S., Hager, R., Choi, J., Pugmire, D., Klasky, S., Loarte, A., Pitts, R., Team, I., others"
-    venue: "APS Division of Plasma Physics Meeting Abstracts"
+  # ABSTRACT - 2024
+  - id: 'chang2024turbulent'
+    title: 'Turbulent homoclinic tangle and its role in the integrated pedestal and heat exhaust problem for a stationary-operation tokamak fusion reactor'
+    authors: 'Chang, C., Ku, S., Hager, R., Choi, J., Pugmire, D., Klasky, S., Loarte, A., Pitts, R., Team, I., others'
+    venue: 'APS Division of Plasma Physics Meeting Abstracts'
     year: 2024
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1088/1741-4326/ad3b1e"
-    paper_url: "https://doi.org/10.1088/1741-4326/ad3b1e"
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1088/1741-4326/ad3b1e'
+    paper_url: 'https://doi.org/10.1088/1741-4326/ad3b1e'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'chang2024turbulent.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2024
-  - id: "athawale2024uncertainty"
-    title: "Uncertainty Visualization of Critical Points of 2D Scalar Fields for Parametric and Nonparametric Probabilistic Models"
-    authors: "Athawale, T., Wang, Z., Pugmire, D., Moreland, K., Gong, Q., Klasky, S., Johnson, C., Rosen, P."
-    venue: "IEEE Transactions on Visualization and Computer Graphics"
+  # WORKSHOP - 2024
+  - id: 'saklani2024uncertainty'
+    title: 'Uncertainty-Informed Volume Visualization using Implicit Neural Representation'
+    authors: 'Saklani, S., Goel, C., Bansal, S., Wang, Z., Dutta, S., Athawale, T., Pugmire, D., Johnson, C.'
+    venue: '2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks'
     year: 2024
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tvcg.2024.3456393/mm2"
-    paper_url: "https://doi.org/10.1109/tvcg.2024.3456393/mm2"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale2024uncertainty.jpg'  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2024
-  - id: "saklani2024uncertainty"
-    title: "Uncertainty-Informed Volume Visualization using Implicit Neural Representation"
-    authors: "Saklani, S., Goel, C., Bansal, S., Wang, Z., Dutta, S., Athawale, T., Pugmire, D., Johnson, C."
-    venue: "2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks"
-    year: 2024
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/uncertaintyvisualization63963.2024.00013"
-    paper_url: "https://doi.org/10.1109/uncertaintyvisualization63963.2024.00013"
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/uncertaintyvisualization63963.2024.00013'
+    paper_url: 'https://api.semanticscholar.org/CorpusID:271855075'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'saklani2024uncertainty.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2024
-  - id: "moreland2024visualization"
-    title: "Visualization at exascale: Making it all work with VTK-m"
-    authors: "Moreland, K., Athawale, T., Bolea, V., Bolstad, M., Brugger, E., Childs, H., Huebl, A., Lo, L., Geveci, B., Marsaglia, N., others"
-    venue: "The International Journal of High Performance Computing Applications"
+  - id: 'moreland2024visualization'
+    title: 'Visualization at exascale: Making it all work with VTK-m'
+    authors: 'Moreland, K., Athawale, T., Bolea, V., Bolstad, M., Brugger, E., Childs, H., Huebl, A., Lo, L., Geveci, B., Marsaglia, N., Philip, S., Pugmire, D., Rizzi, S., Wang, Z., Yenpure, A.'
+    venue: 'The International Journal of High Performance Computing Applications'
     year: 2024
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1177/10943420241270969"
-    paper_url: "https://doi.org/10.1177/10943420241270969"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1177/10943420241270969'
+    paper_url: 'https://doi.org/10.1177/10943420241270969'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'moreland2024visualization.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2023
-  - id: "anirudh2023review"
-    title: "2022 review of data-driven plasma science"
-    authors: "Anirudh, R., Archibald, R., Asif, M., Becker, M., Benkadda, S., Bremer, P., Bude, R., Chang, C., Chen, L., Churchill, R., others"
-    venue: "IEEE Transactions on Plasma Science"
+  - id: 'anirudh2023review'
+    title: '2022 Review of Data-Driven Plasma Science'
+    authors: 'Anirudh, R., Archibald, R., Asif, M., Becker, M., Benkadda, S., Bremer, P., Budé, R., Chang, C., Chen, L., Churchill, R., Citrin, J., Gaffney, J., Gainaru, A., Gekelman, W., Gibbs, T., Hamaguchi, S., Hill, C., Humbird, K., Jalas, S., Kawaguchi, S., et al.'
+    venue: 'IEEE Transactions on Plasma Science'
     year: 2023
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/icops45751.2022.9813261"
-    paper_url: "https://doi.org/10.1109/icops45751.2022.9813261"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tps.2023.3268170'
+    paper_url: 'https://doi.org/10.1109/tps.2023.3268170'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'anirudh2023review.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2023
-  - id: "athawale2023comparative"
-    title: "A comparative study of the perceptual sensitivity of topological visualizations to feature variations"
-    authors: "Athawale, T., Triana, B., Kotha, T., Pugmire, D., Rosen, P."
-    venue: "IEEE Transactions on Visualization and Computer Graphics"
-    year: 2023
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tvcg.2023.3326592/mm1"
-    paper_url: "https://doi.org/10.1109/tvcg.2023.3326592/mm1"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale2023comparative.jpg'  # Optional - add image file to images/papers/
-
   # CONFERENCE - 2023
-  - id: "senapati2023advancing"
-    title: "Advancing comprehension of quantum application outputs: A visualization technique"
-    authors: "Senapati, P., Athawale, T., Pugmire, D., Guan, Q."
-    venue: "Proceedings of the 2023 International Workshop on Quantum Classical Cooperative"
+  - id: 'senapati2023advancing'
+    title: 'Advancing Comprehension of Quantum Application Outputs: A Visualization Technique'
+    authors: 'Senapati, P., Athawale, T., Pugmire, D., Guan, Q.'
+    venue: 'Proceedings of the 2023 International Workshop on Quantum Classical Cooperative'
     year: 2023
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/3588983.3596689"
-    paper_url: "https://doi.org/10.1145/3588983.3596689"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3588983.3596689'
+    paper_url: 'https://doi.org/10.1145/3588983.3596689'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'senapati2023advancing.jpg'  # Optional - add image file to images/papers/
 
-  # OTHER - 2023
-  - id: "wang2023funmc"
-    title: 'FunMC\^ 2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core Devices'
-    authors: "Wang, J., Athawale, T., Moreland, K., Chen, J., Johnson, C., Pugmire, D."
-    venue: "Unknown Venue"
+  # JOURNAL - 2023
+  - id: 'athawale2023fiber'
+    title: 'Fiber Uncertainty Visualization for Bivariate Data With Parametric and Nonparametric Noise Models'
+    authors: 'Athawale, T., Johnson, C., Sane, S., Pugmire, D.'
+    venue: 'IEEE Transactions on Visualization and Computer Graphics'
     year: 2023
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/vis49827.2021.9623267"
-    paper_url: "https://doi.org/10.1109/vis49827.2021.9623267"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2022.3209424'
+    paper_url: 'https://doi.org/10.1109/tvcg.2022.3209424'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'athawale2023fiber.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2023
+  - id: 'wang2023funmc'
+    title: 'FunMC\^2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core Devices'
+    authors: 'Wang, Z., Athawale, T., Moreland, K., Chen, J., Johnson, C., Pugmire, D.'
+    venue: 'Eurographics Symposium on Parallel Graphics and Visualization'
+    year: 2023
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2312/pgv.20231081'
+    paper_url: 'https://doi.org/10.2312/pgv.20231081'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'wang2023funmc.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2023
-  - id: "yenpure2023state"
-    title: "State-of-the-Art Report on Optimizing Particle Advection Performance"
-    authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
-    venue: "Computer Graphics Forum"
+  - id: 'trinh2023understanding'
+    title: 'Understanding Node Allocation on Leadership-Class Supercomputers with Graph Analytics'
+    authors: 'Trinh, A., Sheth, S., Gaihre, A., Ding, C., Chen, J., Wang, F., Pugmire, D., Klasky, S., Liu, H., Wan, L.'
+    venue: '2023 IEEE International Conference on High Performance Computing & Communications, Data Science & Systems, Smart City & Dependability in Sensor, Cloud & Big Data Systems & Application (HPCC/DSS/SmartCity/DependSys)'
     year: 2023
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1111/cgf.14858"
-    paper_url: "https://doi.org/10.1111/cgf.14858"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'yenpure2023state.jpg'  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2023
-  - id: "chang2023role"
-    title: "The role of turbulent separatrix tangle in the improvement of the integrated pedestal/heat exhaust issue for stationary operation in ITER and Fusion Reactors"
-    authors: "Chang, C., Ku, S., Hager, R., Choi, J., Pugmire, D., Klasky, S., Loarte, A., Pitts, R., Gu, J., Wu, J."
-    venue: "APS Division of Plasma Physics Meeting Abstracts"
-    year: 2023
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1088/1741-4326/ad3b1e"
-    paper_url: "https://doi.org/10.1088/1741-4326/ad3b1e"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'chang2023role.jpg'  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2023
-  - id: "trinh2023understanding"
-    title: "Understanding Node Allocation on Leadership-Class Supercomputers with Graph Analytics"
-    authors: "Trinh, A., Sheth, S., Gaihre, A., Ding, C., Chen, J., Wang, F., Pugmire, D., Klasky, S., Liu, H., Wan, L."
-    venue: "2023 IEEE International Conference on High Performance Computing & Communications, Data Science & Systems, Smart City & Dependability in Sensor, Cloud & Big Data Systems & Application (HPCC/DSS/SmartCity/DependSys)"
-    year: 2023
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113"
-    paper_url: "https://doi.org/10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113'
+    paper_url: 'https://doi.org/10.1109/hpcc-dss-smartcity-dependsys60770.2023.00113'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'trinh2023understanding.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2023
-  - id: "moreland2023paper"
-    title: "VTK-m v. 2.0"
-    authors: "Moreland, K., Pugmire, D., Maynard, R., Vacanti, A., Thompson, N., Lo, L., Philip, S., Ruebel, O., Bolea, V., Weber, G., others"
-    venue: "US Department of Energy (DOE) Software"
+  # CONFERENCE - 2023
+  - id: 'bolstad2023visualization'
+    title: 'VTK-m: Visualization for the Exascale Era and Beyond'
+    authors: 'Bolstad, M., Moreland, K., Pugmire, D., Rogers, D., Lo, L., Geveci, B., Childs, H., Rizzi, S.'
+    venue: 'ACM SIGGRAPH 2023 Talks'
     year: 2023
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1959590"
-    paper_url: "https://doi.org/10.2172/1959590"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2023paper.jpg'  # Optional - add image file to images/papers/
-
-  # BOOK-CHAPTER - 2023
-  - id: "bolstad2023visualization"
-    title: "VTK-m: Visualization for the Exascale Era and Beyond"
-    authors: "Bolstad, M., Moreland, K., Pugmire, D., Rogers, D., Lo, L., Geveci, B., Childs, H., Rizzi, S."
-    venue: "ACM SIGGRAPH 2023 Talks"
-    year: 2023
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/2430458"
-    paper_url: "https://doi.org/10.2172/2430458"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3587421.3595466'
+    paper_url: 'https://doi.org/10.1145/3587421.3595466'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'bolstad2023visualization.jpg'  # Optional - add image file to images/papers/
 
   # PREPRINT - 2022
-  - id: "yenpure2022guide"
-    title: "A Guide to Particle Advection Performance"
-    authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
-    venue: "arXiv preprint arXiv:2201.08440"
+  - id: 'yenpure2022guide'
+    title: 'A Guide to Particle Advection Performance'
+    authors: 'Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H.'
+    venue: 'Unknown Venue'
     year: 2022
-    type: preprint # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/cluster49012.2020.00048"
-    paper_url: "https://doi.org/10.1109/cluster49012.2020.00048"
+    type: preprint  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.48550/arxiv.2201.08440'
+    paper_url: 'https://arxiv.org/abs/2201.08440'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'yenpure2022guide.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2022
-  - id: "han2022accelerated"
-    title: "Accelerated probabilistic marching cubes by deep learning for time-varying scalar ensembles"
-    authors: "Han, M., Athawale, T., Pugmire, D., Johnson, C."
-    venue: "2022 IEEE Visualization and Visual Analytics (VIS)"
+  - id: 'han2022accelerated'
+    title: 'Accelerated Probabilistic Marching Cubes by Deep Learning for Time-Varying Scalar Ensembles'
+    authors: 'Han, M., Athawale, T., Pugmire, D., Johnson, C.'
+    venue: '2022 IEEE Visualization and Visual Analytics (VIS)'
     year: 2022
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/vis54862.2022.00040"
-    paper_url: "https://doi.org/10.1109/vis54862.2022.00040"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/vis54862.2022.00040'
+    paper_url: 'https://ieeexplore.ieee.org/document/9973217'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'han2022accelerated.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2022
-  - id: "chang2022discovery"
-    title: "Discovery of micro-turbulent homoclinic tangle near magnetic X-point from the XGC total-f electromagnetic simulation"
-    authors: "Chang, C., Ku, S., Churchill, M., Kube, R., Hager, R., Guo, H., Choi, J., Pugmire, D., Klasky, S., Team, S."
-    venue: "APS Division of Plasma Physics Meeting Abstracts"
+  # ABSTRACT - 2022
+  - id: 'chang2022discovery'
+    title: 'Discovery of micro-turbulent homoclinic tangle near magnetic X-point from the XGC total-f electromagnetic simulation'
+    authors: 'Chang, C., Ku, S., Churchill, M., Kube, R., Hager, R., Guo, H., Choi, J., Pugmire, D., Klasky, S., Team, S.'
+    venue: 'APS Division of Plasma Physics Meeting Abstracts'
     year: 2022
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1063/5.0097855"
-    paper_url: "https://doi.org/10.1063/5.0097855"
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1063/5.0097855'
+    paper_url: 'https://doi.org/10.1063/5.0097855'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'chang2022discovery.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2022
-  - id: "athawale2022fiber"
-    title: "Fiber uncertainty visualization for bivariate data with parametric and nonparametric noise models"
-    authors: "Athawale, T., Johnson, C., Sane, S., Pugmire, D."
-    venue: "IEEE Transactions on Visualization and Computer Graphics"
-    year: 2022
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tvcg.2022.3209424"
-    paper_url: "https://doi.org/10.1109/tvcg.2022.3209424"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale2022fiber.jpg'  # Optional - add image file to images/papers/
-
   # CONFERENCE - 2022
-  - id: "suchyta2022hybrid"
-    title: "Hybrid analysis of fusion data for online understanding of complex science on extreme scale computers"
-    authors: "Suchyta, E., Choi, J., Ku, S., Pugmire, D., Gainaru, A., Huck, K., Kube, R., Scheinberg, A., Suter, F., Chang, C., others"
-    venue: "2022 IEEE International Conference on Cluster Computing (CLUSTER)"
+  - id: 'suchyta2022hybrid'
+    title: 'Hybrid Analysis of Fusion Data for Online Understanding of Complex Science on Extreme Scale Computers'
+    authors: 'Suchyta, E., Choi, J., Ku, S., Pugmire, D., Gainaru, A., Huck, K., Kube, R., Scheinberg, A., Suter, F., Chang, C., Munson, T., Podhorszki, N., Klasky, S.'
+    venue: '2022 IEEE International Conference on Cluster Computing (CLUSTER)'
     year: 2022
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/cluster51413.2022.00035"
-    paper_url: "https://doi.org/10.1109/cluster51413.2022.00035"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/cluster51413.2022.00035'
+    paper_url: 'https://ieeexplore.ieee.org/document/9912722'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'suchyta2022hybrid.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2022
-  - id: "pugmire2022message"
-    title: "Message from the Workshop Chairs"
-    authors: "Pugmire, D., Ziegeler, S., Larsen, M., Huebl, A."
-    venue: "Proceedings of ISAV 2022: IEEE/ACM International Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization, Held in conjunction with SC 2022: The International Conference for High Performance Computing, Networking, Storage and Analysis"
+  # BOOKCHAPTER - 2022
+  - id: 'gong2022maintaining'
+    title: 'Maintaining Trust in Reduction: Preserving the Accuracy of Quantities of Interest for Lossy Compression'
+    authors: 'Gong, Q.'
+    venue: 'Driving Scientific and Engineering Discoveries Through the Integration of Experiment, Big Data, and Modeling and Simulation'
     year: 2022
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/waccpd56842.2022.00004"
-    paper_url: "https://doi.org/10.1109/waccpd56842.2022.00004"
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-030-96498-6_2'
+    paper_url: 'https://doi.org/10.1007/978-3-030-96498-6_2'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2022message.jpg'  # Optional - add image file to images/papers/
+    # image: 'gong2022maintaining.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2022
-  - id: "pugmire2022proximity"
-    title: "Proximity Portability and in Transit, M-to-N Data Partitioning and Movement"
-    authors: "Pugmire, D., Rizzi, S., Thompson, D., Usher, W., Weber, G."
-    venue: "In Situ Visualization for Computational Science"
+  # BOOKCHAPTER - 2022
+  - id: 'bethel2022proximity'
+    title: 'Proximity Portability and in Transit, M-to-N Data Partitioning and Movement in SENSEI'
+    authors: 'Bethel, E., Loring, B., Ayachit, U., Duque, E., Ferrier, N., Insley, J., Gu, J., Kress, J., O’Leary, P., Pugmire, D., Rizzi, S., Thompson, D., Usher, W., Weber, G., Whitlock, B., Wolf, M., Wu, K.'
+    venue: 'In Situ Visualization for Computational Science'
     year: 2022
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-81627-8_20"
-    paper_url: "https://doi.org/10.1007/978-3-030-81627-8_20"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2022proximity.jpg'  # Optional - add image file to images/papers/
-
-  # OTHER - 2022
-  - id: "bethel2022proximity"
-    title: "Proximity Portability and in Transit, M-to-N Data Partitioning and Movement in SENSEI [Book Chapter]"
-    authors: "Bethel, E., Loring, B., Ayachit, U., Duque, E., Ferrier, N., Insley, J., Gu, J., Kress, J., O’Leary, P., Pugmire, D., others"
-    venue: "Unknown Venue"
-    year: 2022
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-81627-8_20"
-    paper_url: "https://doi.org/10.1007/978-3-030-81627-8_20"
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-030-81627-8_20'
+    paper_url: 'https://doi.org/10.1007/978-3-030-81627-8_20'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'bethel2022proximity.jpg'  # Optional - add image file to images/papers/
 
-  # BOOK-CHAPTER - 2022
-  - id: "bethel2022proximity"
-    title: "Proximity portability and in transit, m-to-n data partitioning and movement in sensei"
-    authors: "Bethel, E., Loring, B., Ayachit, U., Duque, E., Ferrier, N., Insley, J., Gu, J., Kress, J., O’Leary, P., Pugmire, D., others"
-    venue: "In Situ Visualization for Computational Science"
+  # BOOKCHAPTER - 2022
+  - id: 'pugmire2022adaptable'
+    title: 'The Adaptable IO System (ADIOS)'
+    authors: 'Pugmire, D.'
+    venue: 'In Situ Visualization for Computational Science'
     year: 2022
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-81627-8_20"
-    paper_url: "https://doi.org/10.1007/978-3-030-81627-8_20"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bethel2022proximity.jpg'  # Optional - add image file to images/papers/
-
-  # OTHER - 2022
-  - id: "moreland2022exploitation"
-    title: "The Exploitation of Data Reduction for Visualization"
-    authors: "Moreland, K., Pugmire, D., Chen, J."
-    venue: "Unknown Venue"
-    year: 2022
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1881112"
-    paper_url: "https://doi.org/10.2172/1881112"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2022exploitation.jpg'  # Optional - add image file to images/papers/
-
-  # workshop - 2022
-  - id: "moreland2022importance"
-    title: "The Importance of Scientific Visualization on Novel Hardware"
-    authors: "Moreland, K., Pugmire, D., Geveci, B., Lo, L., Childs, H., Bolstad, M., Shah, R., Wu, P."
-    venue: "ASCR Workshop on Visualization for Scientific Discovery, Decision-Making, & Communication"
-    year: 2022
-    type: workshop # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1885308"
-    paper_url: "https://doi.org/10.2172/1885308"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2022importance.jpg'  # Optional - add image file to images/papers/
-
-  # OTHER - 2022
-  - id: "bethel2022sensei"
-    title: "The SENSEI Generic In Situ Interface: Tool and Processing Portability at Scale [Book Chapter]"
-    authors: "Bethel, E., Loring, B., Ayachit, U., Camp, D., Duque, E., Ferrier, N., Insley, J., Gu, J., Kress, J., O’Leary, P., others"
-    venue: "Unknown Venue"
-    year: 2022
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-81627-8_13"
-    paper_url: "https://doi.org/10.1007/978-3-030-81627-8_13"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bethel2022sensei.jpg'  # Optional - add image file to images/papers/
-
-  # BOOK-CHAPTER - 2022
-  - id: "pugmire2022adaptable"
-    title: "The adaptable io system (adios)"
-    authors: "Pugmire, D., Podhorszki, N., Klasky, S., Wolf, M., Kress, J., Kim, M., Thompson, N., Logan, J., Wang, R., Mehta, K., others"
-    venue: "In Situ Visualization for Computational Science"
-    year: 2022
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/1383529.1383533"
-    paper_url: "https://doi.org/10.1145/1383529.1383533"
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/1383529.1383533'
+    paper_url: 'https://doi.org/10.1145/1383529.1383533'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2022adaptable.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2022
-  - id: "suchyta2022exascale"
-    title: "The exascale framework for high fidelity coupled simulations (effis): Enabling whole device modeling in fusion science"
-    authors: "Suchyta, E., Klasky, S., Podhorszki, N., Wolf, M., Adesoji, A., Chang, C., Choi, J., Davis, P., Dominski, J., Ethier, S., others"
-    venue: "The International Journal of High Performance Computing Applications"
+  # TECHREPORT - 2022
+  - id: 'moreland2022exploitation'
+    title: 'The Exploitation of Data Reduction for Visualization'
+    authors: 'Moreland, K., Pugmire, D., Chen, J.'
+    venue: 'Unknown Venue'
     year: 2022
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1177/10943420211019119"
-    paper_url: "https://doi.org/10.1177/10943420211019119"
+    type: techreport  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2172/1881112'
+    paper_url: 'https://doi.org/10.2172/1881112'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'suchyta2022exascale.jpg'  # Optional - add image file to images/papers/
+    # image: 'moreland2022exploitation.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2022
-  - id: "pugmire2022need"
-    title: "The need for pervasive in situ analysis and visualization (p-isav)"
-    authors: "Pugmire, D., Huang, J., Moreland, K., Klasky, S."
-    venue: "International Conference on High Performance Computing"
+  # TECHREPORT - 2022
+  - id: 'moreland2022importance'
+    title: 'The Importance of Scientific Visualization on Novel Hardware'
+    authors: 'Moreland, K., Pugmire, D., Geveci, B., Lo, L., Childs, H., Bolstad, M., Shah, R., Wu, P.'
+    venue: 'Unknown Venue'
     year: 2022
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-031-23220-6_21"
-    paper_url: "https://doi.org/10.1007/978-3-031-23220-6_21"
+    type: techreport  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2172/1885308'
+    paper_url: 'https://www.osti.gov/biblio/1885308'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'moreland2022importance.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2022
+  - id: 'pugmire2022need'
+    title: 'The Need for Pervasive In Situ Analysis and Visualization (P-ISAV)'
+    authors: 'Pugmire, D., Huang, J., Moreland, K., Klasky, S.'
+    venue: 'High Performance Computing. ISC High Performance 2022 International Workshops'
+    year: 2022
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-031-23220-6_21'
+    paper_url: 'https://doi.org/10.1007/978-3-031-23220-6_21'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2022need.jpg'  # Optional - add image file to images/papers/
 
-  # BOOK-CHAPTER - 2022
-  - id: "bethel2022sensei"
-    title: "The sensei generic in situ interface: Tool and processing portability at scale"
-    authors: "Bethel, E., Loring, B., Ayachit, U., Camp, D., Duque, E., Ferrier, N., Insley, J., Gu, J., Kress, J., O’Leary, P., others"
-    venue: "In Situ Visualization for Computational Science"
+  # BOOKCHAPTER - 2022
+  - id: 'bethel2022sensei'
+    title: 'The SENSEI Generic In Situ Interface: Tool and Processing Portability at Scale'
+    authors: 'Bethel, E., Loring, B., Ayachit, U., Camp, D., Duque, E., Ferrier, N., Insley, J., Gu, J., Kress, J., O''Leary, P., Pugmire, D., Rizzi, S., Thompson, D., Weber, G., Whitlock, B., Wolf, M., Wu, K.'
+    venue: 'In Situ Visualization for Computational Science'
     year: 2022
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-81627-8_13"
-    paper_url: "https://doi.org/10.1007/978-3-030-81627-8_13"
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-030-81627-8_13'
+    paper_url: 'https://doi.org/10.1007/978-3-030-81627-8_13'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'bethel2022sensei.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2022
-  - id: "oleary2022tool"
-    title: "Tool and Processing Portability at Scale"
-    authors: "O'Leary, P., Pugmire, D., Rizzi, S., Thompson, D."
-    venue: "In Situ Visualization for Computational Science"
+  - id: 'suchyta2022exascale'
+    title: 'The exascale framework for high fidelity coupled simulations (effis): Enabling whole device modeling in fusion science'
+    authors: 'Suchyta, E., Klasky, S., Podhorszki, N., Wolf, M., Adesoji, A., Chang, C., Choi, J., Davis, P., Dominski, J., Ethier, S., others'
+    venue: 'The International Journal of High Performance Computing Applications'
     year: 2022
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-81627-8_13"
-    paper_url: "https://doi.org/10.1007/978-3-030-81627-8_13"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1177/10943420211019119'
+    paper_url: 'https://doi.org/10.1177/10943420211019119'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'oleary2022tool.jpg'  # Optional - add image file to images/papers/
+    # image: 'suchyta2022exascale.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2022
-  - id: "gainaru2022understanding"
-    title: "Understanding the impact of data staging for coupled scientific workflows"
-    authors: "Gainaru, A., Wan, L., Wang, R., Suchyta, E., Chen, J., Podhorszki, N., Kress, J., Pugmire, D., Klasky, S."
-    venue: "IEEE Transactions on Parallel and Distributed Systems"
+  - id: 'gainaru2022understanding'
+    title: 'Understanding the Impact of Data Staging for Coupled Scientific Workflows'
+    authors: 'Gainaru, A., Wan, L., Wang, R., Suchyta, E., Chen, J., Podhorszki, N., Kress, J., Pugmire, D., Klasky, S.'
+    venue: 'IEEE Transactions on Parallel and Distributed Systems'
     year: 2022
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tpds.2022.3179989"
-    paper_url: "https://doi.org/10.1109/tpds.2022.3179989"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tpds.2022.3179989'
+    paper_url: 'https://doi.org/10.1109/tpds.2022.3179989'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'gainaru2022understanding.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: "chen2021accelerating"
-    title: "Accelerating multigrid-based hierarchical scientific data refactoring on gpus"
-    authors: "Chen, J., Wan, L., Liang, X., Whitney, B., Liu, Q., Pugmire, D., Thompson, N., Choi, J., Wolf, M., Munson, T., others"
-    venue: "2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)"
+  - id: 'chen2021accelerating'
+    title: 'Accelerating Multigrid-based Hierarchical Scientific Data Refactoring on GPUs'
+    authors: 'Chen, J., Wan, L., Liang, X., Whitney, B., Liu, Q., Pugmire, D., Thompson, N., Wolf, M., Munson, T., Foster, I., Klasky, S.'
+    venue: '2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)'
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/ipdps49936.2021.00095"
-    paper_url: "https://doi.org/10.1109/ipdps49936.2021.00095"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ipdps49936.2021.00094'
+    paper_url: 'https://doi.org/10.1109/IPDPS49936.2021.00094'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'chen2021accelerating.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: "alexander2021design"
-    title: "Co-design center for exascale machine learning technologies (exalearn)"
-    authors: "Alexander, F., Ang, J., Bilbrey, J., Balewski, J., Casey, T., Chard, R., Choi, J., Choudhury, S., Debusschere, B., DeGennaro, A., others"
-    venue: "The International Journal of High Performance Computing Applications"
+  - id: 'alexander2021design'
+    title: 'Co-design Center for Exascale Machine Learning Technologies (ExaLearn)'
+    authors: 'Alexander, F., Ang, J., Bilbrey, J., Balewski, J., Casey, T., Chard, R., Choudhury, S., Debusschere, B., DeGennaro, A., Dryden, N., Ellis, J., Foster, I., Garcia Cardona, C., Ghosh, S., Harrington, P., Huang, Y., Jha, S., Johnston, T., Kagawa, A., Kannan, R., et al.'
+    venue: 'The International Journal of High Performance Computing Applications'
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1869758"
-    paper_url: "https://doi.org/10.2172/1869758"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1177/10943420211029302'
+    paper_url: 'https://doi.org/10.1177/10943420211029302'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'alexander2021design.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: "liang2021error"
-    title: "Error-controlled, progressive, and adaptable retrieval of scientific data with multilevel decomposition"
-    authors: "Liang, X., Gong, Q., Chen, J., Whitney, B., Wan, L., Liu, Q., Pugmire, D., Archibald, R., Podhorszki, N., Klasky, S."
-    venue: "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+  - id: 'liang2021error'
+    title: 'Error-controlled, progressive, and adaptable retrieval of scientific data with multilevel decomposition'
+    authors: 'Liang, X., Gong, Q., Chen, J., Whitney, B., Wan, L., Liu, Q., Pugmire, D., Archibald, R., Podhorszki, N., Klasky, S.'
+    venue: 'Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis'
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/3458817.3476179"
-    paper_url: "https://doi.org/10.1145/3458817.3476179"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3458817.3476179'
+    paper_url: 'https://doi.org/10.1145/3458817.3476179'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'liang2021error.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2021
-  - id: "pugmire2021fides"
-    title: "Fides: a general purpose data model library for streaming data"
-    authors: "Pugmire, D., Ross, C., Thompson, N., Kress, J., Atkins, C., Klasky, S., Geveci, B."
-    venue: "International Conference on High Performance Computing"
+  # WORKSHOP - 2021
+  - id: 'pugmire2021fides'
+    title: 'Fides: A General Purpose Data Model Library for Streaming Data'
+    authors: 'Pugmire, D.'
+    venue: 'High Performance Computing'
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-90539-2_34"
-    paper_url: "https://doi.org/10.1007/978-3-030-90539-2_34"
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-030-90539-2_34'
+    paper_url: 'https://doi.org/10.1007/978-3-030-90539-2_34'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2021fides.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: "binyahib2021hylipod"
-    title: "HyLiPoD: Parallel Particle Advection Via a Hybrid of Lifeline Scheduling and Parallelization-Over-Data."
-    authors: "Binyahib, R., Pugmire, D., Childs, H., Larsen, M., Sadlo, F."
-    venue: "EGPGV@ EuroVis"
+  - id: 'binyahib2021hylipod'
+    title: 'HyLiPoD: Parallel Particle Advection Via a Hybrid of Lifeline Scheduling and Parallelization-Over-Data'
+    authors: 'Binyahib, R., Pugmire, D., Childs, H.'
+    venue: 'Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)'
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/ldav48142.2019.8944355"
-    paper_url: "https://doi.org/10.1109/ldav48142.2019.8944355"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ldav48142.2019.8944355'
+    paper_url: 'https://doi.org/10.1109/ldav48142.2019.8944355'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'binyahib2021hylipod.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2021
-  - id: "schwartz2021improving"
-    title: "Improving parallel particle advection performance with machine learning"
-    authors: "Schwartz, S., Childs, H., Pugmire, D."
-    venue: "Proceedings of the Eurographics Symposium on Parallel Graphics and Visualization, Zurich, Switzerland"
-    year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1162/99608f92.beeb1183"
-    paper_url: "https://doi.org/10.1162/99608f92.beeb1183"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'schwartz2021improving.jpg'  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2021
-  - id: "schwartz2021machine"
-    title: "Machine Learning-Based Autotuning for Parallel Particle Advection."
-    authors: "Schwartz, S., Childs, H., Pugmire, D."
-    venue: "EGPGV@ EuroVis"
-    year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1162/99608f92.beeb1183"
-    paper_url: "https://doi.org/10.1162/99608f92.beeb1183"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'schwartz2021machine.jpg'  # Optional - add image file to images/papers/
-
-  # CONFERENCE - 2021
-  - id: "gong2021maintaining"
-    title: "Maintaining trust in reduction: Preserving the accuracy of quantities of interest for lossy compression"
-    authors: "Gong, Q., Liang, X., Whitney, B., Choi, J., Chen, J., Wan, L., Ethier, S., Ku, S., Churchill, R., Chang, C., others"
-    venue: "Smoky Mountains Computational Sciences and Engineering Conference"
-    year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-96498-6_2"
-    paper_url: "https://doi.org/10.1007/978-3-030-96498-6_2"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'gong2021maintaining.jpg'  # Optional - add image file to images/papers/
-
   # JOURNAL - 2021
-  - id: "liang2021mgard"
-    title: "Mgard+: Optimizing multilevel methods for error-bounded scientific data reduction"
-    authors: "Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., others"
-    venue: "IEEE Transactions on Computers"
+  - id: 'liang2021mgard'
+    title: 'MGARD+: Optimizing multilevel methods for error-bounded scientific data reduction'
+    authors: 'Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., others'
+    venue: 'IEEE Transactions on Computers'
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tc.2021.3092201"
-    paper_url: "https://doi.org/10.1109/tc.2021.3092201"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tc.2021.3092201'
+    paper_url: 'https://doi.org/10.1109/tc.2021.3092201'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'liang2021mgard.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: "moreland2021minimizing"
-    title: "Minimizing development costs for efficient many-core visualization using MCD3"
-    authors: "Moreland, K., Maynard, R., Pugmire, D., Yenpure, A., Vacanti, A., Larsen, M., Childs, H."
-    venue: "Parallel Computing"
+  - id: 'liang2021mgard'
+    title: 'MGARD+: Optimizing multilevel methods for error-bounded scientific data reduction'
+    authors: 'Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., others'
+    venue: 'IEEE Transactions on Computers'
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1016/j.parco.2021.102834"
-    paper_url: "https://doi.org/10.1016/j.parco.2021.102834"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tc.2021.3092201'
+    paper_url: 'https://doi.org/10.1109/tc.2021.3092201'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'liang2021mgard.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2021
+  - id: 'schwartz2021machine'
+    title: 'Machine Learning-Based Autotuning for Parallel Particle Advection'
+    authors: 'Schwartz, S., Childs, H., Pugmire, D.'
+    venue: 'Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)'
+    year: 2021
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1162/99608f92.beeb1183'
+    paper_url: 'https://doi.org/10.1162/99608f92.beeb1183'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'schwartz2021machine.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2021
+  - id: 'moreland2021minimizing'
+    title: 'Minimizing development costs for efficient many-core visualization using MCD3'
+    authors: 'Moreland, K., Maynard, R., Pugmire, D., Yenpure, A., Vacanti, A., Larsen, M., Childs, H.'
+    venue: 'Parallel Computing'
+    year: 2021
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1016/j.parco.2021.102834'
+    paper_url: 'https://www.sciencedirect.com/science/article/pii/S016781912100082X'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'moreland2021minimizing.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
-  - id: "choi2021neural"
-    title: "Neural data compression for physics plasma simulation"
-    authors: "Choi, J., Churchill, M., Gong, Q., Ku, S., Lee, J., Rangarajan, A., Ranka, S., Pugmire, D., Chang, C., Klasky, S."
-    venue: "Neural Compression: From Information Theory to Applications--Workshop@ ICLR 2021"
+  - id: 'choi2021neural'
+    title: 'Neural data compression for physics plasma simulation'
+    authors: 'Choi, J., Churchill, M., Gong, Q., Ku, S., Lee, J., Rangarajan, A., Ranka, S., Pugmire, D., Chang, C., Klasky, S.'
+    venue: 'Neural Compression: From Information Theory to Applications -- Workshop @ ICLR 2021'
     year: 2021
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/dcc50243.2021.00048"
-    paper_url: "https://doi.org/10.1109/dcc50243.2021.00048"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/dcc50243.2021.00048'
+    paper_url: 'https://openreview.net/forum?id=eEp5uad8bM'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'choi2021neural.jpg'  # Optional - add image file to images/papers/
 
   # PREPRINT - 2021
-  - id: "chen2021scalable"
-    title: "Scalable Multigrid-based Hierarchical Scientific Data Refactoring on GPUs"
-    authors: "Chen, J., Wan, L., Liang, X., Whitney, B., Liu, Q., Gong, Q., Pugmire, D., Thompson, N., Choi, J., Wolf, M., others"
-    venue: "arXiv preprint arXiv:2105.12764"
+  - id: 'chen2021scalable'
+    title: 'Scalable Multigrid-based Hierarchical Scientific Data Refactoring on GPUs'
+    authors: 'Chen, J., Wan, L., Liang, X., Whitney, B., Liu, Q., Gong, Q., Pugmire, D., Thompson, N., Choi, J., Wolf, M., Munson, T., Foster, I., Klasky, S.'
+    venue: 'ArXiv'
     year: 2021
-    type: preprint # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/ipdps49936.2021.00095"
-    paper_url: "https://doi.org/10.1109/ipdps49936.2021.00095"
+    type: preprint  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ipdps49936.2021.00095'
+    paper_url: 'https://arxiv.org/abs/2105.12764'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'chen2021scalable.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
-  - id: "dominski2021spatial"
-    title: "Spatial coupling of gyrokinetic simulations, a generalized scheme based on first-principles"
-    authors: "Dominski, J., Cheng, J., Merlo, G., Carey, V., Hager, R., Ricketson, L., Choi, J., Ethier, S., Germaschewski, K., Ku, S., others"
-    venue: "Physics of Plasmas"
+  - id: 'dominski2021spatial'
+    title: 'Spatial coupling of gyrokinetic simulations, a generalized scheme based on first-principles'
+    authors: 'Dominski, J., Cheng, J., Merlo, G., Carey, V., Hager, R., Ricketson, L., Choi, J., Ethier, S., Germaschewski, K., Ku, S., Mollen, A., Podhorszki, N., Pugmire, D., Suchyta, E., Trivedi, P., Wang, R., Chang, C., Hittinger, J., Jenko, F., Klasky, S., et al.'
+    venue: 'Physics of Plasmas'
     year: 2021
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1063/5.0027160"
-    paper_url: "https://doi.org/10.1063/5.0027160"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1063/5.0027160'
+    paper_url: 'https://doi.org/10.1063/5.0027160'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'dominski2021spatial.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: "childs2020terminology"
-    title: "A terminology for in situ visualization and analysis systems"
-    authors: "Childs, H., Ahern, S., Ahrens, J., Bauer, A., Bennett, J., Bethel, E., Bremer, P., Brugger, E., Cottam, J., Dorier, M., others"
-    venue: "The International Journal of High Performance Computing Applications"
+  - id: 'godoy2020adios'
+    title: 'ADIOS 2: The Adaptable Input Output System. A framework for high-performance data management'
+    authors: 'Godoy, W., Podhorszki, N., Wang, R., Atkins, C., Eisenhauer, G., Gu, J., Davis, P., Choi, J., Germaschewski, K., Huck, K., Huebl, A., Kim, M., Kress, J., Kurc, T., Liu, Q., Logan, J., Mehta, K., Ostrouchov, G., Parashar, M., Poeschel, F., et al.'
+    venue: 'SoftwareX'
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/3426462.3426469"
-    paper_url: "https://doi.org/10.1145/3426462.3426469"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'childs2020terminology.jpg'  # Optional - add image file to images/papers/
-
-  # OTHER - 2020
-  - id: "godoy2020adios"
-    title: "ADIOS 2: the adaptable input output system. A framework for high-performance data management. SoftwareX 12, 100561 (2020)"
-    authors: "Godoy, W., Podhorszki, N., Wang, R., Atkins, C., Eisenhauer, G., Gu, J., Davis, P., Choi, J., Germaschewski, K., Huck, K., others"
-    venue: "Unknown Venue"
-    year: 2020
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1016/j.softx.2020.100561"
-    paper_url: "https://doi.org/10.1016/j.softx.2020.100561"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1016/j.softx.2020.100561'
+    paper_url: 'https://www.sciencedirect.com/science/article/pii/S2352711019302560'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'godoy2020adios.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
-  - id: "godoy2020adios"
-    title: "Adios 2: The adaptable input output system. a framework for high-performance data management"
-    authors: "Godoy, W., Podhorszki, N., Wang, R., Atkins, C., Eisenhauer, G., Gu, J., Davis, P., Choi, J., Germaschewski, K., Huck, K., others"
-    venue: "SoftwareX"
+  - id: 'qin2020estimating'
+    title: 'Estimating Lossy Compressibility of Scientific Data Using Deep Neural Networks'
+    authors: 'Qin, Z., Wang, J., Liu, Q., Chen, J., Pugmire, D., Podhorszki, N., Klasky, S.'
+    venue: 'IEEE Letters of the Computer Society'
     year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1016/j.softx.2020.100561"
-    paper_url: "https://doi.org/10.1016/j.softx.2020.100561"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/locs.2020.2971940'
+    paper_url: 'https://doi.org/10.1109/locs.2020.2971940'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'godoy2020adios.jpg'  # Optional - add image file to images/papers/
+    # image: 'qin2020estimating.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2020
+  - id: 'logan2020extending'
+    title: 'Extending the Publish/Subscribe Abstraction for High-Performance I/O and Data Management at Extreme Scale'
+    authors: 'Logan, J., Ainsworth, M., Atkins, C., Chen, J., Choi, J., Gu, J., Kress, J., Eisenhauer, G., Geveci, B., Godoy, W., others'
+    venue: 'Bulletin of the IEEE Technical Committee on Data Engineering'
+    year: 2020
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.22215/etd/2003-05586'
+    paper_url: 'https://www.osti.gov/biblio/1606642'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'logan2020extending.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2020
+  - id: 'lei2020global'
+    title: 'Global adjoint tomography—model GLAD-M25'
+    authors: 'Lei, W., Ruan, Y., Bozdağ, E., Peter, D., Lefebvre, M., Komatitsch, D., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D.'
+    venue: 'Geophysical Journal International'
+    year: 2020
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1093/gji/ggaa253'
+    paper_url: 'https://doi.org/10.1093/gji/ggaa253'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'lei2020global.jpg'  # Optional - add image file to images/papers/
+
+  # ABSTRACT - 2020
+  - id: 'lei2020global'
+    title: 'Global adjoint tomography—model GLAD-M25'
+    authors: 'Lei, W., Ruan, Y., Bozdağ, E., Peter, D., Lefebvre, M., Komatitsch, D., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D.'
+    venue: 'Geophysical Journal International'
+    year: 2020
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1093/gji/ggaa253'
+    paper_url: 'https://doi.org/10.1093/gji/ggaa253'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'lei2020global.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
-  - id: "kress2020comparing"
-    title: "Comparing time-to-solution for in situ visualization paradigms at scale"
-    authors: "Kress, J., Larsen, M., Choi, J., Kim, M., Wolf, M., Podhorszki, N., Klasky, S., Childs, H., Pugmire, D."
-    venue: "2020 IEEE 10th Symposium on Large Data Analysis and Visualization (LDAV)"
+  - id: 'wan2020performance'
+    title: 'I/O Performance Characterization and Prediction through Machine Learning on HPC Systems'
+    authors: 'Wan, L., Wolf, M., Wang, F., Choi, J., Ostrouchov, G., Chen, J., Podhorszki, N., Logan, J., Mehta, K., Klasky, S., Pugmire, D.'
+    venue: 'CUG 2020 Proceedings'
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/ldav51489.2020.00009"
-    paper_url: "https://doi.org/10.1109/ldav51489.2020.00009"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kress2020comparing.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 2020
-  - id: "wan2020performance"
-    title: "I/o performance characterization and prediction through machine learning on hpc systems"
-    authors: "Wan, L., Wolf, M., Wang, F., Choi, J., Ostrouchov, G., Chen, J., Podhorszki, N., Logan, J., Mehta, K., Klasky, S., others"
-    venue: "CUG2020 Proceedings"
-    year: 2020
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.4018/978-1-6684-3795-7.ch009"
-    paper_url: "https://doi.org/10.4018/978-1-6684-3795-7.ch009"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.4018/978-1-6684-3795-7.ch009'
+    paper_url: 'https://doi.org/10.4018/978-1-6684-3795-7.ch009'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'wan2020performance.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 2020
-  - id: "kress2020opportunities"
-    title: "Opportunities for cost savings with in-transit visualization"
-    authors: "Kress, J., Larsen, M., Choi, J., Kim, M., Wolf, M., Podhorszki, N., Klasky, S., Childs, H., Pugmire, D."
-    venue: "International Conference on High Performance Computing"
+  # PREPRINT - 2020
+  - id: 'liang2020mgard'
+    title: 'MGARD+: Optimizing Multilevel Methods for Error-bounded Scientific Data Reduction'
+    authors: 'Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., Klasky, S.'
+    venue: 'Unknown Venue'
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-3-030-50743-5_8"
-    paper_url: "https://doi.org/10.1007/978-3-030-50743-5_8"
+    type: preprint  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tc.2021.3092201'
+    paper_url: 'https://arxiv.org/abs/2010.05872'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'liang2020mgard.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2020
+  - id: 'kress2020opportunities'
+    title: 'Opportunities for Cost Savings with In-Transit Visualization'
+    authors: 'Kress, J., Larsen, M., Choi, J., Kim, M., Wolf, M., Podhorszki, N., Klasky, S., Childs, H., Pugmire, D.'
+    venue: 'High Performance Computing: 35th International Conference, ISC High Performance 2020, Frankfurt/Main, Germany, June 22–25, 2020, Proceedings'
+    year: 2020
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-030-50743-5_8'
+    paper_url: 'https://doi.org/10.1007/978-3-030-50743-5_8'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'kress2020opportunities.jpg'  # Optional - add image file to images/papers/
 
-  # PREPRINT - 2020
-  - id: "liang2020optimizing"
-    title: "Optimizing multi-grid based reduction for efficient scientific data management"
-    authors: "Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., others"
-    venue: "arXiv preprint arXiv:2010.05872"
-    year: 2020
-    type: preprint # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/icuems50872.2020.00063"
-    paper_url: "https://doi.org/10.1109/icuems50872.2020.00063"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'liang2020optimizing.jpg'  # Optional - add image file to images/papers/
-
-  # OTHER - 2020
-  - id: "pugmire2020parallel"
-    title: "Parallel Particle Advection Bake-Off for Scientific Visualization Workloads"
-    authors: "Pugmire, D., Childs, H."
-    venue: "Unknown Venue"
-    year: 2020
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/cluster49012.2020.00048"
-    paper_url: "https://doi.org/10.1109/cluster49012.2020.00048"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2020parallel.jpg'  # Optional - add image file to images/papers/
-
   # CONFERENCE - 2020
-  - id: "binyahib2020parallel"
-    title: "Parallel particle advection bake-off for scientific visualization workloads"
-    authors: "Binyahib, R., Pugmire, D., Yenpure, A., Childs, H."
-    venue: "2020 IEEE International Conference on Cluster Computing (CLUSTER)"
+  - id: 'binyahib2020parallel'
+    title: 'Parallel Particle Advection Bake-Off for Scientific Visualization Workloads'
+    authors: 'Binyahib, R., Pugmire, D., Yenpure, A., Childs, H.'
+    venue: '2020 IEEE International Conference on Cluster Computing (CLUSTER)'
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/cluster49012.2020.00048"
-    paper_url: "https://doi.org/10.1109/cluster49012.2020.00048"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/cluster49012.2020.00048'
+    paper_url: 'https://ieeexplore.ieee.org/document/9229571'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'binyahib2020parallel.jpg'  # Optional - add image file to images/papers/
 
-  # PREPRINT - 2020
-  - id: "thompson2020towards"
-    title: "Towards 1ULP evaluation of Daubechies Wavelets"
-    authors: "Thompson, N., Maddock, J., Ostrouchov, G., Logan, J., Pugmire, D., Klasky, S."
-    venue: "arXiv preprint arXiv:2005.05424"
+  # JOURNAL - 2020
+  - id: 'reina2020moving'
+    title: 'The moving target of visualization software for an increasingly complex world'
+    authors: 'Reina, G., Childs, H., Matkovi\vc, K., Bühler, K., Waldner, M., Pugmire, D., Kozlíková, B., Ropinski, T., Ljung, P., Itoh, T., Gröller, E., Krone, M.'
+    venue: 'Comput. Graph.'
     year: 2020
-    type: preprint # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1201/9781003006626-5"
-    paper_url: "https://doi.org/10.1201/9781003006626-5"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1016/j.cag.2020.01.005'
+    paper_url: 'https://api.semanticscholar.org/CorpusID:212894376'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'reina2020moving.jpg'  # Optional - add image file to images/papers/
+
+  # PREPRINT - 2020
+  - id: 'thompson2020towards'
+    title: 'Towards 1ULP Evaluation of Daubechies Wavelets'
+    authors: 'Thompson, N., Maddock, J., Ostrouchov, G., Pugmire, D., Klasky, S.'
+    venue: 'Unknown Venue'
+    year: 2020
+    type: preprint  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1201/9781003006626-5'
+    paper_url: 'https://arxiv.org/abs/2005.05424'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'thompson2020towards.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
-  - id: "pugmire2020visualization"
-    title: "Visualization as a service for scientific data"
-    authors: "Pugmire, D., Kress, J., Chen, J., Childs, H., Choi, J., Ganyushin, D., Geveci, B., Kim, M., Klasky, S., Liang, X., others"
-    venue: "Smoky Mountains Computational Sciences and Engineering Conference"
+  - id: 'pugmire2020visualization'
+    title: 'Visualization as a Service for Scientific Data'
+    authors: 'Pugmire, D., Kress, J., Chen, J., Childs, H., Choi, J., Ganyushin, D., Geveci, B., Kim, M., Klasky, S., Liang, X., Logan, J., Marsaglia, N., Mehta, K., Podhorszki, N., Ross, C., Suchyta, E., Thompson, N., Walton, S., Wan, L., Wolf, M.'
+    venue: 'Smoky Mountains Computational Sciences and Engineering Conference'
     year: 2020
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/cluster49012.2020.00048"
-    paper_url: "https://doi.org/10.1109/cluster49012.2020.00048"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/drbsd-549595.2019.00007'
+    paper_url: 'https://doi.org/10.1109/drbsd-549595.2019.00007'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2020visualization.jpg'  # Optional - add image file to images/papers/
 
-  # conference - 2019
-  - id: "pugmire2019lifeline"
-    title: "A Lifeline-Based Approach for Work Requesting and Parallel Particle Advection"
-    authors: "Binyahib, R., Pugmire, D., Norris. B. and Childs, H."
-    venue: "2019 IEEE 9th Symposium on Large Data Analysis and Visualization (LDAV)"
+  # CONFERENCE - 2019
+  - id: 'binyahib2019lifeline'
+    title: 'A Lifeline-Based Approach for Work Requesting and Parallel Particle Advection'
+    authors: 'Binyahib, R., Pugmire, D., Norris, B., Childs, H.'
+    venue: 'IEEE Symposium on Large Data Analysis and Visualization (LDAV)'
     year: 2019
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/ldav48142.2019.8944355"
-    paper_url: "https://doi.org/10.1109/ldav48142.2019.8944355"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ldav48142.2019.8944355'
+    paper_url: 'https://doi.org/10.1109/ldav48142.2019.8944355'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2019lifeline.jpg'  # Optional - add image file to images/papers/
-
-  # OTHER - 2019
-  - id: "pugmire2019situ"
-    title: "In situ particle advection via parallelizing over particles"
-    authors: "Pugmire, D., Childs, H."
-    venue: "Unknown Venue"
-    year: 2019
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/3364228.3364235"
-    paper_url: "https://doi.org/10.1145/3364228.3364235"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2019situ.jpg'  # Optional - add image file to images/papers/
-
-  # workshop - 2019
-  - id: "kim2019pave"
-    title: "PAVE: An In Situ Framework for Scientific Visualization and Machine Learning Coupling"
-    authors: "Leventhal, S., Kim, M., Pugmire, D."
-    venue: "2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)"
-    year: 2019
-    type: workshop # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/drbsd-549595.2019.00007"
-    paper_url: "https://doi.org/10.1109/drbsd-549595.2019.00007"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kim2019pave.jpg'  # Optional - add image file to images/papers/
+    # image: 'binyahib2019lifeline.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2019
-  - id: "liu2019publications"
-    title: "Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf"
-    authors: "Liu, J., Ren, S., Zhou, Y., Tsang, D., Lippold, H., Wang, J., Yin, M., Xiao, T., Luo, X., Chen, Y."
-    venue: "Journal of Environmental Management"
+  - id: 'ruan2019generation'
+    title: 'A New Generation of Earth Mantle Model from Global Adjoint Tomography'
+    authors: 'Ruan, Y., Lei, W., Lefebvre, M., Modrak, R., Smith, J., Orsvuran, R., Bozdag, E., Hill, J., Podhorszki, N., Pugmire, D., Tromp, J.'
+    venue: 'Acta Geologica Sinica (English Edition)'
     year: 2019
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.15586/codon.cutaneousmelanoma.2017.ch3"
-    paper_url: "https://doi.org/10.15586/codon.cutaneousmelanoma.2017.ch3"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1111/1755-6724.13991'
+    paper_url: 'https://doi.org/10.1111/1755-6724.13991'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'liu2019publications.jpg'  # Optional - add image file to images/papers/
+    # image: 'ruan2019generation.jpg'  # Optional - add image file to images/papers/
 
-  # OTHER - 2019
-  - id: "moreland2019milestone"
-    title: "STDA05-18 P6 Milestone Delivery"
-    authors: "Moreland, K., Pugmire, D., Rogers, D., Childs, H."
-    venue: "Unknown Venue"
+  # CONFERENCE - 2019
+  - id: 'kress2019comparing'
+    title: 'Comparing the Efficiency of In Situ Visualization Paradigms at Scale'
+    authors: 'Kress, J.'
+    venue: 'High Performance Computing'
     year: 2019
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1761961"
-    paper_url: "https://doi.org/10.2172/1761961"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ldav51489.2020.00009'
+    paper_url: 'https://doi.org/10.1109/ldav51489.2020.00009'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2019milestone.jpg'  # Optional - add image file to images/papers/
+    # image: 'kress2019comparing.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2019
-  - id: "moreland2019xvis"
-    title: "XVis: Visualization for the extreme-scale scientific computation ecosystem"
-    authors: "Moreland, K., Pugmire, D., Rogers, D., Childs, H., Ma, K., Geveci, B."
-    venue: "Univ. of Oregon, Eugene, OR (United States)"
+  # WORKSHOP - 2019
+  - id: 'binyahib2019situ'
+    title: 'In Situ Particle Advection Via Parallelizing Over Particles'
+    authors: 'Binyahib, R., Pugmire, D., Childs, H.'
+    venue: 'Proceedings of the Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization (ISAV)'
     year: 2019
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1762947"
-    paper_url: "https://doi.org/10.2172/1762947"
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3364228.3364235'
+    paper_url: 'https://doi.org/10.1145/3364228.3364235'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'binyahib2019situ.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2019
+  - id: 'leventhal2019pave'
+    title: 'PAVE: An In Situ Framework for Scientific Visualization and Machine Learning Coupling'
+    authors: 'Leventhal, S., Kim, M., Pugmire, D.'
+    venue: '2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)'
+    year: 2019
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/drbsd-549595.2019.00007'
+    paper_url: 'https://ieeexplore.ieee.org/document/8955119'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'leventhal2019pave.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2019
+  - id: 'chen2019understanding'
+    title: 'Understanding Performance-Quality Trade-offs in Scientific Visualization Workflows with Lossy Compression'
+    authors: 'Chen, J., Pugmire, D., Wolf, M., Thompson, N., Logan, J., Mehta, K., Wan, L., Choi, J., Whitney, B., Klasky, S.'
+    venue: '2019 IEEE/ACM 5th International Workshop on Data Analysis and Reduction for Big Scientific Data (DRBSD-5)'
+    year: 2019
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/drbsd-549595.2019.00006'
+    paper_url: 'https://doi.org/10.1109/drbsd-549595.2019.00006'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'chen2019understanding.jpg'  # Optional - add image file to images/papers/
+
+  # ABSTRACT - 2019
+  - id: 'dudek2019virtual'
+    title: 'Virtual and Augmented Reality for Visualization of Big Data'
+    authors: 'Dudek, R., others'
+    venue: 'AGU Fall Meeting Abstracts'
+    year: 2019
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3306449.3328826'
+    paper_url: 'https://ui.adsabs.harvard.edu/abs/2019AGUFMIN21B..05D/abstract'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'dudek2019virtual.jpg'  # Optional - add image file to images/papers/
+
+  # TECHREPORT - 2019
+  - id: 'moreland2019xvis'
+    title: 'XVis: Visualization for the Extreme-Scale Scientific Computation Ecosystem (Final Report)'
+    authors: 'Moreland, K., Pugmire, D., Rogers, D., Childs, H., Ma, K., Geveci, B.'
+    venue: 'Unknown Venue'
+    year: 2019
+    type: techreport  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2172/1547341'
+    paper_url: 'https://www.osti.gov/biblio/1547341'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'moreland2019xvis.jpg'  # Optional - add image file to images/papers/
 
-  # OTHER - 2017
-  - id: "moreland2017milestone"
-    title: "ECP Milestone Report WBS 2.3. 4.13 ECP/VTK-m FY18Q1 [MS-18/01-03] Multiblock/Gradients/Release STDA05-5."
-    authors: "Moreland, K., Pugmire, D., Geveci, B."
-    venue: "Unknown Venue"
-    year: 2017
-    type: other # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1414661"
-    paper_url: "https://doi.org/10.2172/1414661"
+  # CONFERENCE - 2018
+  - id: 'klasky2018view'
+    title: 'A View from ORNL: Scientific Data Research Opportunities in the Big Data Age'
+    authors: 'Klasky, S., Wolf, M., Ainsworth, M., Atkins, C., Choi, J., Eisenhauer, G., Geveci, B., Godoy, W., Kim, M., Kress, J., Kurc, T., Liu, Q., Logan, J., Maccabe, A., Mehta, K., Ostrouchov, G., Parashar, M., Podhorszki, N., Pugmire, D., Suchyta, E., et al.'
+    venue: '2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS)'
+    year: 2018
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/icdcs.2018.00136'
+    paper_url: 'https://doi.org/10.1109/icdcs.2018.00136'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2017milestone.jpg'  # Optional - add image file to images/papers/
+    # image: 'klasky2018view.jpg'  # Optional - add image file to images/papers/
 
-  # conference - 2017
-  - id: "pugmire2017pillars"
-    title: "Pillars of the Mantle: Imaging the Interior of the Earth with Adjoint Tomography. In: PEARC17 Proceedings of the Practice and Experience in Advanced Research Computing 2017 on Sustainability, Success and Impact, Article No. 75"
-    authors: 'Pugmire, D., Bozda\ug, E., Lefebvre, M., Tromp, J., Komatitsch, D., Peter, D., Podhorszki, N., Hill, J.'
-    venue: "Practice and Experience in Advanced Research Computing 2017: Sustainability, Success and Impact"
+  # WORKSHOP - 2018
+  - id: 'kress2018binning'
+    title: 'Binning Based Data Reduction for Vector Field Data of a Particle-In-Cell Fusion Simulation'
+    authors: 'Kress, J.'
+    venue: 'High Performance Computing'
+    year: 2018
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-030-02465-9_15'
+    paper_url: 'https://doi.org/10.1007/978-3-030-02465-9_15'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'kress2018binning.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2018
+  - id: 'choi2018coupling'
+    title: 'Coupling Exascale Multiphysics Applications: Methods and Lessons Learned'
+    authors: 'Choi, J., Chang, C., Dominski, J., Klasky, S., Merlo, G., Suchyta, E., Ainsworth, M., Allen, B., Cappello, F., Churchill, M., Davis, P., Di, S., Eisenhauer, G., Ethier, S., Foster, I., Geveci, B., Guo, H., Huck, K., Jenko, F., Kim, M., et al.'
+    venue: '2018 IEEE 14th International Conference on e-Science (e-Science)'
+    year: 2018
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/escience.2018.00133'
+    paper_url: 'https://doi.org/10.1109/escience.2018.00133'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'choi2018coupling.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2018
+  - id: 'kim2018dense'
+    title: 'Dense texture flow visualization using data-parallel primitives'
+    authors: 'Kim, M., Klasky, S., Pugmire, D.'
+    venue: 'Proceedings of the Symposium on Parallel Graphics and Visualization'
+    year: 2018
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ldav.2018.8739239'
+    paper_url: 'https://doi.org/10.1109/ldav.2018.8739239'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'kim2018dense.jpg'  # Optional - add image file to images/papers/
+
+  # ABSTRACT - 2018
+  - id: 'isleyen2018exploring'
+    title: 'Exploring Earth’s interior in collaborative immersive VR environments'
+    authors: 'Isleyen, E., Orsvuran, R., Bozdag, E., Duzgun, S., Pugmire, D., Lei, W., Ruan, Y., Tromp, J.'
+    venue: 'AGU Fall Meeting 2018'
+    year: 2018
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/vr.2017.7892299'
+    paper_url: 'https://doi.org/10.1109/vr.2017.7892299'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'isleyen2018exploring.jpg'  # Optional - add image file to images/papers/
+
+  # ABSTRACT - 2018
+  - id: 'ruan2018global'
+    title: 'Global Adjoint Tomography - New Generation Earth Mantle Model'
+    authors: 'Ruan, Y., Lei, W., others'
+    venue: 'AGU Fall Meeting Abstracts'
+    year: 2018
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1111/1755-6724.13991'
+    paper_url: 'https://doi.org/10.1111/1755-6724.13991'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'ruan2018global.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2018
+  - id: 'kim2018situ'
+    title: 'In Situ Analysis and Visualization of Fusion Simulations: Lessons Learned'
+    authors: 'Kim, M.'
+    venue: 'High Performance Computing'
+    year: 2018
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1007/978-3-030-02465-9_16'
+    paper_url: 'https://doi.org/10.1007/978-3-030-02465-9_16'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'kim2018situ.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2018
+  - id: 'pugmire2018performance'
+    title: 'Performance-Portable Particle Advection with VTK-m'
+    authors: 'Pugmire, D., Yenpure, A., Kim, M., Kress, J., Maynard, R., Childs, H., Hentschel, B.'
+    venue: 'Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)'
+    year: 2018
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2312/pgv.20181094'
+    paper_url: 'https://www.osti.gov/biblio/1558503'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'pugmire2018performance.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2017
+  - id: 'lu2017canopus'
+    title: 'Canopus: A Paradigm Shift Towards Elastic Extreme-Scale Data Analytics on HPC Storage'
+    authors: 'Lu, T., Suchyta, E., Pugmire, D., Choi, J., Klasky, S., Liu, Q., Podhorszki, N., Ainsworth, M., Wolf, M.'
+    venue: '2017 IEEE International Conference on Cluster Computing (CLUSTER)'
     year: 2017
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/3093338.3104170"
-    paper_url: "https://doi.org/10.1145/3093338.3104170"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/cluster.2017.62'
+    paper_url: 'https://doi.org/10.1109/cluster.2017.62'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'lu2017canopus.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2017
+  - id: 'lu2017canopus'
+    title: 'Canopus: Enabling Extreme-Scale Data Analytics on Big HPC Storage via Progressive Refactoring'
+    authors: 'Lu, T., Suchyta, E., Choi, J., Podhorszki, N., Klasky, S., Liu, Q., Pugmire, D., Wolf, M., Ainsworth, M.'
+    venue: '9th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage 17)'
+    year: 2017
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/cluster.2017.62'
+    paper_url: 'https://www.usenix.org/conference/hotstorage17/program/presentation/lu'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'lu2017canopus.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2017
+  - id: 'klasky2017exacution'
+    title: 'Exacution: Enhancing Scientific Data Management for Exascale'
+    authors: 'Klasky, S., Suchyta, E., Ainsworth, M., Liu, Q., Whitney, B., Wolf, M., Choi, J., Foster, I., Kim, M., Logan, J., Mehta, K., Munson, T., Ostrouchov, G., Parashar, M., Podhorszki, N., Pugmire, D., Wan, L.'
+    venue: '2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS)'
+    year: 2017
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/icdcs.2017.256'
+    paper_url: 'https://doi.org/10.1109/icdcs.2017.256'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'klasky2017exacution.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2017
+  - id: 'kim2017situ'
+    title: 'In Situ Visualization of Radiation Transport Geometry'
+    authors: 'Kim, M., Evans, T., Klasky, S., Pugmire, D.'
+    venue: 'Proceedings of the In Situ Infrastructures on Enabling Extreme-Scale Analysis and Visualization'
+    year: 2017
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3144769.3144770'
+    paper_url: 'https://doi.org/10.1145/3144769.3144770'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'kim2017situ.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2017
+  - id: 'pugmire2017pillars'
+    title: 'Pillars of the Mantle: Imaging the Interior of the Earth with Adjoint Tomography'
+    authors: 'Pugmire, D., Bozdağ, E., Lefebvre, M., Tromp, J., Komatitsch, D., Peter, D., Podhorszki, N., Hill, J.'
+    venue: 'Practice and Experience in Advanced Research Computing 2017: Sustainability, Success and Impact'
+    year: 2017
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/3093338.3104170'
+    paper_url: 'https://doi.org/10.1145/3093338.3104170'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2017pillars.jpg'  # Optional - add image file to images/papers/
 
+  # TECHREPORT - 2017
+  - id: 'moreland2017xvis'
+    title: 'XVis: Visualization for the Extreme-Scale Scientific-Computation Ecosystem: Year-end report FY17.'
+    authors: 'Moreland, K., Pugmire, D., Rogers, D., Childs, H., Ma, K., Geveci, B.'
+    venue: 'Unknown Venue'
+    year: 2017
+    type: techreport  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2172/1408391'
+    paper_url: 'https://www.osti.gov/biblio/1408391'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'moreland2017xvis.jpg'  # Optional - add image file to images/papers/
+
   # JOURNAL - 2016
-  - id: "pugmire2016global"
-    title: "Global adjoint tomography: first-generation model"
-    authors: "Pugmire, D."
-    venue: "Geophysical Journal"
+  - id: 'bozda2016global'
+    title: 'Global adjoint tomography: first-generation model'
+    authors: 'Bozdağ, E., Peter, D., Lefebvre, M., Komatitsch, D., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D.'
+    venue: 'Geophysical Journal International'
     year: 2016
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1093/gji/ggw356"
-    paper_url: "https://doi.org/10.1093/gji/ggw356"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1093/gji/ggw356'
+    paper_url: 'https://doi.org/10.1093/gji/ggw356'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2016global.jpg'  # Optional - add image file to images/papers/
+    # image: 'bozda2016global.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2016
+  - id: 'kress2016preparing'
+    title: 'Preparing for In Situ Processing on Upcoming Leading-edge Supercomputers'
+    authors: 'Kress, J., Churchill, R., Klasky, S., Kim, M., Childs, H., Pugmire, D.'
+    venue: 'Supercomputing frontiers and innovations'
+    year: 2016
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.14529/jsfi160404'
+    paper_url: 'https://www.osti.gov/biblio/1338570'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'kress2016preparing.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2016
+  - id: 'choi2016stream'
+    title: 'Stream processing for near real-time scientific data analysis'
+    authors: 'Choi, J., Kurc, T., Logan, J., Wolf, M., Suchyta, E., Kress, J., Pugmire, D., Podhorszki, N., Byun, E., Ainsworth, M., Parashar, M., Klasky, S.'
+    venue: '2016 New York Scientific Data Summit (NYSDS)'
+    year: 2016
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/nysds.2016.7747804'
+    paper_url: 'https://doi.org/10.1109/nysds.2016.7747804'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'choi2016stream.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2016
+  - id: 'sisneros2016tuned'
+    title: 'Tuned to Terrible: A Study of Parallel Particle Advection State of the Practice'
+    authors: 'Sisneros, R., Pugmire, D.'
+    venue: '2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)'
+    year: 2016
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ipdpsw.2016.173'
+    paper_url: 'https://doi.org/10.1109/ipdpsw.2016.173'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'sisneros2016tuned.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2016
+  - id: 'moreland2016accelerating'
+    title: 'VTK-m: Accelerating the Visualization Toolkit for Massively Threaded Architectures'
+    authors: 'Moreland, K., Sewell, C., Usher, W., Lo, L., Meredith, J., Pugmire, D., Kress, J., Schroots, H., Ma, K., Childs, H., Larsen, M., Chen, C., Maynard, R., Geveci, B.'
+    venue: 'IEEE Computer Graphics and Applications'
+    year: 2016
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/mcg.2016.48'
+    paper_url: 'https://doi.org/10.1109/mcg.2016.48'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'moreland2016accelerating.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2016
+  - id: 'kress2016visualization'
+    title: 'Visualization and Analysis Requirements for In Situ Processing for a Large-Scale Fusion Simulation Code'
+    authors: 'Kress, J., Pugmire, D., Klasky, S., Childs, H.'
+    venue: '2016 Second Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization (ISAV)'
+    year: 2016
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/isav.2016.014'
+    paper_url: 'https://doi.org/10.1109/isav.2016.014'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'kress2016visualization.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2016
+  - id: 'pugmire2016visualization'
+    title: 'Visualization and Analysis for Near-Real-Time Decision Making in Distributed Workflows'
+    authors: 'Pugmire, D., Kress, J., Choi, J., Klasky, S., Kurc, T., Churchill, R., Wolf, M., Eisenhower, G., Childs, H., Wu, K., Sim, A., Gu, J., Low, J.'
+    venue: '2016 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW)'
+    year: 2016
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ipdpsw.2016.175'
+    paper_url: 'https://doi.org/10.1109/ipdpsw.2016.175'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'pugmire2016visualization.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2015
+  - id: 'kress2015loosely'
+    title: 'Loosely Coupled In Situ Visualization: A Perspective on Why It''s Here to Stay'
+    authors: 'Kress, J., Klasky, S., Podhorszki, N., Choi, J., Childs, H., Pugmire, D.'
+    venue: 'Proceedings of the First Workshop on In Situ Infrastructures for Enabling Extreme-Scale Analysis and Visualization'
+    year: 2015
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/2828612.2828623'
+    paper_url: 'https://doi.org/10.1145/2828612.2828623'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'kress2015loosely.jpg'  # Optional - add image file to images/papers/
+
+  # WORKSHOP - 2014
+  - id: 'davidpugmire2014towards'
+    title: 'Towards Scalable Visualization Plugins for Data Staging Workflows'
+    authors: 'David Pugmire, J.'
+    venue: '5th International Workshop on Big Data Analytics: Challenges, and Opportunities (BDAC-14), held in conjuction with SC14'
+    year: 2014
+    type: workshop  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1101/212654'
+    paper_url: 'https://doi.org/10.1101/212654'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'davidpugmire2014towards.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2014
+  - id: 'huebl2014visualizing'
+    title: 'Visualizing the Radiation of the Kelvin-Helmholtz Instability'
+    authors: 'Huebl, A., Pugmire, D., Schmitt, F., Pausch, R., Bussmann, M.'
+    venue: 'IEEE Transactions on Plasma Science'
+    year: 2014
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tps.2014.2327392'
+    paper_url: 'https://doi.org/10.1109/tps.2014.2327392'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'huebl2014visualizing.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2013
+  - id: 'chen2013parallel'
+    title: 'A Parallel EM Algorithm for Model-Based Clustering Applied to the Exploration of Large Spatio-Temporal Data'
+    authors: 'Chen, W., Ostrouchov, G., Pugmire, D., Prabhat, Wehner, M.'
+    venue: 'Technometrics'
+    year: 2013
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1080/00401706.2013.826146'
+    paper_url: 'https://doi.org/10.1080/00401706.2013.826146'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'chen2013parallel.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2013
+  - id: 'tchoua2013adios'
+    title: 'ADIOS Visualization Schema: A First Step Towards Improving Interdisciplinary Collaboration in High Performance Computing'
+    authors: 'Tchoua, R., Choi, J., Klasky, S., Liu, Q., Logan, J., Moreland, K., Mu, J., Parashar, M., Podhorszki, N., Pugmire, D., Wolf, M.'
+    venue: '2013 IEEE 9th International Conference on e-Science'
+    year: 2013
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/escience.2013.24'
+    paper_url: 'https://doi.org/10.1109/escience.2013.24'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'tchoua2013adios.jpg'  # Optional - add image file to images/papers/
+
+  # ABSTRACT - 2013
+  - id: 'ostrouchov2013computation'
+    title: 'Computation and volume rendering of large-scale EOF coherent modes in rotating turbulent flow data'
+    authors: 'Ostrouchov, G., Pugmire, D., Rosenberg, D., Chen, W., Pouquet, A.'
+    venue: 'AGU Fall Meeting Abstracts'
+    year: 2013
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ldav.2013.6675156'
+    paper_url: 'https://doi.org/10.1109/ldav.2013.6675156'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'ostrouchov2013computation.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2013
+  - id: 'krishnan2013exploring'
+    title: 'Exploring Collaborative HPC Visualization Workflows using VisIt and Python'
+    authors: 'Krishnan, H., Harrison, C., Whitlock, B., Sanderson, A., Pugmire, D.'
+    venue: 'Proceedings of the 12th Python in Science Conference'
+    year: 2013
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.25080/majora-8b375195-00b'
+    paper_url: 'https://proceedings.scipy.org/articles/Majora-8b375195-00b'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'krishnan2013exploring.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2013
+  - id: 'camp2013acceleration'
+    title: 'GPU acceleration of particle advection workloads in a parallel, distributed memory setting'
+    authors: 'Camp, D., Krishnan, H., Pugmire, D., Garth, C., Johnson, I., Bethel, E., Joy, K., Childs, H.'
+    venue: 'Proceedings of the 13th Eurographics Symposium on Parallel Graphics and Visualization'
+    year: 2013
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ldav.2013.6675152'
+    paper_url: 'https://doi.org/10.1109/ldav.2013.6675152'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'camp2013acceleration.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2013
+  - id: 'smith2013ultra'
+    title: 'The Ultra-scale Visualization Climate Data Analysis Tools (UV-CDAT): Data Analysis and Visualization for Geoscience Data'
+    authors: 'Smith, B., Maxwell, T., Santos, E., Potter, G., Williams, D., Kindig, D., Williams, S., Shipman, G., Doutriaux, C., Patchett, J., others'
+    venue: 'Computer'
+    year: 2013
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2172/1022945'
+    paper_url: 'https://doi.org/10.2172/1022945'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'smith2013ultra.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2013
+  - id: 'williams2013ultrascale'
+    title: 'Ultrascale Visualization of Climate Data'
+    authors: 'Williams, D., Bremer, T., Doutriaux, C., Patchett, J., Williams, S., Shipman, G., Miller, R., Pugmire, D., Smith, B., Steed, C., Bethel, E., Childs, H., Krishnan, H., Prabhat, P., Wehner, M., Silva, C., Santos, E., Koop, D., Ellqvist, T., Poco, J., et al.'
+    venue: 'Computer'
+    year: 2013
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/mc.2013.119'
+    paper_url: 'https://doi.org/10.1109/mc.2013.119'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'williams2013ultrascale.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2012
+  - id: 'meredith2012distributed'
+    title: 'A Distributed Data-Parallel Framework for Analysis and Visualization Algorithm Development'
+    authors: 'Meredith, J., Sisneros, R., Pugmire, D., Ahern, S.'
+    venue: 'Proceedings of the 5th Annual Workshop on General Purpose Processing with Graphics Processing Units'
+    year: 2012
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/2159430.2159432'
+    paper_url: 'https://doi.org/10.1145/2159430.2159432'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'meredith2012distributed.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2012
-  - id: "sisneros2012distributed"
-    title: "A distributed data-parallel framework for analysis and visualization algorithm development"
-    authors: "Sisneros, R., Pugmire, D., Ahern, S."
-    venue: "Unknown Venue"
+  - id: 'sutter2012examination'
+    title: 'An examination of magnetized outflows from active galactic nuclei in galaxy clusters'
+    authors: 'Sutter, P., Yang, H., Ricker, P., Foreman, G., Pugmire, D.'
+    venue: 'Monthly Notices of the Royal Astronomical Society'
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/2159430.2159432"
-    paper_url: "https://doi.org/10.1145/2159430.2159432"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1111/j.1365-2966.2011.19875.x'
+    paper_url: 'https://doi.org/10.1111/j.1365-2966.2011.19875.x'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'sisneros2012distributed.jpg'  # Optional - add image file to images/papers/
+    # image: 'sutter2012examination.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2012
-  - id: "banfield2012integrated"
-    title: "Integrated Radiation Transport and Nuclear Fuel Performance for Assembly-Level Simulations"
-    authors: "Banfield, J., Philip, B., Allu, S., Clarno, K., Pugmire, D., Hamilton, S., Sampath, R., Berrill, M."
-    venue: "Unknown Venue"
+  # CONFERENCE - 2012
+  - id: 'tchoua2012collaborative'
+    title: 'Collaborative monitoring and visualization of HPC data'
+    authors: 'Tchoua, R., Abbasi, H., Klasky, S., Liu, Q., Podhorszki, N., Pugmire, D., Tian, Y., Wolf, M.'
+    venue: '2012 International Conference on Collaboration Technologies and Systems (CTS)'
     year: 2012
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1034694"
-    paper_url: "https://doi.org/10.2172/1034694"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/cts.2012.6261083'
+    paper_url: 'https://doi.org/10.1109/cts.2012.6261083'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'banfield2012integrated.jpg'  # Optional - add image file to images/papers/
+    # image: 'tchoua2012collaborative.jpg'  # Optional - add image file to images/papers/
 
-  # BOOK-CHAPTER - 2012
-  - id: "childs2012visit"
-    title: "VisIt."
-    authors: "Childs, H., Brugger, E., Whitlock, B., Meredith, J., Ahern, S., Pugmire, D., Biagas, K., Miller, M., Harrison, C., Weber, G., others"
-    editors: "Bethel, E., Childs, H., Hansen, C."
-    venue: "High Performance Visualization - Enabling Extreme-Scale Scientific Insight"
+  # CONFERENCE - 2012
+  - id: 'meredith2012eavl'
+    title: 'EAVL: The Extreme-scale Analysis and Visualization Library'
+    authors: 'Meredith, J., Ahern, S., Childs, H.'
+    venue: 'Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)'
     year: 2012
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/900855"
-    paper_url: "https://doi.org/10.2172/900855"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2312/egpgv.egpgv12.021-030'
+    paper_url: 'https://doi.org/10.2312/egpgv.egpgv12.021-030'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'meredith2012eavl.jpg'  # Optional - add image file to images/papers/
+
+  # BOOKCHAPTER - 2012
+  - id: 'bethel2012hybrid'
+    title: 'Hybrid Parallelism'
+    authors: 'Bethel, E., Camp, D., Childs, H., Garth, C., Howison, M., Joy, K., Pugmire, D.'
+    venue: 'High Performance Visualization - Enabling Extreme-Scale Scientific Insight'
+    year: 2012
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1201/b12985-16'
+    paper_url: 'https://doi.org/10.1201/b12985-16'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'bethel2012hybrid.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2012
+  - id: 'choi2012mining'
+    title: 'Mining hidden mixture context with ADIOS-P to improve predictive pre-fetcher accuracy'
+    authors: 'Choi, J., Abbasi, H., Pugmire, D., Podhorszki, N., Klasky, S., Capdevila, C., Parashar, M., Wolf, M., Qiu, J., Fox, G.'
+    venue: '2012 IEEE 8th International Conference on E-Science'
+    year: 2012
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/escience.2012.6404418'
+    paper_url: 'https://doi.org/10.1109/escience.2012.6404418'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'choi2012mining.jpg'  # Optional - add image file to images/papers/
+
+  # BOOKCHAPTER - 2012
+  - id: 'pugmire2012parallel'
+    title: 'Parallel Integral Curves'
+    authors: 'Pugmire, D., Peterka, T., Garth, C.'
+    venue: 'High Performance Visualization - Enabling Extreme-Scale Scientific Insight'
+    year: 2012
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1201/b12985-8'
+    paper_url: 'https://doi.org/10.1201/b12985-8'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'pugmire2012parallel.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2012
+  - id: 'camp2012parallel'
+    title: 'Parallel stream surface computation for large data sets'
+    authors: 'Camp, D., Childs, H., Garth, C., Pugmire, D., Joy, K.'
+    venue: 'IEEE Symposium on Large Data Analysis and Visualization (LDAV)'
+    year: 2012
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/ldav.2012.6378974'
+    paper_url: 'https://doi.org/10.1109/ldav.2012.6378974'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'camp2012parallel.jpg'  # Optional - add image file to images/papers/
+
+  # BOOKCHAPTER - 2012
+  - id: 'childs2012visit'
+    title: 'VisIt'
+    authors: 'Childs, H., Brugger, E., Whitlock, B., Meredith, J., Ahern, S., Pugmire, D., Biagas, K., Miller, M., Harrison, C., Weber, G., Krishnan, H., Fogal, T., Sanderson, A., Garth, C., Bethel, E., Camp, D., Rübel, O., Durant, M., Favre, J., Navrátil, P.'
+    venue: 'High Performance Visualization - Enabling Extreme-Scale Scientific Insight'
+    year: 2012
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1201/b12985-21'
+    paper_url: 'https://doi.org/10.1201/b12985-21'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'childs2012visit.jpg'  # Optional - add image file to images/papers/
 
+  # BOOKCHAPTER - 2012
+  - id: 'childs2012visualization'
+    title: 'Visualization at Extreme Scale Concurrency'
+    authors: 'Childs, H., Pugmire, D., Ahern, S., Whitlock, B., Howison, M., Weber, G., Bethel, E.'
+    venue: 'High Performance Visualization - Enabling Extreme-Scale Scientific Insight'
+    year: 2012
+    type: bookchapter  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1201/b12985-17'
+    paper_url: 'https://doi.org/10.1201/b12985-17'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'childs2012visualization.jpg'  # Optional - add image file to images/papers/
+
   # JOURNAL - 2011
-  - id: "sutter2011examination"
-    title: "An examination of magnetized outflows from active galactic nuclei in galaxy clusters: Magnetized outflows in galaxy clusters"
-    authors: "Sutter, P., Yang, H., Ricker, P., Foreman, G., Pugmire, D."
-    venue: "Monthly Notices of the Royal Astronomical Society"
+  - id: 'sutter2011examination'
+    title: 'An examination of magnetized outflows from active galactic nuclei in galaxy clusters: Magnetized outflows in galaxy clusters'
+    authors: 'Sutter, P., Yang, H., Ricker, P., Foreman, G., Pugmire, D.'
+    venue: 'Monthly Notices of the Royal Astronomical Society'
     year: 2011
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1111/j.1365-2966.2011.19875.x"
-    paper_url: "https://doi.org/10.1111/j.1365-2966.2011.19875.x"
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1111/j.1365-2966.2011.19875.x'
+    paper_url: 'https://www.osti.gov/biblio/1564898'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'sutter2011examination.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 2009
-  - id: "garth2009vector"
-    title: "Vector field visual data analysis technologies for petascale computational science"
-    authors: "Garth, C., Deines, E., Joy, K., Bethel, E., Childs, H., Weber, G., Ahern, S., Pugmire, D., Sanderson, A., Johnson, C."
-    venue: "SciDAC Review"
+  # CONFERENCE - 2011
+  - id: 'pugmire2011magnetic'
+    title: 'Magnetic field outflows from active galactic nuclei'
+    authors: 'Pugmire, D., Sutter, P., Ricker, P., Yang, H., Foreman, G.'
+    venue: 'Proceedings of the 2011 Companion on High Performance Computing Networking, Storage and Analysis Companion'
+    year: 2011
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/2148600.2148668'
+    paper_url: 'https://doi.org/10.1145/2148600.2148668'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'pugmire2011magnetic.jpg'  # Optional - add image file to images/papers/
+
+  # ABSTRACT - 2011
+  - id: 'prabhat2011pattern'
+    title: 'Pattern Detection and Extreme Value Analysis on Large Climate Data'
+    authors: 'Prabhat, M., Byna, S., Paciorek, C., Weber, G., Wu, K., Yopes, T., Wehner, M., Ostrouchov, G., Pugmire, D., Strelitz, R., Collins, W., Bethel, W.'
+    venue: 'AGU Fall Meeting Abstracts'
+    year: 2011
+    type: abstract  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/2110205.2110208'
+    paper_url: 'https://doi.org/10.1145/2110205.2110208'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'prabhat2011pattern.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2011
+  - id: 'green2011simulation'
+    title: 'Simulation of High-Harmonic Fast-Wave Heating on the National Spherical Tokamak Experiment'
+    authors: 'Green, D., Jaeger, E., Chen, G., Berry, L., Pugmire, D., Canik, J., Ryan, P.'
+    venue: 'IEEE Transactions on Plasma Science'
+    year: 2011
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tps.2011.2160370'
+    paper_url: 'https://doi.org/10.1109/tps.2011.2160370'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'green2011simulation.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2011
+  - id: 'camp2011streamline'
+    title: 'Streamline Integration Using MPI-Hybrid Parallelism on a Large Multicore Architecture'
+    authors: 'Camp, D., Garth, C., Childs, H., Pugmire, D., Joy, K.'
+    venue: 'IEEE Transactions on Visualization and Computer Graphics'
+    year: 2011
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2010.259'
+    paper_url: 'https://doi.org/10.1109/tvcg.2010.259'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'camp2011streamline.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2011
+  - id: 'childs2011visit'
+    title: 'VisIt: An End-User Tool For Visualizing and Analyzing Very Large Data'
+    authors: 'Childs, H., Brugger, E., Whitlock, B., Meredith, J., Ahern, S., Bonnell, K., Miller, M., Weber, G., Harrison, C., Pugmire, D., Fogal, T., Garth, C., Sanderson, A., Bethel, E., Durant, M., Camp, D., Favre, J., Rübel, O., Navrátil, P., Wheeler, M., et al.'
+    venue: 'Proceedings of SciDAC 2011'
+    year: 2011
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1201/b12985-29'
+    paper_url: 'https://doi.org/10.1201/b12985-29'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'childs2011visit.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2010
+  - id: 'monroe2010case'
+    title: 'A case study of collaborative facilities use in engineering design'
+    authors: 'Monroe, L., Pugmire, D.'
+    venue: 'The Engineering Reality of Virtual Reality 2010'
+    year: 2010
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1117/12.839511'
+    paper_url: 'https://doi.org/10.1117/12.839511'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'monroe2010case.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2010
+  - id: 'childs2010extreme'
+    title: 'Extreme Scaling of Production Visualization Software on Diverse Architectures'
+    authors: 'Childs, H., Pugmire, D., Ahern, S., Whitlock, B., Howison, M., Prabhat, Weber, G., Bethel, E.'
+    venue: 'IEEE Computer Graphics and Applications'
+    year: 2010
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/mcg.2010.51'
+    paper_url: 'https://doi.org/10.1109/mcg.2010.51'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'childs2010extreme.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2009
+  - id: 'ahrens2009parallel'
+    title: 'Parallel visualization and analysis with paraview on a Cray XT4'
+    authors: 'Ahrens, J., Patchett, J., Pugmire, D., Ahern, S.'
+    venue: 'Unknown Venue'
     year: 2009
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1020344"
-    paper_url: "https://doi.org/10.2172/1020344"
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1142/s0129626409000444'
+    paper_url: 'https://www.osti.gov/biblio/1019552'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'ahrens2009parallel.jpg'  # Optional - add image file to images/papers/
+
+  # CONFERENCE - 2009
+  - id: 'pugmire2009scalable'
+    title: 'Scalable computation of streamlines on very large datasets'
+    authors: 'Pugmire, D., Childs, H., Garth, C., Ahern, S., Weber, G.'
+    venue: 'Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis'
+    year: 2009
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/1654059.1654076'
+    paper_url: 'https://doi.org/10.1145/1654059.1654076'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'pugmire2009scalable.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2009
+  - id: 'ahrens2009vismashup'
+    title: 'VISMASHUP: streamlining the creation of custom visualization applications'
+    authors: 'Ahrens, J., Santos, E., Lins, L., Freire, J., Silva, C.'
+    venue: 'Unknown Venue'
+    year: 2009
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2009.195'
+    paper_url: 'https://www.osti.gov/biblio/1019553'
+    # summary: ""  # Add a one-sentence summary of the paper
+    # image: 'ahrens2009vismashup.jpg'  # Optional - add image file to images/papers/
+
+  # JOURNAL - 2009
+  - id: 'garth2009vector'
+    title: 'Vector field visual data analysis technologies for petascale computational science'
+    authors: 'Garth, C., Deines, E., Joy, K., Bethel, E., Childs, H., Weber, G., Ahern, S., Pugmire, D., Sanderson, A., Johnson, C.'
+    venue: 'SciDAC Review'
+    year: 2009
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.2172/1020344'
+    paper_url: 'https://doi.org/10.2172/1020344'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'garth2009vector.jpg'  # Optional - add image file to images/papers/
 
-  # CONFERENCE - 1912
-  - id: "han1912supplemental"
-    title: "Supplemental Material for Accelerated Probabilistic Marching Cubes by Deep Learning for Time-Varying Scalar Ensembles"
-    authors: "Han, M., Athawale, T., Pugmire, D., Johnson, C."
-    venue: "neural information processing systems"
-    year: 1912
-    type: conference # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/vis54862.2022.00040"
-    paper_url: "https://doi.org/10.1109/vis54862.2022.00040"
+  # JOURNAL - 2007
+  - id: 'pugmire2007based'
+    title: 'NPU-Based Image Compositing in a Distributed Visualization System'
+    authors: 'Pugmire, D., Monroe, L., Connor Davenport, C., DuBois, A., DuBois, D., Poole, S.'
+    venue: 'IEEE Transactions on Visualization and Computer Graphics'
+    year: 2007
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1109/tvcg.2007.1026'
+    paper_url: 'https://doi.org/10.1109/tvcg.2007.1026'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'han1912supplemental.jpg'  # Optional - add image file to images/papers/
+    # image: 'pugmire2007based.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 0
-  - id: "bessac0athawale"
-    title: "Athawale, Tushar 78 Athawale, Tushar M. 38, 43, 51, 62 Bansal, Shrey 62 Bendeck, Alexander 28"
-    authors: "Bessac, J., Cogley, B., Deussen, O., Divis, K., Duan, Y., Dutta, S., Evers, M., Gerrits, T., Goel, C., Gong, Q., others"
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1016/s0040-4039(02)00926-7"
-    paper_url: "https://doi.org/10.1016/s0040-4039(02)00926-7"
+  # JOURNAL - 2007
+  - id: 'pugmire2007pick'
+    title: 'Pick-n-Place: A Virtual Reality Assembly Tool'
+    authors: 'Pugmire, D., Modi, D., Monroe, L.'
+    venue: 'NW Highlights'
+    year: 2007
+    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1108/aa.2007.03327aad.004'
+    paper_url: 'https://doi.org/10.1108/aa.2007.03327aad.004'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bessac0athawale.jpg'  # Optional - add image file to images/papers/
+    # image: 'pugmire2007pick.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 0
-  - id: "pugmire0efficient"
-    title: "Efficient Visualization on Complex Distributed Resources"
-    authors: "Pugmire, D., Moreland, K., Kress, J., Chen, J., Athawale, T., Klasky, S., Childs, H."
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tvcg.2007.1026"
-    paper_url: "https://doi.org/10.1109/tvcg.2007.1026"
+  # CONFERENCE - 1995
+  - id: 'grimm1995visual'
+    title: 'Visual Interfaces for Solids Modeling'
+    authors: 'Grimm, C., Pugmire, D., Hughes, J., Bloomenthal, M., Cohen, E.'
+    venue: 'UIST'
+    year: 1995
+    type: conference  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    doi: '10.1145/215585.215652'
+    paper_url: 'https://doi.org/10.1145/215585.215652'
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire0efficient.jpg'  # Optional - add image file to images/papers/
+    # image: 'grimm1995visual.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 0
-  - id: "pugmire0workshop"
-    title: "ISAV22 Workshop Organization"
-    authors: "Pugmire, D., Huebl, A., Ferrier, N., Garth, C., Moreland, K., Raffin, B., Reina, G., Rizzi, S., Weber, G., Wolf, M., others"
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1145/3364228.3364235"
-    paper_url: "https://doi.org/10.1145/3364228.3364235"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire0workshop.jpg'  # Optional - add image file to images/papers/
 
-  # JOURNAL - 0
-  - id: "pugmire0message"
-    title: "Message from the ISAV22 Workshop Chairs"
-    authors: "Pugmire, D., Huebl, A."
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/exampi54564.2021.00004"
-    paper_url: "https://doi.org/10.1109/exampi54564.2021.00004"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire0message.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 0
-  - id: "liu0revolutionizing"
-    title: "Revolutionizing the I/O Paradigm for Scientific Data Analytics"
-    authors: "Liu, Q., Klasky, S., Chen, J., Whitney, B., Wang, R., Gong, Q., Liang, X., Wan, L., Pugmire, D., Moreland, K., others"
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.62311/nesx/rb978-81-969163-1-2"
-    paper_url: "https://doi.org/10.62311/nesx/rb978-81-969163-1-2"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'liu0revolutionizing.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 0
-  - id: "ahrens0scivis"
-    title: "SciVis International Program Committee"
-    authors: "Ahrens, J., Bujack, R., Carr, H., Chen, B., Chen, M., Cignoni, P., Comba, J., Entezari, A., Frey, S., Gaither, K., others"
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/scivis.2015.7429480"
-    paper_url: "https://doi.org/10.1109/scivis.2015.7429480"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'ahrens0scivis.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 0
-  - id: "athawale0supplement"
-    title: "Supplement: Uncertainty Visualization of Critical Points of 2D Scalar Fields for Parametric and Nonparametric Probabilistic Models"
-    authors: "Athawale, T., Wang, Z., Pugmire, D., Moreland, K., Gong, Q., Klasky, S., Johnson, C., Rosen, P."
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1109/tvcg.2024.3456393/mm2"
-    paper_url: "https://doi.org/10.1109/tvcg.2024.3456393/mm2"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale0supplement.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 0
-  - id: "dutta0biedert"
-    title: "Tim Biedert, NVIDIA Mark Bolstad, Sandia National Laboratories Roxana Bujack, Los Alamos National Laboratory Hamish Carr, University of Leeds"
-    authors: "Dutta, S., Fujiwara, T., Gerrits, T., Grosset, P., Hadwiger, M., Han, J., Insley, J., Jeong, W., Jiang, M., Klosowski, J., others"
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/2572522"
-    paper_url: "https://doi.org/10.2172/2572522"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'dutta0biedert.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 0
-  - id: "athawale0uncertainty"
-    title: "Uncertainty-Aware Scientific Data Visualization for Trusted Decision-Making"
-    authors: "Athawale, T., Pugmire, D., Johnson, C., Moreland, K., Lu, D., Chen, J., Kress, J., Klasky, S., Parashar, M."
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1007/978-1-4471-6497-5_7"
-    paper_url: "https://doi.org/10.1007/978-1-4471-6497-5_7"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale0uncertainty.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 0
-  - id: "sewell0xvis"
-    title: "XVis: Visualization for the Extreme-Scale Scientific-Computation Ecosystem"
-    authors: "Sewell, C., Childs, H., Ma, K., Geveci, B., Pugmire, D."
-    venue: "Unknown Venue"
-    year: 0
-    type: journal # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.2172/1405121"
-    paper_url: "https://doi.org/10.2172/1405121"
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'sewell0xvis.jpg'  # Optional - add image file to images/papers/
-
-  # BOOK-CHAPTER - 2012
-  - id: "childs2012visualization"
-    title: "Visualization at Extreme Scale Concurrency"
-    authors: "Childs, H., Pugmire, D., Ahern, S., Whitlock, B., Howison, M., Weber, G., Bethel, E."
-    editors: "Bethel, E., Childs, H., Hansen, C."
-    venue: "High Performance Visualization - Enabling Extreme-Scale Scientific Insight"
-    year: 2012
-    type: book-chapter # journal, conference, workshop, book-chapter, preprint, other
-    doi: "10.1201/b12985-17"
-    paper_url: "https://doi.org/10.1201/b12985-17"
-    # summary: ''  # Optional one-sentence summary
-    # image: 'childs2012visualization.jpg' # Optional image in images/papers/
 # --------------------------------------------------
 # TEMPLATE: Copy this to add a new publication
 # --------------------------------------------------
@@ -1187,7 +1536,7 @@ publications:
 #    authors: 'Last, F., Last, F., Last, F.'
 #    venue: 'Journal or Conference Name'
 #    year: 2024
-#    type: journal  # journal, conference, workshop, book-chapter, preprint, other
+#    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
 #    doi: '10.xxxx/xxxxx'
 #    paper_url: 'https://...'
 #    # summary: 'One sentence summary of the paper.'
