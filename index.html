@@ -8,7 +8,7 @@
     <!-- js-yaml for loading YAML data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 
-    <!-- marked.js for rendering Markdown (professional activities) -->
+    <!-- marked.js for rendering Markdown (about, quotes, fun facts, professional activities) -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <!-- Leaflet CSS & JS for talk map -->
@@ -29,36 +29,37 @@
         .contact-links { display: flex; gap: 1rem; }
         .contact-links a { color: #0066cc; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #0066cc; border-radius: 4px; transition: all 0.3s; }
         .contact-links a:hover { background: #0066cc; color: white; }
+
         nav { background: white; border-bottom: 2px solid #eee; position: sticky; top: 100px; z-index: 99; }
         nav ul { max-width: 1200px; margin: 0 auto; list-style: none; display: flex; gap: 2rem; padding: 0 2rem; }
         nav a { display: block; padding: 1rem 0; text-decoration: none; color: #666; border-bottom: 3px solid transparent; transition: all 0.3s; }
         nav a:hover, nav a.active { color: #0066cc; border-bottom-color: #0066cc; }
+
         main { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
         section { background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: none; }
         section.active { display: block; }
         h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: #222; border-bottom: 3px solid #0066cc; padding-bottom: 0.5rem; }
         h3 { font-size: 1.3rem; margin: 2rem 0 1rem 0; color: #444; }
 
-        .category-header { display: flex; align-items: center; gap: 1rem; border-left: 4px solid #0066cc; padding-left: 1rem; margin-top: 2rem; }
+        .category-header { display: flex; align-items: center; gap: 1rem; border-left: 4px solid #0066cc; padding-left: 1rem; margin-top: 2rem; margin-bottom: 1rem; }
         .category-count { background: #0066cc; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.9rem; }
 
         .publication { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px; transition: box-shadow 0.3s; }
         .publication:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
 
-        /* Thumbnail box for paper images */
         .pub-image {
             flex-shrink: 0;
             width: 200px;
-            height: 150px;              /* fixed bounding box */
-            background: #f0f0f0;         /* gray padding area */
+            height: 150px;
+            background: #f0f0f0;
             border-radius: 4px;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 0.85rem;
+            color: #888;
         }
-
-        /* Image scales down to fit, keeps aspect ratio, may show gray padding */
         .pub-image img {
             max-width: 100%;
             max-height: 100%;
@@ -79,18 +80,17 @@
         .btn-primary:hover { background: #0052a3; }
         .btn-secondary { background: #f0f0f0; color: #333; }
         .btn-secondary:hover { background: #e0e0e0; }
+
         .bibtex-container { display: none; margin-top: 1rem; background: #f8f8f8; padding: 1rem; border-radius: 4px; border-left: 3px solid #0066cc; }
         .bibtex-container.show { display: block; }
         .bibtex-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
         .bibtex-code { background: white; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 0.85rem; white-space: pre; }
 
-        /* Talks section */
         #talk-map { height: 520px; margin: 1rem 0; border-radius: 8px; overflow: hidden; }
         .talk-item { padding: 1rem; border-left: 4px solid #10b981; margin-bottom: 1rem; background: #f9f9f9; }
         .talk-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
         .talk-details { color: #666; font-size: 0.95rem; }
 
-        /* Professional Activities markdown container */
         .markdown-body {
             line-height: 1.7;
         }
@@ -109,10 +109,10 @@
         }
 
         footer { text-align: center; padding: 2rem; background: white; color: #666; margin-top: 3rem; }
-        .loading { text-align: center; padding: 2rem; color: #666; }
+
         .pub-header { position: sticky; top: 165px; background: white; padding: 1rem 0; border-bottom: 3px solid #0066cc; z-index: 50; display: flex; align-items: center; gap: 2rem; }
         .pub-header h2 { font-size: 1.8rem; margin: 0; color: #222; border: none; padding: 0; }
-        .pub-nav { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+        .pub-nav { display: flex; gap: 1rem; align-items: center; }
         .pub-nav a { color: #0066cc; text-decoration: none; padding: 0.25rem 0.5rem; border-radius: 4px; transition: background 0.3s; font-size: 0.95rem; }
         .pub-nav a:hover { background: #f0f0f0; }
     </style>
@@ -128,7 +128,7 @@
             <div class="contact-links">
                 <a href="mailto:your.email@university.edu">Email</a>
                 <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="cv.pdf" target="_blank">CV</a>
+                <a href="cv/cv.pdf" target="_blank">CV</a>
             </div>
         </div>
     </header>
@@ -139,54 +139,82 @@
             <li><a href="#talks" class="nav-link">Talks</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#professional-activities" class="nav-link">Professional Activities</a></li>
+            <li><a href="#quotes" class="nav-link">Quotes</a></li>
+            <li><a href="#fun-facts" class="nav-link">Fun Facts</a></li>
         </ul>
     </nav>
     <main>
         <section id="about" class="active">
             <h2>About Me</h2>
-            <p>I am a researcher specializing in machine learning and artificial intelligence. My work focuses on developing novel algorithms for natural language processing and computer vision applications.</p>
-            <h3>Research Interests</h3>
-            <ul>
-                <li>Machine Learning</li>
-                <li>Natural Language Processing</li>
-                <li>Computer Vision</li>
-                <li>Deep Learning</li>
-            </ul>
+            <div id="about-content" class="markdown-body">
+                <p>Loading about information…</p>
+            </div>
         </section>
+
         <section id="publications">
             <div class="pub-header">
                 <h2>Publications</h2>
-                <div id="publication-links" class="pub-nav" style="display:none;"></div>
+                <div id="publication-links" class="pub-nav" style="display:none;">
+                    <a href="#pub-journal">Journal Articles</a>
+                    <a href="#pub-conference">Conference Papers</a>
+                    <a href="#pub-workshop">Workshop Papers</a>
+                    <a href="#pub-book-chapter">Book Chapters</a>
+                    <a href="#pub-preprint">Preprints</a>
+                    <a href="#pub-other">Other</a>
+                </div>
             </div>
             <div id="publications-content" style="margin-top: 1.5rem;"></div>
         </section>
+
         <section id="talks">
             <h2>Invited Talks & Presentations</h2>
             <div id="talks-content"></div>
         </section>
+
         <section id="projects">
             <h2>Projects & Code</h2>
             <p>Coming soon...</p>
         </section>
+
         <section id="professional-activities">
             <h2>Professional Activities</h2>
             <div id="professional-activities-content" class="markdown-body">
                 <p>Loading professional activities…</p>
             </div>
         </section>
+
+        <section id="quotes">
+            <h2>Quotes</h2>
+            <div id="quotes-content" class="markdown-body">
+                <p>Loading quotes…</p>
+            </div>
+        </section>
+
+        <section id="fun-facts">
+            <h2>Fun Facts</h2>
+            <div id="fun-facts-content" class="markdown-body">
+                <p>Loading fun facts…</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Dr. Your Name. All rights reserved.</p>
     </footer>
+
     <script>
-        // Navigation: show/hide sections (only for in-page nav links)
+        // Basic navigation: show/hide sections and set active link
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = e.target.getAttribute('href').substring(1);
+
                 document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
                 document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                document.getElementById(target).classList.add('active');
+
+                const targetSection = document.getElementById(target);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
                 e.target.classList.add('active');
             });
         });
@@ -202,14 +230,64 @@
             }
         }
 
+        // Generic helper to load Markdown into a container using marked.js
+        async function renderMarkdownInto(url, elementId, emptyMessage) {
+            const container = document.getElementById(elementId);
+            if (!container) return;
+
+            try {
+                const resp = await fetch(url);
+                if (!resp.ok) {
+                    container.innerHTML = '<p>' + emptyMessage + '</p>';
+                    return;
+                }
+                const text = await resp.text();
+                container.innerHTML = marked.parse(text);
+            } catch (err) {
+                console.error('Error loading ' + url + ':', err);
+                container.innerHTML = '<p>Error loading content.</p>';
+            }
+        }
+
+        // Section-specific Markdown loaders
+        function renderAbout() {
+            return renderMarkdownInto(
+                'data/about.md',
+                'about-content',
+                'Please create data/about.md to customize this section.'
+            );
+        }
+
+        function renderQuotes() {
+            return renderMarkdownInto(
+                'data/quotes.md',
+                'quotes-content',
+                'Please create data/quotes.md to customize this section.'
+            );
+        }
+
+        function renderFunFacts() {
+            return renderMarkdownInto(
+                'data/fun-facts.md',
+                'fun-facts-content',
+                'Please create data/fun-facts.md to customize this section.'
+            );
+        }
+
+        async function renderProfessionalActivities() {
+            return renderMarkdownInto(
+                'data/professional-activities.md',
+                'professional-activities-content',
+                'Please create data/professional-activities.md to customize this section.'
+            );
+        }
+
         function generateBibtex(pub) {
             const typeMap = {
                 'journal': 'article',
                 'conference': 'inproceedings',
                 'workshop': 'inproceedings',
-                'bookchapter': 'incollection',
-                'techreport': 'techreport',
-                'abstract': 'misc',
+                'book-chapter': 'incollection',
                 'preprint': 'misc',
                 'other': 'misc'
             };
@@ -220,7 +298,6 @@
             bibtex += '  title = {' + pub.title + '},\n';
             bibtex += '  author = {' + pub.authors + '},\n';
 
-            // Include editors if present (especially for book chapters)
             if (pub.editors) {
                 bibtex += '  editor = {' + pub.editors + '},\n';
             }
@@ -237,12 +314,16 @@
         }
 
         function toggleBibtex(id) {
-            document.getElementById('bibtex-' + id).classList.toggle('show');
+            const elem = document.getElementById('bibtex-' + id);
+            if (elem) {
+                elem.classList.toggle('show');
+            }
         }
 
         function copyBibtex(id, bibtex) {
             navigator.clipboard.writeText(bibtex).then(() => {
                 const btn = document.getElementById('copy-btn-' + id);
+                if (!btn) return;
                 const originalText = btn.textContent;
                 btn.textContent = '✓ Copied!';
                 setTimeout(() => { btn.textContent = originalText; }, 2000);
@@ -258,109 +339,86 @@
             }
 
             const pubs = data.publications;
-
-            // Categories corresponding to BibTeX pubtype values:
-            // journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
             const types = {
-                'journal':   { name: 'Journal Articles',   color: '#0066cc', pubs: [] },
-                'conference':{ name: 'Conference Papers',  color: '#10b981', pubs: [] },
-                'workshop':  { name: 'Workshop Papers',    color: '#f59e0b', pubs: [] },
-                'techreport':{ name: 'Technical Reports',  color: '#ef4444', pubs: [] },
-                'abstract':  { name: 'Abstracts',          color: '#0ea5e9', pubs: [] },
-                'bookchapter':{ name: 'Book Chapters',     color: '#8b5cf6', pubs: [] },
-                'preprint':  { name: 'Preprints',          color: '#ec4899', pubs: [] },
-                'other':     { name: 'Other Publications', color: '#6b7280', pubs: [] }
+                'journal':       { name: 'Journal Articles',      color: '#0066cc', pubs: [] },
+                'conference':    { name: 'Conference Papers',    color: '#10b981', pubs: [] },
+                'workshop':      { name: 'Workshop Papers',      color: '#f59e0b', pubs: [] },
+                'book-chapter':  { name: 'Book Chapters',        color: '#8b5cf6', pubs: [] },
+                'preprint':      { name: 'Preprints',            color: '#ec4899', pubs: [] },
+                'other':         { name: 'Other Publications',   color: '#6b7280', pubs: [] }
             };
 
-            // Bucket publications by type
             pubs.forEach(pub => {
-                const t = (pub.type || 'other').toLowerCase();
-                if (types[t]) {
-                    types[t].pubs.push(pub);
+                const type = pub.type || 'other';
+                if (types[type]) {
+                    types[type].pubs.push(pub);
                 } else {
-                    // Unknown types fall back to "other"
                     types['other'].pubs.push(pub);
                 }
             });
 
-            // Sort each bucket by year (desc) then title
             Object.values(types).forEach(type => {
-                type.pubs.sort((a, b) => {
-                    const ya = parseInt(a.year || '0', 10) || 0;
-                    const yb = parseInt(b.year || '0', 10) || 0;
-                    if (yb !== ya) return yb - ya;
-                    return (a.title || '').localeCompare(b.title || '');
-                });
+                type.pubs.sort((a, b) => (b.year || 0) - (a.year || 0));
             });
 
             let html = '';
-            const navLinks = [];
-
-            // Render categories in a consistent order
             Object.entries(types).forEach(([key, type]) => {
                 if (type.pubs.length === 0) return;
 
-                // Add nav link for this category
-                navLinks.push('<a href="#pub-' + key + '">' + type.name + '</a>');
-
-                // Category header
                 html += '<div id="pub-' + key + '" class="category-header" style="border-left-color: ' + type.color + '">';
                 html += '<h3>' + type.name + '</h3>';
                 html += '<span class="category-count" style="background: ' + type.color + '">' + type.pubs.length + '</span>';
                 html += '</div>';
 
-                // Publications in this category
                 type.pubs.forEach(pub => {
                     const bibtex = generateBibtex(pub);
-                    const paperUrl = pub.paper_url || (pub.doi ? 'https://doi.org/' + pub.doi : '#');
+                    const paperUrl = pub.paper_url || (pub.doi ? ('https://doi.org/' + pub.doi) : '#');
 
                     html += '<div class="publication">';
-                    html += '<div class="pub-image">';
+                    html += '  <div class="pub-image">';
                     if (pub.image) {
                         html += '<img src="images/papers/' + pub.image + '" alt="' + pub.title + '">';
                     } else {
                         html += 'No image';
                     }
-                    html += '</div>'; // pub-image
+                    html += '  </div>';
 
-                    html += '<div class="pub-content">';
-                    html += '<div class="pub-title">' + pub.title + '</div>';
-                    html += '<div class="pub-authors">' + pub.authors + '</div>';
-                    html += '<div class="pub-venue">' + pub.venue + ', ' + pub.year + '</div>';
+                    html += '  <div class="pub-content">';
+                    html += '    <div class="pub-title">' + pub.title + '</div>';
+                    html += '    <div class="pub-authors">' + (pub.authors || '') + '</div>';
+                    html += '    <div class="pub-venue">' + (pub.venue || '') + (pub.year ? (', ' + pub.year) : '') + '</div>';
+
                     if (pub.summary) {
-                        html += '<div class="pub-summary">' + pub.summary + '</div>';
+                        html += '    <div class="pub-summary">' + pub.summary + '</div>';
                     }
 
-                    html += '<div class="pub-actions">';
+                    html += '    <div class="pub-actions">';
                     if (paperUrl !== '#') {
-                        html += '<a href="' + paperUrl + '" class="btn btn-primary" target="_blank">📄 View Paper</a>';
+                        html += '      <a href="' + paperUrl + '" class="btn btn-primary" target="_blank" rel="noopener">📄 View Paper</a>';
                     }
-                    html += '<button class="btn btn-secondary" onclick="toggleBibtex(\'' + pub.id + '\')">📋 BibTeX</button>';
-                    html += '</div>'; // pub-actions
+                    html += '      <button class="btn btn-secondary" onclick="toggleBibtex(\'' + pub.id + '\')">📋 BibTeX</button>';
+                    html += '    </div>';
 
-                    html += '<div id="bibtex-' + pub.id + '" class="bibtex-container">';
-                    html += '<div class="bibtex-header"><strong>BibTeX Citation</strong>';
-                    html += '<button id="copy-btn-' + pub.id + '" class="btn btn-secondary" onclick="copyBibtex(\'' + pub.id + '\', `' + bibtex.replace(/`/g, '\\`') + '`)">Copy</button>';
-                    html += '</div>'; // bibtex-header
-                    html += '<div class="bibtex-code">' + bibtex + '</div>';
-                    html += '</div>'; // bibtex-container
+                    html += '    <div id="bibtex-' + pub.id + '" class="bibtex-container">';
+                    html += '      <div class="bibtex-header"><strong>BibTeX Citation</strong>';
+                    html += '        <button id="copy-btn-' + pub.id + '" class="btn btn-secondary" onclick="copyBibtex(\'' + pub.id + '\', `' + bibtex.replace(/`/g, '\\`') + '`)">Copy</button>';
+                    html += '      </div>';
+                    html += '      <div class="bibtex-code">' + bibtex.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+                    html += '    </div>';
 
-                    html += '</div>'; // pub-content
-                    html += '</div>'; // publication
+                    html += '  </div>';
+                    html += '</div>';
                 });
             });
 
             container.innerHTML = html;
 
-            // Build the dynamic publication type nav (above the list)
-            const linksBar = document.getElementById('publication-links');
-            if (linksBar && navLinks.length > 0) {
-                linksBar.innerHTML = navLinks.join('');
-                linksBar.style.display = 'flex';
+            const links = document.getElementById('publication-links');
+            if (links) {
+                links.style.display = 'block';
             }
         }
 
-        // HTML-escape helper for map popups
         function escHtml(s) {
             return String(s || '').replace(/[&<>"']/g, function(m) {
                 return {
@@ -381,7 +439,6 @@
                 return;
             }
 
-            // Sort by date (newest first)
             const talks = data.talks.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
 
             let html = '';
@@ -401,6 +458,7 @@
                 html += '<div class="talk-item">';
                 html += '<div class="talk-title">' + escHtml(talk.title) + '</div>';
                 html += '<div class="talk-details">';
+
                 const locParts = [];
                 if (talk.venue) locParts.push(talk.venue);
                 if (talk.city) locParts.push(talk.city);
@@ -417,10 +475,9 @@
                 html += '</div></div>';
             });
 
-            html += '</div>'; // talks-list
+            html += '</div>';
             container.innerHTML = html;
 
-            // --- Leaflet map setup ---
             const map = L.map('talk-map', { worldCopyJump: true }).setView([20, 0], 2);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -428,13 +485,10 @@
                 attribution: '&copy; OpenStreetMap contributors'
             }).addTo(map);
 
-            // Group by rounded lat/lon so multiple talks in the same city collapse into one marker
             const keyFor = function(t) {
                 const lat = parseFloat(t.lat);
                 const lon = parseFloat(t.lon);
                 if (isNaN(lat) || isNaN(lon)) return null;
-                // Adjust precision if needed:
-                // toFixed(3) ≈ 100–120 m, toFixed(2) ≈ 1.1 km, toFixed(1) ≈ 11 km
                 return lat.toFixed(3) + ',' + lon.toFixed(3);
             };
 
@@ -448,7 +502,6 @@
 
             const bounds = [];
             Object.values(groups).forEach(function(group) {
-                // Sort newest first if dates are ISO-like
                 group.sort(function(a, b) {
                     return String(b.date).localeCompare(String(a.date));
                 });
@@ -457,7 +510,6 @@
                 const lon = parseFloat(group[0].lon);
                 if (isNaN(lat) || isNaN(lon)) return;
 
-                // Derive a location label: prefer explicit "location" if present, else venue/city/country
                 let locLabel = null;
                 for (let i = 0; i < group.length; i++) {
                     const g = group[i];
@@ -502,30 +554,18 @@
             }
         }
 
-        async function renderProfessionalActivities() {
-            const container = document.getElementById('professional-activities-content');
-            try {
-                const resp = await fetch('data/professional-activities.md');
-                if (!resp.ok) {
-                    container.innerHTML = '<p>Could not load professional activities. Ensure data/professional-activities.md exists.</p>';
-                    return;
-                }
-                const text = await resp.text();
-                container.innerHTML = marked.parse(text);
-            } catch (err) {
-                console.error('Error loading professional activities:', err);
-                container.innerHTML = '<p>Error loading professional activities.</p>';
-            }
-        }
-
         let publicationsLoaded = false;
         let talksLoaded = false;
         let professionalActivitiesLoaded = false;
+        let aboutLoaded = false;
+        let quotesLoaded = false;
+        let funFactsLoaded = false;
 
-        // Lazy loading hooks
+        // Lazy-load heavy / external data when sections are first visited
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 const target = e.target.getAttribute('href').substring(1);
+
                 if (target === 'publications' && !publicationsLoaded) {
                     renderPublications();
                     publicationsLoaded = true;
@@ -538,11 +578,24 @@
                     renderProfessionalActivities();
                     professionalActivitiesLoaded = true;
                 }
+                if (target === 'about' && !aboutLoaded) {
+                    renderAbout();
+                    aboutLoaded = true;
+                }
+                if (target === 'quotes' && !quotesLoaded) {
+                    renderQuotes();
+                    quotesLoaded = true;
+                }
+                if (target === 'fun-facts' && !funFactsLoaded) {
+                    renderFunFacts();
+                    funFactsLoaded = true;
+                }
             });
         });
 
-        // Optionally preload professional activities on first load:
-        // renderProfessionalActivities(); professionalActivitiesLoaded = true;
+        // Preload About + Professional Activities on first load (nice UX)
+        renderAbout().then(() => { aboutLoaded = true; });
+        renderProfessionalActivities().then(() => { professionalActivitiesLoaded = true; });
     </script>
 </body>
 </html>

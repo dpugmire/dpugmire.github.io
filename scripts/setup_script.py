@@ -18,11 +18,11 @@ import argparse
 def create_directory_structure():
     """Create all necessary directories."""
     dirs = [
-        'data',
-        'images/papers',
-        'slides',
-        'scripts',
-        'cv'
+        "data",
+        "images/papers",
+        "slides",
+        "scripts",
+        "cv",
     ]
 
     print("Creating directory structure...")
@@ -47,7 +47,7 @@ def create_index_html():
     <!-- js-yaml for loading YAML data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 
-    <!-- marked.js for rendering Markdown (professional activities) -->
+    <!-- marked.js for rendering Markdown (about, quotes, fun facts, professional activities) -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <!-- Leaflet CSS & JS for talk map -->
@@ -68,36 +68,37 @@ def create_index_html():
         .contact-links { display: flex; gap: 1rem; }
         .contact-links a { color: #0066cc; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #0066cc; border-radius: 4px; transition: all 0.3s; }
         .contact-links a:hover { background: #0066cc; color: white; }
+
         nav { background: white; border-bottom: 2px solid #eee; position: sticky; top: 100px; z-index: 99; }
         nav ul { max-width: 1200px; margin: 0 auto; list-style: none; display: flex; gap: 2rem; padding: 0 2rem; }
         nav a { display: block; padding: 1rem 0; text-decoration: none; color: #666; border-bottom: 3px solid transparent; transition: all 0.3s; }
         nav a:hover, nav a.active { color: #0066cc; border-bottom-color: #0066cc; }
+
         main { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
         section { background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: none; }
         section.active { display: block; }
         h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: #222; border-bottom: 3px solid #0066cc; padding-bottom: 0.5rem; }
         h3 { font-size: 1.3rem; margin: 2rem 0 1rem 0; color: #444; }
 
-        .category-header { display: flex; align-items: center; gap: 1rem; border-left: 4px solid #0066cc; padding-left: 1rem; margin-top: 2rem; }
+        .category-header { display: flex; align-items: center; gap: 1rem; border-left: 4px solid #0066cc; padding-left: 1rem; margin-top: 2rem; margin-bottom: 1rem; }
         .category-count { background: #0066cc; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.9rem; }
 
         .publication { display: flex; gap: 1.5rem; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px; transition: box-shadow 0.3s; }
         .publication:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
 
-        /* Thumbnail box for paper images */
         .pub-image {
             flex-shrink: 0;
             width: 200px;
-            height: 150px;              /* fixed bounding box */
-            background: #f0f0f0;         /* gray padding area */
+            height: 150px;
+            background: #f0f0f0;
             border-radius: 4px;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 0.85rem;
+            color: #888;
         }
-
-        /* Image scales down to fit, keeps aspect ratio, may show gray padding */
         .pub-image img {
             max-width: 100%;
             max-height: 100%;
@@ -118,18 +119,17 @@ def create_index_html():
         .btn-primary:hover { background: #0052a3; }
         .btn-secondary { background: #f0f0f0; color: #333; }
         .btn-secondary:hover { background: #e0e0e0; }
+
         .bibtex-container { display: none; margin-top: 1rem; background: #f8f8f8; padding: 1rem; border-radius: 4px; border-left: 3px solid #0066cc; }
         .bibtex-container.show { display: block; }
         .bibtex-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
         .bibtex-code { background: white; padding: 1rem; border-radius: 4px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 0.85rem; white-space: pre; }
 
-        /* Talks section */
         #talk-map { height: 520px; margin: 1rem 0; border-radius: 8px; overflow: hidden; }
         .talk-item { padding: 1rem; border-left: 4px solid #10b981; margin-bottom: 1rem; background: #f9f9f9; }
         .talk-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
         .talk-details { color: #666; font-size: 0.95rem; }
 
-        /* Professional Activities markdown container */
         .markdown-body {
             line-height: 1.7;
         }
@@ -148,10 +148,10 @@ def create_index_html():
         }
 
         footer { text-align: center; padding: 2rem; background: white; color: #666; margin-top: 3rem; }
-        .loading { text-align: center; padding: 2rem; color: #666; }
+
         .pub-header { position: sticky; top: 165px; background: white; padding: 1rem 0; border-bottom: 3px solid #0066cc; z-index: 50; display: flex; align-items: center; gap: 2rem; }
         .pub-header h2 { font-size: 1.8rem; margin: 0; color: #222; border: none; padding: 0; }
-        .pub-nav { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+        .pub-nav { display: flex; gap: 1rem; align-items: center; }
         .pub-nav a { color: #0066cc; text-decoration: none; padding: 0.25rem 0.5rem; border-radius: 4px; transition: background 0.3s; font-size: 0.95rem; }
         .pub-nav a:hover { background: #f0f0f0; }
     </style>
@@ -167,7 +167,7 @@ def create_index_html():
             <div class="contact-links">
                 <a href="mailto:your.email@university.edu">Email</a>
                 <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                <a href="cv.pdf" target="_blank">CV</a>
+                <a href="cv/cv.pdf" target="_blank">CV</a>
             </div>
         </div>
     </header>
@@ -178,54 +178,82 @@ def create_index_html():
             <li><a href="#talks" class="nav-link">Talks</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#professional-activities" class="nav-link">Professional Activities</a></li>
+            <li><a href="#quotes" class="nav-link">Quotes</a></li>
+            <li><a href="#fun-facts" class="nav-link">Fun Facts</a></li>
         </ul>
     </nav>
     <main>
         <section id="about" class="active">
             <h2>About Me</h2>
-            <p>I am a researcher specializing in machine learning and artificial intelligence. My work focuses on developing novel algorithms for natural language processing and computer vision applications.</p>
-            <h3>Research Interests</h3>
-            <ul>
-                <li>Machine Learning</li>
-                <li>Natural Language Processing</li>
-                <li>Computer Vision</li>
-                <li>Deep Learning</li>
-            </ul>
+            <div id="about-content" class="markdown-body">
+                <p>Loading about information…</p>
+            </div>
         </section>
+
         <section id="publications">
             <div class="pub-header">
                 <h2>Publications</h2>
-                <div id="publication-links" class="pub-nav" style="display:none;"></div>
+                <div id="publication-links" class="pub-nav" style="display:none;">
+                    <a href="#pub-journal">Journal Articles</a>
+                    <a href="#pub-conference">Conference Papers</a>
+                    <a href="#pub-workshop">Workshop Papers</a>
+                    <a href="#pub-book-chapter">Book Chapters</a>
+                    <a href="#pub-preprint">Preprints</a>
+                    <a href="#pub-other">Other</a>
+                </div>
             </div>
             <div id="publications-content" style="margin-top: 1.5rem;"></div>
         </section>
+
         <section id="talks">
             <h2>Invited Talks & Presentations</h2>
             <div id="talks-content"></div>
         </section>
+
         <section id="projects">
             <h2>Projects & Code</h2>
             <p>Coming soon...</p>
         </section>
+
         <section id="professional-activities">
             <h2>Professional Activities</h2>
             <div id="professional-activities-content" class="markdown-body">
                 <p>Loading professional activities…</p>
             </div>
         </section>
+
+        <section id="quotes">
+            <h2>Quotes</h2>
+            <div id="quotes-content" class="markdown-body">
+                <p>Loading quotes…</p>
+            </div>
+        </section>
+
+        <section id="fun-facts">
+            <h2>Fun Facts</h2>
+            <div id="fun-facts-content" class="markdown-body">
+                <p>Loading fun facts…</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Dr. Your Name. All rights reserved.</p>
     </footer>
+
     <script>
-        // Navigation: show/hide sections (only for in-page nav links)
+        // Basic navigation: show/hide sections and set active link
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = e.target.getAttribute('href').substring(1);
+
                 document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
                 document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                document.getElementById(target).classList.add('active');
+
+                const targetSection = document.getElementById(target);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
                 e.target.classList.add('active');
             });
         });
@@ -241,14 +269,64 @@ def create_index_html():
             }
         }
 
+        // Generic helper to load Markdown into a container using marked.js
+        async function renderMarkdownInto(url, elementId, emptyMessage) {
+            const container = document.getElementById(elementId);
+            if (!container) return;
+
+            try {
+                const resp = await fetch(url);
+                if (!resp.ok) {
+                    container.innerHTML = '<p>' + emptyMessage + '</p>';
+                    return;
+                }
+                const text = await resp.text();
+                container.innerHTML = marked.parse(text);
+            } catch (err) {
+                console.error('Error loading ' + url + ':', err);
+                container.innerHTML = '<p>Error loading content.</p>';
+            }
+        }
+
+        // Section-specific Markdown loaders
+        function renderAbout() {
+            return renderMarkdownInto(
+                'data/about.md',
+                'about-content',
+                'Please create data/about.md to customize this section.'
+            );
+        }
+
+        function renderQuotes() {
+            return renderMarkdownInto(
+                'data/quotes.md',
+                'quotes-content',
+                'Please create data/quotes.md to customize this section.'
+            );
+        }
+
+        function renderFunFacts() {
+            return renderMarkdownInto(
+                'data/fun-facts.md',
+                'fun-facts-content',
+                'Please create data/fun-facts.md to customize this section.'
+            );
+        }
+
+        async function renderProfessionalActivities() {
+            return renderMarkdownInto(
+                'data/professional-activities.md',
+                'professional-activities-content',
+                'Please create data/professional-activities.md to customize this section.'
+            );
+        }
+
         function generateBibtex(pub) {
             const typeMap = {
                 'journal': 'article',
                 'conference': 'inproceedings',
                 'workshop': 'inproceedings',
-                'bookchapter': 'incollection',
-                'techreport': 'techreport',
-                'abstract': 'misc',
+                'book-chapter': 'incollection',
                 'preprint': 'misc',
                 'other': 'misc'
             };
@@ -259,7 +337,6 @@ def create_index_html():
             bibtex += '  title = {' + pub.title + '},\n';
             bibtex += '  author = {' + pub.authors + '},\n';
 
-            // Include editors if present (especially for book chapters)
             if (pub.editors) {
                 bibtex += '  editor = {' + pub.editors + '},\n';
             }
@@ -276,12 +353,16 @@ def create_index_html():
         }
 
         function toggleBibtex(id) {
-            document.getElementById('bibtex-' + id).classList.toggle('show');
+            const elem = document.getElementById('bibtex-' + id);
+            if (elem) {
+                elem.classList.toggle('show');
+            }
         }
 
         function copyBibtex(id, bibtex) {
             navigator.clipboard.writeText(bibtex).then(() => {
                 const btn = document.getElementById('copy-btn-' + id);
+                if (!btn) return;
                 const originalText = btn.textContent;
                 btn.textContent = '✓ Copied!';
                 setTimeout(() => { btn.textContent = originalText; }, 2000);
@@ -297,109 +378,86 @@ def create_index_html():
             }
 
             const pubs = data.publications;
-
-            // Categories corresponding to BibTeX pubtype values:
-            // journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
             const types = {
-                'journal':   { name: 'Journal Articles',   color: '#0066cc', pubs: [] },
-                'conference':{ name: 'Conference Papers',  color: '#10b981', pubs: [] },
-                'workshop':  { name: 'Workshop Papers',    color: '#f59e0b', pubs: [] },
-                'techreport':{ name: 'Technical Reports',  color: '#ef4444', pubs: [] },
-                'abstract':  { name: 'Abstracts',          color: '#0ea5e9', pubs: [] },
-                'bookchapter':{ name: 'Book Chapters',     color: '#8b5cf6', pubs: [] },
-                'preprint':  { name: 'Preprints',          color: '#ec4899', pubs: [] },
-                'other':     { name: 'Other Publications', color: '#6b7280', pubs: [] }
+                'journal':       { name: 'Journal Articles',      color: '#0066cc', pubs: [] },
+                'conference':    { name: 'Conference Papers',    color: '#10b981', pubs: [] },
+                'workshop':      { name: 'Workshop Papers',      color: '#f59e0b', pubs: [] },
+                'book-chapter':  { name: 'Book Chapters',        color: '#8b5cf6', pubs: [] },
+                'preprint':      { name: 'Preprints',            color: '#ec4899', pubs: [] },
+                'other':         { name: 'Other Publications',   color: '#6b7280', pubs: [] }
             };
 
-            // Bucket publications by type
             pubs.forEach(pub => {
-                const t = (pub.type || 'other').toLowerCase();
-                if (types[t]) {
-                    types[t].pubs.push(pub);
+                const type = pub.type || 'other';
+                if (types[type]) {
+                    types[type].pubs.push(pub);
                 } else {
-                    // Unknown types fall back to "other"
                     types['other'].pubs.push(pub);
                 }
             });
 
-            // Sort each bucket by year (desc) then title
             Object.values(types).forEach(type => {
-                type.pubs.sort((a, b) => {
-                    const ya = parseInt(a.year || '0', 10) || 0;
-                    const yb = parseInt(b.year || '0', 10) || 0;
-                    if (yb !== ya) return yb - ya;
-                    return (a.title || '').localeCompare(b.title || '');
-                });
+                type.pubs.sort((a, b) => (b.year || 0) - (a.year || 0));
             });
 
             let html = '';
-            const navLinks = [];
-
-            // Render categories in a consistent order
             Object.entries(types).forEach(([key, type]) => {
                 if (type.pubs.length === 0) return;
 
-                // Add nav link for this category
-                navLinks.push('<a href="#pub-' + key + '">' + type.name + '</a>');
-
-                // Category header
                 html += '<div id="pub-' + key + '" class="category-header" style="border-left-color: ' + type.color + '">';
                 html += '<h3>' + type.name + '</h3>';
                 html += '<span class="category-count" style="background: ' + type.color + '">' + type.pubs.length + '</span>';
                 html += '</div>';
 
-                // Publications in this category
                 type.pubs.forEach(pub => {
                     const bibtex = generateBibtex(pub);
-                    const paperUrl = pub.paper_url || (pub.doi ? 'https://doi.org/' + pub.doi : '#');
+                    const paperUrl = pub.paper_url || (pub.doi ? ('https://doi.org/' + pub.doi) : '#');
 
                     html += '<div class="publication">';
-                    html += '<div class="pub-image">';
+                    html += '  <div class="pub-image">';
                     if (pub.image) {
                         html += '<img src="images/papers/' + pub.image + '" alt="' + pub.title + '">';
                     } else {
                         html += 'No image';
                     }
-                    html += '</div>'; // pub-image
+                    html += '  </div>';
 
-                    html += '<div class="pub-content">';
-                    html += '<div class="pub-title">' + pub.title + '</div>';
-                    html += '<div class="pub-authors">' + pub.authors + '</div>';
-                    html += '<div class="pub-venue">' + pub.venue + ', ' + pub.year + '</div>';
+                    html += '  <div class="pub-content">';
+                    html += '    <div class="pub-title">' + pub.title + '</div>';
+                    html += '    <div class="pub-authors">' + (pub.authors || '') + '</div>';
+                    html += '    <div class="pub-venue">' + (pub.venue || '') + (pub.year ? (', ' + pub.year) : '') + '</div>';
+
                     if (pub.summary) {
-                        html += '<div class="pub-summary">' + pub.summary + '</div>';
+                        html += '    <div class="pub-summary">' + pub.summary + '</div>';
                     }
 
-                    html += '<div class="pub-actions">';
+                    html += '    <div class="pub-actions">';
                     if (paperUrl !== '#') {
-                        html += '<a href="' + paperUrl + '" class="btn btn-primary" target="_blank">📄 View Paper</a>';
+                        html += '      <a href="' + paperUrl + '" class="btn btn-primary" target="_blank" rel="noopener">📄 View Paper</a>';
                     }
-                    html += '<button class="btn btn-secondary" onclick="toggleBibtex(\'' + pub.id + '\')">📋 BibTeX</button>';
-                    html += '</div>'; // pub-actions
+                    html += '      <button class="btn btn-secondary" onclick="toggleBibtex(\'' + pub.id + '\')">📋 BibTeX</button>';
+                    html += '    </div>';
 
-                    html += '<div id="bibtex-' + pub.id + '" class="bibtex-container">';
-                    html += '<div class="bibtex-header"><strong>BibTeX Citation</strong>';
-                    html += '<button id="copy-btn-' + pub.id + '" class="btn btn-secondary" onclick="copyBibtex(\'' + pub.id + '\', `' + bibtex.replace(/`/g, '\\`') + '`)">Copy</button>';
-                    html += '</div>'; // bibtex-header
-                    html += '<div class="bibtex-code">' + bibtex + '</div>';
-                    html += '</div>'; // bibtex-container
+                    html += '    <div id="bibtex-' + pub.id + '" class="bibtex-container">';
+                    html += '      <div class="bibtex-header"><strong>BibTeX Citation</strong>';
+                    html += '        <button id="copy-btn-' + pub.id + '" class="btn btn-secondary" onclick="copyBibtex(\'' + pub.id + '\', `' + bibtex.replace(/`/g, '\\`') + '`)">Copy</button>';
+                    html += '      </div>';
+                    html += '      <div class="bibtex-code">' + bibtex.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+                    html += '    </div>';
 
-                    html += '</div>'; // pub-content
-                    html += '</div>'; // publication
+                    html += '  </div>';
+                    html += '</div>';
                 });
             });
 
             container.innerHTML = html;
 
-            // Build the dynamic publication type nav (above the list)
-            const linksBar = document.getElementById('publication-links');
-            if (linksBar && navLinks.length > 0) {
-                linksBar.innerHTML = navLinks.join('');
-                linksBar.style.display = 'flex';
+            const links = document.getElementById('publication-links');
+            if (links) {
+                links.style.display = 'block';
             }
         }
 
-        // HTML-escape helper for map popups
         function escHtml(s) {
             return String(s || '').replace(/[&<>"']/g, function(m) {
                 return {
@@ -420,7 +478,6 @@ def create_index_html():
                 return;
             }
 
-            // Sort by date (newest first)
             const talks = data.talks.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
 
             let html = '';
@@ -440,6 +497,7 @@ def create_index_html():
                 html += '<div class="talk-item">';
                 html += '<div class="talk-title">' + escHtml(talk.title) + '</div>';
                 html += '<div class="talk-details">';
+
                 const locParts = [];
                 if (talk.venue) locParts.push(talk.venue);
                 if (talk.city) locParts.push(talk.city);
@@ -456,10 +514,9 @@ def create_index_html():
                 html += '</div></div>';
             });
 
-            html += '</div>'; // talks-list
+            html += '</div>';
             container.innerHTML = html;
 
-            // --- Leaflet map setup ---
             const map = L.map('talk-map', { worldCopyJump: true }).setView([20, 0], 2);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -467,13 +524,10 @@ def create_index_html():
                 attribution: '&copy; OpenStreetMap contributors'
             }).addTo(map);
 
-            // Group by rounded lat/lon so multiple talks in the same city collapse into one marker
             const keyFor = function(t) {
                 const lat = parseFloat(t.lat);
                 const lon = parseFloat(t.lon);
                 if (isNaN(lat) || isNaN(lon)) return null;
-                // Adjust precision if needed:
-                // toFixed(3) ≈ 100–120 m, toFixed(2) ≈ 1.1 km, toFixed(1) ≈ 11 km
                 return lat.toFixed(3) + ',' + lon.toFixed(3);
             };
 
@@ -487,7 +541,6 @@ def create_index_html():
 
             const bounds = [];
             Object.values(groups).forEach(function(group) {
-                // Sort newest first if dates are ISO-like
                 group.sort(function(a, b) {
                     return String(b.date).localeCompare(String(a.date));
                 });
@@ -496,7 +549,6 @@ def create_index_html():
                 const lon = parseFloat(group[0].lon);
                 if (isNaN(lat) || isNaN(lon)) return;
 
-                // Derive a location label: prefer explicit "location" if present, else venue/city/country
                 let locLabel = null;
                 for (let i = 0; i < group.length; i++) {
                     const g = group[i];
@@ -541,30 +593,18 @@ def create_index_html():
             }
         }
 
-        async function renderProfessionalActivities() {
-            const container = document.getElementById('professional-activities-content');
-            try {
-                const resp = await fetch('data/professional-activities.md');
-                if (!resp.ok) {
-                    container.innerHTML = '<p>Could not load professional activities. Ensure data/professional-activities.md exists.</p>';
-                    return;
-                }
-                const text = await resp.text();
-                container.innerHTML = marked.parse(text);
-            } catch (err) {
-                console.error('Error loading professional activities:', err);
-                container.innerHTML = '<p>Error loading professional activities.</p>';
-            }
-        }
-
         let publicationsLoaded = false;
         let talksLoaded = false;
         let professionalActivitiesLoaded = false;
+        let aboutLoaded = false;
+        let quotesLoaded = false;
+        let funFactsLoaded = false;
 
-        // Lazy loading hooks
+        // Lazy-load heavy / external data when sections are first visited
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
                 const target = e.target.getAttribute('href').substring(1);
+
                 if (target === 'publications' && !publicationsLoaded) {
                     renderPublications();
                     publicationsLoaded = true;
@@ -577,16 +617,29 @@ def create_index_html():
                     renderProfessionalActivities();
                     professionalActivitiesLoaded = true;
                 }
+                if (target === 'about' && !aboutLoaded) {
+                    renderAbout();
+                    aboutLoaded = true;
+                }
+                if (target === 'quotes' && !quotesLoaded) {
+                    renderQuotes();
+                    quotesLoaded = true;
+                }
+                if (target === 'fun-facts' && !funFactsLoaded) {
+                    renderFunFacts();
+                    funFactsLoaded = true;
+                }
             });
         });
 
-        // Optionally preload professional activities on first load:
-        // renderProfessionalActivities(); professionalActivitiesLoaded = true;
+        // Preload About + Professional Activities on first load (nice UX)
+        renderAbout().then(() => { aboutLoaded = true; });
+        renderProfessionalActivities().then(() => { professionalActivitiesLoaded = true; });
     </script>
 </body>
 </html>'''
 
-    with open('index.html', 'w', encoding='utf-8') as f:
+    with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
 
     print("  ✓ Created index.html\n")
@@ -598,10 +651,7 @@ def create_publications_yaml(overwrite=False):
     print(f"{action} data/publications.yaml...")
 
     yaml_content = '''# publications.yaml
-# Edit this file to manage your publications.
-#
-# Valid types (pubtype) are:
-#   journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+# Edit this file to manage your publications
 
 publications:
   - id: smith2024neural
@@ -629,15 +679,15 @@ publications:
 #    authors: "Last, F., Last, F."
 #    venue: "Journal or Conference"
 #    year: 2024
-#    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+#    type: journal  # or conference, workshop, book-chapter, preprint, other
 #    doi: "10.xxxx/xxxxx"
 #    paper_url: "https://..."
 #    summary: "One sentence summary."
-#    image: "yourname2024keyword.jpg"
+#    image: "yourname2024.jpg"
 '''
 
-    os.makedirs('data', exist_ok=True)
-    with open('data/publications.yaml', 'w', encoding='utf-8') as f:
+    os.makedirs("data", exist_ok=True)
+    with open("data/publications.yaml", "w", encoding="utf-8") as f:
         f.write(yaml_content)
 
     print("  ✓ Wrote data/publications.yaml\n")
@@ -683,8 +733,8 @@ talks:
 #    # location: "Custom location label for popup"
 '''
 
-    os.makedirs('data', exist_ok=True)
-    with open('data/talks.yaml', 'w', encoding='utf-8') as f:
+    os.makedirs("data", exist_ok=True)
+    with open("data/talks.yaml", "w", encoding="utf-8") as f:
         f.write(yaml_content)
 
     print("  ✓ Wrote data/talks.yaml\n")
@@ -697,7 +747,6 @@ def create_professional_activities_md(overwrite=False):
 
     content = '''---
 title: "Professional Activities"
-# layout: page   # Kept for compatibility if you ever move this to a standalone Jekyll page
 ---
 
 # Professional Activities
@@ -809,11 +858,108 @@ Regular PC / reviewer for:
 _Last updated: YYYY-MM-DD_
 '''
 
-    os.makedirs('data', exist_ok=True)
-    with open('data/professional-activities.md', 'w', encoding='utf-8') as f:
+    os.makedirs("data", exist_ok=True)
+    with open("data/professional-activities.md", "w", encoding="utf-8") as f:
         f.write(content)
 
     print("  ✓ Wrote data/professional-activities.md\n")
+
+
+def create_about_md(overwrite=False):
+    """Create or overwrite data/about.md template."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/about.md...")
+
+    content = '''---
+title: "About Me"
+---
+
+## About Me
+
+This is a placeholder **About** section for your academic website.
+
+Replace this text with a short bio describing:
+
+- Your current position and institution  
+- Your main research areas  
+- A sentence or two about what motivates your work
+
+You can also include links, for example:
+
+- [My GitHub](https://github.com/yourusername)  
+- [My Google Scholar](https://scholar.google.com/)
+'''
+
+    os.makedirs("data", exist_ok=True)
+    with open("data/about.md", "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("  ✓ Wrote data/about.md\n")
+
+
+def create_quotes_md(overwrite=False):
+    """Create or overwrite data/quotes.md template."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/quotes.md...")
+
+    content = '''---
+title: "Quotes"
+---
+
+## Quotes
+
+Use this page to collect quotes that resonate with you — about science, creativity, leadership, or life in general.
+
+> "The important thing is not to stop questioning."  
+> — Albert Einstein
+
+> "In the middle of difficulty lies opportunity."  
+> — Albert Einstein
+
+> "All models are wrong, but some are useful."  
+> — George Box
+
+You can add more quotes using Markdown blockquotes:
+
+> Your quote here.  
+> — Author Name
+'''
+
+    os.makedirs("data", exist_ok=True)
+    with open("data/quotes.md", "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("  ✓ Wrote data/quotes.md\n")
+
+
+def create_fun_facts_md(overwrite=False):
+    """Create or overwrite data/fun-facts.md template."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/fun-facts.md...")
+
+    content = '''---
+title: "Fun Facts"
+---
+
+## Fun Facts
+
+Use this section to share a more personal side of yourself.
+
+- I enjoy teaching complex topics with clear visual explanations.  
+- I prefer early-morning writing sessions with coffee.  
+- My favorite debugging tool is still a whiteboard.  
+- I keep a running list of "tiny experiments" I want to try in my research.
+
+You can add as many bullet points as you like, or even include images:
+
+![Example image](images/papers/example.jpg)
+'''
+
+    os.makedirs("data", exist_ok=True)
+    with open("data/fun-facts.md", "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("  ✓ Wrote data/fun-facts.md\n")
 
 
 def create_readme():
@@ -824,22 +970,29 @@ def create_readme():
 
 ## Quick Start
 
-1. Edit `data/publications.yaml` with your publications
-2. Edit `data/talks.yaml` with your talks (including lat/lon for the map)
-3. Edit `data/professional-activities.md` with your professional service
-4. Run locally: `python -m http.server 8000`
-5. Open: http://localhost:8000
+1. Edit `data/about.md` with your bio
+2. Edit `data/publications.yaml` with your publications
+3. Edit `data/talks.yaml` with your talks (including lat/lon for the map)
+4. Edit:
+   - `data/professional-activities.md`
+   - `data/quotes.md`
+   - `data/fun-facts.md`
+5. Run locally: `python -m http.server 8000`
+6. Open: http://localhost:8000
 
 ## Structure
 
-- `index.html`                     - Main website (single-page app)
-- `data/publications.yaml`         - Your publications
-- `data/talks.yaml`                - Your talks (drives the Leaflet map and talk list)
-- `data/professional-activities.md`- Professional activities in Markdown (rendered into the SPA)
-- `images/papers/`                 - Paper images
-- `slides/`                        - Talk PDFs
-- `scripts/`                       - Helper scripts (e.g., ORCID export, LaTeX CV)
-- `cv/`                            - CV and related documents
+- `index.html`                      - Main website (single-page app)
+- `data/about.md`                   - About / bio (Markdown, rendered with marked.js)
+- `data/publications.yaml`          - Your publications
+- `data/talks.yaml`                 - Your talks (drives the Leaflet map and talk list)
+- `data/professional-activities.md` - Professional activities in Markdown
+- `data/quotes.md`                  - Quotes (Markdown)
+- `data/fun-facts.md`               - Fun facts (Markdown)
+- `images/papers/`                  - Paper images
+- `slides/`                         - Talk PDFs
+- `scripts/`                        - Helper scripts (e.g., ORCID export, LaTeX CV)
+- `cv/`                             - CV and related documents
 
 ## Scripts
 
@@ -856,10 +1009,10 @@ Edit the header in `index.html` to update:
 - Email
 - Links
 
-Edit `data/professional-activities.md` to keep your service/leadership record up to date.
+Edit the Markdown files under `data/` to keep your content up to date.
 '''
 
-    with open('README.md', 'w', encoding='utf-8') as f:
+    with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme)
 
     print("  ✓ Created README.md\n")
@@ -870,9 +1023,9 @@ def parse_args(argv=None):
         description="Set up an academic website (HTML, YAML/Markdown templates, and structure)."
     )
     parser.add_argument(
-        '--reset-templates',
-        action='store_true',
-        help="Recreate data/publications.yaml, data/talks.yaml, and data/professional-activities.md even if they already exist."
+        "--reset-templates",
+        action="store_true",
+        help="Recreate data/*.yaml and data/*.md even if they already exist.",
     )
     return parser.parse_args(argv)
 
@@ -888,40 +1041,61 @@ def main(argv=None):
     create_index_html()
     create_readme()
 
-    # Handle template files with conditional overwrite
     # publications.yaml
-    pubs_path = 'data/publications.yaml'
+    pubs_path = "data/publications.yaml"
     if args.reset_templates or not os.path.exists(pubs_path):
         create_publications_yaml(overwrite=args.reset_templates)
     else:
         print(f"Skipping {pubs_path} (already exists). Use --reset-templates to regenerate.\n")
 
     # talks.yaml
-    talks_path = 'data/talks.yaml'
+    talks_path = "data/talks.yaml"
     if args.reset_templates or not os.path.exists(talks_path):
         create_talks_yaml(overwrite=args.reset_templates)
     else:
         print(f"Skipping {talks_path} (already exists). Use --reset-templates to regenerate.\n")
 
-    # professional-activities markdown
-    pa_path = 'data/professional-activities.md'
+    # professional-activities.md
+    pa_path = "data/professional-activities.md"
     if args.reset_templates or not os.path.exists(pa_path):
         create_professional_activities_md(overwrite=args.reset_templates)
     else:
         print(f"Skipping {pa_path} (already exists). Use --reset-templates to regenerate.\n")
 
+    # about.md
+    about_path = "data/about.md"
+    if args.reset_templates or not os.path.exists(about_path):
+        create_about_md(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {about_path} (already exists). Use --reset-templates to regenerate.\n")
+
+    # quotes.md
+    quotes_path = "data/quotes.md"
+    if args.reset_templates or not os.path.exists(quotes_path):
+        create_quotes_md(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {quotes_path} (already exists). Use --reset-templates to regenerate.\n")
+
+    # fun-facts.md
+    funfacts_path = "data/fun-facts.md"
+    if args.reset_templates or not os.path.exists(funfacts_path):
+        create_fun_facts_md(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {funfacts_path} (already exists). Use --reset-templates to regenerate.\n")
+
     print("\n" + "=" * 60)
     print("✅ Setup Complete!")
     print("=" * 60)
     print("\nNext steps:")
-    print("1. Edit data/publications.yaml with your publications (if created/skipped above).")
-    print("2. Edit data/talks.yaml with your talks (lat/lon for the map).")
-    print("3. Edit data/professional-activities.md with your professional service.")
-    print("4. Test locally: python -m http.server 8000")
-    print("5. Push to GitHub and enable GitHub Pages.")
+    print("1. Edit data/about.md with your bio.")
+    print("2. Edit data/publications.yaml with your publications.")
+    print("3. Edit data/talks.yaml with your talks (lat/lon for the map).")
+    print("4. Edit data/professional-activities.md, data/quotes.md, data/fun-facts.md.")
+    print("5. Test locally: python -m http.server 8000")
+    print("6. Push to GitHub and enable GitHub Pages.")
     print("\nTo regenerate the YAML/Markdown templates, run:")
     print("   python setup_academic_website.py --reset-templates\n")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
