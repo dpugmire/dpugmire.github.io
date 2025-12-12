@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 """
-Convert a Google Scholar BibTeX export into publications.yaml
+Convert a BibTeX export into publications.yaml
 for the academic website.
 
 Features:
 - Parses BibTeX from Google Scholar (or other sources).
+- Uses a REQUIRED custom 'pubtype' field in each BibTeX entry.
+- Allowed pubtype values (case-insensitive):
+    journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
 - Extracts title, authors, venue, year, type.
 - Converts common LaTeX accent sequences (e.g., Poincar{\'e} -> Poincaré).
 - Extracts DOI and URL from BibTeX when present.
+- Extracts abstract when present (BibTeX fields: 'abstract' and common aliases).
 - If DOI or URL are missing, optionally queries Crossref by title
   (+ first author + year) to fill them in when possible.
+- Carries through BibTeX 'note' (e.g., "Best Short Paper Award") into YAML.
 - Emits safely quoted YAML using single quotes.
 
 Usage:
@@ -39,20 +44,6 @@ except ImportError:
     print("Warning: requests is not installed; Crossref lookup will be disabled.",
           file=sys.stderr)
 
-# Allowed publication types from BibTeX pubtype field
-# Final categories:
-#   journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
-ALLOWED_PUBTYPES = {
-    "journal",
-    "conference",
-    "workshop",
-    "techreport",
-    "abstract",
-    "bookchapter",
-    "preprint",
-    "other",
-}
-
 
 # ----------------- LaTeX -> Unicode helpers ----------------- #
 
@@ -62,15 +53,13 @@ def latex_to_unicode(text: str) -> str:
     Examples:
       'Poincar{\\\'e}' -> 'Poincaré'
       'Garc{\\\'i}a'  -> 'García'
-      'Bozda\\ug'     -> 'Bozdağ'
     """
     if not text:
         return ""
 
     s = str(text)
 
-    # Replace accent commands like \'{e}, \"{o}, \c{c}, \u{g}, etc.
-    # Handles both \'{e} and \\'e styles via optional braces.
+    # Replace accent commands like \'{e}, \"{o}, \c{c}, etc.
     accent_map = {
         ("'", "a"): "á", ("'", "e"): "é", ("'", "i"): "í",
         ("'", "o"): "ó", ("'", "u"): "ú", ("'", "y"): "ý",
@@ -82,11 +71,10 @@ def latex_to_unicode(text: str) -> str:
         ('"', "o"): "ö", ('"', "u"): "ü", ('"', "y"): "ÿ",
         ("~", "a"): "ã", ("~", "n"): "ñ", ("~", "o"): "õ",
         ("c", "c"): "ç",
-        ("u", "g"): "ğ",  # Bozda\u{g}
     }
 
     def accent_replacer(match):
-        cmd = match.group(1)   # accent command (', ", ^, ~, c, u)
+        cmd = match.group(1)   # accent command (', ", ^, ~, c)
         ch = match.group(2)    # base letter
         base = ch.lower()
         rep = accent_map.get((cmd, base))
@@ -94,8 +82,8 @@ def latex_to_unicode(text: str) -> str:
             return ch  # fallback: just return character
         return rep.upper() if ch.isupper() else rep
 
-    # Match \'{e}, \'{E}, \"{o}, \c{c}, \u{g}, etc. Optional braces.
-    pattern = re.compile(r"\\([\'\"\^~cu])\{?([A-Za-z])\}?")
+    # Match \'{e}, \'{E}, \"{o}, \c{c}, etc. Optional braces.
+    pattern = re.compile(r"\\([\'\"\^~c])\{?([A-Za-z])\}?")
     s = pattern.sub(accent_replacer, s)
 
     # Other common LaTeX sequences
@@ -114,7 +102,7 @@ def latex_to_unicode(text: str) -> str:
     for pat, repl in replacements.items():
         s = re.sub(pat, repl, s)
 
-    # Remove remaining braces (mostly used for capitalization in BibTeX)
+    # Remove remaining braces (used for capitalization, etc.)
     s = s.replace("{", "").replace("}", "")
 
     return s
@@ -126,6 +114,21 @@ def clean_text(text: str) -> str:
         return ""
     text = latex_to_unicode(text)
     return " ".join(str(text).split())
+
+
+def clean_abstract(text: str) -> str:
+    """
+    Clean abstract text:
+    - Convert LaTeX accents
+    - Normalize whitespace
+    This intentionally produces a single-paragraph string (good for YAML + web display).
+    """
+    if not text:
+        return ""
+    s = latex_to_unicode(text)
+    # BibTeX abstracts are often line-wrapped; collapse to single spaces.
+    s = re.sub(r"\s+", " ", str(s)).strip()
+    return s
 
 
 def yaml_str(s: str) -> str:
@@ -142,79 +145,67 @@ def yaml_str(s: str) -> str:
 
 # ----------------- Type / author / metadata helpers ----------------- #
 
-def map_type(entry_type: str, entry: dict) -> str:
+def describe_entry(entry: dict) -> str:
+    """Return a human-friendly label for error messages."""
+    bib_id = entry.get("ID")
+    if bib_id:
+        return bib_id
+    title = clean_text(entry.get("title", "")).strip()
+    if title:
+        if len(title) > 60:
+            title = title[:57] + "..."
+        return f"title '{title}'"
+    return "<unknown entry>"
+
+
+def map_pubtype(entry: dict) -> str:
     """
-    Legacy: Map BibTeX ENTRYTYPE to coarse categories.
-    Used only as a fallback if pubtype is missing (should not happen now).
+    Map BibTeX 'pubtype' field to our normalized categories.
 
-    Final categories:
-      journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
-    """
-    if not entry_type:
-        return "other"
-    t = entry_type.lower()
-
-    # Heuristic for preprints (arXiv, etc.)
-    journal = (entry.get("journal") or "").lower()
-    if "arxiv" in journal or "preprint" in journal:
-        return "preprint"
-
-    if t == "article":
-        return "journal"
-    if t in ("inproceedings", "conference", "proceedings"):
-        return "conference"
-    if t in ("incollection", "inbook"):
-        return "bookchapter"
-    if t in ("proceedings", "collection"):
-        return "conference"
-    if t in ("phdthesis", "mastersthesis"):
-        return "other"
-    if t in ("unpublished", "manual", "techreport"):
-        return "techreport"
-    return "other"
-
-
-def get_pub_type(entry: dict, index: int) -> str:
-    """
-    Determine the publication type using the required 'pubtype' field.
-
-    Final categories:
+    Allowed pubtype values (case-insensitive):
       journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
 
-    If pubtype is missing or empty, raise a ValueError.
-    If pubtype is unrecognized, map to 'other' and emit a warning.
+    Returns canonical values:
+      'journal', 'conference', 'workshop', 'techreport', 'abstract',
+      'book-chapter', 'preprint', 'other'
     """
     raw = (entry.get("pubtype") or "").strip()
-
     if not raw:
-        key = entry.get("ID", "<no key>")
         raise ValueError(
-            f"BibTeX entry {index} (key '{key}') is missing required 'pubtype' field."
+            f"BibTeX entry {describe_entry(entry)} is missing required 'pubtype' field. "
+            "Expected one of: journal, conference, workshop, techreport, abstract, "
+            "bookchapter, preprint, other."
         )
 
-    raw_lower = raw.lower()
+    t = raw.lower()
 
-    # Normalize common variants
-    synonyms = {
-        "book-chapter": "bookchapter",
-        "book chapter": "bookchapter",
-        "book_chapter": "bookchapter",
-        "tech report": "techreport",
+    mapping = {
+        "journal": "journal",
+        "conference": "conference",
+        "conf": "conference",
+        "workshop": "workshop",
+        "ws": "workshop",
+        "techreport": "techreport",
         "tech-report": "techreport",
         "technicalreport": "techreport",
-        "technical report": "techreport",
+        "techrep": "techreport",
+        "abstract": "abstract",
+        "abs": "abstract",
+        "bookchapter": "book-chapter",
+        "book-chapter": "book-chapter",
+        "preprint": "preprint",
+        "arxiv": "preprint",
+        "other": "other",
     }
-    t = synonyms.get(raw_lower, raw_lower)
 
-    if t in ALLOWED_PUBTYPES:
-        return t
+    if t not in mapping:
+        raise ValueError(
+            f"BibTeX entry {describe_entry(entry)} has unknown pubtype '{raw}'. "
+            "Expected one of: journal, conference, workshop, techreport, abstract, "
+            "bookchapter, preprint, other."
+        )
 
-    key = entry.get("ID", "<no key>")
-    print(
-        f"Warning: entry '{key}' has unrecognized pubtype '{raw}'. Mapping to 'other'.",
-        file=sys.stderr,
-    )
-    return "other"
+    return mapping[t]
 
 
 def parse_authors(author_field: str) -> str:
@@ -322,7 +313,7 @@ def normalize_doi(doi: str) -> str:
     return doi.lower()
 
 
-def extract_doi_and_url(entry: dict) -> tuple[str, str]:
+def extract_doi_and_url(entry: dict) -> (str, str):
     """Get DOI and paper_url from BibTeX entry."""
     doi = entry.get("doi", "") or ""
     doi = normalize_doi(doi)
@@ -337,7 +328,28 @@ def extract_doi_and_url(entry: dict) -> tuple[str, str]:
     return doi, url
 
 
-def crossref_lookup(title: str, authors_str: str, year: str) -> tuple[str, str]:
+def extract_abstract(entry: dict) -> str:
+    """
+    Extract abstract text from BibTeX entry.
+
+    Common fields seen in the wild:
+      - abstract (non-standard but widely used)
+      - annote (BibTeX standard-ish annotation field; sometimes used for abstracts)
+      - annotation (rare alias)
+    """
+    raw = (
+        entry.get("abstract")
+        or entry.get("annote")
+        or entry.get("annotation")
+        or ""
+    )
+    raw = str(raw).strip()
+    if not raw:
+        return ""
+    return clean_abstract(raw)
+
+
+def crossref_lookup(title: str, authors_str: str, year: str) -> (str, str):
     """
     Query Crossref by title (+ first author + year) to find DOI and URL.
 
@@ -392,13 +404,11 @@ def bibtex_to_publications(entries):
     Convert BibTeX entries to our internal publication dict list.
     Uses BibTeX for DOI/URL where present, and Crossref to fill gaps.
     Also converts LaTeX accents in titles/venues/authors to Unicode.
-
-    Requires each entry to have a 'pubtype' field that maps to:
-      journal, conference, workshop, techreport, abstract, bookchapter, preprint, other
+    Requires a valid 'pubtype' field in each entry.
     """
     publications = []
 
-    for idx, entry in enumerate(entries, start=1):
+    for entry in entries:
         raw_title = entry.get("title", "Untitled")
         title = clean_text(raw_title)
 
@@ -407,8 +417,19 @@ def bibtex_to_publications(entries):
 
         venue = extract_venue(entry)
         year = extract_year(entry)
-        pub_type = get_pub_type(entry, idx)
+
+        # Determine pub type from required 'pubtype' field
+        pub_type = map_pubtype(entry)
+
+        # DOI / URL
         doi, url = extract_doi_and_url(entry)
+
+        # Abstract (NEW)
+        abstract = extract_abstract(entry) or None
+
+        # Optional note (e.g. Best Paper Award)
+        raw_note = entry.get("note") or ""
+        note = clean_text(raw_note) if str(raw_note).strip() else None
 
         # Enrich with Crossref if DOI or URL missing
         if (not doi or not url) and HAVE_REQUESTS:
@@ -429,6 +450,8 @@ def bibtex_to_publications(entries):
             "type": pub_type,
             "doi": doi or None,
             "paper_url": url or None,
+            "note": note,          # may be None
+            "abstract": abstract,  # may be None
         }
 
         publications.append(pub)
@@ -436,7 +459,7 @@ def bibtex_to_publications(entries):
     # Sort: year desc, then title
     def sort_key(p):
         y = p.get("year", "")
-        y_val = int(y) if y.isdigit() else 0
+        y_val = int(y) if str(y).isdigit() else 0
         return (-y_val, p.get("title", ""))
 
     publications.sort(key=sort_key)
@@ -468,7 +491,7 @@ def write_yaml(publications, out_file=None):
             # year: keep as integer-ish for JS sorting
             out.write(f"    year: {year}\n")
             out.write(
-                "    type: {type}  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other\n".format(
+                "    type: {type}  # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other\n".format(
                     type=pub["type"]
                 )
             )
@@ -481,6 +504,16 @@ def write_yaml(publications, out_file=None):
             else:
                 out.write('    # paper_url: ""  # Add direct link to paper if available\n')
 
+            if pub.get("abstract"):
+                out.write(f"    abstract: {yaml_str(pub['abstract'])}\n")
+            else:
+                out.write('    # abstract: ""  # Optional - full abstract text\n')
+
+            if pub["note"]:
+                out.write(f"    note: {yaml_str(pub['note'])}\n")
+            else:
+                out.write('    # note: ""  # e.g., Best Paper Award\n')
+
             out.write('    # summary: ""  # Add a one-sentence summary of the paper\n')
             out.write(f"    # image: {yaml_str(pub['id'] + '.jpg')}  # Optional - add image file to images/papers/\n")
 
@@ -492,9 +525,11 @@ def write_yaml(publications, out_file=None):
         out.write("#    authors: 'Last, F., Last, F., Last, F.'\n")
         out.write("#    venue: 'Journal or Conference Name'\n")
         out.write("#    year: 2024\n")
-        out.write("#    type: journal  # journal, conference, workshop, techreport, abstract, bookchapter, preprint, other\n")
+        out.write("#    type: journal  # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other\n")
         out.write("#    doi: '10.xxxx/xxxxx'\n")
         out.write("#    paper_url: 'https://...'\n")
+        out.write("#    abstract: 'Optional abstract text...'\n")
+        out.write("#    note: 'Best Paper Award'\n")
         out.write("#    # summary: 'One sentence summary of the paper.'\n")
         out.write("#    # image: 'lastname2024keyword.jpg'  # Optional\n")
 
@@ -528,8 +563,8 @@ def main():
 
     try:
         bib_db = bibtexparser.loads(bib_str, parser=parser_obj)
-    except Exception as e:
-        print(f"Error parsing BibTeX file: {e}", file=sys.stderr)
+    except Exception as exc:
+        print(f"Error parsing BibTeX file '{args.bibfile}': {exc}", file=sys.stderr)
         sys.exit(1)
 
     entries = bib_db.entries or []
@@ -537,9 +572,8 @@ def main():
 
     try:
         publications = bibtex_to_publications(entries)
-    except ValueError as e:
-        # Catch missing pubtype or similar hard errors
-        print(f"Error while converting entries: {e}", file=sys.stderr)
+    except ValueError as exc:
+        print(f"Error while converting BibTeX entries: {exc}", file=sys.stderr)
         sys.exit(1)
 
     print(f"Converted to {len(publications)} publications", file=sys.stderr)

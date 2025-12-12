@@ -1,21 +1,8 @@
----
-title: "Quotes"
----
+## Favorite Quotes
 
-## Quotes
+> **John Murphy:** “What if nobody is home?”  
+> **Kevin Garvey:** “Then come over to my house.”  
+> — _The Leftovers_
 
-Use this page to collect quotes that resonate with you — about science, creativity, leadership, or life in general.
-
-> "The important thing is not to stop questioning."  
-> — Albert Einstein
-
-> "In the middle of difficulty lies opportunity."  
-> — Albert Einstein
-
-> "All models are wrong, but some are useful."  
-> — George Box
-
-You can add more quotes using Markdown blockquotes:
-
-> Your quote here.  
-> — Author Name
+> “There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.”  
+> — Fred Rogers
