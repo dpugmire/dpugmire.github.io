@@ -11,10 +11,10 @@ publications:
     type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/uncertaintyvisualization63963.2024.00014"
     paper_url: "https://arxiv.org/abs/2510.01190"
+    image: "ouermi2025efficient.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'ouermi2025efficient.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2025
   - id: "wang2025situ"
@@ -42,7 +42,7 @@ publications:
     abstract: 'Sparse observations and coarse-resolution climate models limit effective regional decision-making, underscoring the need for robust downscaling. However, existing AI methods struggle with generalization across variables and geographies and are constrained by the quadratic complexity of Vision Transformer (ViT) self-attention. We introduce ORBIT-2, a scalable foundation model for global, hyper-resolution climate downscaling. ORBIT-2 incorporates two key innovations: (1) Residual Slim ViT (Reslim), a lightweight architecture with residual learning and Bayesian regularization for efficient, robust prediction; and (2) TILES, a tile-wise sequence scaling algorithm that reduces self-attention complexity from quadratic to linear, enabling long-sequence processing and massive parallelism. ORBIT-2 scales to 10 billion parameters across 65,536 GPUs, achieving up to 4.1 ExaFLOPS sustained throughput and 74–98\% strong scaling efficiency. It supports downscaling to 0.9 km global resolution and processes sequences up to 4.2 billion tokens. On 7 km resolution benchmarks, ORBIT-2 achieves high accuracy with R2 scores in range of 0.98–0.99 against observation data.'
     note: "Best Paper Award"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'wang2025orbit.jpg'  # Optional - add image file to images/papers/
+    image: "wang2025orbit.png" # Optional - add image file to images/papers/
 
   # PREPRINT - 2025
   - id: "wang2025orbitPreprint"
@@ -84,7 +84,7 @@ publications:
     abstract: "A significant challenge on an exascale computer is the speed at which we compute results exceeds by many orders of magnitude the speed at which we save these results. Therefore the Exascale Computing Project (ECP) ALPINE project focuses on providing exascale-ready visualization solutions including in situ processing. In situ visualization and analysis runs as the simulation is run, on simulations results are they are generated avoiding the need to save entire simulations to storage for later analysis. The ALPINE project made post hoc visualization tools, ParaView and VisIt, exascale ready and developed in situ algorithms and infrastructures. The suite of ALPINE algorithms developed under ECP includes novel approaches to enable automated data analysis and visualization to focus on the most important aspects of the simulation. Many of the algorithms also provide data reduction benefits to meet the I/O challenges at exascale. ALPINE developed a new lightweight in situ infrastructure, Ascent."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'ahrens2025alpine.jpg'  # Optional - add image file to images/papers/
+    image: "ahrens2025alpine.jpg" # Optional - add image file to images/papers/
 
   # JOURNAL - 2025
   - id: "athawale2025uncertainty"
@@ -95,10 +95,10 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/tvcg.2024.3456393"
     paper_url: "https://doi.org/10.1109/tvcg.2024.3456393"
+    image: "athawale2025uncertainty.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale2025uncertainty.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2025
   - id: "senapati2025visualization"
@@ -123,10 +123,10 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/tvcg.2023.3326592"
     paper_url: "https://doi.org/10.1109/tvcg.2023.3326592"
+    image: "athawale2024comparative.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale2024comparative.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2024
   - id: "hammer2024personalized"
@@ -140,7 +140,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'hammer2024personalized.jpg'  # Optional - add image file to images/papers/
+    image: "hammer2024personalized.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2024
   - id: "sisneros2024entropy"
@@ -154,7 +154,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'sisneros2024entropy.jpg'  # Optional - add image file to images/papers/
+    image: "sisneros2024entropy.jpg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2024
   - id: "athawale2024data"
@@ -165,10 +165,10 @@ publications:
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2312/evs.20241071"
     paper_url: "https://doi.org/10.2312/evs.20241071"
+    image: "athawale2024data.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale2024data.jpg'  # Optional - add image file to images/papers/
 
   # ABSTRACT - 2024
   - id: "dudson2024enhancing"
@@ -210,7 +210,7 @@ publications:
     abstract: "We present our third and final generation joint P and S global adjoint tomography (GLAD) model, GLAD-M35, and quantify its uncertainty based on a low-rank approximation of the inverse Hessian. Starting from our second-generation model, GLAD-M25, we added 680 new earthquakes to the database for a total of 2160 events. New P-wave categories are included to compensate for the imbalance between P- and S-wave measurements, and we enhanced the window selection algorithm to include more major-arc phases, providing better constraints on the structure of the deep mantle and more than doubling the number of measurement windows to 40 million. Two stages of a Broyden–Fletcher–Goldfarb–Shanno (BFGS) quasi-Newton inversion were performed, each comprising five iterations. With this BFGS update history, we determine the model’s standard deviation and resolution length through randomized singular value decomposition."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'cui2024glad.jpg'  # Optional - add image file to images/papers/
+    image: "specfem3d.jpg" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2024
   - id: "pugmire2024performance"
@@ -221,10 +221,10 @@ publications:
     type: workshop # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2312/visgap.20241120"
     paper_url: "https://doi.org/10.2312/visgap.20241120"
+    image: "pugmire2024performance.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2024performance.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2024
   - id: "pugmire2024research"
@@ -235,10 +235,10 @@ publications:
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/e-science62913.2024.10678727"
     paper_url: "https://doi.org/10.1109/e-science62913.2024.10678727"
+    image: "pugmire2024research.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2024research.jpg'  # Optional - add image file to images/papers/
 
   # ABSTRACT - 2024
   - id: "chang2024turbulent"
@@ -266,7 +266,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'saklani2024uncertainty.jpg'  # Optional - add image file to images/papers/
+    image: "saklani2024uncertainty.jpg" # Optional - add image file to images/papers/
 
   # JOURNAL - 2024
   - id: "moreland2024visualization"
@@ -277,10 +277,10 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1177/10943420241270969"
     paper_url: "https://doi.org/10.1177/10943420241270969"
+    image: "moreland2024visualization.jpg" # Optional - add image file to images/papers/
     abstract: "The VTK-m software library enables scientific visualization on exascale-class supercomputers. Exascale machines are particularly challenging for software development in part because they use GPU accelerators to provide the vast majority of their computational throughput. Algorithmic designs for GPUs and GPU-centric computing often deviate from those that worked well on previous generations of high-performance computers that relied on traditional CPUs. Fortunately, VTK-m provides scientific visualization algorithms for GPUs and other accelerators. VTK-m also provides a framework that simplifies the implementation of new algorithms and adds a porting layer to work across multiple processor types. This paper describes the main challenges encountered when making scientific visualization available at exascale. We document the surprises and obstacles faced when moving from pre-exascale platforms to the final exascale designs and the performance on those systems including scaling studies on Frontier, an exascale machine with over 37,000 AMD GPUs. We also report on the integration of VTK-m with other exascale software technologies. Finally, we show how VTK-m helps scientific discovery for applications such as fusion and particle acceleration that leverage an exascale supercomputer."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2024visualization.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2023
   - id: "anirudh2023review"
@@ -302,13 +302,13 @@ publications:
     authors: "Senapati, P., Athawale, T., Pugmire, D., Guan, Q."
     venue: "Proceedings of the 2023 International Workshop on Quantum Classical Cooperative"
     year: 2023
-    type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    type: workshop # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1145/3588983.3596689"
     paper_url: "https://doi.org/10.1145/3588983.3596689"
+    image: "senapati2023advancing.jpg" # Optional - add image file to images/papers/
     abstract: "Noise in quantum computers presents a challenge for the users of quantum computing despite the rapid progress we have seen in the past few years in building quantum computers. Existing works have addressed the noise in quantum computers using a variety of mitigation techniques since error correction requires a large number of qubits which is infeasible at present. One of the consequences of quantum computing noise is that users are unable to reproduce similar output from the same quantum computer at different times, let alone from various quantum computers. In this work, we have made initial attempts to visualize quantum basis states for all the circuits that were used in quantum machine learning from various quantum computers and noise-free quantum simulators. We have opened up a pathway for further research into this field where we will be able to isolate noisy states from non-noisy states leading to efficient error mitigation. This is where our work provides an important step in the direction of efficient error mitigation. Our work also provides a ground for quantum noise visualization in the case of large numbers of qubits."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'senapati2023advancing.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2023
   - id: "athawale2023fiber"
@@ -319,10 +319,10 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/tvcg.2022.3209424"
     paper_url: "https://doi.org/10.1109/tvcg.2022.3209424"
+    image: "athawale2023fiber.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'athawale2023fiber.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2023
   - id: "wang2023funmc"
@@ -333,10 +333,10 @@ publications:
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2312/pgv.20231081"
     paper_url: "https://doi.org/10.2312/pgv.20231081"
+    image: "wang2023funmc.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'wang2023funmc.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 2023
   - id: "trinh2023understanding"
@@ -389,10 +389,10 @@ publications:
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/vis54862.2022.00040"
     paper_url: "https://ieeexplore.ieee.org/document/9973217"
+    image: "han2022accelerated.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'han2022accelerated.jpg'  # Optional - add image file to images/papers/
 
   # ABSTRACT - 2022
   - id: "chang2022discovery"
@@ -770,7 +770,7 @@ publications:
     abstract: "Building on global adjoint tomography model GLAD-M15, we present transversely isotropic global model GLAD-M25, which is the result of 10 quasi-Newton tomographic iterations with an earthquake database consisting of 1480 events in the magnitude range 5.5 ≤ Mw ≤ 7.2, an almost sixfold increase over the first-generation model. We calculated fully 3-D synthetic seismograms with a shortest period of 17 s based on a GPU-accelerated spectral-element wave propagation solver which accommodates effects due to 3-D anelastic crust and mantle structure, topography and bathymetry, the ocean load, ellipticity, rotation and self-gravitation. We used an adjoint-state method to calculate Fréchet derivatives in 3-D anelastic Earth models facilitated by a parsimonious storage algorithm. The simulations were performed on the Cray XK7 ‘Titan’ and the IBM Power 9 ‘Summit’ at the Oak Ridge Leadership Computing Facility. We quantitatively evaluated GLAD-M25 by assessing misfit reductions and traveltime anomaly histograms in 12 measurement categories. We performed similar assessments for a held-out data set consisting of 360 earthquakes, with results comparable to the actual inversion. We highlight the new model for a variety of plumes and subduction zones."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'lei2020global.jpg'  # Optional - add image file to images/papers/
+    image: "specfem3d.jpg"
 
   # ABSTRACT - 2020
   - id: "lei2020global"
@@ -784,7 +784,7 @@ publications:
     abstract: "Building on global adjoint tomography model GLAD-M15, we present transversely isotropic global model GLAD-M25, which is the result of 10 quasi-Newton tomographic iterations with an earthquake database consisting of 1480 events in the magnitude range 5.5 ≤ Mw ≤ 7.2, an almost sixfold increase over the first-generation model. We calculated fully 3-D synthetic seismograms with a shortest period of 17 s based on a GPU-accelerated spectral-element wave propagation solver which accommodates effects due to 3-D anelastic crust and mantle structure, topography and bathymetry, the ocean load, ellipticity, rotation and self-gravitation. We used an adjoint-state method to calculate Fréchet derivatives in 3-D anelastic Earth models facilitated by a parsimonious storage algorithm. The simulations were performed on the Cray XK7 ‘Titan’ and the IBM Power 9 ‘Summit’ at the Oak Ridge Leadership Computing Facility. We quantitatively evaluated GLAD-M25 by assessing misfit reductions and traveltime anomaly histograms in 12 measurement categories. We performed similar assessments for a held-out data set consisting of 360 earthquakes, with results comparable to the actual inversion. We highlight the new model for a variety of plumes and subduction zones."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'lei2020global.jpg'  # Optional - add image file to images/papers/
+    image: "specfem3d.jpg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
   - id: "wan2020performance"
@@ -854,7 +854,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'reina2020moving.jpg'  # Optional - add image file to images/papers/
+    image: "reina2020moving.jpg" # Optional - add image file to images/papers/
 
   # PREPRINT - 2020
   - id: "thompson2020towards"
@@ -910,7 +910,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'ruan2019generation.jpg'  # Optional - add image file to images/papers/
+    image: "specfem3d.jpg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2019
   - id: "kress2019comparing"
@@ -1064,7 +1064,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'isleyen2018exploring.jpg'  # Optional - add image file to images/papers/
+    image: "specfem3d.jpg" # Optional - add image file to images/papers/
 
   # ABSTRACT - 2018
   - id: "ruan2018global"
@@ -1176,7 +1176,7 @@ publications:
     abstract: "In this work, we investigate global seismic tomographic models obtained by spectral-element simulations of seismic wave propagation and adjoint methods. Global crustal and mantle models are obtained based on an iterative conjugate-gradient type of optimization scheme. Forward and adjoint seismic wave propagation simulations, which result in synthetic seismic data to make measurements and data sensitivity kernels to compute gradient for model updates, respectively, are performed by the SPECFEM3D_GLOBE package [1] [2] at the Oak Ridge Leadership Computing Facility (OLCF) to study the structure of the Earth at unprecedented levels. Using advances in solver techniques that run on the GPUs on Titan at the OLCF, scientists are able to perform large-scale seismic inverse modeling and imaging. Using seismic data from global and regional networks from global CMT earthquakes, scientists are using SPECFEM3D_GLOBE to understand the structure of the mantle layer of the Earth. Visualization of the generated data sets provide an effective way to understand the computed wave perturbations which define the structure of mantle in the Earth."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2017pillars.jpg'  # Optional - add image file to images/papers/
+    image: "specfem3d.jpg" # Optional - add image file to images/papers/
 
   # TECHREPORT - 2017
   - id: "moreland2017xvis"
@@ -1204,7 +1204,7 @@ publications:
     abstract: "We present the first-generation global tomographic model constructed based on adjoint tomography, an iterative full-waveform inversion technique. Synthetic seismograms were calculated using GPU-accelerated spectral-element simulations of global seismic wave propagation, accommodating effects due to 3-D anelastic crust &amp; mantle structure, topography &amp; bathymetry, the ocean load, ellipticity, rotation, and self-gravitation. Fréchet derivatives were calculated in 3-D anelastic models based on an adjoint-state method. The simulations were performed on the Cray XK7 named ‘Titan’, a computer with 18 688 GPU accelerators housed at Oak Ridge National Laboratory. The transversely isotropic global model is the result of 15 tomographic iterations, which systematically reduced differences between observed and simulated three-component seismograms. Our starting model combined 3-D mantle model S362ANI with 3-D crustal model Crust2.0. We simultaneously inverted for structure in the crust and mantle, thereby eliminating the need for widely used ‘crustal corrections’. We used data from 253 earthquakes in the magnitude range 5.8 ≤ M w ≤ 7.0. We started inversions by combining ∼30 s body-wave data with ∼60 s surface-wave data. The shortest period of the surface waves was gradually decreased, and in the last three iterations we combined ∼17 s body waves with ∼45 s surface waves. We started using 180 min long seismograms after the 12th iteration and assimilated minor- and major-arc body and surface waves. The 15th iteration model features enhancements of well-known slabs, an enhanced image of the Samoa/Tahiti plume, as well as various other plumes and hotspots, such as Caroline, Galapagos, Yellowstone and Erebus. Furthermore, we see clear improvements in slab resolution along the Hellenic and Japan Arcs, as well as subduction along the East of Scotia Plate, which does not exist in the starting model. Point-spread function tests demonstrate that we are approaching the resolution of continental-scale studies in some areas, for example, underneath Yellowstone. This is a consequence of our multiscale smoothing strategy in which we define our smoothing operator as a function of the approximate Hessian kernel, thereby smoothing gradients less wherever we have good ray coverage, such as underneath North America."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bozda2016global.jpg'  # Optional - add image file to images/papers/
+    image: "specfem3d.jpg" # Optional - add image file to images/papers/
 
   # JOURNAL - 2016
   - id: "kress2016preparing"
@@ -1257,10 +1257,10 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/mcg.2016.48"
     paper_url: "https://doi.org/10.1109/mcg.2016.48"
+    image: "moreland2016accelerating.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2016accelerating.jpg'  # Optional - add image file to images/papers/
 
   # WORKSHOP - 2016
   - id: "kress2016visualization"
