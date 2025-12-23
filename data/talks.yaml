@@ -3,23 +3,522 @@
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
 
 talks:
-  - title: "AI in Healthcare"
-    venue: "Stanford Medical School"
-    city: "Stanford, CA"
+  - title: "Visualization Services"
+    venue: "Princeton Plasma Physics Laboratory"
+    city: "Princeton, NJ"
     country: "USA"
-    date: "2024-03-15"
-    lat: 37.4275
-    lon: -122.1697
-    slides: "stanford2024.pdf"
-    
-  - title: "Neural Networks Tutorial"
-    venue: "MIT CSAIL"
-    city: "Cambridge, MA"
-    country: "USA"
-    date: "2024-02-10"
-    lat: 42.3601
-    lon: -71.0902
+    date: "2025-01-15"
+    lat: 40.35014
+    lon: -74.60278
+    #slides: "stanford2024.pdf"
+  - title: "In Situ Workload Estimation for Block Assignment and Duplication in Parallelization-Over-Data Particle Advection"
+    venue: "Eurographics 2025"
+    city: "Luxembourg City"
+    country: "Luxembourg"
+    date: "2025-06-04"
+    lat: 49.6399337
+    lon: 6.1517228
+    #slides: "stanford2024.pdf"
 
+  - title: "Performance Improvements of Poincaré Analysis for Exascale Fusion Simulations"
+    venue: "Eurographics 2024"
+    city: "Odense"
+    country: "Denmark"
+    date: "2024-05-27"
+    lat: 55.3690
+    lon: 10.4282
+
+  - title: "Data-Driven Computation of Probabilistic Marching Cubes for Efficient Visualization of Level-Set Uncertainty"
+    venue: "Eurographics 2024"
+    city: "Odense"
+    country: "Denmark"
+    date: "2024-05-30"
+    lat: 55.3690
+    lon: 10.4282
+
+  - title: "FunMC2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core Devices"
+    venue: "Eurographics Symposium on Parallel Graphics and Visualization"
+    city: "Leipzig"
+    country: "Germany"
+    date: "2023-06-14"
+    lat: 51.3516
+    lon: 12.4320
+
+  - title: "Poincare Analysis for Magnetic Fieldlines in Tokamaks"
+    venue: "DOE Computer Graphics Forum"
+    city: "Idaho Falls"
+    country: "USA"
+    date: "2023-04-25"
+    lat: 43.51968
+    lon: -112.04585
+
+  - title: "Poincare Analysis for Magnetic Fieldlines in Tokamaks"
+    venue: "Cambridge University"
+    city: "Cambridge"
+    country: "United Kingdom"
+    date: "2023-08-01"
+    lat: 52.21269
+    lon: 0.10408
+
+  - title: "Visualization of Scientific Data at the Exascale and Beyond"
+    venue: "Leeds University"
+    city: "Leeds"
+    country: "United Kingdom"
+    date: "2023-08-03"
+    lat: 53.8080
+    lon: -1.5533
+
+  - title: "Visualization of Scientific Data at the Exascale and Beyond"
+    venue: "International Workshop on In Situ Visualization"
+    city: "Hamburg"
+    country: "Germany"
+    date: "2023-05-25"
+    lat: 58.5488
+    lon: 9.9872
+
+  - title: "The Need for Pervasive In Situ Visualization: PiSAV"
+    venue: "International Workshop on In Situ Visualization"
+    city: "Hamburg"
+    country: "Germany"
+    date: "2022-06-02"
+    lat: 58.5488
+    lon: 9.9872
+
+  - title: "Visualization as a Service for Scientific Data"
+    venue: "Excalibur-SLE: Systems Level Engineering Workshop, Cambridge University"
+    city: "Camgridge"
+    country: "UK"
+    date: "2021-06-17"
+    lat: 52.20551
+    lon: 0.11316
+
+  - title: "Visualization and Analysis Services"
+    venue: "ASiMoV Workshop"
+    city: "Camgridge"
+    country: "UK"
+    date: "2021-04-15"
+    lat: 52.20551
+    lon: 0.11316
+
+  - title: "Visualization and Analysis Services with Data Staging"
+    venue: "ECP Annual Meeting"
+    city: "Houston"
+    country: "USA"
+    date: "2021-04-15"
+    lat: 29.75996
+    lon: -95.36542
+
+  - title: "In Situ: Experiences from the Trenches"
+    venue: "ISAV 2020"
+    city: "Virtual"
+    country: "USA"
+    date: "2020-11-09"
+
+  - title: "Visualization and Analysis Services for Extreme Scale Computing"
+    venue: "Rutherford Appleton Laboratory"
+    city: "Chilton"
+    country: "UK"
+    date: "2016-07-09"
+    lat: 51.57480
+    lon: -1.31083
+
+  - title: "Visualization and Analysis Services for Extreme Scale Computing"
+    venue: "Oxford University"
+    city: "Oxford"
+    country: "UK"
+    date: "2016-07-09"
+    lat: 51.75718
+    lon: -1.25455
+
+  - title: "Visualization and Analysis Services for Extreme Scale Computing"
+    venue: "Swansea University"
+    city: "Swansea"
+    country: "UK"
+    date: "2016-07-09"
+    lat: 51.61162
+    lon: -3.98014
+
+  - title: "Visualization and Analysis Services for Extreme Scale Computing"
+    venue: "Daresbury Laboratory"
+    city: "Warrington"
+    country: "UK"
+    date: "2016-07-09"
+    lat: 53.34469
+    lon: -2.64000
+
+  - title: "Visualization and Analysis Services for Extreme Scale Computing"
+    venue: "Leeds University"
+    city: "Leeds"
+    country: "UK"
+    date: "2016-07-09"
+    lat: 53.8080
+    lon: -1.5533
+
+  - title: "Visualization and Analysis Services for Extreme Scale Computing"
+    venue: "Visualization Applications, Hartree Summer School Series"
+    city: "Warrington"
+    country: "UK"
+    date: "2016-07-09"
+    lat: 53.34469
+    lon: -2.64000
+  - title: "ADIOS Update"
+    venue: "DOE Computer Graphics Forum"
+    city: "Monterey"
+    country: "USA"
+    date: "2016-04-09"
+    lat: 36.61934
+    lon: -121.93763
+
+  - title: "Visualization at ORNL"
+    venue: "DOE Computer Graphics Forum"
+    city: "Monterey"
+    country: "USA"
+    date: "2016-04-09"
+    lat: 36.61934
+    lon: -121.93763
+
+  - title: "Scientific Visualization for High Performance Computing"
+    venue: "University of Tennessee"
+    city: "Knoxville"
+    country: "USA"
+    date: "2015-10-09"
+    lat: 35.95885
+    lon: -83.92453
+  - title: "Performance and Extreme Parallelism in Visualization and HPC Computing"
+    venue: "University of Leeds, School of Computing Colloquium"
+    city: "Leeds"
+    country: "UK"
+    date: "2015-06-09"
+    lat: 53.8080
+    lon: -1.5533
+  - title: "Visualization Applications"
+    venue: "Hartree Summer School Series"
+    city: "Warrington"
+    country: "UK"
+    date: "2015-06-09"
+    lat: 53.34469
+    lon: -2.64000
+
+  - title: "Visualization Applications"
+    venue: "Hartree Summer School Series"
+    city: "Warrington"
+    country: "UK"
+    date: "2014-06-09"
+    lat: 53.34469
+    lon: -2.64000
+  - title: "Toward the Next Generation of HPC Data and Visualization"
+    venue: "National Center for Supercomputing Applications"
+    city: "Urbana-Champaign"
+    country: "USA"
+    date: "2014-04-09"
+    lat: 40.11509
+    lon: -88.22485
+
+  - title: "Visualization of Very Large Scientific Data"
+    venue: "Rice University Oil and Gas Workshop"
+    city: "Houston"
+    country: "USA"
+    date: "2014-03-09"
+    lat: 29.71725
+    lon: -95.40351
+
+  - title: "Scientific Visualization with VisIt"
+    venue: "The Princeton Institute for Computational Science and Engineering"
+    city: "Princeton"
+    country: "USA"
+    date: "2013-11-09"
+    lat: 40.99095
+    lon: -74.65129
+
+  - title: "Visualization of Extremely Large Datasets using VisIt"
+    venue: "OLCF Data Workshop"
+    city: "Oak Ridge"
+    country: "USA"
+    date: "2013-08-09"
+    lat: 35.93132
+    lon: -84.31013
+
+  - title: "The EVEREST Upgrade at ORNL"
+    venue: "HPC User Forum"
+    city: "Tucson"
+    country: "USA"
+    date: "2013-11-09"
+    lat: 32.25437
+    lon: -110.97178
+
+  - title: "Addressing Data Challenges for Exascale Computing"
+    venue: "Data Birds of a Feather, Supcomputing"
+    city: "Salt Lake City"
+    country: "USA"
+    date: "2012-11-09"
+    lat: 40.76805
+    lon: -111.89607
+
+  - title: "Data Analysis and Visualization of Very Large Data"
+    venue: "HPC Users Forum"
+    city: "Dearborn"
+    country: "USA"
+    date: "2012-09-09"
+    lat: 42.32302
+    lon: -83.17411
+
+  - title: "EAVL: Extreme Scale Analysis and Visualization Library"
+    venue: "CSCADS"
+    city: "Snowbird"
+    country: "USA"
+    date: "2012-07-09"
+    lat: 40.58124
+    lon: -111.65642
+
+  - title: "PICS: A Flexible, Extensible System for Particle Based Analysis"
+    venue: "Astronum"
+    city: "Kona"
+    country: "USA"
+    date: "2012-06-09"
+    lat: 19.64213
+    lon: -155.99990
+
+  - title: "Scientific Data Visualization"
+    venue: "DOE Office of Science Graduate Fellowship Seminar"
+    city: "Oak Ridge"
+    country: "USA"
+    date: "2012-07-09"
+    lat: 36.61934
+    lon: -121.93763
+
+  - title: "Scientific Data Visualization"
+    venue: "Innovations in Data-Intensive Astronomy Workshop"
+    city: "Green Bank, WV"
+    country: "USA"
+    date: "2011-05-09"
+    lat: 38.43517
+    lon: -79.84013
+
+  - title: "Algorithm Scalability for Scalar and Vector Field Visualization"
+    venue: "SIAM Conference on Parallel Processing for Scientific Computing"
+    city: "Seattle"
+    country: "USA"
+    date: "2010-02-09"
+    lat: 47.60614
+    lon: -122.33156
+
+  - title: "Experiments in Pure Parallelism"
+    venue: "CScADS"
+    city: "Snowbird"
+    country: "USA"
+    date: "2010-07-09"
+    lat: 40.58124
+    lon: -111.65642
+
+  - title: "Visualization with VisIt"
+    venue: "ORNL Hexcore Workshop"
+    city: "Oak Ridge"
+    country: "USA"
+    date: "2010-05-09"
+    lat: 35.93132
+    lon: -84.31013
+
+  - title: "Petascale Analysis and Visualization"
+    venue: "CScADS"
+    city: "Tahoe City"
+    country: "USA"
+    date: "2010-05-09"
+    lat: 39.16791
+    lon: -120.14631
+
+  - title: "Magnetic Field Analysis"
+    venue: "ORNL Hexcore Workshop"
+    city: "Oak Ridge"
+    country: "USA"
+    date: "2009-05-09"
+    lat: 35.93132
+    lon: -84.31013
+
+  - title: "The Moving Target of Visualization Software for an Ever More Complex World"
+    venue: "National Institute of Informatics Shonan Seminar"
+    city: "Shonan"
+    country: "Japan"
+    date: "2019-02-09"
+    lat: 35.3712
+    lon: 139.3044
+
+  - title: "In Situ Visualization for Computational Science"
+    venue: "Schloss Dagstuhl Seminar on Scientific Visualization"
+    city: "Wadern"
+    country: "Germany"
+    date: "2018-07-09"
+    lat: 49.63060
+    lon: 6.89899
+
+  - title: "Visualization using VisIt"
+    venue: "VISTA Webinar Series, Oak Ridge National Laboratory"
+    city: "Oak Ridge, TN"
+    country: "United States"
+    date: "2021-03-01"
+    lat: 36.010357
+    lon: -84.269646
+
+  - title: "High Performance I/O Frameworks 101"
+    venue: "Supercomputing 2019"
+    city: "Denver, CO"
+    country: "United States"
+    date: "2019-11-01"
+    lat: 39.739200
+    lon: -104.984700
+
+  - title: "VTKm"
+    venue: "IEEE Visualization 2019"
+    city: "Vancouver, BC"
+    country: "Canada"
+    date: "2019-10-01"
+    lat: 49.260830
+    lon: -123.113890
+
+  - title: "Scalable HPC Visualization and Data Analysis Using VisIt"
+    venue: "Supercomputing 2017"
+    city: "Denver, CO"
+    country: "United States"
+    date: "2017-11-01"
+    lat: 39.739200
+    lon: -104.984700
+
+  - title: "Scalable HPC Visualization and Data Analysis Using VisIt"
+    venue: "Supercomputing 2016"
+    city: "Salt Lake City, UT"
+    country: "United States"
+    date: "2016-11-01"
+    lat: 40.760800
+    lon: -111.891000
+
+  - title: "Data Management, Analysis and Visualization Tools for Data-Intensive Science"
+    venue: "Supercomputing 2015"
+    city: "Austin, TX"
+    country: "United States"
+    date: "2015-11-01"
+    lat: 30.266666
+    lon: -97.733330
+
+  - title: "Visualization with VisIt"
+    venue: "Hartree Summer School"
+    city: "Warrington"
+    country: "United Kingdom"
+    date: "2016-07-01"
+    lat: 53.392500
+    lon: -2.580240
+
+  - title: "Effective HPC Visualization and Data Analysis using VisIt"
+    venue: "Supercomputing 2015"
+    city: "Austin, TX"
+    country: "United States"
+    date: "2015-11-01"
+    lat: 30.266666
+    lon: -97.733330
+
+  - title: "Scientific Data Workflows"
+    venue: "ISC"
+    city: "Frankfurt"
+    country: "Germany"
+    date: "2015-07-01"
+    lat: 50.110924
+    lon: 8.682127
+
+  - title: "Visualization with VisIt"
+    venue: "PRACE Winter School"
+    city: "Ostrava"
+    country: "Czech Republic"
+    date: "2015-01-01"
+    lat: 49.820923
+    lon: 18.262524
+
+  - title: "Effective HPC Visualization and Data Analysis using VisIt"
+    venue: "Supercomputing 2014"
+    city: "New Orleans, LA"
+    country: "United States"
+    date: "2014-11-01"
+    lat: 29.951065
+    lon: -90.071533
+
+  - title: "Visualization with VisIt"
+    venue: "Hartree Summer School Series"
+    city: "Warrington"
+    country: "United Kingdom"
+    date: "2014-06-01"
+    lat: 53.392500
+    lon: -2.580240
+
+  - title: "Visualization with VisIt"
+    venue: "British Petroleum Data Center"
+    city: "Houston, TX"
+    country: "United States"
+    date: "2014-03-01"
+    lat: 29.749907
+    lon: -95.358421
+
+  - title: "Large Scale Visualization and Data Analysis with VisIt"
+    venue: "OLCF Data Workshop"
+    city: "Knoxville, TN"
+    country: "United States"
+    date: "2013-08-01"
+    lat: 35.964668
+    lon: -83.926453
+
+  - title: "Large Scale Visualization and Data Analysis with VisIt"
+    venue: "Supercomputing 2012"
+    city: "Salt Lake City, UT"
+    country: "United States"
+    date: "2012-11-01"
+    lat: 40.760800
+    lon: -111.891000
+
+  - title: "Introduction to VisIt"
+    venue: "CSDMS 2011"
+    city: "Boulder, CO"
+    country: "United States"
+    date: "2011-10-01"
+    lat: 40.014984
+    lon: -105.270546
+
+  - title: "Introduction to VisIt"
+    venue: "SciDAC 2011"
+    city: "Denver, CO"
+    country: "United States"
+    date: "2011-07-01"
+    lat: 39.739200
+    lon: -104.984700
+
+  - title: "Introduction to VisIt"
+    venue: "NRAO Workshop 2011"
+    city: "Green Bank, WV"
+    country: "United States"
+    date: "2011-05-01"
+    lat: 38.420119
+    lon: -79.831446
+
+  - title: "Introduction to Vector Field Visualization"
+    venue: "Supercomputing 2010"
+    city: "New Orleans, LA"
+    country: "United States"
+    date: "2010-11-01"
+    lat: 29.951065
+    lon: -90.071533
+
+  - title: "Introduction to VisIt"
+    venue: "SciDAC 2010"
+    city: "Chattanooga, TN"
+    country: "United States"
+    date: "2010-07-01"
+    lat: 35.045631
+    lon: -85.309677
+
+  - title: "Introduction to VisIt"
+    venue: "SciDAC 2009"
+    city: "San Diego, CA"
+    country: "United States"
+    date: "2009-06-01"
+    lat: 32.715736
+    lon: -117.161087
+#
+#
 # Template - copy and fill in:
 #  - title: "Talk Title"
 #    venue: "Institution"

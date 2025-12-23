@@ -42,7 +42,7 @@ def create_index_html():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Your Name - Academic Portfolio</title>
+    <title>Dr. David R. Pugmire</title>
 
     <!-- js-yaml for loading YAML data -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
@@ -313,6 +313,25 @@ def create_index_html():
         .markdown-body ul { margin-left: 1.25rem; margin-bottom: 1rem; }
         .markdown-body p { margin-bottom: 0.75rem; }
 
+        /* Markdown tables: add breathing room between columns */
+        .markdown-body table {
+            border-collapse: separate;   /* allow padding to feel like column spacing */
+            border-spacing: 0;           /* keep clean look */
+            margin: 0.75rem 0 1rem 0;
+            line-height: 1.4;
+        }
+        .markdown-body th,
+        .markdown-body td {
+            padding: 0.2rem 0.9rem;      /* general cell padding */
+            vertical-align: top;
+        }
+        .markdown-body th:first-child,
+        .markdown-body td:first-child {
+            padding-right: 2.5rem;       /* increase space between col 1 and col 2 */
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+        }
+
         footer { text-align: center; padding: 2rem; background: white; color: #666; margin-top: 3rem; }
 
         /* Publications section header */
@@ -347,9 +366,9 @@ def create_index_html():
         <header>
             <div class="header-content">
                 <div>
-                    <h1>Dr. Your Name</h1>
-                    <div class="subtitle">Professor of Computer Science</div>
-                    <div class="subtitle">University Name</div>
+                    <h1>Dr. David R. Pugmire</h1>
+                    <div class="subtitle">Distinguished Research Scientist</div>
+                    <div class="subtitle">Oak Ridge National Laboratory</div>
                 </div>
                 <div class="contact-links">
                     <a href="mailto:your.email@university.edu">Email</a>
@@ -427,7 +446,7 @@ def create_index_html():
     </main>
 
     <footer>
-        <p>&copy; 2024 Dr. Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Dr. David R. Pugmire. All rights reserved.</p>
     </footer>
 
     <script>
@@ -703,7 +722,7 @@ def create_index_html():
 
             let html = '';
             html += '<div id="talk-map"></div>';
-            html += '<h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; color: #444;">Talk History</h3>';
+            html += '<h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; color: #444;">Presentations</h3>';
             html += '<div id="talks-list">';
 
             talks.forEach(function(talk) {

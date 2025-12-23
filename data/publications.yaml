@@ -160,7 +160,7 @@ publications:
   - id: "athawale2024data"
     title: "Data-Driven Computation of Probabilistic Marching Cubes for Efficient Visualization of Level-Set Uncertainty"
     authors: "Athawale, T., Wang, Z., Johnson, C., Pugmire, D."
-    venue: "EuroVis 2024 - Short Papers"
+    venue: "EuroVis 2024"
     year: 2024
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2312/evs.20241071"

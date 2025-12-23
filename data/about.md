@@ -1,18 +1,30 @@
 I am a Distinguished Research Scientist and Visualization Group Leader at [Oak Ridge National Laboratory](https://ornl.gov). I also hold a Joint Faculty Professor position in the [Electrical Engineering and Computer Science Department at the University of Tennesse](https://eecs.utk.edu).
 
-I have been at ORNL since 2007. From 2003 to 2007 I was a Research Scientist in the High Performance Computing Group at [Los Alamos National Laboratory](https://lanl.gov). From 1997 to 2003 I was a Lead Software Engineer at [IronCAD, LLC](https://ironcad.com). I received my Ph.D. in Computer Science from the [University of Utah](https://cs.utah.edu) in 2000.
+My interests are focused on research and development of scientific visualization and analysis for large-scale data.
 
-My interests are focused on research and development of scientific visualization and analysis for extremely large-scale data.
+### Professional Experience
 
-Replace this text with a short bio describing:
+|              |                                                                                                     |
+| ------------ | --------------------------------------------------------------------------------------------------- |
+| 2021–Present | **Distinguished Research Scientist**, [Oak Ridge National Lab](ornl.gov)                            |
+| 2020–Present | **Visualization Group Lead**, Oak Ridge National Lab                                                |
+| 2016–Present | **Joint Faculty Professor**, EE and CS Department, [University of Tennessee](https://eecs.utk.edu/) |
+| 2015–2021    | **Senior Research Scientist**, Oak Ridge National Lab                                               |
+| 2013–2020    | **Visualization Team Lead**, Scientific Data Group, Oak Ridge National Lab                          |
+| 2011–2015    | **Research Scientist**, Scientific Data Group, Oak Ridge National Lab                               |
+| 2011–2013    | **Visualization Team Lead**, Scientific Computing Group, Oak Ridge National Lab                     |
+| 2007–2011    | **Research Scientist**, Scientific Computing Group, Oak Ridge National Lab                          |
+| 2003–2007    | **Research Scientist**, High Performance Computing Group, Los Alamos National Lab                   |
+| 2000–2003    | **Design Manager**, [IronCAD, LLC](ironcad.com)                                                     |
+| 1997–2000    | **Lead Software Engineer**, [IronCAD, LLC](ironcad.com)                                             |
 
-- Your current position and institution
-- Your main research areas
-- A sentence or two about what motivates your work
+### Education
 
-You can also include links, for example:
+|          |                                                                                                                                                                      |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2000** | Ph.D. in Computer Science. [University of Utah](https://www.cs.utah.edu/), Salt Lake City, UT                                                                        |
+|          | Advisors: [Elaine Cohen](https://users.cs.utah.edu/~cohen/), [Richard Riesenfeld](https://users.cs.utah.edu/~rfr/), [Chris Johnson](https://users.cs.utah.edu/~crj/) |
+| **1992** | B.S. Computer Science. [University of Utah](https://www.cs.utah.edu/), Salt Lake City, UT                                                                            |
 
 - [My GitHub](https://github.com/yourusername)
 - [My Google Scholar](https://scholar.google.com/)
-  ~
-  His research is focused on large-scale scientific visualization on HPC resources. His current interests include scalable visualization algorithms and systems on multi-core and future generation hardware.
