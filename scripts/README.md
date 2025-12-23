@@ -4,7 +4,7 @@
 
 1. Edit `data/about.md` with your bio and research overview.
 2. Edit `data/publications.yaml` with your publications (optionally include `abstract`).
-3. Edit `data/keynotes.yaml`, `data/talks.yaml`, and `data/tutorials.yaml` (including lat/lon for the map).
+3. Edit `data/talks.yaml` with your talks (including lat/lon for the map).
 4. Edit `data/professional-activities.md` with your professional service.
 5. Optionally edit `data/fun-facts.md` and `data/quotes.md`.
 6. Run locally: `python -m http.server 8000`
@@ -15,9 +15,7 @@
 - `index.html`                      - Main website (single-page app)
 - `data/about.md`                   - About/Bio (Markdown)
 - `data/publications.yaml`          - Publications
-- `data/keynotes.yaml`              - Keynotes (drives the Leaflet map and list)
-- `data/talks.yaml`                 - Talks (drives the Leaflet map and list)
-- `data/tutorials.yaml`             - Tutorials (drives the Leaflet map and list)
+- `data/talks.yaml`                 - Talks (drives the Leaflet map and talk list)
 - `data/professional-activities.md` - Professional activities (Markdown)
 - `data/fun-facts.md`               - Fun facts (Markdown)
 - `data/quotes.md`                  - Favorite quotes (Markdown)

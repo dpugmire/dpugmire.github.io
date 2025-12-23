@@ -297,7 +297,6 @@ def create_index_html():
             max-width: 900px;           /* optional, match your bibtex-container */
         }
 
-
         /* Talks section */
         #talk-map { height: 520px; margin: 1rem 0; border-radius: 8px; overflow: hidden; }
         .talk-item { padding: 1rem; border-left: 4px solid #10b981; margin-bottom: 1rem; background: #f9f9f9; }
@@ -711,50 +710,85 @@ def create_index_html():
         }
 
         async function renderTalks() {
-            const data = await loadYAML('data/talks.yaml');
             const container = document.getElementById('talks-content');
-            if (!data || !data.talks) {
-                container.innerHTML = '<p>No talks found. Check data/talks.yaml</p>';
+
+            // Load all three categories (each file contains: talks: [ ... ])
+            const [keynotesData, talksData, tutorialsData] = await Promise.all([
+                loadYAML('data/keynotes.yaml'),
+                loadYAML('data/talks.yaml'),
+                loadYAML('data/tutorials.yaml'),
+            ]);
+
+            const keynotes = (keynotesData && keynotesData.talks) ? keynotesData.talks : [];
+            const talks = (talksData && talksData.talks) ? talksData.talks : [];
+            const tutorials = (tutorialsData && tutorialsData.talks) ? tutorialsData.talks : [];
+
+            const tag = (arr, cat) => (arr || []).map(t => Object.assign({ _category: cat }, t));
+            const all = [
+                ...tag(keynotes, 'Keynote'),
+                ...tag(talks, 'Talk'),
+                ...tag(tutorials, 'Tutorial'),
+            ];
+
+            if (all.length === 0) {
+                container.innerHTML = '<p>No talks found. Check data/keynotes.yaml, data/talks.yaml, data/tutorials.yaml</p>';
                 return;
             }
 
-            const talks = data.talks.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+            const renderList = (items) => {
+                if (!items || items.length === 0) return '<p style="color:#666;">None yet.</p>';
+
+                let h = '';
+                items.slice().sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(function(talk) {
+                    const formattedDate = talk.date
+                        ? new Date(talk.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+                        : '';
+
+                    h += '<div class="talk-item">';
+                    h += '<div class="talk-title">' + escHtml(talk.title) + '</div>';
+                    h += '<div class="talk-details">';
+                    if (talk._category) h += '🏷️ ' + escHtml(talk._category) + '<br>';
+
+                    const locParts = [];
+                    if (talk.venue) locParts.push(talk.venue);
+                    if (talk.city) locParts.push(talk.city);
+                    if (talk.country) locParts.push(talk.country);
+                    if (locParts.length > 0) h += '📍 ' + escHtml(locParts.join(', ')) + '<br>';
+                    if (formattedDate) h += '📅 ' + escHtml(formattedDate);
+                    if (talk.slides) {
+                        h += '<br>📊 <a href="slides/' + encodeURIComponent(talk.slides) + '" target="_blank" rel="noopener noreferrer">View Slides</a>';
+                    }
+                    h += '</div></div>';
+                });
+
+                return h;
+            };
 
             let html = '';
             html += '<div id="talk-map"></div>';
-            html += '<h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; color: #444;">Presentations</h3>';
-            html += '<div id="talks-list">';
 
-            talks.forEach(function(talk) {
-                const formattedDate = talk.date
-                    ? new Date(talk.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric'
-                      })
-                    : '';
-
-                html += '<div class="talk-item">';
-                html += '<div class="talk-title">' + escHtml(talk.title) + '</div>';
-                html += '<div class="talk-details">';
-                const locParts = [];
-                if (talk.venue) locParts.push(talk.venue);
-                if (talk.city) locParts.push(talk.city);
-                if (talk.country) locParts.push(talk.country);
-                if (locParts.length > 0) {
-                    html += '📍 ' + escHtml(locParts.join(', ')) + '<br>';
-                }
-                if (formattedDate) {
-                    html += '📅 ' + escHtml(formattedDate);
-                }
-                if (talk.slides) {
-                    html += '<br>📊 <a href="slides/' + encodeURIComponent(talk.slides) + '" target="_blank" rel="noopener noreferrer">View Slides</a>';
-                }
-                html += '</div></div>';
-            });
-
+            html += '<div class="category-header" style="border-left-color:#8b5cf6;">';
+            html += '  <h3>Keynotes</h3>';
+            html += '  <span class="category-count" style="background:#8b5cf6;">' + keynotes.length + '</span>';
             html += '</div>';
+            html += renderList(tag(keynotes, 'Keynote'));
+
+            html += '<div class="category-header" style="border-left-color:#10b981;">';
+            html += '  <h3>Talks</h3>';
+            html += '  <span class="category-count" style="background:#10b981;">' + talks.length + '</span>';
+            html += '</div>';
+            html += renderList(tag(talks, 'Talk'));
+
+            html += '<div class="category-header" style="border-left-color:#f59e0b;">';
+            html += '  <h3>Tutorials</h3>';
+            html += '  <span class="category-count" style="background:#f59e0b;">' + tutorials.length + '</span>';
+            html += '</div>';
+            html += renderList(tag(tutorials, 'Tutorial'));
+
             container.innerHTML = html;
+
+            // Map pins from ALL categories
+            const sortedAll = all.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
 
             const map = L.map('talk-map', { worldCopyJump: true }).setView([20, 0], 2);
 
@@ -771,7 +805,7 @@ def create_index_html():
             };
 
             const groups = {};
-            talks.forEach(function(t) {
+            sortedAll.forEach(function(t) {
                 const k = keyFor(t);
                 if (!k) return;
                 if (!groups[k]) groups[k] = [];
@@ -807,6 +841,7 @@ def create_index_html():
 
                 const items = group.map(function(t) {
                     const datePart = t.date ? ' — ' + escHtml(t.date) : '';
+                    const catPart = t._category ? ' <span style="color:#666;">(' + escHtml(t._category) + ')</span>' : '';
                     const parts = [];
                     if (t.venue) parts.push(t.venue);
                     if (t.city) parts.push(t.city);
@@ -815,7 +850,7 @@ def create_index_html():
                     const linkPart = t.slides
                         ? ' — <a href="slides/' + encodeURIComponent(t.slides) + '" target="_blank" rel="noopener noreferrer">slides</a>'
                         : '';
-                    return '• <b>' + escHtml(t.title) + '</b>' + datePart + locPart + linkPart;
+                    return '• <b>' + escHtml(t.title) + '</b>' + catPart + datePart + locPart + linkPart;
                 }).join('<br>');
 
                 const header = locLabel
@@ -970,12 +1005,12 @@ publications:
 
 
 def create_talks_yaml(overwrite=False):
-    """Create or overwrite talks.yaml template."""
+    """Create or overwrite talks.yaml template (Talks category)."""
     action = "Overwriting" if overwrite else "Creating"
     print(f"{action} data/talks.yaml...")
 
     yaml_content = '''# talks.yaml
-# Edit this file to manage your talks
+# Talks
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
 
 talks:
@@ -987,14 +1022,6 @@ talks:
     lat: 37.4275
     lon: -122.1697
     slides: "stanford2024.pdf"
-
-  - title: "Neural Networks Tutorial"
-    venue: "MIT CSAIL"
-    city: "Cambridge, MA"
-    country: "USA"
-    date: "2024-02-10"
-    lat: 42.3601
-    lon: -71.0902
 
 # Template - copy and fill in:
 #  - title: "Talk Title"
@@ -1014,6 +1041,83 @@ talks:
         f.write(yaml_content)
 
     print("  ✓ Wrote data/talks.yaml\n")
+
+
+def create_keynotes_yaml(overwrite=False):
+    """Create or overwrite keynotes.yaml template (Keynotes category)."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/keynotes.yaml...")
+
+    yaml_content = '''# keynotes.yaml
+# Keynotes
+# lat/lon are used to place pins on the Leaflet world map in the Talks section.
+
+talks:
+  - title: "Keynote Title"
+    venue: "Conference / Event"
+    city: "City, ST"
+    country: "USA"
+    date: "2024-01-01"
+    lat: 0.0
+    lon: 0.0
+    slides: "keynote.pdf"
+
+# Template - copy and fill in:
+#  - title: "Keynote Title"
+#    venue: "Conference / Event"
+#    city: "City"
+#    country: "Country"
+#    date: "YYYY-MM-DD"
+#    lat: 00.0000      # latitude (used for map pin)
+#    lon: 00.0000      # longitude (used for map pin)
+#    slides: "file.pdf"
+#    # optional:
+#    # location: "Custom location label for popup"
+'''
+
+    os.makedirs('data', exist_ok=True)
+    with open('data/keynotes.yaml', 'w', encoding='utf-8') as f:
+        f.write(yaml_content)
+
+    print("  ✓ Wrote data/keynotes.yaml\n")
+
+
+def create_tutorials_yaml(overwrite=False):
+    """Create or overwrite tutorials.yaml template (Tutorials category)."""
+    action = "Overwriting" if overwrite else "Creating"
+    print(f"{action} data/tutorials.yaml...")
+
+    yaml_content = '''# tutorials.yaml
+# Tutorials
+# lat/lon are used to place pins on the Leaflet world map in the Talks section.
+
+talks:
+  - title: "Neural Networks Tutorial"
+    venue: "MIT CSAIL"
+    city: "Cambridge, MA"
+    country: "USA"
+    date: "2024-02-10"
+    lat: 42.3601
+    lon: -71.0902
+
+# Template - copy and fill in:
+#  - title: "Tutorial Title"
+#    venue: "School / Workshop"
+#    city: "City"
+#    country: "Country"
+#    date: "YYYY-MM-DD"
+#    lat: 00.0000      # latitude (used for map pin)
+#    lon: 00.0000      # longitude (used for map pin)
+#    slides: "file.pdf"
+#    # optional:
+#    # location: "Custom location label for popup"
+'''
+
+    os.makedirs('data', exist_ok=True)
+    with open('data/tutorials.yaml', 'w', encoding='utf-8') as f:
+        f.write(yaml_content)
+
+    print("  ✓ Wrote data/tutorials.yaml\n")
 
 
 def create_professional_activities_md(overwrite=False):
@@ -1139,7 +1243,7 @@ def create_readme():
 
 1. Edit `data/about.md` with your bio and research overview.
 2. Edit `data/publications.yaml` with your publications (optionally include `abstract`).
-3. Edit `data/talks.yaml` with your talks (including lat/lon for the map).
+3. Edit `data/keynotes.yaml`, `data/talks.yaml`, and `data/tutorials.yaml` (including lat/lon for the map).
 4. Edit `data/professional-activities.md` with your professional service.
 5. Optionally edit `data/fun-facts.md` and `data/quotes.md`.
 6. Run locally: `python -m http.server 8000`
@@ -1150,7 +1254,9 @@ def create_readme():
 - `index.html`                      - Main website (single-page app)
 - `data/about.md`                   - About/Bio (Markdown)
 - `data/publications.yaml`          - Publications
-- `data/talks.yaml`                 - Talks (drives the Leaflet map and talk list)
+- `data/keynotes.yaml`              - Keynotes (drives the Leaflet map and list)
+- `data/talks.yaml`                 - Talks (drives the Leaflet map and list)
+- `data/tutorials.yaml`             - Tutorials (drives the Leaflet map and list)
 - `data/professional-activities.md` - Professional activities (Markdown)
 - `data/fun-facts.md`               - Fun facts (Markdown)
 - `data/quotes.md`                  - Favorite quotes (Markdown)
@@ -1205,12 +1311,26 @@ def main(argv=None):
     else:
         print(f"Skipping {pubs_path} (already exists). Use --reset-templates to regenerate.\n")
 
+    # keynotes.yaml
+    keynotes_path = 'data/keynotes.yaml'
+    if args.reset_templates or not os.path.exists(keynotes_path):
+        create_keynotes_yaml(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {keynotes_path} (already exists). Use --reset-templates to regenerate.\n")
+
     # talks.yaml
     talks_path = 'data/talks.yaml'
     if args.reset_templates or not os.path.exists(talks_path):
         create_talks_yaml(overwrite=args.reset_templates)
     else:
         print(f"Skipping {talks_path} (already exists). Use --reset-templates to regenerate.\n")
+
+    # tutorials.yaml
+    tutorials_path = 'data/tutorials.yaml'
+    if args.reset_templates or not os.path.exists(tutorials_path):
+        create_tutorials_yaml(overwrite=args.reset_templates)
+    else:
+        print(f"Skipping {tutorials_path} (already exists). Use --reset-templates to regenerate.\n")
 
     # professional-activities.md
     pa_path = 'data/professional-activities.md'
@@ -1246,8 +1366,9 @@ def main(argv=None):
     print("\nNext steps:")
     print("1. Run your bibtex_to_yaml.py to regenerate data/publications.yaml (include abstract if available).")
     print("2. Edit the markdown files in data/ (about, professional-activities, fun-facts, quotes).")
-    print("3. Test locally: python -m http.server 8000")
-    print("4. Push to GitHub and enable GitHub Pages.")
+    print("3. Edit talk files in data/ (keynotes.yaml, talks.yaml, tutorials.yaml).")
+    print("4. Test locally: python -m http.server 8000")
+    print("5. Push to GitHub and enable GitHub Pages.")
     print("\nTo regenerate the YAML/Markdown templates, run:")
     print("   python setup_academic_website.py --reset-templates\n")
 

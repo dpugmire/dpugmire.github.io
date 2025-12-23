@@ -1,0 +1,182 @@
+# tutorials.yaml
+# Tutorials
+# lat/lon are used to place pins on the Leaflet world map in the Talks section.
+talks:
+  - title: "Visualization using VisIt"
+    venue: "VISTA Webinar Series, Oak Ridge National Laboratory"
+    city: "Oak Ridge, TN"
+    country: "United States"
+    date: "2021-03-01"
+    lat: 36.010357
+    lon: -84.269646
+
+  - title: "High Performance I/O Frameworks 101"
+    venue: "Supercomputing 2019"
+    city: "Denver, CO"
+    country: "United States"
+    date: "2019-11-01"
+    lat: 39.739200
+    lon: -104.984700
+
+  - title: "VTKm"
+    venue: "IEEE Visualization 2019"
+    city: "Vancouver, BC"
+    country: "Canada"
+    date: "2019-10-01"
+    lat: 49.260830
+    lon: -123.113890
+
+  - title: "Scalable HPC Visualization and Data Analysis Using VisIt"
+    venue: "Supercomputing 2017"
+    city: "Denver, CO"
+    country: "United States"
+    date: "2017-11-01"
+    lat: 39.739200
+    lon: -104.984700
+
+  - title: "Scalable HPC Visualization and Data Analysis Using VisIt"
+    venue: "Supercomputing 2016"
+    city: "Salt Lake City, UT"
+    country: "United States"
+    date: "2016-11-01"
+    lat: 40.760800
+    lon: -111.891000
+
+  - title: "Data Management, Analysis and Visualization Tools for Data-Intensive Science"
+    venue: "Supercomputing 2015"
+    city: "Austin, TX"
+    country: "United States"
+    date: "2015-11-01"
+    lat: 30.266666
+    lon: -97.733330
+
+  - title: "Visualization with VisIt"
+    venue: "Hartree Summer School"
+    city: "Warrington"
+    country: "United Kingdom"
+    date: "2016-07-01"
+    lat: 53.392500
+    lon: -2.580240
+
+  - title: "Effective HPC Visualization and Data Analysis using VisIt"
+    venue: "Supercomputing 2015"
+    city: "Austin, TX"
+    country: "United States"
+    date: "2015-11-01"
+    lat: 30.266666
+    lon: -97.733330
+
+  - title: "Scientific Data Workflows"
+    venue: "ISC"
+    city: "Frankfurt"
+    country: "Germany"
+    date: "2015-07-01"
+    lat: 50.110924
+    lon: 8.682127
+
+  - title: "Visualization with VisIt"
+    venue: "PRACE Winter School"
+    city: "Ostrava"
+    country: "Czech Republic"
+    date: "2015-01-01"
+    lat: 49.820923
+    lon: 18.262524
+
+  - title: "Effective HPC Visualization and Data Analysis using VisIt"
+    venue: "Supercomputing 2014"
+    city: "New Orleans, LA"
+    country: "United States"
+    date: "2014-11-01"
+    lat: 29.951065
+    lon: -90.071533
+
+  - title: "Visualization with VisIt"
+    venue: "Hartree Summer School Series"
+    city: "Warrington"
+    country: "United Kingdom"
+    date: "2014-06-01"
+    lat: 53.392500
+    lon: -2.580240
+
+  - title: "Visualization with VisIt"
+    venue: "British Petroleum Data Center"
+    city: "Houston, TX"
+    country: "United States"
+    date: "2014-03-01"
+    lat: 29.749907
+    lon: -95.358421
+
+  - title: "Large Scale Visualization and Data Analysis with VisIt"
+    venue: "OLCF Data Workshop"
+    city: "Knoxville, TN"
+    country: "United States"
+    date: "2013-08-01"
+    lat: 35.964668
+    lon: -83.926453
+
+  - title: "Large Scale Visualization and Data Analysis with VisIt"
+    venue: "Supercomputing 2012"
+    city: "Salt Lake City, UT"
+    country: "United States"
+    date: "2012-11-01"
+    lat: 40.760800
+    lon: -111.891000
+
+  - title: "Introduction to VisIt"
+    venue: "CSDMS 2011"
+    city: "Boulder, CO"
+    country: "United States"
+    date: "2011-10-01"
+    lat: 40.014984
+    lon: -105.270546
+
+  - title: "Introduction to VisIt"
+    venue: "SciDAC 2011"
+    city: "Denver, CO"
+    country: "United States"
+    date: "2011-07-01"
+    lat: 39.739200
+    lon: -104.984700
+
+  - title: "Introduction to VisIt"
+    venue: "NRAO Workshop 2011"
+    city: "Green Bank, WV"
+    country: "United States"
+    date: "2011-05-01"
+    lat: 38.420119
+    lon: -79.831446
+
+  - title: "Introduction to Vector Field Visualization"
+    venue: "Supercomputing 2010"
+    city: "New Orleans, LA"
+    country: "United States"
+    date: "2010-11-01"
+    lat: 29.951065
+    lon: -90.071533
+
+  - title: "Introduction to VisIt"
+    venue: "SciDAC 2010"
+    city: "Chattanooga, TN"
+    country: "United States"
+    date: "2010-07-01"
+    lat: 35.045631
+    lon: -85.309677
+
+  - title: "Introduction to VisIt"
+    venue: "SciDAC 2009"
+    city: "San Diego, CA"
+    country: "United States"
+    date: "2009-06-01"
+    lat: 32.715736
+    lon: -117.161087
+# Template - copy and fill in:
+#  - title: "Tutorial Title"
+#    venue: "School / Workshop"
+#    city: "City"
+#    country: "Country"
+#    date: "YYYY-MM-DD"
+#    lat: 00.0000      # latitude (used for map pin)
+#    lon: 00.0000      # longitude (used for map pin)
+#    slides: "file.pdf"
+#    # optional:
+#    # location: "Custom location label for popup"

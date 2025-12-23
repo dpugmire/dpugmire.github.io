@@ -258,7 +258,6 @@
             max-width: 900px;           /* optional, match your bibtex-container */
         }
 
-
         /* Talks section */
         #talk-map { height: 520px; margin: 1rem 0; border-radius: 8px; overflow: hidden; }
         .talk-item { padding: 1rem; border-left: 4px solid #10b981; margin-bottom: 1rem; background: #f9f9f9; }
@@ -672,50 +671,85 @@
         }
 
         async function renderTalks() {
-            const data = await loadYAML('data/talks.yaml');
             const container = document.getElementById('talks-content');
-            if (!data || !data.talks) {
-                container.innerHTML = '<p>No talks found. Check data/talks.yaml</p>';
+
+            // Load all three categories (each file contains: talks: [ ... ])
+            const [keynotesData, talksData, tutorialsData] = await Promise.all([
+                loadYAML('data/keynotes.yaml'),
+                loadYAML('data/talks.yaml'),
+                loadYAML('data/tutorials.yaml'),
+            ]);
+
+            const keynotes = (keynotesData && keynotesData.talks) ? keynotesData.talks : [];
+            const talks = (talksData && talksData.talks) ? talksData.talks : [];
+            const tutorials = (tutorialsData && tutorialsData.talks) ? tutorialsData.talks : [];
+
+            const tag = (arr, cat) => (arr || []).map(t => Object.assign({ _category: cat }, t));
+            const all = [
+                ...tag(keynotes, 'Keynote'),
+                ...tag(talks, 'Talk'),
+                ...tag(tutorials, 'Tutorial'),
+            ];
+
+            if (all.length === 0) {
+                container.innerHTML = '<p>No talks found. Check data/keynotes.yaml, data/talks.yaml, data/tutorials.yaml</p>';
                 return;
             }
 
-            const talks = data.talks.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+            const renderList = (items) => {
+                if (!items || items.length === 0) return '<p style="color:#666;">None yet.</p>';
+
+                let h = '';
+                items.slice().sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(function(talk) {
+                    const formattedDate = talk.date
+                        ? new Date(talk.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+                        : '';
+
+                    h += '<div class="talk-item">';
+                    h += '<div class="talk-title">' + escHtml(talk.title) + '</div>';
+                    h += '<div class="talk-details">';
+                    if (talk._category) h += '🏷️ ' + escHtml(talk._category) + '<br>';
+
+                    const locParts = [];
+                    if (talk.venue) locParts.push(talk.venue);
+                    if (talk.city) locParts.push(talk.city);
+                    if (talk.country) locParts.push(talk.country);
+                    if (locParts.length > 0) h += '📍 ' + escHtml(locParts.join(', ')) + '<br>';
+                    if (formattedDate) h += '📅 ' + escHtml(formattedDate);
+                    if (talk.slides) {
+                        h += '<br>📊 <a href="slides/' + encodeURIComponent(talk.slides) + '" target="_blank" rel="noopener noreferrer">View Slides</a>';
+                    }
+                    h += '</div></div>';
+                });
+
+                return h;
+            };
 
             let html = '';
             html += '<div id="talk-map"></div>';
-            html += '<h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; color: #444;">Presentations</h3>';
-            html += '<div id="talks-list">';
 
-            talks.forEach(function(talk) {
-                const formattedDate = talk.date
-                    ? new Date(talk.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric'
-                      })
-                    : '';
-
-                html += '<div class="talk-item">';
-                html += '<div class="talk-title">' + escHtml(talk.title) + '</div>';
-                html += '<div class="talk-details">';
-                const locParts = [];
-                if (talk.venue) locParts.push(talk.venue);
-                if (talk.city) locParts.push(talk.city);
-                if (talk.country) locParts.push(talk.country);
-                if (locParts.length > 0) {
-                    html += '📍 ' + escHtml(locParts.join(', ')) + '<br>';
-                }
-                if (formattedDate) {
-                    html += '📅 ' + escHtml(formattedDate);
-                }
-                if (talk.slides) {
-                    html += '<br>📊 <a href="slides/' + encodeURIComponent(talk.slides) + '" target="_blank" rel="noopener noreferrer">View Slides</a>';
-                }
-                html += '</div></div>';
-            });
-
+            html += '<div class="category-header" style="border-left-color:#8b5cf6;">';
+            html += '  <h3>Keynotes</h3>';
+            html += '  <span class="category-count" style="background:#8b5cf6;">' + keynotes.length + '</span>';
             html += '</div>';
+            html += renderList(tag(keynotes, 'Keynote'));
+
+            html += '<div class="category-header" style="border-left-color:#10b981;">';
+            html += '  <h3>Talks</h3>';
+            html += '  <span class="category-count" style="background:#10b981;">' + talks.length + '</span>';
+            html += '</div>';
+            html += renderList(tag(talks, 'Talk'));
+
+            html += '<div class="category-header" style="border-left-color:#f59e0b;">';
+            html += '  <h3>Tutorials</h3>';
+            html += '  <span class="category-count" style="background:#f59e0b;">' + tutorials.length + '</span>';
+            html += '</div>';
+            html += renderList(tag(tutorials, 'Tutorial'));
+
             container.innerHTML = html;
+
+            // Map pins from ALL categories
+            const sortedAll = all.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
 
             const map = L.map('talk-map', { worldCopyJump: true }).setView([20, 0], 2);
 
@@ -732,7 +766,7 @@
             };
 
             const groups = {};
-            talks.forEach(function(t) {
+            sortedAll.forEach(function(t) {
                 const k = keyFor(t);
                 if (!k) return;
                 if (!groups[k]) groups[k] = [];
@@ -768,6 +802,7 @@
 
                 const items = group.map(function(t) {
                     const datePart = t.date ? ' — ' + escHtml(t.date) : '';
+                    const catPart = t._category ? ' <span style="color:#666;">(' + escHtml(t._category) + ')</span>' : '';
                     const parts = [];
                     if (t.venue) parts.push(t.venue);
                     if (t.city) parts.push(t.city);
@@ -776,7 +811,7 @@
                     const linkPart = t.slides
                         ? ' — <a href="slides/' + encodeURIComponent(t.slides) + '" target="_blank" rel="noopener noreferrer">slides</a>'
                         : '';
-                    return '• <b>' + escHtml(t.title) + '</b>' + datePart + locPart + linkPart;
+                    return '• <b>' + escHtml(t.title) + '</b>' + catPart + datePart + locPart + linkPart;
                 }).join('<br>');
 
                 const header = locLabel
