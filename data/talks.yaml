@@ -3,6 +3,15 @@
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
 
 talks:
+  - title: "Tools and Technologies for Scientific Campaign Management"
+    venue: "University of Oregon"
+    city: "Eugene, OR"
+    country: "USA"
+    date: "2026-01-12"
+    lat: 44.0448
+    lon: -123.0737
+    #slides: "stanford2024.pdf"
+
   - title: "Visualization Services"
     venue: "Princeton Plasma Physics Laboratory"
     city: "Princeton, NJ"
@@ -73,16 +82,16 @@ talks:
     city: "Hamburg"
     country: "Germany"
     date: "2023-05-25"
-    lat: 58.5488
-    lon: 9.9872
+    lat: 53.5488
+    lon: 9.9937
 
   - title: "The Need for Pervasive In Situ Visualization: PiSAV"
     venue: "International Workshop on In Situ Visualization"
     city: "Hamburg"
     country: "Germany"
     date: "2022-06-02"
-    lat: 58.5488
-    lon: 9.9872
+    lat: 53.5488
+    lon: 9.9937
 
   - title: "Visualization as a Service for Scientific Data"
     venue: "Excalibur-SLE: Systems Level Engineering Workshop, Cambridge University"
