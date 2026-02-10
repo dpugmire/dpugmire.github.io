@@ -1,5 +1,3 @@
-## Favorite Quotes
-
 > John Murphy: “What if nobody is home?”  
 > Kevin Garvey: “Then come over to my house.”  
 > — _The Leftovers_

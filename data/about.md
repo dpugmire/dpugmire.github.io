@@ -1,4 +1,4 @@
-I am a Distinguished Research Scientist and Visualization Group Leader at [Oak Ridge National Laboratory](https://ornl.gov). I also hold a Joint Faculty Professor position in the [Electrical Engineering and Computer Science Department at the University of Tennesse](https://eecs.utk.edu).
+I am a Distinguished Research Scientist and Visualization Group Leader at [Oak Ridge National Laboratory](https://ornl.gov). I also hold a Joint Faculty Professor position in the [Electrical Engineering and Computer Science Department at the University of Tennessee](https://eecs.utk.edu).
 
 My interests are focused on research and development of scientific visualization and analysis for large-scale data.
 
@@ -6,7 +6,7 @@ My interests are focused on research and development of scientific visualization
 
 |              |                                                                                                     |
 | ------------ | --------------------------------------------------------------------------------------------------- |
-| 2021–Present | **Distinguished Research Scientist**, [Oak Ridge National Lab](ornl.gov)                            |
+| 2021–Present | **Distinguished Research Scientist**, [Oak Ridge National Lab](https:://ornl.gov)                   |
 | 2020–Present | **Visualization Group Lead**, Oak Ridge National Lab                                                |
 | 2016–Present | **Joint Faculty Professor**, EE and CS Department, [University of Tennessee](https://eecs.utk.edu/) |
 | 2015–2021    | **Senior Research Scientist**, Oak Ridge National Lab                                               |
@@ -15,8 +15,8 @@ My interests are focused on research and development of scientific visualization
 | 2011–2013    | **Visualization Team Lead**, Scientific Computing Group, Oak Ridge National Lab                     |
 | 2007–2011    | **Research Scientist**, Scientific Computing Group, Oak Ridge National Lab                          |
 | 2003–2007    | **Research Scientist**, High Performance Computing Group, Los Alamos National Lab                   |
-| 2000–2003    | **Design Manager**, [IronCAD, LLC](ironcad.com)                                                     |
-| 1997–2000    | **Lead Software Engineer**, [IronCAD, LLC](ironcad.com)                                             |
+| 2000–2003    | **Design Manager**, [IronCAD, LLC](https://ironcad.com)                                             |
+| 1997–2000    | **Lead Software Engineer**, [IronCAD, LLC](https://ironcad.com)                                     |
 
 ### Education
 

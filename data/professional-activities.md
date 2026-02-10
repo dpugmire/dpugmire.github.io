@@ -1,16 +1,3 @@
----
-title: "Professional Activities"
-# layout: page   # Kept for compatibility if you ever move this to a standalone Jekyll page
----
-
-# Professional Activities
-
-This page summarizes my professional service, leadership roles, and community activities.
-
----
-
-## Leadership & Service Roles
-
 - **[Role Title]**, [Organization or Conference], [Years]  
   Short one-line description of what you did.
 
@@ -98,13 +85,13 @@ Regular PC / reviewer for:
 
 ## Outreach, Mentoring, and Community
 
-- **Mentoring**  
+- **Mentoring**
   - [Description: e.g., mentor for graduate students, undergraduate research, REU programs, etc.]
 
-- **Outreach & Public Engagement**  
+- **Outreach & Public Engagement**
   - [Talks to general audiences, school visits, podcasts, public lectures, etc.]
 
-- **Diversity, Equity, and Inclusion Activities**  
+- **Diversity, Equity, and Inclusion Activities**
   - [Committees, initiatives, mentoring programs, etc.]
 
 ---
