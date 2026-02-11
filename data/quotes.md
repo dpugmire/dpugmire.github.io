@@ -1,3 +1,7 @@
+> "You're bound to get idears if you go thinkin' about stuff"
+>
+> - John Steinbeck, The Grapes of Wrath
+
 > John Murphy: “What if nobody is home?”  
 > Kevin Garvey: “Then come over to my house.”  
 > — _The Leftovers_

@@ -715,8 +715,14 @@
       </section>
 
       <section id="talks">
-        <h2>Talks</h2>
-        <div id="talks-content"></div>
+        <div class="pub-header">
+          <h2>Talks</h2>
+          <div id="talk-links" class="pub-nav" style="display: none">
+            <a href="#talk-talks">Talks</a>
+            <a href="#talk-tutorials">Tutorials</a>
+          </div>
+        </div>
+        <div id="talks-content" style="margin-top: 1.5rem"></div>
       </section>
 
       <section id="projects">
@@ -1082,30 +1088,23 @@
       async function renderTalks() {
         const container = document.getElementById("talks-content");
 
-        // Load all three categories (each file contains: talks: [ ... ])
-        const [keynotesData, talksData, tutorialsData] = await Promise.all([
-          loadYAML("data/keynotes.yaml"),
+        // Load talks + tutorials
+        const [talksData, tutorialsData] = await Promise.all([
           loadYAML("data/talks.yaml"),
           loadYAML("data/tutorials.yaml"),
         ]);
 
-        const keynotes =
-          keynotesData && keynotesData.talks ? keynotesData.talks : [];
         const talks = talksData && talksData.talks ? talksData.talks : [];
-        const tutorials =
-          tutorialsData && tutorialsData.talks ? tutorialsData.talks : [];
+        const tutorials = tutorialsData && tutorialsData.talks ? tutorialsData.talks : [];
 
-        const tag = (arr, cat) =>
-          (arr || []).map((t) => Object.assign({ _category: cat }, t));
-        const all = [
-          ...tag(keynotes, "Keynote"),
-          ...tag(talks, "Talk"),
-          ...tag(tutorials, "Tutorial"),
-        ];
+        const categories = {
+          talks: { name: "Talks", color: "#1f7a8c", items: talks },
+          tutorials: { name: "Tutorials", color: "#f59e0b", items: tutorials },
+        };
 
-        if (all.length === 0) {
+        if (talks.length + tutorials.length === 0) {
           container.innerHTML =
-            "<p>No talks found. Check data/keynotes.yaml, data/talks.yaml, data/tutorials.yaml</p>";
+            "<p>No talks found. Check data/talks.yaml and data/tutorials.yaml</p>";
           return;
         }
 
@@ -1129,7 +1128,6 @@
               h += '<div class="talk-item">';
               h += '<div class="talk-title">' + escHtml(talk.title) + "</div>";
               h += '<div class="talk-details">';
-              if (talk._category) h += "🏷️ " + escHtml(talk._category) + "<br>";
 
               const locParts = [];
               if (talk.venue) locParts.push(talk.venue);
@@ -1153,47 +1151,36 @@
         let html = "";
         html += '<div id="talk-map"></div>';
 
-        html +=
-          '<div class="category-header" style="border-left-color:#8b5cf6;">';
-        html += "  <h3>Keynotes</h3>";
-        html +=
-          '  <span class="category-count" style="background:#8b5cf6;">' +
-          keynotes.length +
-          "</span>";
-        html += "</div>";
-        html += renderList(tag(keynotes, "Keynote"));
+        Object.entries(categories).forEach(([key, cat]) => {
+          if (!cat.items || cat.items.length === 0) return;
 
-        html +=
-          '<div class="category-header" style="border-left-color:#10b981;">';
-        html += "  <h3>Talks</h3>";
-        html +=
-          '  <span class="category-count" style="background:#10b981;">' +
-          talks.length +
-          "</span>";
-        html += "</div>";
-        html += renderList(tag(talks, "Talk"));
+          html +=
+            '<div id="talk-' +
+            key +
+            '" class="category-header" style="border-left-color: ' +
+            cat.color +
+            '">';
+          html += "  <h3>" + escHtml(cat.name) + "</h3>";
+          html +=
+            '  <span class="category-count" style="background: ' +
+            cat.color +
+            '">' +
+            cat.items.length +
+            "</span>";
+          html += "</div>";
 
-        html +=
-          '<div class="category-header" style="border-left-color:#f59e0b;">';
-        html += "  <h3>Tutorials</h3>";
-        html +=
-          '  <span class="category-count" style="background:#f59e0b;">' +
-          tutorials.length +
-          "</span>";
-        html += "</div>";
-        html += renderList(tag(tutorials, "Tutorial"));
+          html += renderList(cat.items);
+        });
 
         container.innerHTML = html;
 
-        // Map pins from ALL categories
+        // Map pins from ALL talks
+        const all = [...talks, ...tutorials];
         const sortedAll = all
           .slice()
           .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        const map = L.map("talk-map", { worldCopyJump: true }).setView(
-          [20, 0],
-          2,
-        );
+        const map = L.map("talk-map", { worldCopyJump: true }).setView([20, 0], 2);
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 10,
@@ -1245,11 +1232,6 @@
           const items = group
             .map(function (t) {
               const datePart = t.date ? " — " + escHtml(t.date) : "";
-              const catPart = t._category
-                ? ' <span style="color:#666;">(' +
-                  escHtml(t._category) +
-                  ")</span>"
-                : "";
               const parts = [];
               if (t.venue) parts.push(t.venue);
               if (t.city) parts.push(t.city);
@@ -1258,15 +1240,14 @@
                 ? ", " + escHtml(parts.join(", "))
                 : "";
               const linkPart = t.slides
-                ? ' — <a href="slides/' +
+                ? " — <a href=\"slides/" +
                   encodeURIComponent(t.slides) +
-                  '" target="_blank" rel="noopener noreferrer">slides</a>'
+                  "\" target=\"_blank\" rel=\"noopener noreferrer\">slides</a>"
                 : "";
               return (
                 "• <b>" +
                 escHtml(t.title) +
                 "</b>" +
-                catPart +
                 datePart +
                 locPart +
                 linkPart
@@ -1281,15 +1262,16 @@
             : "";
           const popupHtml = header + items;
 
-          L.marker([lat, lon])
-            .addTo(map)
-            .bindPopup(popupHtml, { maxWidth: 360 });
+          L.marker([lat, lon]).addTo(map).bindPopup(popupHtml, { maxWidth: 360 });
           bounds.push([lat, lon]);
         });
 
         if (bounds.length > 0) {
           map.fitBounds(bounds, { padding: [24, 24] });
         }
+
+        const links = document.getElementById("talk-links");
+        if (links) links.style.display = "flex";
       }
 
       async function renderProfessionalActivities() {
