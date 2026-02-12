@@ -648,6 +648,9 @@
             </p>
             <h1>Dr. David R. Pugmire</h1>
             <div class="subtitle">Distinguished Research Scientist</div>
+            <div class="subtitle">
+              Computer Science and Mathematics Division
+            </div>
             <div class="subtitle">Oak Ridge National Laboratory</div>
             <div class="research-tags">
               <span>Scientific Visualization</span>
@@ -1095,7 +1098,8 @@
         ]);
 
         const talks = talksData && talksData.talks ? talksData.talks : [];
-        const tutorials = tutorialsData && tutorialsData.talks ? tutorialsData.talks : [];
+        const tutorials =
+          tutorialsData && tutorialsData.talks ? tutorialsData.talks : [];
 
         const categories = {
           talks: { name: "Talks", color: "#1f7a8c", items: talks },
@@ -1180,7 +1184,10 @@
           .slice()
           .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        const map = L.map("talk-map", { worldCopyJump: true }).setView([20, 0], 2);
+        const map = L.map("talk-map", { worldCopyJump: true }).setView(
+          [20, 0],
+          2,
+        );
 
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 10,
@@ -1240,9 +1247,9 @@
                 ? ", " + escHtml(parts.join(", "))
                 : "";
               const linkPart = t.slides
-                ? " — <a href=\"slides/" +
+                ? ' — <a href="slides/' +
                   encodeURIComponent(t.slides) +
-                  "\" target=\"_blank\" rel=\"noopener noreferrer\">slides</a>"
+                  '" target="_blank" rel="noopener noreferrer">slides</a>'
                 : "";
               return (
                 "• <b>" +
@@ -1262,7 +1269,9 @@
             : "";
           const popupHtml = header + items;
 
-          L.marker([lat, lon]).addTo(map).bindPopup(popupHtml, { maxWidth: 360 });
+          L.marker([lat, lon])
+            .addTo(map)
+            .bindPopup(popupHtml, { maxWidth: 360 });
           bounds.push([lat, lon]);
         });
 
