@@ -102,13 +102,14 @@
       }
 
       .logo-container img {
-        width: 95px;
-        height: 95px;
-        border-radius: 50%;
+        width: 140px;
+        height: 160px;
+        border-radius: 8px;
         border: 4px solid rgba(255, 255, 255, 0.9);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s ease;
         background: white;
+        object-fit: cover;
       }
 
       .logo-container img:hover {
@@ -809,6 +810,49 @@
         }
 
       }
+
+      /* Minimalist left border quotes styling */
+      #quotes-content blockquote {
+        background: rgba(15, 61, 104, 0.03);
+        border: none;
+        border-left: 4px solid var(--accent);
+        border-radius: 0;
+        padding: 1.5rem 2rem;
+        margin: 0 0 2rem 0;
+        transition: all 0.2s ease;
+      }
+
+      #quotes-content blockquote:hover {
+        background: rgba(15, 61, 104, 0.05);
+        border-left-color: var(--brand);
+      }
+
+      #quotes-content blockquote p {
+        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1.75;
+        color: var(--text);
+        font-style: italic;
+      }
+
+      #quotes-content blockquote p:last-child {
+        margin-top: 0.75rem;
+        font-style: normal;
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      @media (max-width: 768px) {
+        #quotes-content blockquote {
+          padding: 1.25rem 1.5rem;
+        }
+
+        #quotes-content blockquote p {
+          font-size: 1.05rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -817,7 +861,7 @@
         <div class="header-content">
           <div class="identity">
             <div class="logo-container">
-              <img src="images/logo/logo.png" alt="Dave Pugmire Logo" />
+              <img src="images/profile/profile.png" alt="Dave Pugmire" />
             </div>
             <div class="identity-text">
               <h1>Dave Pugmire</h1>
