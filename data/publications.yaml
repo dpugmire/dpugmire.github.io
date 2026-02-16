@@ -2,18 +2,18 @@
 # Generated from BibTeX on 2025-12-12 15:50:55
 
 publications:
-  # PREPRINT - 2025
+  # WORKSHOP - 2025
   - id: "ouermi2025efficient"
     title: "Efficient Probabilistic Visualization of Local Divergence of 2D Vector Fields with Independent Gaussian Uncertainty"
     authors: "Ouermi, T., Li, E., Moreland, K., Pugmire, D., Johnson, C., Athawale, T."
-    venue: "Unknown Venue"
+    venue: "2025 IEEE Workshop on Uncertainty Visualization: Unraveling Relationships of Uncertainty, AI, and Decision-Making"
     year: 2025
-    type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1109/uncertaintyvisualization63963.2024.00014"
-    paper_url: "https://arxiv.org/abs/2510.01190"
+    type: workshop # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    doi: "10.1109/UncertaintyVisualization68947.2025.00006"
+    paper_url: "https://ieeexplore.ieee.org/abstract/document/11329422"
     image: "ouermi2025efficient.jpg" # Optional - add image file to images/papers/
+    note: "Best Paper Award"
     # abstract: ""  # Optional - full abstract text
-    # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
 
   # JOURNAL - 2025
@@ -613,6 +613,7 @@ publications:
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/ldav48142.2019.8944355"
     paper_url: "https://doi.org/10.1109/ldav48142.2019.8944355"
+    note: Best Short Paper Award
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
@@ -1104,7 +1105,7 @@ publications:
     doi: "10.2312/pgv.20181094"
     paper_url: "https://www.osti.gov/biblio/1558503"
     abstract: "Particle advection is the fundamental kernel behind most vector field visualization methods. Yet, the efficient parallel computation of large amounts of particle traces remains challenging. This is exacerbated by the variety of hardware trends in today's HPC arena, including increasing core counts in classical CPUs, many-core designs such as the Intel Xeon Phi, and massively parallel GPUs. The dedicated optimization of a particle advection kernel for each individual target architecture is both time-consuming and error prone. In this paper, we propose a performance-portable algorithm for particle advection. Our algorithm is based on the recently introduced VTK-m system and chiefly relies on its device adapter abstraction. We demonstrate the general portability of our implementation across a wide variety of hardware. Finally, our evaluation shows that our hardware-agnostic algorithm has comparable performance to hardware-specific algorithms."
-    # note: ""  # e.g., Best Paper Award
+    note: "Best Paper Finalist"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2018performance.jpg'  # Optional - add image file to images/papers/
 
