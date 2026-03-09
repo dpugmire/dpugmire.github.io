@@ -13,7 +13,6 @@
 - **[Erdős–Bacon number](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number): 6**
 
   - Examples: [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) (6), [Carl Sagan](https://en.wikipedia.org/wiki/Carl_Sagan) (6)
-  - [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky) (7 — sorry Noam…)
 
 - **[Erdős–Bacon–Sabbath number](https://www.timeshighereducation.com/blog/whats-your-erdos-bacon-sabbath-number): 11**
 

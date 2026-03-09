@@ -3,6 +3,14 @@
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
 
 talks:
+  - title: "Scientific Data Management"
+    venue: "Rensselaer Polytechnic Institute (RPI)"
+    city: "Troy, NY"
+    country: "USA"
+    date: "2026-03-09"
+    lat: 42.7302
+    lon: -73.6788
+
   - title: "Tools and Technologies for Scientific Campaign Management"
     venue: "University of Oregon"
     city: "Eugene, OR"
