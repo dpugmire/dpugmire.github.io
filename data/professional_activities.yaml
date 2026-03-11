@@ -1,0 +1,60 @@
+# professional_activities.yaml
+# Conference/workshop organization and service.
+
+professional_organizations:
+  - organization: "IEEE"
+    role: "Senior Member"
+
+organizations:
+  - name: "EGPGV (Eurographics Symposium on Parallel Graphics and Visualization)"
+    entries:
+      - year: 2023
+        role: "Program Co-Chair"
+      - year: 2024
+        role: "Symposium Chair"
+
+  - name: "ISAV (In Situ Infrastructures for Enabling Extreme-scale Analysis and Visualization)"
+    entries:
+      - year: 2021
+        role: "General Co-Chair"
+      - year: 2022
+        role: "General Chair"
+
+  - name: "IEEE VIS - Uncertainty Visualization Workshop"
+    entries:
+      - year: 2024
+        role: "Workshop Organizer"
+      - year: 2025
+        role: "Workshop Organizer"
+
+  - name: "DOE Computer Graphics Forum"
+    entries:
+      - year: 2008
+        role: "Technical Program Chair"
+      - year: 2018
+        role: "Site Chair"
+      - year: 2024
+        role: "Site Chair"
+
+program_committee:
+  - event: "Supercomputing Conference"
+    years: [2014, 2015, 2016, 2018, 2019, 2020, 2021]
+  - event: "IEEE VIS (SciVis)"
+    years: [2017, 2019]
+
+reviewer:
+  - event: "Supercomputing Conference"
+  - event: "IEEE Visualization Conference"
+  - event: "Cluster Conference"
+
+  - event: "Transactions on Visualization and Computer Graphics (TVCG)"
+  - event: "EuroVis Conference"
+  - event: "Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)"
+
+  - event: "Workshop on Large Data Analysis an Visualization (LDAV)"
+  - event: "In situ Infrastructures for Enabling Extreme-scale Analysis and Visualization (ISAV)"
+  - event: "Journal of Parallel and Distributed Computing"
+  - event: "International Symposium on Visual Computing"
+  - event: "IEEE Virtual Reality Conference"
+  - event: "DOE Early Career Research Program (ECRP)"
+  - event: "DOE Small Business Innovation Research (SBIR) Program"

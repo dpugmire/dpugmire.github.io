@@ -1,0 +1,40 @@
+# mentorship.yaml
+# Source of truth for mentorship entries shown on the website.
+
+postdoctoral_students:
+  - name: "Zhe (Jay) Wang"
+    institution: "Computer Network Information Center, Beijing, China"
+    years: "2022-2024"
+    current_position: "Senior Researcher"
+    website: "https://www.linkedin.com/in/zhe-wang-4877b7111/"
+
+  - name: "Jieyang Chen"
+    institution: "University of Oregon, Eugene, OR, USA"
+    years: "2019-2020"
+    current_position: "Assistant Professor"
+    website: "https://jieyangchen7.github.io/"
+
+  - name: "Mark Kim"
+    institution: "AMD"
+    years: "2016-2018"
+    current_position: "Senior Software Engineer"
+    website: "https://www.linkedin.com/in/markbkim/"
+
+thesis_advisees:
+  - name: "James Kress"
+    degree: "PhD" # PhD, MS, BS, etc.
+    institution: "University of Oregon"
+    graduation_year: 2020
+    #   thesis_title: ""
+    advisor: "Hank Childs"
+    current_position: "Staff Visualization Scientist, KAUST"
+    website: "https://www.jameskress.com/"
+
+  - name: "Samuel Leventhal"
+    degree: "PhD" # PhD, MS, BS, etc.
+    institution: "University of Utah"
+    graduation_year: 2025
+    #   thesis_title: ""
+    advisor: "Valerio Pascucci"
+    current_position: "Postdoctoral Fellow, University of San Francisco"
+    website: "www.samleventhal.com"

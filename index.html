@@ -1530,6 +1530,242 @@
           "professional-activities-content",
           "Could not load professional activities. Ensure data/professional-activities.md exists.",
         );
+
+        const container = document.getElementById("professional-activities-content");
+        if (!container) return;
+
+        const mentorshipData = (await loadYAML("data/mentorship.yaml")) || {};
+        const activitiesData = (await loadYAML("data/professional_activities.yaml")) || {};
+
+        const postdocs = Array.isArray(mentorshipData.postdoctoral_students)
+          ? mentorshipData.postdoctoral_students
+          : Array.isArray(mentorshipData.postdocs)
+            ? mentorshipData.postdocs
+            : [];
+
+        const advisees = Array.isArray(mentorshipData.thesis_advisees)
+          ? mentorshipData.thesis_advisees
+          : Array.isArray(mentorshipData.advisees)
+            ? mentorshipData.advisees
+            : [];
+
+        const renderEntry = (entry, type) => {
+          const name = escHtml(entry.name || "");
+          const institution = escHtml(entry.institution || "");
+          const years = escHtml(entry.years || "");
+          const topic = escHtml(entry.topic || "");
+          const current = escHtml(entry.current_position || "");
+          const degree = escHtml(entry.degree || "");
+          const gradYear = escHtml(String(entry.graduation_year || ""));
+          const thesisTitle = escHtml(entry.thesis_title || "");
+          const advisor = escHtml(entry.advisor || entry.co_advisor || "");
+
+          const rawWebsite = String(
+            entry.website || entry.url || entry.website_url || "",
+          ).trim();
+          let websiteLink = "";
+          if (rawWebsite) {
+            const href = /^https?:\/\//i.test(rawWebsite)
+              ? rawWebsite
+              : `https://${rawWebsite}`;
+            const safeHref = escHtml(href);
+            websiteLink = ` <a href="${safeHref}" target="_blank" rel="noopener noreferrer">Website</a>`;
+          }
+
+          const details = [];
+          if (type === "advisee" && degree) details.push(degree);
+          if (type === "advisee" && gradYear)
+            details.push(`Graduated ${gradYear}`);
+          if (topic) details.push(`Topic: ${topic}`);
+          if (thesisTitle) details.push(`Thesis: ${thesisTitle}`);
+          if (advisor) details.push(`Advisor: ${advisor}`);
+
+          let currentPositionText = "";
+          if (institution && current) {
+            currentPositionText = `Current position: ${current} at ${institution}`;
+          } else if (current) {
+            currentPositionText = `Current position: ${current}`;
+          } else if (institution) {
+            currentPositionText = `Current position: ${institution}`;
+          }
+
+          if (currentPositionText && type !== "advisee") {
+            details.push(currentPositionText);
+          }
+
+          const label = name || "(Unnamed entry)";
+          const yearsLabel = years ? ` (${years})` : "";
+
+          const detailsHtml = details.length
+            ? `<span style="color:#4d6278;">${details.join(" | ")}</span>`
+            : "";
+          const adviseeCurrentHtml =
+            type === "advisee" && currentPositionText
+              ? `<span style="color:#4d6278;">${currentPositionText}</span>`
+              : "";
+
+          let detailText = "";
+          if (detailsHtml && adviseeCurrentHtml) {
+            detailText = `<br>${detailsHtml}<br>${adviseeCurrentHtml}`;
+          } else if (detailsHtml) {
+            detailText = `<br>${detailsHtml}`;
+          } else if (adviseeCurrentHtml) {
+            detailText = `<br>${adviseeCurrentHtml}`;
+          }
+
+          return `<li><strong>${label}${yearsLabel}</strong>${websiteLink}${detailText}</li>`;
+        };
+
+        const postdocItems = postdocs.map((e) => renderEntry(e, "postdoc")).join("");
+        const adviseeItems = advisees.map((e) => renderEntry(e, "advisee")).join("");
+
+        const mentorshipHtml = `
+          <h3>Mentorship</h3>
+          <h4>Postdoctoral Students</h4>
+          ${postdocItems ? `<ul>${postdocItems}</ul>` : "<p>No postdoctoral entries yet.</p>"}
+          <h4>Thesis Advisees</h4>
+          ${adviseeItems ? `<ul>${adviseeItems}</ul>` : "<p>No thesis advisee entries yet.</p>"}
+        `;
+
+        const organizations = Array.isArray(activitiesData.organizations)
+          ? activitiesData.organizations
+          : [];
+        const professionalOrganizations = Array.isArray(activitiesData.professional_organizations)
+          ? activitiesData.professional_organizations
+          : Array.isArray(activitiesData.professionalOrganizations)
+            ? activitiesData.professionalOrganizations
+            : [];
+        const programCommittee = Array.isArray(activitiesData.program_committee)
+          ? activitiesData.program_committee
+          : [];
+        const reviewerEntries = Array.isArray(activitiesData.reviewer)
+          ? activitiesData.reviewer
+          : Array.isArray(activitiesData.reviewers)
+            ? activitiesData.reviewers
+            : [];
+
+        const formatYears = (yearsVal) => {
+          if (Array.isArray(yearsVal)) {
+            return yearsVal.map((y) => escHtml(String(y))).join(", ");
+          }
+          if (yearsVal === undefined || yearsVal === null || yearsVal === "") {
+            return "";
+          }
+          return escHtml(String(yearsVal));
+        };
+
+        const renderEventYearSection = (title, items) => {
+          if (!items || items.length === 0) return "";
+
+          let html = `<h3>${title}</h3><ul>`;
+          items.forEach((item) => {
+            const event = escHtml(item.event || item.name || "");
+            const years = formatYears(item.years || item.year);
+            const note = escHtml(item.note || "");
+
+            let line = "";
+            if (event && years) {
+              line = `<strong>${event}</strong>: ${years}`;
+            } else {
+              line = event || years;
+            }
+
+            if (note) {
+              line += ` (${note})`;
+            }
+
+            if (line) {
+              html += `<li>${line}</li>`;
+            }
+          });
+          html += "</ul>";
+          return html;
+        };
+
+        const renderProfessionalOrganizations = (items) => {
+          if (!items || items.length === 0) return "";
+
+          let html = "<h3>Professional Organizations</h3><ul>";
+          items.forEach((item) => {
+            const org = escHtml(item.organization || item.name || "");
+            const role = escHtml(item.role || "");
+            const years = formatYears(item.years || item.year);
+
+            let line = "";
+            if (org && role && years) {
+              line = `<strong>${org}</strong>, ${role} (${years})`;
+            } else if (org && role) {
+              line = `<strong>${org}</strong>, ${role}`;
+            } else if (org && years) {
+              line = `<strong>${org}</strong>: ${years}`;
+            } else {
+              line = org || role || years;
+            }
+
+            if (line) {
+              html += `<li>${line}</li>`;
+            }
+          });
+          html += "</ul>";
+          return html;
+        };
+
+        let serviceHtml = "";
+        if (organizations.length > 0) {
+          serviceHtml += "<h3>Conference and Workshop Service</h3>";
+
+          organizations.forEach((org) => {
+            const orgName = escHtml(org.name || "");
+            const entries = Array.isArray(org.entries) ? org.entries : [];
+            if (!orgName && entries.length === 0) return;
+
+            if (orgName) {
+              serviceHtml += `<h4>${orgName}</h4>`;
+            }
+
+            if (entries.length > 0) {
+              serviceHtml += "<ul>";
+              entries.forEach((item) => {
+                const yearVal = item.year;
+                const year =
+                  yearVal === undefined || yearVal === null || yearVal === ""
+                    ? ""
+                    : escHtml(String(yearVal));
+                const role = escHtml(item.role || "");
+                const note = escHtml(item.note || "");
+
+                let line = "";
+                if (year && role) {
+                  line = `<strong>${year}</strong> - ${role}`;
+                } else {
+                  line = year || role;
+                }
+
+                if (note) {
+                  line += ` (${note})`;
+                }
+
+                if (line) {
+                  serviceHtml += `<li>${line}</li>`;
+                }
+              });
+              serviceHtml += "</ul>";
+            }
+          });
+        }
+
+        serviceHtml += renderEventYearSection("Program Committee", programCommittee);
+        serviceHtml += renderEventYearSection("Reviewer", reviewerEntries);
+
+        const professionalOrganizationsHtml = renderProfessionalOrganizations(
+          professionalOrganizations,
+        );
+
+        container.innerHTML =
+          mentorshipHtml +
+          professionalOrganizationsHtml +
+          serviceHtml +
+          container.innerHTML;
       }
 
       async function renderAbout() {
