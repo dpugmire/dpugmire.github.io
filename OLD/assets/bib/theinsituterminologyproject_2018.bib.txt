@@ -1,1 +1,0 @@
-@inbook{2018, ISBN={9780429052972}, url={http://dx.doi.org/10.1201/9780429052972-13}, DOI={10.1201/9780429052972-13}, booktitle={Implementing Project and Program Benefit Management}, publisher={Auerbach Publications}, year={2018}, month=dec, pages={51–68} }

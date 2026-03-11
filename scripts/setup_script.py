@@ -868,11 +868,10 @@ def create_index_html():
         }
 
         async function renderProfessionalActivities() {
-            await loadMarkdown(
-                'data/professional-activities.md',
-                'professional-activities-content',
-                'Could not load professional activities. Ensure data/professional-activities.md exists.'
-            );
+            const container = document.getElementById('professional-activities-content');
+            if (container) {
+                container.innerHTML = '<p>Manage professional activities in data/professional_activities.yaml and data/mentorship.yaml.</p>';
+            }
         }
 
         async function renderAbout() {
@@ -1120,51 +1119,38 @@ talks:
     print("  ✓ Wrote data/tutorials.yaml\n")
 
 
-def create_professional_activities_md(overwrite=False):
-    """Create or overwrite data/professional-activities.md template."""
+def create_professional_activities_yaml(overwrite=False):
+    """Create or overwrite data/professional_activities.yaml template."""
     action = "Overwriting" if overwrite else "Creating"
-    print(f"{action} data/professional-activities.md...")
+    print(f"{action} data/professional_activities.yaml...")
 
-    content = '''---
-title: "Professional Activities"
----
+    content = '''# professional_activities.yaml
+# Conference/workshop organization and service.
 
-# Professional Activities
+professional_organizations:
+  - organization: "IEEE"
+    role: "Senior Member"
 
-This page summarizes my professional service, leadership roles, and community activities.
+organizations:
+  - name: "Example Conference"
+    entries:
+      - year: 2026
+        role: "Program Chair"
 
----
+program_committee:
+  - event: "Supercomputing Conference"
+    years: [2018, 2019]
 
-## Leadership & Service Roles
-
-- **[Role Title]**, [Organization or Conference], [Years]  
-  Short one-line description of what you did.
-
----
-
-## Conference & Workshop Organization
-
-- **[Conference / Workshop Name]**, [Year], [Location]  
-  Role: [General Chair / Program Chair / etc.]  
-  Notes: Brief description (e.g., size, focus area, notable aspects).
-
----
-
-## Editorial Boards & Reviewing
-
-- **[Journal Name]** — [Editorial Role], [Years]  
-  Brief description (e.g., handled submissions in visualization and HCI).
-
----
-
-_Last updated: YYYY-MM-DD_
+reviewer:
+  - event: "Cluster Conference"
+    years: [2016, 2017]
 '''
 
     os.makedirs('data', exist_ok=True)
-    with open('data/professional-activities.md', 'w', encoding='utf-8') as f:
+    with open('data/professional_activities.yaml', 'w', encoding='utf-8') as f:
         f.write(content)
 
-    print("  ✓ Wrote data/professional-activities.md\n")
+    print("  ✓ Wrote data/professional_activities.yaml\n")
 
 
 def create_about_md(overwrite=False):
@@ -1244,7 +1230,7 @@ def create_readme():
 1. Edit `data/about.md` with your bio and research overview.
 2. Edit `data/publications.yaml` with your publications (optionally include `abstract`).
 3. Edit `data/keynotes.yaml`, `data/talks.yaml`, and `data/tutorials.yaml` (including lat/lon for the map).
-4. Edit `data/professional-activities.md` with your professional service.
+4. Edit `data/mentorship.yaml` and `data/professional_activities.yaml` with your mentorship and professional service.
 5. Optionally edit `data/fun-facts.md` and `data/quotes.md`.
 6. Run locally: `python -m http.server 8000`
 7. Open: http://localhost:8000
@@ -1257,7 +1243,8 @@ def create_readme():
 - `data/keynotes.yaml`              - Keynotes (drives the Leaflet map and list)
 - `data/talks.yaml`                 - Talks (drives the Leaflet map and list)
 - `data/tutorials.yaml`             - Tutorials (drives the Leaflet map and list)
-- `data/professional-activities.md` - Professional activities (Markdown)
+- `data/mentorship.yaml`            - Mentorship entries (postdocs and thesis advisees)
+- `data/professional_activities.yaml` - Professional activities and service
 - `data/fun-facts.md`               - Fun facts (Markdown)
 - `data/quotes.md`                  - Favorite quotes (Markdown)
 - `images/papers/`                  - Paper images
@@ -1332,10 +1319,10 @@ def main(argv=None):
     else:
         print(f"Skipping {tutorials_path} (already exists). Use --reset-templates to regenerate.\n")
 
-    # professional-activities.md
-    pa_path = 'data/professional-activities.md'
+    # professional_activities.yaml
+    pa_path = 'data/professional_activities.yaml'
     if args.reset_templates or not os.path.exists(pa_path):
-        create_professional_activities_md(overwrite=args.reset_templates)
+        create_professional_activities_yaml(overwrite=args.reset_templates)
     else:
         print(f"Skipping {pa_path} (already exists). Use --reset-templates to regenerate.\n")
 

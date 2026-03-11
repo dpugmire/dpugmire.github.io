@@ -1,1 +1,0 @@
-@article{Chakraborty_2017, title={8th Annual Meeting of Proteomics Society, India}, volume={93}, ISSN={0370-0046}, url={http://dx.doi.org/10.16943/ptinsa/2017/49125}, DOI={10.16943/ptinsa/2017/49125}, number={0}, journal={Proceedings of the Indian National Science Academy}, publisher={Indian National Science Academy}, author={Chakraborty, Subhra}, year={2017}, month=aug }

@@ -213,7 +213,7 @@ In `templates/cv_template.tex`, change:
 ## 📈 Future Enhancements
 
 Possible additions:
-- [ ] Parse `professional-activities.md` for service roles
+- [ ] Parse `professional_activities.yaml` for service roles
 - [ ] Add awards from a YAML file
 - [ ] Generate both full CV and short 2-page resume
 - [ ] Multiple CV formats (academic, industry, government)

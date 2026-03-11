@@ -1,1 +1,0 @@
-@book{Brightwell_2017, title={December 2017 ECP ST Project Review: ECP Project WBS 2.3.5.04 (SNL ATDM Software Ecosystem).}, url={http://dx.doi.org/10.2172/1415115}, DOI={10.2172/1415115}, institution={Office of Scientific and Technical Information (OSTI)}, author={Brightwell, Ronald}, year={2017}, month=dec }
