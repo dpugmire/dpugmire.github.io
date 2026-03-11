@@ -8,6 +8,7 @@ Generates a complete academic CV from website data sources:
 - data/talks.yaml: Invited talks
 - data/keynotes.yaml: Keynote presentations
 - data/tutorials.yaml: Tutorials
+- data/professional_activities.yaml: Professional activities and service
 
 Usage:
     python generate_cv.py
@@ -39,6 +40,10 @@ class CVGenerator:
         self.talks = []
         self.keynotes = []
         self.tutorials = []
+        self.professional_organizations = []
+        self.organizations = []
+        self.program_committee = []
+        self.reviewer = []
 
     def escape_latex(self, s: str) -> str:
         """Escape special LaTeX characters."""
@@ -193,6 +198,39 @@ class CVGenerator:
 
         self.tutorials = data.get("tutorials", [])
         print(f"✓ Parsed {len(self.tutorials)} tutorials")
+
+    def parse_professional_activities_yaml(self):
+        """Parse professional_activities.yaml."""
+        activities_file = self.data_dir / "professional_activities.yaml"
+        if not activities_file.exists():
+            print(f"⚠️  {activities_file} not found")
+            return
+
+        with activities_file.open("r", encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+
+        self.professional_organizations = data.get("professional_organizations", []) or []
+        self.organizations = data.get("organizations", []) or []
+        self.program_committee = data.get("program_committee", []) or []
+        self.reviewer = data.get("reviewer", data.get("reviewers", [])) or []
+
+        print(
+            "✓ Parsed "
+            f"{len(self.professional_organizations)} professional organizations, "
+            f"{len(self.organizations)} conference/workshop organizations, "
+            f"{len(self.program_committee)} program committee entries, "
+            f"{len(self.reviewer)} reviewer entries"
+        )
+
+    def _format_years(self, years: Any) -> str:
+        """Format single year or year list as plain text."""
+        if isinstance(years, list):
+            vals = [str(y).strip() for y in years if str(y).strip()]
+            return ", ".join(vals)
+        if years is None:
+            return ""
+        val = str(years).strip()
+        return val
 
     def generate_publications_section(self) -> str:
         """Generate publications section grouped by type with continuous numbering."""
@@ -366,6 +404,94 @@ class CVGenerator:
 
         return "\n".join(sections)
 
+    def generate_professional_activities_section(self) -> str:
+        """Generate professional activities section from professional_activities.yaml."""
+        sections = []
+
+        if self.professional_organizations:
+            sections.append("\\subsection*{Professional Organizations}")
+            sections.append("\\begin{itemize}[leftmargin=2em]")
+            for item in self.professional_organizations:
+                org = self.escape_latex(str(item.get("organization", item.get("name", ""))))
+                role = self.escape_latex(str(item.get("role", "")))
+                years = self.escape_latex(self._format_years(item.get("years", item.get("year"))))
+
+                line = ""
+                if org and role and years:
+                    line = f"\\textbf{{{org}}}, {role} ({years})"
+                elif org and role:
+                    line = f"\\textbf{{{org}}}, {role}"
+                elif org and years:
+                    line = f"\\textbf{{{org}}}: {years}"
+                else:
+                    line = org or role or years
+
+                if line:
+                    sections.append(f"  \\item {line}")
+            sections.append("\\end{itemize}")
+            sections.append("")
+
+        if self.organizations:
+            sections.append("\\subsection*{Conference and Workshop Service}")
+            sections.append("\\begin{itemize}[leftmargin=2em]")
+            for org in self.organizations:
+                org_name = self.escape_latex(str(org.get("name", "")))
+                entries = org.get("entries", []) or []
+                if not org_name and not entries:
+                    continue
+
+                if org_name:
+                    sections.append(f"  \\item \\textbf{{{org_name}}}")
+                else:
+                    sections.append("  \\item")
+
+                if entries:
+                    sections.append("  \\begin{itemize}[leftmargin=2em]")
+                    for entry in entries:
+                        year = self.escape_latex(str(entry.get("year", "")))
+                        role = self.escape_latex(str(entry.get("role", "")))
+                        note = self.escape_latex(str(entry.get("note", "")))
+
+                        line = ""
+                        if year and role:
+                            line = f"\\textbf{{{year}}} -- {role}"
+                        else:
+                            line = year or role
+                        if note:
+                            line += f" ({note})"
+                        if line:
+                            sections.append(f"    \\item {line}")
+                    sections.append("  \\end{itemize}")
+            sections.append("\\end{itemize}")
+            sections.append("")
+
+        def add_event_year_subsection(title: str, items: List[Dict[str, Any]]) -> None:
+            if not items:
+                return
+            sections.append(f"\\subsection*{{{title}}}")
+            sections.append("\\begin{itemize}[leftmargin=2em]")
+            for item in items:
+                event = self.escape_latex(str(item.get("event", item.get("name", ""))))
+                years = self.escape_latex(self._format_years(item.get("years", item.get("year"))))
+                note = self.escape_latex(str(item.get("note", "")))
+
+                line = ""
+                if event and years:
+                    line = f"\\textbf{{{event}}}: {years}"
+                else:
+                    line = event or years
+                if note:
+                    line += f" ({note})"
+                if line:
+                    sections.append(f"  \\item {line}")
+            sections.append("\\end{itemize}")
+            sections.append("")
+
+        add_event_year_subsection("Program Committee", self.program_committee)
+        add_event_year_subsection("Reviewer", self.reviewer)
+
+        return "\n".join(sections)
+
     def generate_cv(self):
         """Generate the complete CV LaTeX file."""
         # Read template
@@ -410,12 +536,16 @@ class CVGenerator:
         # Presentations
         presentations_content = self.generate_presentations_section()
 
+        # Professional Activities
+        professional_activities_content = self.generate_professional_activities_section()
+
         # Replace placeholders in template
         cv_content = template.replace("{{PROFESSIONAL_EXPERIENCE}}", experience_content)
         cv_content = cv_content.replace("{{EDUCATION}}", education_content)
         cv_content = cv_content.replace("{{AWARDS}}", awards_content)
         cv_content = cv_content.replace("{{PUBLICATIONS}}", publications_content)
         cv_content = cv_content.replace("{{PRESENTATIONS}}", presentations_content)
+        cv_content = cv_content.replace("{{PROFESSIONAL_ACTIVITIES}}", professional_activities_content)
         cv_content = cv_content.replace("{{GENERATION_DATE}}", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
         # Write output
@@ -453,6 +583,7 @@ def main():
     generator.parse_talks_yaml()
     generator.parse_keynotes_yaml()
     generator.parse_tutorials_yaml()
+    generator.parse_professional_activities_yaml()
     print()
 
     # Generate CV
