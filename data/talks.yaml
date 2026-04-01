@@ -3,6 +3,14 @@
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
 
 talks:
+  - title: "Data Visualization Pathways"
+    venue: "Oak Ridge Leadership Computing Facility (OLCF) User Meeting"
+    city: "Oak Ridge, TN"
+    country: "USA"
+    date: "2026-03-25"
+    lat: 35.93132
+    lon: -84.31013
+
   - title: "Scientific Data Management"
     venue: "Rensselaer Polytechnic Institute (RPI)"
     city: "Troy, NY"
