@@ -44,7 +44,6 @@ publications:
     # summary: ""  # Add a one-sentence summary of the paper
     image: "wang2025orbit.png" # Optional - add image file to images/papers/
 
-
   # CONFERENCE - 2016
   - id: "larsen2016"
     title: "Performance Modeling of In Situ Rendering"
@@ -68,6 +67,7 @@ publications:
     type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1145/3712285.3771989"
     paper_url: "https://doi.org/10.1145/3712285.3771989"
+    image: "wang2025orbit.png" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
@@ -85,7 +85,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'wang2025parallelize.jpg'  # Optional - add image file to images/papers/
+    image: "wang2025Parallelize.png"
 
   # JOURNAL - 2025
   - id: "ahrens2025alpine"
@@ -309,7 +309,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'anirudh2023review.jpg'  # Optional - add image file to images/papers/
+    image: "Anirudh2022.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2023
   - id: "senapati2023advancing"
@@ -341,7 +341,7 @@ publications:
 
   # CONFERENCE - 2023
   - id: "wang2023funmc"
-    title: 'FunMC^2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core Devices'
+    title: "FunMC^2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core Devices"
     authors: "Wang, Z., Athawale, T., Moreland, K., Chen, J., Johnson, C., Pugmire, D."
     venue: "Eurographics Symposium on Parallel Graphics and Visualization"
     year: 2023
@@ -385,9 +385,9 @@ publications:
   - id: "yenpure2022guide"
     title: "A Guide to Particle Advection Performance"
     authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
-    venue: "Unknown Venue"
+    venue: "CoRR"
     year: 2022
-    type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    type: Journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.48550/arxiv.2201.08440"
     paper_url: "https://arxiv.org/abs/2201.08440"
     # abstract: ""  # Optional - full abstract text
@@ -483,7 +483,7 @@ publications:
   - id: "moreland2022exploitation"
     title: "The Exploitation of Data Reduction for Visualization"
     authors: "Moreland, K., Pugmire, D., Chen, J."
-    venue: "Unknown Venue"
+    venue: "Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States)"
     year: 2022
     type: techreport # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2172/1881112"
@@ -497,7 +497,7 @@ publications:
   - id: "moreland2022importance"
     title: "The Importance of Scientific Visualization on Novel Hardware"
     authors: "Moreland, K., Pugmire, D., Geveci, B., Lo, L., Childs, H., Bolstad, M., Shah, R., Wu, P."
-    venue: "Unknown Venue"
+    venue: "Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States)"
     year: 2022
     type: techreport # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2172/1885308"
@@ -547,7 +547,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'suchyta2022exascale.jpg'  # Optional - add image file to images/papers/
+    image: "Suchyta2022.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2022
   - id: "gainaru2022understanding"
@@ -633,20 +633,6 @@ publications:
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'binyahib2021hylipod.jpg'  # Optional - add image file to images/papers/
-
-  # JOURNAL - 2021
-  - id: "liang2021mgard"
-    title: "MGARD+: Optimizing multilevel methods for error-bounded scientific data reduction"
-    authors: "Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., others"
-    venue: "IEEE Transactions on Computers"
-    year: 2021
-    type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1109/tc.2021.3092201"
-    paper_url: "https://doi.org/10.1109/tc.2021.3092201"
-    # abstract: ""  # Optional - full abstract text
-    # note: ""  # e.g., Best Paper Award
-    # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'liang2021mgard.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
   - id: "liang2021mgard"
@@ -788,20 +774,6 @@ publications:
     # summary: ""  # Add a one-sentence summary of the paper
     image: "specfem3d.jpg"
 
-  # ABSTRACT - 2020
-  - id: "lei2020global"
-    title: "Global adjoint tomography—model GLAD-M25"
-    authors: "Lei, W., Ruan, Y., Bozdağ, E., Peter, D., Lefebvre, M., Komatitsch, D., Tromp, J., Hill, J., Podhorszki, N., Pugmire, D."
-    venue: "Geophysical Journal International"
-    year: 2020
-    type: abstract # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1093/gji/ggaa253"
-    paper_url: "https://doi.org/10.1093/gji/ggaa253"
-    abstract: "Building on global adjoint tomography model GLAD-M15, we present transversely isotropic global model GLAD-M25, which is the result of 10 quasi-Newton tomographic iterations with an earthquake database consisting of 1480 events in the magnitude range 5.5 ≤ Mw ≤ 7.2, an almost sixfold increase over the first-generation model. We calculated fully 3-D synthetic seismograms with a shortest period of 17 s based on a GPU-accelerated spectral-element wave propagation solver which accommodates effects due to 3-D anelastic crust and mantle structure, topography and bathymetry, the ocean load, ellipticity, rotation and self-gravitation. We used an adjoint-state method to calculate Fréchet derivatives in 3-D anelastic Earth models facilitated by a parsimonious storage algorithm. The simulations were performed on the Cray XK7 ‘Titan’ and the IBM Power 9 ‘Summit’ at the Oak Ridge Leadership Computing Facility. We quantitatively evaluated GLAD-M25 by assessing misfit reductions and traveltime anomaly histograms in 12 measurement categories. We performed similar assessments for a held-out data set consisting of 360 earthquakes, with results comparable to the actual inversion. We highlight the new model for a variety of plumes and subduction zones."
-    # note: ""  # e.g., Best Paper Award
-    # summary: ""  # Add a one-sentence summary of the paper
-    image: "specfem3d.jpg" # Optional - add image file to images/papers/
-
   # CONFERENCE - 2020
   - id: "wan2020performance"
     title: "I/O Performance Characterization and Prediction through Machine Learning on HPC Systems"
@@ -820,7 +792,7 @@ publications:
   - id: "liang2020mgard"
     title: "MGARD+: Optimizing Multilevel Methods for Error-bounded Scientific Data Reduction"
     authors: "Liang, X., Whitney, B., Chen, J., Wan, L., Liu, Q., Tao, D., Kress, J., Pugmire, D., Wolf, M., Podhorszki, N., Klasky, S."
-    venue: "Unknown Venue"
+    venue: "arXiv preprint arXiv:2010.05872"
     year: 2020
     type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/tc.2021.3092201"
@@ -876,7 +848,7 @@ publications:
   - id: "thompson2020towards"
     title: "Towards 1ULP Evaluation of Daubechies Wavelets"
     authors: "Thompson, N., Maddock, J., Ostrouchov, G., Pugmire, D., Klasky, S."
-    venue: "Unknown Venue"
+    venue: "arXiv preprint arXiv:2005.05424"
     year: 2020
     type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1201/9781003006626-5"
@@ -1002,7 +974,7 @@ publications:
   - id: "moreland2019xvis"
     title: "XVis: Visualization for the Extreme-Scale Scientific Computation Ecosystem (Final Report)"
     authors: "Moreland, K., Pugmire, D., Rogers, D., Childs, H., Ma, K., Geveci, B."
-    venue: "Unknown Venue"
+    venue: "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)"
     year: 2019
     type: techreport # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2172/1547341"
@@ -1139,7 +1111,7 @@ publications:
     # image: 'lu2017canopus.jpg'  # Optional - add image file to images/papers/
 
   # WORKSHOP - 2017
-  - id: "lu2017canopus"
+  - id: "lu2017canopusB"
     title: "Canopus: Enabling Extreme-Scale Data Analytics on Big HPC Storage via Progressive Refactoring"
     authors: "Lu, T., Suchyta, E., Choi, J., Podhorszki, N., Klasky, S., Liu, Q., Pugmire, D., Wolf, M., Ainsworth, M."
     venue: "9th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage 17)"
@@ -1198,7 +1170,7 @@ publications:
   - id: "moreland2017xvis"
     title: "XVis: Visualization for the Extreme-Scale Scientific-Computation Ecosystem: Year-end report FY17."
     authors: "Moreland, K., Pugmire, D., Rogers, D., Childs, H., Ma, K., Geveci, B."
-    venue: "Unknown Venue"
+    venue: "Sandia National Laboratories (SNL-NM), Albuquerque, NM (United States)"
     year: 2017
     type: techreport # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2172/1408391"
@@ -1702,7 +1674,7 @@ publications:
   - id: "ahrens2009parallel"
     title: "Parallel visualization and analysis with paraview on a Cray XT4"
     authors: "Ahrens, J., Patchett, J., Pugmire, D., Ahern, S."
-    venue: "Unknown Venue"
+    venue: "Cray Users Group Meeting 2009"
     year: 2009
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1142/s0129626409000444"
@@ -1730,7 +1702,7 @@ publications:
   - id: "ahrens2009vismashup"
     title: "VISMASHUP: streamlining the creation of custom visualization applications"
     authors: "Ahrens, J., Santos, E., Lins, L., Freire, J., Silva, C."
-    venue: "Unknown Venue"
+    venue: "IEEE Transactions on Visualization and Computer Graphics"
     year: 2009
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/tvcg.2009.195"
