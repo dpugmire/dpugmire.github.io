@@ -44,6 +44,21 @@ publications:
     # summary: ""  # Add a one-sentence summary of the paper
     image: "wang2025orbit.png" # Optional - add image file to images/papers/
 
+
+  # CONFERENCE - 2016
+  - id: "larsen2016"
+    title: "Performance Modeling of In Situ Rendering"
+    authors: "M. Larsen, C. Harrison, J. Kress, D. Pugmire, J. S. Meredith and H. Childs"
+    venue: "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
+    year: 2016
+    type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    doi: "10.1109/SC.2016.23"
+    paper_url: "https://doi.org/10.1109/SC.2016.23"
+    abstract: "With the push to exascale, in situ visualization and analysis will continue to play an important role in high performance computing. Tightly coupling in situ visualization with simulations constrains resources for both, and these constraints force a complex balance of trade-offs. A performance model that provides an a priori answer for the cost of using an in situ approach for a given task would assist in managing the trade-offs between simulation and visualization resources. In this work, we present new statistical performance models, based on algorithmic complexity, that accurately predict the run-time cost of a set of representative rendering algorithms, an essential in situ visualization task. To train and validate the models, we conduct a performance study of an MPI+X rendering infrastructure used in situ with three HPC simulation applications. We then explore feasibility issues using the model for selected in situ rendering questions."
+    note: "Best Paper Award Finalist"
+    # summary: ""  # Add a one-sentence summary of the paper
+    image: "wang2025orbit.png" # Optional - add image file to images/papers/
+
   # PREPRINT - 2025
   - id: "wang2025orbitPreprint"
     title: "ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling"
@@ -186,7 +201,7 @@ publications:
 
   # WORKSHOP - 2024
   - id: "hari2024filter"
-    title: "FunM2C: A Filter for Uncertainty Visualization of Multivariate Data on Multi-Core Devices"
+    title: "FunMC^2: A Filter for Uncertainty Visualization of Multivariate Data on Multi-Core Devices"
     authors: "Hari, G., Joshi, N., Wang, Z., Gong, Q., Pugmire, D., Moreland, K., Johnson, C., Klasky, S., Podhorszki, N., Athawale, T."
     venue: "2024 IEEE Workshop on Uncertainty Visualization: Applications, Techniques, Software, and Decision Frameworks"
     year: 2024
@@ -194,7 +209,7 @@ publications:
     doi: "10.1109/uncertaintyvisualization63963.2024.00010"
     paper_url: "https://doi.org/10.1109/uncertaintyvisualization63963.2024.00010"
     # abstract: ""  # Optional - full abstract text
-    # note: ""  # e.g., Best Paper Award
+    note: "Best Paper Award Honorable Mention"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'hari2024filter.jpg'  # Optional - add image file to images/papers/
 
@@ -326,7 +341,7 @@ publications:
 
   # CONFERENCE - 2023
   - id: "wang2023funmc"
-    title: 'FunMC\^2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core Devices'
+    title: 'FunMC^2: A Filter for Uncertainty Visualization of Marching Cubes on Multi-Core Devices'
     authors: "Wang, Z., Athawale, T., Moreland, K., Chen, J., Johnson, C., Pugmire, D."
     venue: "Eurographics Symposium on Parallel Graphics and Visualization"
     year: 2023
@@ -895,7 +910,7 @@ publications:
     doi: "10.1109/ldav48142.2019.8944355"
     paper_url: "https://doi.org/10.1109/ldav48142.2019.8944355"
     # abstract: ""  # Optional - full abstract text
-    # note: ""  # e.g., Best Paper Award
+    note: "Honorable Mention Best Paper"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'binyahib2019lifeline.jpg'  # Optional - add image file to images/papers/
 
@@ -1105,7 +1120,7 @@ publications:
     doi: "10.2312/pgv.20181094"
     paper_url: "https://www.osti.gov/biblio/1558503"
     abstract: "Particle advection is the fundamental kernel behind most vector field visualization methods. Yet, the efficient parallel computation of large amounts of particle traces remains challenging. This is exacerbated by the variety of hardware trends in today's HPC arena, including increasing core counts in classical CPUs, many-core designs such as the Intel Xeon Phi, and massively parallel GPUs. The dedicated optimization of a particle advection kernel for each individual target architecture is both time-consuming and error prone. In this paper, we propose a performance-portable algorithm for particle advection. Our algorithm is based on the recently introduced VTK-m system and chiefly relies on its device adapter abstraction. We demonstrate the general portability of our implementation across a wide variety of hardware. Finally, our evaluation shows that our hardware-agnostic algorithm has comparable performance to hardware-specific algorithms."
-    note: "Best Paper Finalist"
+    note: "Best Paper Award Finalist"
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2018performance.jpg'  # Optional - add image file to images/papers/
 

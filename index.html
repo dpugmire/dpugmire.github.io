@@ -1072,6 +1072,14 @@
         });
       }
 
+      function renderInlineMathText(s) {
+        return escHtml(s)
+          .replace(/\^\{([^}]+)\}/g, "<sup>$1</sup>")
+          .replace(/_\{([^}]+)\}/g, "<sub>$1</sub>")
+          .replace(/\^([^^_{}])/g, "<sup>$1</sup>")
+          .replace(/_([^^_{}])/g, "<sub>$1</sub>");
+      }
+
       function generateBibtex(pub) {
         const typeMap = {
           journal: "article",
@@ -1211,7 +1219,7 @@
             // Citation: authors. "title." venue year. + DOI appended at end
             const pieces = [];
             if (pub.authors) pieces.push(escHtml(pub.authors) + ".");
-            if (pub.title) pieces.push('"' + escHtml(pub.title) + '."');
+            if (pub.title) pieces.push('"' + renderInlineMathText(pub.title) + '."');
             if (pub.venue) pieces.push("<i>" + escHtml(pub.venue) + "</i>");
             if (pub.year) pieces.push(escHtml(String(pub.year)) + ".");
 
@@ -1762,31 +1770,226 @@
           mentorshipHtml + professionalOrganizationsHtml + serviceHtml;
       }
 
-      async function renderAbout() {
-        try {
-          const resp = await fetch("data/about.md");
-          if (!resp.ok) {
-            document.getElementById("about-intro").innerHTML = "<p>Could not load about information.</p>";
+      function splitMarkdownSections(markdown) {
+        const lines = String(markdown || "").split("\n");
+        const sections = [];
+        let current = null;
+
+        lines.forEach((line) => {
+          const match = line.match(/^###\s+(.*?)\s*$/);
+          if (match) {
+            if (current) {
+              const body = current.lines.join("\n").trim();
+              sections.push({
+                heading: current.heading,
+                markdown: body
+                  ? `### ${current.heading}\n\n${body}\n`
+                  : `### ${current.heading}\n`,
+              });
+            }
+
+            current = {
+              heading: match[1].trim(),
+              lines: [],
+            };
             return;
           }
-          const text = await resp.text();
-          const html = marked.parse(text);
 
-          // Split content at Professional Experience heading
-          const parts = html.split(/<h3[^>]*>Professional Experience<\/h3>/i);
+          if (current) {
+            current.lines.push(line);
+          }
+        });
 
-          if (parts.length > 1) {
-            // Put intro text in left column
-            document.getElementById("about-intro").innerHTML = parts[0];
-            // Put Professional Experience in full-width section below
-            document.getElementById("about-experience").innerHTML = '<h3>Professional Experience</h3>' + parts[1];
+        if (current) {
+          const body = current.lines.join("\n").trim();
+          sections.push({
+            heading: current.heading,
+            markdown: body
+              ? `### ${current.heading}\n\n${body}\n`
+              : `### ${current.heading}\n`,
+          });
+        }
+
+        return sections;
+      }
+
+      function awardYear(value) {
+        const year = Number.parseInt(String(value || "").trim(), 10);
+        return Number.isFinite(year) ? year : 0;
+      }
+
+      function isPublicationAwardNote(note) {
+        const normalized = String(note || "").trim();
+        if (!normalized) return false;
+
+        return (
+          (normalized.startsWith("Best ") &&
+            (normalized.includes("Award") || normalized.includes("Finalist"))) ||
+          normalized.includes("Honorable Mention Best Paper")
+        );
+      }
+
+      function buildAwards(manualAwardsData, publicationsData) {
+        const manualAwards = Array.isArray(manualAwardsData?.awards)
+          ? manualAwardsData.awards
+          : [];
+        const publicationAwards = Array.isArray(publicationsData?.publications)
+          ? publicationsData.publications
+              .filter((pub) => isPublicationAwardNote(pub.note))
+              .map((pub) => ({
+                year: pub.year,
+                title: String(pub.note || "").trim(),
+                organization: pub.venue || "",
+                detail_label: "Paper",
+                detail: pub.title || "",
+              }))
+          : [];
+
+        return [...manualAwards, ...publicationAwards].sort((a, b) => {
+          const yearDiff = awardYear(b.year) - awardYear(a.year);
+          if (yearDiff !== 0) return yearDiff;
+
+          const aKey = [a.title, a.organization, a.detail]
+            .map((value) => String(value || ""))
+            .join(" ");
+          const bKey = [b.title, b.organization, b.detail]
+            .map((value) => String(value || ""))
+            .join(" ");
+          return aKey.localeCompare(bKey);
+        });
+      }
+
+      function renderAwardSummary(award) {
+        const title = String(award.title || "").trim();
+        const organization = String(award.organization || "").trim();
+        const organizationUrl = String(award.organization_url || "").trim();
+        const detail = String(award.detail || "").trim();
+        const detailLabel = String(award.detail_label || "").trim();
+        const isPaperAward =
+          detail &&
+          detailLabel === "Paper" &&
+          title.toLowerCase().includes("paper");
+
+        if (isPaperAward) {
+          const venueHtml = organization
+            ? organizationUrl
+              ? '<a href="' +
+                escHtml(organizationUrl) +
+                '" target="_blank" rel="noopener noreferrer">' +
+                escHtml(organization) +
+                "</a>"
+              : escHtml(organization)
+            : "";
+          const parts = ["<strong>" + escHtml(title) + "</strong>"];
+          parts.push('"' + renderInlineMathText(detail) + '"');
+          if (venueHtml) parts.push(venueHtml);
+          return parts.join(", ");
+        }
+
+        const parts = [];
+        if (title) {
+          parts.push("<strong>" + escHtml(title) + "</strong>");
+        }
+
+        if (organization) {
+          if (organizationUrl) {
+            parts.push(
+              '<a href="' +
+                escHtml(organizationUrl) +
+                '" target="_blank" rel="noopener noreferrer">' +
+                escHtml(organization) +
+                "</a>",
+            );
           } else {
-            // If no split found, put everything in intro
-            document.getElementById("about-intro").innerHTML = html;
+            parts.push(escHtml(organization));
+          }
+        }
+
+        if (detail) {
+          if (detailLabel) {
+            parts.push(escHtml(detailLabel) + ": " + renderInlineMathText(detail));
+          } else {
+            parts.push(renderInlineMathText(detail));
+          }
+        }
+
+        return parts.join(", ");
+      }
+
+      function renderAwardsSection(awards) {
+        if (!awards.length) return "";
+
+        let html = "<h3>Awards</h3>";
+        html += "<table><tbody>";
+
+        awards.forEach((award) => {
+          html += "<tr>";
+          html += "<td>" + escHtml(String(award.year || "")) + "</td>";
+          html += "<td>" + renderAwardSummary(award) + "</td>";
+          html += "</tr>";
+        });
+
+        html += "</tbody></table>";
+        return html;
+      }
+
+      async function renderAbout() {
+        const introContainer = document.getElementById("about-intro");
+        const detailsContainer = document.getElementById("about-experience");
+        const awardsHeadings = new Set(["Awards", "Awards & Honors"]);
+
+        try {
+          const [resp, manualAwardsData, publicationsData] = await Promise.all([
+            fetch("data/about.md"),
+            loadYAML("data/awards.yaml"),
+            loadYAML("data/publications.yaml"),
+          ]);
+
+          if (!resp.ok) {
+            introContainer.innerHTML = "<p>Could not load about information.</p>";
+            detailsContainer.innerHTML = "";
+            return;
+          }
+
+          const text = await resp.text();
+          const introText = text.split(/^###\s+/m)[0].trim();
+          const sections = splitMarkdownSections(text);
+          const sectionMap = new Map(
+            sections.map((section) => [section.heading, section]),
+          );
+          const awards = buildAwards(manualAwardsData, publicationsData);
+
+          awardsHeadings.forEach((heading) => sectionMap.delete(heading));
+
+          introContainer.innerHTML = introText ? marked.parse(introText) : "";
+
+          let detailsHtml = "";
+
+          ["Professional Experience", "Education"].forEach((heading) => {
+            const section = sectionMap.get(heading);
+            if (!section) return;
+
+            detailsHtml += marked.parse(section.markdown);
+            sectionMap.delete(heading);
+          });
+
+          detailsHtml += renderAwardsSection(awards);
+
+          sections.forEach((section) => {
+            if (!sectionMap.has(section.heading)) return;
+            detailsHtml += marked.parse(section.markdown);
+          });
+
+          if (detailsHtml) {
+            detailsContainer.innerHTML = detailsHtml;
+          } else {
+            introContainer.innerHTML = marked.parse(text);
+            detailsContainer.innerHTML = "";
           }
         } catch (err) {
           console.error("Error loading about.md:", err);
-          document.getElementById("about-intro").innerHTML = "<p>Could not load about information.</p>";
+          introContainer.innerHTML = "<p>Could not load about information.</p>";
+          detailsContainer.innerHTML = "";
         }
       }
 

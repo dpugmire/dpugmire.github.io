@@ -1,11 +1,6 @@
-### Awards & Honors
+### Awards
 
-|      |                                                                                                                           |
-| ---- | ------------------------------------------------------------------------------------------------------------------------- |
-| 2025 | **Best Paper Award**, SC25 - International Conference for High Performance Computing, Networking, Storage and Analysis   |
-|      | Paper: "ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling"                          |
-| 2021 | **Distinguished Research Scientist**, [Oak Ridge National Laboratory](https://www.ornl.gov/)                              |
-| 2017 | **R&D 100 Award**, R&D World Magazine                                                                                     |
-|      | Project: Cinema - In Situ Visualization and Analysis                                                                     |
-| 2015 | **Best Paper Award**, IEEE Visualization Conference                                                                       |
-|      | Paper: "Flexible In Situ Particle Advection with I/O Kernel"                                                             |
+This file is no longer the source of truth.
+
+- Add manual awards to `data/awards.yaml`
+- Add publication-linked best paper awards by setting `note: "Best Paper Award"` on the relevant entry in `data/publications.yaml`

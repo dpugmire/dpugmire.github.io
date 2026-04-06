@@ -1,0 +1,76 @@
+# awards.yaml
+
+awards:
+  - year: 2018
+    title: "Long Term Paper Impact"
+    organization: "Computer Science and Mathematics Division"
+    detail_label: "Award"
+    detail: "Extreme scaling of production visualization software on diverse architectures"
+
+  - year: 2006
+    title: "R&D 100 Award"
+    organization: "R&D World Magazine"
+    detail_label: "Project"
+    detail: '"PixelVision: An NPU-Based Image Compositor"'
+
+  - year: 2016
+    title: "Significant Event Award"
+    organization: "Oak Ridge National Laboratory"
+    detail_label: "Project"
+    detail: "In Transit Visualization of Fusion Simulations"
+
+  - year: 2011
+    title: "Significant Event Award"
+    organization: "Oak Ridge National Laboratory"
+    detail_label: "Project"
+    detail: '"Support to DOE in response to the Fukushima Dai-ichi damaged reactors"'
+
+  - year: 2011
+    title: "Staff Member of the Month"
+    organization: "Oak Ridge National Laboratory"
+    detail_label: "Award"
+    detail: ""
+
+  - year: 2011
+    title: "Juried Award for Best Visual Aesthetics"
+    organization: "Scientific Discovery through Advanced Computing (SciDAC)"
+    detail_label: ""
+    detail: '"Magnetic Field Outflows from Active Galactic Nuclei"'
+
+  - year: 2011
+    title: "People's Choice Award"
+    organization: "Scientific Discovery through Advanced Computing (SciDAC)"
+    detail_label: ""
+    detail: '"Magnetic Field Outflows from Active Galactic Nuclei"'
+
+  - year: 2010
+    title: "People's Choice Award"
+    organization: "Scientific Discovery through Advanced Computing (SciDAC)"
+    detail_label: ""
+    detail: '"Clean Energy for the Future with the ITER Reactor"'
+
+  - year: 2010
+    title: "Science and Technology Award of Excellence"
+    organization: "Oak Ridge National Laboratory"
+    detail_label: "Award"
+    detail: ""
+
+  - year: 2006
+    title: "Exceptional Contribution Award"
+    organization: "Los Alamos National Laboratory"
+    detail_label: "Award"
+    detail: ""
+
+  - year: 2005
+    title: "Computing Division Exceptional Contribution Award"
+    organization: "Los Alamos National Laboratory"
+    detail_label: "Award"
+    detail: ""
+
+  - year: 2004
+    title: "Computing Division Exceptional Contribution Award"
+    organization: "Los Alamos National Laboratory"
+    detail_label: "Award"
+    detail: ""
+
+

@@ -4,6 +4,7 @@ generate_cv.py - Comprehensive CV Generator
 
 Generates a complete academic CV from website data sources:
 - data/about.md: Professional Experience, Education
+- data/awards.yaml: Awards
 - data/publications.yaml: Publications
 - data/talks.yaml: Invited talks
 - data/keynotes.yaml: Keynote presentations
@@ -18,6 +19,7 @@ Output:
 """
 
 import re
+import unicodedata
 import sys
 import yaml
 from pathlib import Path
@@ -35,6 +37,7 @@ class CVGenerator:
         # Data containers
         self.education = []
         self.experience = []
+        self.manual_awards = []
         self.awards = []
         self.publications = []
         self.talks = []
@@ -49,6 +52,7 @@ class CVGenerator:
         """Escape special LaTeX characters."""
         if not s:
             return ""
+        s = unicodedata.normalize("NFC", s)
         replacements = {
             "\\": r"\textbackslash{}",
             "&": r"\&",
@@ -115,37 +119,20 @@ class CVGenerator:
                     if year and desc:
                         self.education.append((year, desc))
 
-        # Extract Awards & Honors table
-        awards_match = re.search(
-            r'### Awards & Honors\s*\n\s*\|.*?\n\s*\|.*?\n((?:\s*\|.*?\n)+)',
-            content,
-            re.MULTILINE | re.DOTALL
-        )
-        if awards_match:
-            table_rows = awards_match.group(1).strip().split('\n')
-            current_year = None
-            for row in table_rows:
-                match = re.match(r'\|\s*([^|]+)\s*\|\s*(.+?)\s*\|', row)
-                if match:
-                    year = match.group(1).strip()
-                    desc = match.group(2).strip()
-                    # Remove markdown formatting
-                    year = re.sub(r'\*\*([^*]+)\*\*', r'\1', year)
-                    desc = re.sub(r'\*\*([^*]+)\*\*', r'\1', desc)
-                    desc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', desc)
+        print(f"✓ Parsed {len(self.experience)} experience entries and {len(self.education)} education entries")
 
-                    # Handle multi-row awards (where year is empty on continuation rows)
-                    if year:
-                        current_year = year
-                        if desc:  # Only add if there's a description
-                            self.awards.append((current_year, desc))
-                    elif desc and current_year:
-                        # Continuation row - append to previous award
-                        if self.awards:
-                            prev_year, prev_desc = self.awards[-1]
-                            self.awards[-1] = (prev_year, f"{prev_desc} {desc}")
+    def parse_awards_yaml(self):
+        """Parse manually managed awards from awards.yaml."""
+        awards_file = self.data_dir / "awards.yaml"
+        if not awards_file.exists():
+            print(f"⚠️  {awards_file} not found")
+            return
 
-        print(f"✓ Parsed {len(self.experience)} experience entries, {len(self.education)} education entries, {len(self.awards)} awards")
+        with awards_file.open("r", encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+
+        self.manual_awards = data.get("awards", []) or []
+        print(f"✓ Parsed {len(self.manual_awards)} manual awards")
 
     def parse_publications_yaml(self):
         """Parse publications.yaml."""
@@ -159,6 +146,89 @@ class CVGenerator:
 
         self.publications = data.get("publications", [])
         print(f"✓ Parsed {len(self.publications)} publications")
+
+    def build_awards(self):
+        """Combine manual awards with publication-derived best paper awards."""
+        combined_awards = []
+
+        def is_publication_award_note(note: Any) -> bool:
+            normalized = str(note or "").strip()
+            if not normalized:
+                return False
+
+            return (
+                normalized.startswith("Best ") and (
+                    "Award" in normalized or "Finalist" in normalized
+                )
+            ) or (
+                "Honorable Mention Best Paper" in normalized
+            )
+
+        for item in self.manual_awards:
+            combined_awards.append({
+                "year": item.get("year", ""),
+                "title": item.get("title", ""),
+                "organization": item.get("organization", ""),
+                "detail_label": item.get("detail_label", ""),
+                "detail": item.get("detail", ""),
+            })
+
+        for pub in self.publications:
+            if not is_publication_award_note(pub.get("note", "")):
+                continue
+
+            combined_awards.append({
+                "year": pub.get("year", ""),
+                "title": str(pub.get("note", "")).strip(),
+                "organization": pub.get("venue", ""),
+                "detail_label": "Paper",
+                "detail": pub.get("title", ""),
+            })
+
+        def award_sort_key(item: Dict[str, Any]):
+            try:
+                year = int(str(item.get("year", "")).strip())
+            except ValueError:
+                year = 0
+
+            return (
+                -year,
+                str(item.get("title", "")),
+                str(item.get("organization", "")),
+                str(item.get("detail", "")),
+            )
+
+        def award_description(item: Dict[str, Any]) -> str:
+            parts = []
+            title = str(item.get("title", "")).strip()
+            organization = str(item.get("organization", "")).strip()
+            detail = str(item.get("detail", "")).strip()
+            detail_label = str(item.get("detail_label", "")).strip()
+
+            if title:
+                parts.append(title)
+            if organization:
+                parts.append(organization)
+
+            description = ", ".join(parts)
+
+            if detail:
+                if detail_label == "Paper":
+                    description += f' {detail_label}: "{detail}"'
+                elif detail_label:
+                    description += f" {detail_label}: {detail}"
+                else:
+                    description += f" {detail}"
+
+            return description.strip()
+
+        combined_awards.sort(key=award_sort_key)
+        self.awards = [
+            (str(item.get("year", "")).strip(), award_description(item))
+            for item in combined_awards
+            if str(item.get("year", "")).strip() and award_description(item)
+        ]
+        print(f"✓ Built {len(self.awards)} awards")
 
     def parse_talks_yaml(self):
         """Parse talks.yaml."""
@@ -579,7 +649,9 @@ def main():
     # Parse all data sources
     print("Parsing data sources...")
     generator.parse_about_md()
+    generator.parse_awards_yaml()
     generator.parse_publications_yaml()
+    generator.build_awards()
     generator.parse_talks_yaml()
     generator.parse_keynotes_yaml()
     generator.parse_tutorials_yaml()

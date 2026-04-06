@@ -21,6 +21,7 @@ Usage:
 
 import sys
 from pathlib import Path
+import unicodedata
 import yaml  # pip install pyyaml
 
 
@@ -30,6 +31,7 @@ def escape_latex(s: str) -> str:
     """Minimal LaTeX escaping for text fields."""
     if not s:
         return ""
+    s = unicodedata.normalize("NFC", s)
     replacements = {
         "\\": r"\textbackslash{}",
         "&": r"\&",

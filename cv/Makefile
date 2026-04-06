@@ -8,6 +8,8 @@
 
 .PHONY: all gen pdf clean help view
 
+PYTHON ?= /usr/bin/python3
+
 # Default target
 all: gen pdf
 	@echo ""
@@ -18,7 +20,7 @@ all: gen pdf
 # Generate CV from website data
 gen:
 	@echo "🔄 Generating CV from website data..."
-	python3 generate_cv.py
+	$(PYTHON) generate_cv.py
 
 # Compile LaTeX to PDF
 pdf:
@@ -69,7 +71,7 @@ help:
 # Install dependencies (for reference)
 install-deps:
 	@echo "📦 Installing Python dependencies..."
-	pip install pyyaml
+	$(PYTHON) -m pip install pyyaml
 	@echo "✅ Dependencies installed"
 	@echo ""
 	@echo "⚠️  You also need LaTeX installed:"

@@ -6,6 +6,7 @@ This directory contains a complete system for auto-generating your academic CV f
 
 Your CV is automatically generated from the same data that powers your website:
 - **Professional Experience** & **Education** from `data/about.md`
+- **Awards** from `data/awards.yaml` plus `Best Paper Award` notes in `data/publications.yaml`
 - **Publications** from `data/publications.yaml`
 - **Talks** from `data/talks.yaml`
 - **Keynotes** from `data/keynotes.yaml`

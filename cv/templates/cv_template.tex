@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 
 % ============================================================
-% CV Template for Dave Pugmire
+% CV Template for David Pugmire
 % Auto-generated from website data
 % Generated: {{GENERATION_DATE}}
 % ============================================================
@@ -23,8 +23,8 @@
     colorlinks=true,
     urlcolor=blue!60!black,
     linkcolor=blue!60!black,
-    pdfauthor={Dave Pugmire},
-    pdftitle={Curriculum Vitae - Dave Pugmire}
+    pdfauthor={David Pugmire},
+    pdftitle={Curriculum Vitae - David Pugmire}
 }
 
 % Section formatting
@@ -49,7 +49,7 @@
   \begin{center}
     {\Huge\bfseries #1}\\[0.4em]
     {\large #2}\\[0.6em]
-    #3 \quad | \quad #4
+    #3\if\relax\detokenize{#4}\relax\else \quad | \quad #4\fi
   \end{center}
   \vspace{0.5em}
 }
@@ -60,10 +60,10 @@
 % HEADER
 % ============================================================
 \cvheader
-  {Dave Pugmire}
-  {Distinguished Research Scientist}
-  {\href{mailto:dpugmire@gmail.com}{dpugmire@gmail.com}}
-  {\href{https://dpugmire.github.io}{dpugmire.github.io}}
+  {David Pugmire}
+  {Distinguished Research Scientist\\[0.2em] Oak Ridge National Laboratory}
+  {\href{mailto:pugmire@ornl.gov}{pugmire@ornl.gov}}
+  {}
 
 \noindent
 \href{https://scholar.google.com/citations?user=FmxWGN0AAAAJ&hl=en}{Google Scholar} \quad | \quad
@@ -88,9 +88,9 @@
 \end{tabular}
 
 % ============================================================
-% AWARDS & HONORS
+% AWARDS
 % ============================================================
-\section*{Awards \& Honors}
+\section*{Awards}
 
 \begin{itemize}[leftmargin=2em]
 {{AWARDS}}
@@ -124,8 +124,7 @@
 \vfill
 \begin{center}
   \small
-  \textit{Last updated: \today}\\
-  \textit{Auto-generated from \href{https://dpugmire.github.io}{dpugmire.github.io}}
+  \textit{Last updated: \today}
 \end{center}
 
 \end{document}
