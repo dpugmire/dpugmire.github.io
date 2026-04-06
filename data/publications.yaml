@@ -377,9 +377,9 @@ publications:
     doi: "10.1145/3587421.3595466"
     paper_url: "https://doi.org/10.1145/3587421.3595466"
     abstract: "A recent trend in modern high-performance computing is the increasing use of hybrid architectures, where the vast majority of performance comes from accelerators. Modern accelerators are based on Graphics Processing Units (GPU) that contain many low power cores that in their aggregate provides an extremely high computation rate. Current and future CPU processors are requiring more explicit parallelism as each successive version of the hardware packs in more cores, and technologies like hyperthreading and vector operations require even more parallel processing to leverage each core’s full potential. As an example, the Frontier supercomputer installed at Oak Ridge National Laboratories recently hit a record breaking 1.1 exaflops1 on the LINPACK HPC benchmark [Shoemaker 2022]. The system contains 37632 AMD MI250x GPUs which requires more than half a billion threads to keep the system fully utilized [Khizeran 2022]. VTK-m is a toolkit of scientific visualization algorithms for these emerging processor architectures. VTK-m supports the fine-grained concurrency for data analysis and visualization algorithms required to drive extreme scale computing by providing abstract models for data and execution that can be applied to a variety of algorithms across many different processor architectures."
+    image: "bolstad2023.jpg"
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bolstad2023visualization.jpg'  # Optional - add image file to images/papers/
 
   # PREPRINT - 2022
   - id: "yenpure2022guide"
@@ -435,7 +435,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'suchyta2022hybrid.jpg'  # Optional - add image file to images/papers/
+    image: "suchyta2022hybrid.png" # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2022
   - id: "gong2022maintaining"
