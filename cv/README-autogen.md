@@ -22,7 +22,7 @@ cd cv
 make
 ```
 
-That's it! Your CV is now at `cv/generated/cv.pdf`
+That's it! Your CV is now at `cv/output/PugmireCV.pdf`
 
 ## 📁 Directory Structure
 
@@ -32,9 +32,9 @@ cv/
 ├── Makefile                    # Easy build commands
 ├── templates/
 │   └── cv_template.tex         # LaTeX template (customize this!)
-├── generated/                  # Output directory (auto-created)
+├── output/                     # Output directory (auto-created)
 │   ├── cv.tex                  # Generated LaTeX
-│   └── cv.pdf                  # Compiled PDF
+│   └── PugmireCV.pdf           # Compiled PDF
 └── README-autogen.md           # This file
 ```
 
@@ -70,7 +70,7 @@ make help
 1. **`generate_cv.py`** reads your website data files
 2. Parses markdown tables and YAML files
 3. Populates the LaTeX template with your data
-4. Outputs `generated/cv.tex`
+4. Outputs `output/cv.tex`
 5. **`make pdf`** compiles the LaTeX to PDF using `pdflatex`
 
 ## ✏️ Customization
@@ -118,7 +118,7 @@ The generator reads from these files in your website's `data/` directory:
 1. Update your website data (e.g., add a new publication to `publications.yaml`)
 2. Run `make` in the `cv/` directory
 3. Your CV is automatically updated with the new publication
-4. Share `generated/cv.pdf`
+4. Share `output/PugmireCV.pdf`
 
 **No manual editing of LaTeX needed!**
 
@@ -164,7 +164,7 @@ make install-deps
 
 Check the log:
 ```bash
-cat generated/cv.log
+cat output/cv.log
 ```
 
 Common issues:
@@ -173,7 +173,7 @@ Common issues:
 
 ### CV looks wrong
 
-1. Check the generated LaTeX: `generated/cv.tex`
+1. Check the generated LaTeX: `output/cv.tex`
 2. Modify the template: `templates/cv_template.tex`
 3. Adjust generator logic: `generate_cv.py`
 
@@ -233,8 +233,8 @@ To improve the CV generator:
 ## 📝 Notes
 
 - The generator preserves all your original data files unchanged
-- Generated files go to `generated/` directory
-- It's safe to delete `generated/` - it will be recreated
+- Generated files go to `output/` directory
+- It's safe to delete `output/` - it will be recreated
 - Your old manual `cv.tex` is preserved (not overwritten)
 - Run `make` whenever you update website data
 
@@ -243,8 +243,8 @@ To improve the CV generator:
 If you encounter issues:
 1. Check this README
 2. Run `make help`
-3. Check `generated/cv.log` for LaTeX errors
-4. Review the generated LaTeX at `generated/cv.tex`
+3. Check `output/cv.log` for LaTeX errors
+4. Review the generated LaTeX at `output/cv.tex`
 
 ---
 

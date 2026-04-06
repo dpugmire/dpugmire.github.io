@@ -7,7 +7,7 @@ cd cv
 make
 ```
 
-Your auto-generated CV is now at: `cv/generated/cv.pdf`
+Your auto-generated CV is now at: `cv/output/PugmireCV.pdf`
 
 ## 📊 What Was Generated
 
@@ -48,9 +48,9 @@ cv/
 ├── Makefile                 ← Simple build commands
 ├── templates/
 │   └── cv_template.tex      ← LaTeX template (customize this!)
-├── generated/               ← Auto-generated files
+├── output/                  ← Auto-generated files
 │   ├── cv.tex              ← Generated LaTeX
-│   └── cv.pdf              ← Your CV (11 pages)
+│   └── PugmireCV.pdf       ← Your CV (11 pages)
 ├── README-autogen.md        ← Full documentation
 └── QUICKSTART.md            ← This file
 ```
@@ -122,7 +122,7 @@ pip install pyyaml
 
 - Full documentation: `README-autogen.md`
 - See all Make commands: `make help`
-- Check generated LaTeX: `generated/cv.tex`
+- Check generated LaTeX: `output/cv.tex`
 
 ## ✨ What Happens Automatically
 
@@ -144,6 +144,6 @@ When you run `make`:
 
 **Next Steps:**
 1. Run `make` to see your generated CV
-2. Open `generated/cv.pdf`
+2. Open `output/PugmireCV.pdf`
 3. Customize `templates/cv_template.tex` if desired
 4. Keep your website data updated - your CV updates automatically!

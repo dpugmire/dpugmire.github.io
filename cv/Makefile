@@ -9,12 +9,13 @@
 .PHONY: all gen pdf clean help view
 
 PYTHON ?= /usr/bin/python3
+PDF_NAME ?= PugmireCV.pdf
 
 # Default target
 all: gen pdf
 	@echo ""
 	@echo "✅ CV generated and compiled successfully!"
-	@echo "📄 Output: generated/cv.pdf"
+	@echo "📄 Output: output/$(PDF_NAME)"
 	@echo ""
 
 # Generate CV from website data
@@ -25,14 +26,15 @@ gen:
 # Compile LaTeX to PDF
 pdf:
 	@echo "📝 Compiling LaTeX to PDF..."
-	@cd generated && pdflatex cv.tex > /dev/null 2>&1 || pdflatex cv.tex
-	@cd generated && pdflatex cv.tex > /dev/null 2>&1  # Run twice for references
+	@cd output && pdflatex cv.tex > /dev/null 2>&1 || pdflatex cv.tex
+	@cd output && pdflatex cv.tex > /dev/null 2>&1  # Run twice for references
+	@mv -f output/cv.pdf output/$(PDF_NAME)
 	@echo "✅ PDF compilation complete"
 
 # View the generated PDF (macOS)
 view: all
-	@if [ -f generated/cv.pdf ]; then \
-		open generated/cv.pdf; \
+	@if [ -f output/$(PDF_NAME) ]; then \
+		open output/$(PDF_NAME); \
 	else \
 		echo "❌ No PDF found. Run 'make' first."; \
 	fi
@@ -40,13 +42,13 @@ view: all
 # Clean auxiliary files
 clean:
 	@echo "🧹 Cleaning auxiliary files..."
-	@cd generated && rm -f *.aux *.log *.out *.toc *.bbl *.blg *.bcf *.run.xml
+	@cd output && rm -f *.aux *.log *.out *.toc *.bbl *.blg *.bcf *.run.xml
 	@echo "✅ Cleaned"
 
-# Deep clean (remove generated files too)
+# Deep clean (remove output files too)
 distclean: clean
-	@echo "🧹 Deep cleaning (removing generated files)..."
-	@rm -rf generated/*
+	@echo "🧹 Deep cleaning (removing output files)..."
+	@rm -rf output/*
 	@echo "✅ All generated files removed"
 
 # Show help
@@ -59,13 +61,13 @@ help:
 	@echo "  make pdf     - Only compile LaTeX to PDF"
 	@echo "  make view    - Generate, compile, and open PDF (macOS)"
 	@echo "  make clean   - Remove auxiliary LaTeX files"
-	@echo "  make distclean - Remove all generated files"
+	@echo "  make distclean - Remove all output files"
 	@echo "  make help    - Show this help"
 	@echo ""
 	@echo "Workflow:"
 	@echo "  1. Edit your website data files (data/*.yaml, data/about.md)"
 	@echo "  2. Run 'make' to regenerate your CV"
-	@echo "  3. Your CV is at: generated/cv.pdf"
+	@echo "  3. Your CV is at: output/$(PDF_NAME)"
 	@echo ""
 
 # Install dependencies (for reference)

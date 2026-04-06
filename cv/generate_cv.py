@@ -15,7 +15,7 @@ Usage:
     python generate_cv.py
 
 Output:
-    cv/generated/cv.tex (ready to compile with pdflatex)
+    cv/output/cv.tex (ready to compile with pdflatex)
 """
 
 import re
@@ -31,7 +31,7 @@ class CVGenerator:
     def __init__(self, data_dir: Path, cv_dir: Path):
         self.data_dir = data_dir
         self.cv_dir = cv_dir
-        self.output_dir = cv_dir / "generated"
+        self.output_dir = cv_dir / "output"
         self.output_dir.mkdir(exist_ok=True)
 
         # Data containers
@@ -628,7 +628,7 @@ class CVGenerator:
         print(f"  cd {self.cv_dir}")
         print(f"  make")
         print(f"\nOr manually:")
-        print(f"  cd {self.cv_dir}/generated")
+        print(f"  cd {self.cv_dir}/output")
         print(f"  pdflatex cv.tex")
 
 
