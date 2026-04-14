@@ -2,6 +2,18 @@
 # Generated from BibTeX on 2025-12-12 15:50:55
 
 publications:
+  # PREPRINT - 2026
+  - id: "irger2026raiven"
+    title: "Raiven: LLM-Based Visualization Authoring via Domain-Specific Language Mediation"
+    authors: "Irger, A., Hugie, E., Guo, M., Warchol, S., Moreland, K., Pugmire, D., Matusik, W., Pfister, H."
+    venue: "arXiv preprint arXiv:2604.10008"
+    year: 2026
+    type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    paper_url: "https://arxiv.org/abs/2604.10008"
+    # abstract: ""  # Optional - full abstract text
+    # note: ""  # e.g., Best Paper Award
+    # summary: ""  # Add a one-sentence summary of the paper
+
   # WORKSHOP - 2025
   - id: "ouermi2025efficient"
     title: "Efficient Probabilistic Visualization of Local Divergence of 2D Vector Fields with Independent Gaussian Uncertainty"
