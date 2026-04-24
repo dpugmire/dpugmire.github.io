@@ -741,7 +741,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'dominski2021spatial.jpg'  # Optional - add image file to images/papers/
+    image: "dominski2021spatial.png"
 
   # JOURNAL - 2020
   - id: "godoy2020adios"
@@ -769,7 +769,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'qin2020estimating.jpg'  # Optional - add image file to images/papers/
+    image: "qin2020estimating.png"
 
   # JOURNAL - 2020
   - id: "logan2020extending"
