@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="395" viewBox="0 0 620 395" role="img" aria-labelledby="title desc">
+  <title id="title">Data refactoring workflow and MGARD compression performance charts</title>
+  <desc id="desc">Four-panel figure showing write and read workflow timing as coefficient classes increase, plus CPU and GPU MGARD compression and decompression timing across error bounds.</desc>
+  <rect width="620" height="395" fill="#ffffff"/>
+
+  <g font-family="'Source Sans 3', 'Segoe UI', sans-serif" fill="#4b5563">
+    <text x="310" y="18" text-anchor="middle" font-size="13">Fig. 12: Showcase 1: Data refactoring in scientific visualization workflow</text>
+    <text x="310" y="214" text-anchor="middle" font-size="13">Fig. 13: Showcase 2: MGARD lossy compression using CPU (left bars) vs. GPU (right bars)</text>
+  </g>
+
+  <!-- Top left chart -->
+  <g transform="translate(24 28)">
+    <rect x="0" y="0" width="272" height="156" fill="#ffffff" stroke="#cdd6e2"/>
+    <g stroke="#e5e9f0" stroke-width="1">
+      <line x1="30" y1="25" x2="255" y2="25"/>
+      <line x1="30" y1="55" x2="255" y2="55"/>
+      <line x1="30" y1="85" x2="255" y2="85"/>
+      <line x1="30" y1="115" x2="255" y2="115"/>
+      <line x1="30" y1="145" x2="255" y2="145"/>
+    </g>
+    <g stroke="#5f6b7a" stroke-width="1.4">
+      <line x1="30" y1="15" x2="30" y2="145"/>
+      <line x1="30" y1="145" x2="255" y2="145"/>
+    </g>
+    <line x1="30" y1="22" x2="255" y2="22" stroke="#d9534f" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <text x="34" y="17" font-size="10" fill="#d9534f">Original Write Time</text>
+    <g font-size="10" fill="#4b5563" text-anchor="middle">
+      <text x="45" y="158">1</text>
+      <text x="72" y="158">2</text>
+      <text x="99" y="158">3</text>
+      <text x="126" y="158">4</text>
+      <text x="153" y="158">5</text>
+      <text x="180" y="158">6</text>
+      <text x="207" y="158">7</text>
+      <text x="234" y="158">8</text>
+    </g>
+    <g>
+      <rect x="40" y="121" width="8" height="24" fill="#1f77b4"/>
+      <rect x="48" y="113" width="8" height="32" fill="#ff8c1a"/>
+      <rect x="67" y="111" width="8" height="34" fill="#1f77b4"/>
+      <rect x="75" y="103" width="8" height="42" fill="#ff8c1a"/>
+      <rect x="94" y="96" width="8" height="49" fill="#1f77b4"/>
+      <rect x="102" y="87" width="8" height="58" fill="#ff8c1a"/>
+      <rect x="121" y="83" width="8" height="62" fill="#1f77b4"/>
+      <rect x="129" y="73" width="8" height="72" fill="#ff8c1a"/>
+      <rect x="148" y="71" width="8" height="74" fill="#1f77b4"/>
+      <rect x="156" y="60" width="8" height="85" fill="#ff8c1a"/>
+      <rect x="175" y="60" width="8" height="85" fill="#1f77b4"/>
+      <rect x="183" y="48" width="8" height="97" fill="#ff8c1a"/>
+      <rect x="202" y="47" width="8" height="98" fill="#1f77b4"/>
+      <rect x="210" y="35" width="8" height="110" fill="#ff8c1a"/>
+      <rect x="229" y="33" width="8" height="112" fill="#1f77b4"/>
+      <rect x="237" y="21" width="8" height="124" fill="#ff8c1a"/>
+    </g>
+    <g font-size="10" fill="#4b5563">
+      <text x="9" y="82" transform="rotate(-90 9 82)">Time [s]</text>
+      <text x="142" y="172" text-anchor="middle">Number of Coefficient Classes</text>
+      <text x="138" y="186" text-anchor="middle">(a) Write simulation data</text>
+    </g>
+    <g transform="translate(18 132)" font-size="10">
+      <rect x="0" y="0" width="10" height="8" fill="#1f77b4"/>
+      <text x="16" y="8">File Write</text>
+      <rect x="84" y="0" width="10" height="8" fill="#ff8c1a"/>
+      <text x="100" y="8">Data Decomposition</text>
+    </g>
+  </g>
+
+  <!-- Top right chart -->
+  <g transform="translate(324 28)">
+    <rect x="0" y="0" width="272" height="156" fill="#ffffff" stroke="#cdd6e2"/>
+    <g stroke="#e5e9f0" stroke-width="1">
+      <line x1="30" y1="25" x2="255" y2="25"/>
+      <line x1="30" y1="55" x2="255" y2="55"/>
+      <line x1="30" y1="85" x2="255" y2="85"/>
+      <line x1="30" y1="115" x2="255" y2="115"/>
+      <line x1="30" y1="145" x2="255" y2="145"/>
+    </g>
+    <g stroke="#5f6b7a" stroke-width="1.4">
+      <line x1="30" y1="15" x2="30" y2="145"/>
+      <line x1="30" y1="145" x2="255" y2="145"/>
+      <line x1="255" y1="15" x2="255" y2="145"/>
+    </g>
+    <line x1="30" y1="27" x2="255" y2="27" stroke="#d9534f" stroke-dasharray="4 3" stroke-width="1.2"/>
+    <text x="34" y="22" font-size="10" fill="#d9534f">Original Read Time</text>
+    <g font-size="10" fill="#4b5563" text-anchor="middle">
+      <text x="45" y="158">1</text>
+      <text x="72" y="158">2</text>
+      <text x="99" y="158">3</text>
+      <text x="126" y="158">4</text>
+      <text x="153" y="158">5</text>
+      <text x="180" y="158">6</text>
+      <text x="207" y="158">7</text>
+      <text x="234" y="158">8</text>
+    </g>
+    <g>
+      <rect x="40" y="127" width="8" height="18" fill="#1f77b4"/>
+      <rect x="48" y="122" width="8" height="23" fill="#ff8c1a"/>
+      <rect x="67" y="117" width="8" height="28" fill="#1f77b4"/>
+      <rect x="75" y="112" width="8" height="33" fill="#ff8c1a"/>
+      <rect x="94" y="108" width="8" height="37" fill="#1f77b4"/>
+      <rect x="102" y="101" width="8" height="44" fill="#ff8c1a"/>
+      <rect x="121" y="99" width="8" height="46" fill="#1f77b4"/>
+      <rect x="129" y="90" width="8" height="55" fill="#ff8c1a"/>
+      <rect x="148" y="92" width="8" height="53" fill="#1f77b4"/>
+      <rect x="156" y="79" width="8" height="66" fill="#ff8c1a"/>
+      <rect x="175" y="84" width="8" height="61" fill="#1f77b4"/>
+      <rect x="183" y="67" width="8" height="78" fill="#ff8c1a"/>
+      <rect x="202" y="76" width="8" height="69" fill="#1f77b4"/>
+      <rect x="210" y="55" width="8" height="90" fill="#ff8c1a"/>
+      <rect x="229" y="71" width="8" height="74" fill="#1f77b4"/>
+      <rect x="237" y="44" width="8" height="101" fill="#ff8c1a"/>
+    </g>
+    <polyline points="32,72 58,28 86,24 114,23 142,22 170,22 198,22 226,22 252,22" fill="none" stroke="#496aa5" stroke-width="2"/>
+    <g fill="#496aa5">
+      <circle cx="32" cy="72" r="2.2"/>
+      <circle cx="58" cy="28" r="2.2"/>
+      <circle cx="86" cy="24" r="2.2"/>
+      <circle cx="114" cy="23" r="2.2"/>
+      <circle cx="142" cy="22" r="2.2"/>
+      <circle cx="170" cy="22" r="2.2"/>
+      <circle cx="198" cy="22" r="2.2"/>
+      <circle cx="226" cy="22" r="2.2"/>
+      <circle cx="252" cy="22" r="2.2"/>
+    </g>
+    <g font-size="10" fill="#4b5563">
+      <text x="9" y="82" transform="rotate(-90 9 82)">Time [s]</text>
+      <text x="262" y="84" transform="rotate(-90 262 84)">Accuracy</text>
+      <text x="262" y="26" text-anchor="end">100%</text>
+      <text x="262" y="50" text-anchor="end">80%</text>
+      <text x="262" y="74" text-anchor="end">60%</text>
+      <text x="262" y="98" text-anchor="end">40%</text>
+      <text x="262" y="122" text-anchor="end">20%</text>
+      <text x="142" y="172" text-anchor="middle">Number of Coefficient Classes</text>
+      <text x="145" y="186" text-anchor="middle">(b) Read simulation data and visualize</text>
+    </g>
+    <g transform="translate(18 132)" font-size="10">
+      <rect x="0" y="0" width="10" height="8" fill="#1f77b4"/>
+      <text x="16" y="8">File Read</text>
+      <rect x="72" y="0" width="10" height="8" fill="#ff8c1a"/>
+      <text x="88" y="8">Data Recomposition</text>
+    </g>
+  </g>
+
+  <!-- Bottom left chart -->
+  <g transform="translate(24 240)">
+    <rect x="0" y="0" width="272" height="118" fill="#ffffff" stroke="#cdd6e2"/>
+    <g stroke="#e5e9f0" stroke-width="1">
+      <line x1="30" y1="20" x2="255" y2="20"/>
+      <line x1="30" y1="50" x2="255" y2="50"/>
+      <line x1="30" y1="80" x2="255" y2="80"/>
+      <line x1="30" y1="108" x2="255" y2="108"/>
+    </g>
+    <g stroke="#5f6b7a" stroke-width="1.4">
+      <line x1="30" y1="12" x2="30" y2="108"/>
+      <line x1="30" y1="108" x2="255" y2="108"/>
+    </g>
+    <g>
+      <rect x="44" y="18" width="9" height="90" fill="#118847"/>
+      <rect x="53" y="55" width="9" height="53" fill="#294caa"/>
+      <rect x="81" y="20" width="9" height="88" fill="#118847"/>
+      <rect x="90" y="58" width="9" height="50" fill="#294caa"/>
+      <rect x="118" y="24" width="9" height="84" fill="#118847"/>
+      <rect x="127" y="63" width="9" height="45" fill="#294caa"/>
+      <rect x="155" y="26" width="9" height="82" fill="#118847"/>
+      <rect x="164" y="64" width="9" height="44" fill="#294caa"/>
+      <rect x="192" y="28" width="9" height="80" fill="#118847"/>
+      <rect x="201" y="67" width="9" height="41" fill="#294caa"/>
+      <rect x="229" y="38" width="9" height="70" fill="#118847"/>
+      <rect x="238" y="78" width="9" height="30" fill="#294caa"/>
+    </g>
+    <g font-size="10" fill="#4b5563" text-anchor="middle">
+      <text x="58" y="120">1e<tspan baseline-shift="super" font-size="8">-6</tspan></text>
+      <text x="95" y="120">1e<tspan baseline-shift="super" font-size="8">-5</tspan></text>
+      <text x="132" y="120">1e<tspan baseline-shift="super" font-size="8">-4</tspan></text>
+      <text x="169" y="120">1e<tspan baseline-shift="super" font-size="8">-3</tspan></text>
+      <text x="206" y="120">1e<tspan baseline-shift="super" font-size="8">-2</tspan></text>
+      <text x="243" y="120">1e<tspan baseline-shift="super" font-size="8">-1</tspan></text>
+      <text x="142" y="134">Error Bound</text>
+      <text x="145" y="148">(a) Compression</text>
+    </g>
+    <g font-size="10" fill="#4b5563">
+      <text x="9" y="68" transform="rotate(-90 9 68)">Time [s]</text>
+    </g>
+    <g transform="translate(12 88)" font-size="10">
+      <rect x="0" y="0" width="10" height="8" fill="#294caa"/>
+      <text x="16" y="8">ZLib Compression</text>
+      <rect x="108" y="0" width="10" height="8" fill="#ff3b30"/>
+      <text x="124" y="8">GPU-CPU Data Copy</text>
+      <rect x="0" y="14" width="10" height="8" fill="#efc11a"/>
+      <text x="16" y="22">Quantization</text>
+      <rect x="108" y="14" width="10" height="8" fill="#118847"/>
+      <text x="124" y="22">Data Decomposition</text>
+    </g>
+  </g>
+
+  <!-- Bottom right chart -->
+  <g transform="translate(324 240)">
+    <rect x="0" y="0" width="272" height="118" fill="#ffffff" stroke="#cdd6e2"/>
+    <g stroke="#e5e9f0" stroke-width="1">
+      <line x1="30" y1="20" x2="255" y2="20"/>
+      <line x1="30" y1="50" x2="255" y2="50"/>
+      <line x1="30" y1="80" x2="255" y2="80"/>
+      <line x1="30" y1="108" x2="255" y2="108"/>
+    </g>
+    <g stroke="#5f6b7a" stroke-width="1.4">
+      <line x1="30" y1="12" x2="30" y2="108"/>
+      <line x1="30" y1="108" x2="255" y2="108"/>
+    </g>
+    <g>
+      <rect x="44" y="17" width="9" height="91" fill="#118847"/>
+      <rect x="81" y="17" width="9" height="91" fill="#118847"/>
+      <rect x="118" y="17" width="9" height="91" fill="#118847"/>
+      <rect x="155" y="17" width="9" height="91" fill="#118847"/>
+      <rect x="192" y="17" width="9" height="91" fill="#118847"/>
+      <rect x="229" y="17" width="9" height="91" fill="#118847"/>
+    </g>
+    <g font-size="10" fill="#4b5563" text-anchor="middle">
+      <text x="58" y="120">1e<tspan baseline-shift="super" font-size="8">-6</tspan></text>
+      <text x="95" y="120">1e<tspan baseline-shift="super" font-size="8">-5</tspan></text>
+      <text x="132" y="120">1e<tspan baseline-shift="super" font-size="8">-4</tspan></text>
+      <text x="169" y="120">1e<tspan baseline-shift="super" font-size="8">-3</tspan></text>
+      <text x="206" y="120">1e<tspan baseline-shift="super" font-size="8">-2</tspan></text>
+      <text x="243" y="120">1e<tspan baseline-shift="super" font-size="8">-1</tspan></text>
+      <text x="142" y="134">Error Bound</text>
+      <text x="149" y="148">(b) Decompression</text>
+    </g>
+    <g font-size="10" fill="#4b5563">
+      <text x="9" y="68" transform="rotate(-90 9 68)">Time [s]</text>
+    </g>
+    <g transform="translate(12 88)" font-size="10">
+      <rect x="0" y="0" width="10" height="8" fill="#294caa"/>
+      <text x="16" y="8">ZLib Decompression</text>
+      <rect x="126" y="0" width="10" height="8" fill="#ff3b30"/>
+      <text x="142" y="8">GPU-CPU Data Copy</text>
+      <rect x="0" y="14" width="10" height="8" fill="#efc11a"/>
+      <text x="16" y="22">De-quantization</text>
+      <rect x="126" y="14" width="10" height="8" fill="#118847"/>
+      <text x="142" y="22">Data Recomposition</text>
+    </g>
+  </g>
+</svg>

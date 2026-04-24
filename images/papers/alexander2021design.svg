@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Tokamak cross-section with labeled regions</title>
+  <desc id="desc">Cutaway tokamak illustration with plasma-like red and blue patterns and labels for wall, edge, coupling region, and core.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3f3f41"/>
+      <stop offset="20%" stop-color="#d0d0d2"/>
+      <stop offset="48%" stop-color="#f2f2f3"/>
+      <stop offset="72%" stop-color="#b7b7b9"/>
+      <stop offset="100%" stop-color="#4b4b4d"/>
+    </linearGradient>
+    <linearGradient id="shellDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2e2e30"/>
+      <stop offset="100%" stop-color="#676769"/>
+    </linearGradient>
+    <linearGradient id="plasma" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6fbff"/>
+      <stop offset="25%" stop-color="#dce6f7"/>
+      <stop offset="40%" stop-color="#ef4335"/>
+      <stop offset="58%" stop-color="#2a58d3"/>
+      <stop offset="74%" stop-color="#f8e6df"/>
+      <stop offset="100%" stop-color="#fefefe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="760" height="520" fill="#ffffff"/>
+
+  <!-- Central cylinder -->
+  <g>
+    <ellipse cx="380" cy="67" rx="175" ry="28" fill="#4a4a4c"/>
+    <ellipse cx="380" cy="69" rx="151" ry="22" fill="url(#metal)"/>
+    <rect x="229" y="69" width="302" height="356" fill="url(#metal)"/>
+    <ellipse cx="380" cy="425" rx="151" ry="23" fill="#cfcfd1"/>
+    <path d="M 229 425 Q 380 470 531 425" fill="#ececee"/>
+  </g>
+
+  <!-- Left shell -->
+  <g>
+    <path d="M 73 113 C 42 147, 25 210, 28 304 C 30 380, 46 432, 71 456 L 108 441 C 91 401, 84 349, 84 280 C 84 203, 96 152, 123 118 Z" fill="url(#shellDark)"/>
+    <path d="M 123 118 L 185 70 L 217 78 L 168 138 Z" fill="#363638"/>
+    <path d="M 72 456 L 110 441 L 150 482 L 110 500 Z" fill="#e9e9eb"/>
+    <path d="M 110 500 L 150 482 L 191 432 L 144 406 Z" fill="#f5f5f7"/>
+    <path d="M 144 406 Q 138 257 150 141 L 223 96 Q 206 205 208 393 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Right shell -->
+  <g>
+    <path d="M 687 113 C 718 147, 735 210, 732 304 C 730 380, 714 432, 689 456 L 652 441 C 669 401, 676 349, 676 280 C 676 203, 664 152, 637 118 Z" fill="url(#shellDark)"/>
+    <path d="M 637 118 L 575 70 L 543 78 L 592 138 Z" fill="#4e4e50"/>
+    <path d="M 688 456 L 650 441 L 610 482 L 650 500 Z" fill="#e9e9eb"/>
+    <path d="M 650 500 L 610 482 L 569 432 L 616 406 Z" fill="#f5f5f7"/>
+    <path d="M 616 406 Q 622 257 610 141 L 537 96 Q 554 205 552 393 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Plasma rings -->
+  <g opacity="0.98">
+    <ellipse cx="165" cy="259" rx="112" ry="130" fill="url(#plasma)"/>
+    <ellipse cx="165" cy="259" rx="87" ry="105" fill="#f6f8fb"/>
+    <ellipse cx="165" cy="259" rx="47" ry="54" fill="#eef2f7"/>
+    <circle cx="169" cy="257" r="5" fill="#3354d3"/>
+
+    <ellipse cx="595" cy="259" rx="112" ry="130" fill="url(#plasma)"/>
+    <ellipse cx="595" cy="259" rx="87" ry="105" fill="#f6f8fb"/>
+    <ellipse cx="595" cy="259" rx="47" ry="54" fill="#eef2f7"/>
+    <circle cx="599" cy="257" r="5" fill="#3354d3"/>
+  </g>
+
+  <!-- Coupling region hint on left -->
+  <g opacity="0.75">
+    <path d="M 100 160 C 120 175, 130 196, 136 217 L 178 220 C 169 184, 151 166, 125 152 Z" fill="#5d65d8"/>
+    <path d="M 98 169 C 116 183, 127 202, 132 223 L 170 225 C 163 194, 148 177, 124 162 Z" fill="#b4b9f4"/>
+    <path d="M 95 177 C 112 190, 122 209, 127 227 L 161 229 C 156 203, 142 188, 121 173 Z" fill="#ef4d3d"/>
+  </g>
+
+  <!-- Labels and arrows -->
+  <g font-family="'Source Sans 3', 'Segoe UI', sans-serif" fill="#111">
+    <text x="16" y="30" font-size="22" font-weight="700">Wall</text>
+    <line x1="72" y1="24" x2="162" y2="64" stroke="#000" stroke-width="5"/>
+    <polygon points="154,53 167,67 147,68" fill="#000"/>
+
+    <text x="343" y="143" font-size="21" font-weight="700">Edge</text>
+    <line x1="226" y1="159" x2="338" y2="138" stroke="#000" stroke-width="5"/>
+    <polygon points="231,151 213,162 233,169" fill="#000"/>
+
+    <text x="344" y="182" font-size="21" font-weight="700">Coupling</text>
+    <text x="344" y="209" font-size="21" font-weight="700">Region</text>
+    <line x1="226" y1="184" x2="338" y2="184" stroke="#000" stroke-width="5"/>
+    <polygon points="231,176 213,184 231,192" fill="#000"/>
+
+    <text x="354" y="324" font-size="21" font-weight="700">Core</text>
+    <line x1="232" y1="317" x2="349" y2="317" stroke="#000" stroke-width="5"/>
+    <polygon points="237,309 219,317 237,325" fill="#000"/>
+  </g>
+</svg>

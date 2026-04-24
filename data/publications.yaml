@@ -377,7 +377,7 @@ publications:
     abstract: "As the scale of modern high-performance computing (HPC) systems keeps growing, job scheduling on those systems becomes extremely challenging. Particularly, one of the important tasks job schedulers need to fulfill is to optimize the node allocation to improve the jobs' execution efficiency. In order to optimize the node allocation, the job scheduling strategy must take the network topology of the HPC system into consideration. However, existing approaches are either designed for the specific network typologies (lack of generality) or rely on the applications' communication patterns (unknown without running on HPC). In this paper, we propose a generic topology-aware node allocation strategy based on graph algorithms. Our strategy can reduce the intra-job communication overhead and the inter-job communication interference by selecting nodes that form a sub-graph with much smaller diameter. We also propose and study four different initialization strategies for our node allocation algorithm to understand how different initialization strategies affect the node allocation results and speed. We evaluate the proposed methods using 30 days of real job traces collected from the OLCF's Titan supercomputer. Compared to the native job scheduling strategy used on Titan, adopting our approach can achieve a 2.5 × diameter reduction on average, and for certain jobs the diameter reduction can be up to 8 ×."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'trinh2023understanding.jpg'  # Optional - add image file to images/papers/
+    image: "trinh2023understanding.svg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2023
   - id: "bolstad2023visualization"
@@ -389,7 +389,7 @@ publications:
     doi: "10.1145/3587421.3595466"
     paper_url: "https://doi.org/10.1145/3587421.3595466"
     abstract: "A recent trend in modern high-performance computing is the increasing use of hybrid architectures, where the vast majority of performance comes from accelerators. Modern accelerators are based on Graphics Processing Units (GPU) that contain many low power cores that in their aggregate provides an extremely high computation rate. Current and future CPU processors are requiring more explicit parallelism as each successive version of the hardware packs in more cores, and technologies like hyperthreading and vector operations require even more parallel processing to leverage each core’s full potential. As an example, the Frontier supercomputer installed at Oak Ridge National Laboratories recently hit a record breaking 1.1 exaflops1 on the LINPACK HPC benchmark [Shoemaker 2022]. The system contains 37632 AMD MI250x GPUs which requires more than half a billion threads to keep the system fully utilized [Khizeran 2022]. VTK-m is a toolkit of scientific visualization algorithms for these emerging processor architectures. VTK-m supports the fine-grained concurrency for data analysis and visualization algorithms required to drive extreme scale computing by providing abstract models for data and execution that can be applied to a variety of algorithms across many different processor architectures."
-    image: "bolstad2023.jpg"
+    image: "bolstad2023_vtkm.svg"
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
 
@@ -573,7 +573,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'gainaru2022understanding.jpg'  # Optional - add image file to images/papers/
+    image: "gainaru2022understanding.svg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
   - id: "chen2021accelerating"
@@ -582,12 +582,12 @@ publications:
     venue: "2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS)"
     year: 2021
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1109/ipdps49936.2021.00094"
-    paper_url: "https://doi.org/10.1109/IPDPS49936.2021.00094"
+    doi: "10.1109/IPDPS49936.2021.00095"
+    paper_url: "https://ieeexplore.ieee.org/document/9460526"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'chen2021accelerating.jpg'  # Optional - add image file to images/papers/
+    image: "chen2021accelerating.svg" # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
   - id: "alexander2021design"
@@ -601,7 +601,7 @@ publications:
     abstract: "Rapid growth in data, computational methods, and computing power is driving a remarkable revolution in what variously is termed machine learning (ML), statistical learning, computational learning, and artificial intelligence. In addition to highly visible successes in machine-based natural language translation, playing the game Go, and self-driving cars, these new technologies also have profound implications for computational and experimental science and engineering, as well as for the exascale computing systems that the Department of Energy (DOE) is developing to support those disciplines. Not only do these learning technologies open up exciting opportunities for scientific discovery on exascale systems, they also appear poised to have important implications for the design and use of exascale computers themselves, including high-performance computing (HPC) for ML and ML for HPC. The overarching goal of the ExaLearn co-design project is to provide exascale ML software for use by Exascale Computing Project (ECP) applications, other ECP co-design centers, and DOE experimental facilities and leadership class computing facilities."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'alexander2021design.jpg'  # Optional - add image file to images/papers/
+    image: "alexander2021design.svg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
   - id: "liang2021error"
@@ -658,7 +658,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'liang2021mgard.jpg'  # Optional - add image file to images/papers/
+    image: "liang2021mgard.svg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
   - id: "schwartz2021machine"
@@ -686,7 +686,7 @@ publications:
     abstract: "Scientific visualization software increasingly needs to support many-core architectures. However, development time is a significant challenge due to the breadth and diversity of both visualization algorithms and architectures. With this work, we introduce a development environment for visualization algorithms on many-core devices that extends the traditional data-parallel primitive (DPP) approach with several existing constructs and an important new construct: meta-DPPs. We refer to our approach as MCD3 — Meta-DPPs, Convenience routines, Data management, DPPs, and Devices. The twin goals of MCD3 are to reduce developer time and to deliver efficient performance on many-core architectures, and our evaluation considers both of these goals. For development time, we study 57 algorithms implemented in the VTK-m software library and determine that MCD3 leads to significant savings. For efficient performance, we survey ten studies looking at individual algorithms and determine that the MCD3 hardware-agnostic approach leads to performance comparable to hardware-specific approaches: sometimes better, sometimes worse, and better in the aggregate. In total, we find that MCD3 is an effective approach for scientific visualization libraries to support many-core architectures."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'moreland2021minimizing.jpg'  # Optional - add image file to images/papers/
+    image: "moreland2021minimizing.svg"
 
   # CONFERENCE - 2021
   - id: "choi2021neural"
@@ -812,7 +812,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'liang2020mgard.jpg'  # Optional - add image file to images/papers/
+    image: "liang2021mgard.svg" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
   - id: "kress2020opportunities"

@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">Many-core visualization performance comparison</title>
+  <desc id="desc">Scatter plot comparing performance across visualization workloads, data sizes, and hardware devices with circles and triangles positioned around a central reference line.</desc>
+  <rect width="520" height="520" fill="#ffffff"/>
+
+  <defs>
+    <style>
+      .label { font: 700 15px 'Source Sans 3', 'Segoe UI', sans-serif; fill: #353535; }
+      .axis { font: 600 13px 'Source Sans 3', 'Segoe UI', sans-serif; fill: #4b4b4b; }
+      .legend { font: 600 14px 'Source Sans 3', 'Segoe UI', sans-serif; fill: #4b4b4b; }
+      .rowline { stroke: #ececec; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- category labels -->
+  <g class="label">
+    <text x="8" y="57">Hashing</text>
+    <text x="10" y="103">PGM 20</text>
+    <text x="10" y="149">PGM 18</text>
+    <text x="10" y="195">Point</text>
+    <text x="10" y="213">Merge</text>
+    <text x="10" y="255">Wavelet</text>
+    <text x="10" y="273">Compression</text>
+    <text x="10" y="317">External</text>
+    <text x="10" y="335">Facelist</text>
+    <text x="10" y="387">Volume</text>
+    <text x="10" y="405">Rendering</text>
+    <text x="10" y="457">Ray</text>
+    <text x="10" y="475">Tracing</text>
+    <text x="10" y="507">Particle</text>
+    <text x="10" y="525">Advection</text>
+  </g>
+
+  <!-- subtle row guides -->
+  <g class="rowline">
+    <path d="M 70 68 H 390"/>
+    <path d="M 70 114 H 390"/>
+    <path d="M 70 160 H 390"/>
+    <path d="M 70 222 H 390"/>
+    <path d="M 70 282 H 390"/>
+    <path d="M 70 344 H 390"/>
+    <path d="M 70 414 H 390"/>
+    <path d="M 70 484 H 390"/>
+  </g>
+
+  <!-- reference line -->
+  <path d="M 255 8 V 494" fill="none" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="3 4"/>
+
+  <!-- data points -->
+  <g opacity="0.78">
+    <!-- Hashing -->
+    <polygon points="115,48 129,41 129,55" fill="#e79872"/>
+    <polygon points="171,46 186,38 186,54" fill="#e29067"/>
+    <polygon points="202,45 214,39 214,51" fill="#e79b77"/>
+    <polygon points="216,45 224,41 224,49" fill="#edb39b"/>
+    <polygon points="232,44 242,39 242,49" fill="#e08a63"/>
+    <circle cx="265" cy="45" r="9" fill="#7e97cb"/>
+    <circle cx="303" cy="47" r="7" fill="#8fa3d6"/>
+    <circle cx="316" cy="47" r="9" fill="#b6c0e4"/>
+    <polygon points="286,45 297,39 297,51" fill="#e9a17c"/>
+    <polygon points="292,45 300,41 300,49" fill="#e29067"/>
+    <circle cx="393" cy="44" r="8" fill="#8096c5"/>
+
+    <!-- PGM 20 -->
+    <circle cx="82" cy="99" r="8" fill="#d8a4d7"/>
+    <circle cx="245" cy="98" r="8" fill="#d6a6d9"/>
+    <circle cx="269" cy="95" r="7" fill="#b7c1e3"/>
+    <circle cx="280" cy="95" r="9" fill="#aebadf"/>
+
+    <!-- PGM 18 -->
+    <circle cx="211" cy="143" r="6" fill="#d59ed3"/>
+    <circle cx="234" cy="141" r="9" fill="#d8a8da"/>
+    <circle cx="286" cy="144" r="6" fill="#b5c0e3"/>
+    <circle cx="332" cy="140" r="10" fill="#a8b8df"/>
+
+    <!-- Point Merge -->
+    <circle cx="258" cy="191" r="5" fill="#97d1be"/>
+    <circle cx="274" cy="191" r="8" fill="#aab8df"/>
+    <circle cx="288" cy="189" r="6" fill="#9bb1db"/>
+    <circle cx="317" cy="192" r="9" fill="#a6d8c8"/>
+    <circle cx="344" cy="190" r="7" fill="#8db6d7"/>
+
+    <!-- Wavelet Compression -->
+    <polygon points="207,246 219,239 219,253" fill="#e7a07c"/>
+    <polygon points="218,246 231,239 231,253" fill="#d98b67"/>
+    <circle cx="238" cy="246" r="7" fill="#cdb2df"/>
+    <circle cx="255" cy="246" r="10" fill="#8aa0d1"/>
+    <circle cx="276" cy="246" r="8" fill="#aebbe1"/>
+
+    <!-- External Facelist -->
+    <circle cx="122" cy="324" r="8" fill="#99d4bf"/>
+    <circle cx="147" cy="322" r="7" fill="#8ed0ba"/>
+    <circle cx="157" cy="323" r="10" fill="#b1e0ce"/>
+    <circle cx="177" cy="322" r="6" fill="#96d1bd"/>
+    <circle cx="205" cy="320" r="8" fill="#a5dbc9"/>
+    <circle cx="224" cy="320" r="6" fill="#92d2bf"/>
+    <circle cx="236" cy="319" r="10" fill="#b4e0d2"/>
+    <circle cx="255" cy="321" r="7" fill="#a6d6c8"/>
+    <circle cx="270" cy="323" r="5" fill="#9fd2c7"/>
+
+    <!-- Volume Rendering -->
+    <polygon points="118,392 130,386 130,398" fill="#e8b39d"/>
+    <polygon points="190,389 202,383 202,395" fill="#e9b29a"/>
+    <polygon points="208,389 220,383 220,395" fill="#ecae93"/>
+    <polygon points="230,389 242,383 242,395" fill="#e79b78"/>
+    <circle cx="251" cy="390" r="7" fill="#c9b2df"/>
+    <circle cx="262" cy="390" r="8" fill="#8ba0d0"/>
+    <circle cx="275" cy="390" r="6" fill="#b2bedf"/>
+    <circle cx="303" cy="390" r="8" fill="#8fd0be"/>
+    <circle cx="323" cy="390" r="9" fill="#9fd7c7"/>
+    <circle cx="343" cy="390" r="7" fill="#a5dccd"/>
+    <circle cx="362" cy="390" r="10" fill="#b7e2d4"/>
+
+    <!-- Ray Tracing -->
+    <polygon points="186,456 200,449 200,463" fill="#f1b9a0"/>
+    <polygon points="196,456 209,449 209,463" fill="#efaf94"/>
+    <polygon points="205,456 218,448 218,464" fill="#e5966f"/>
+    <polygon points="215,456 228,448 228,464" fill="#e18b63"/>
+    <polygon points="225,456 238,448 238,464" fill="#d98258"/>
+    <circle cx="166" cy="456" r="8" fill="#8ea0ce"/>
+    <circle cx="178" cy="456" r="6" fill="#a2b2dc"/>
+    <circle cx="188" cy="456" r="10" fill="#8b9fd0"/>
+    <circle cx="198" cy="456" r="7" fill="#a0afd9"/>
+    <circle cx="208" cy="456" r="6" fill="#9caed8"/>
+
+    <!-- Particle Advection -->
+    <circle cx="76" cy="504" r="7" fill="#acb7df"/>
+    <circle cx="137" cy="503" r="5" fill="#98d3c1"/>
+    <circle cx="146" cy="503" r="7" fill="#a4afd9"/>
+    <circle cx="256" cy="504" r="6" fill="#9eb0dc"/>
+    <circle cx="269" cy="504" r="9" fill="#a7b5de"/>
+    <polygon points="276,504 289,497 289,511" fill="#e09067"/>
+    <polygon points="286,504 300,497 300,511" fill="#e59d77"/>
+    <polygon points="296,504 310,497 310,511" fill="#db855e"/>
+  </g>
+
+  <!-- x-axis -->
+  <path d="M 72 494 H 402" fill="none" stroke="#3e3e3e" stroke-width="1.5"/>
+  <g class="axis" text-anchor="middle">
+    <text x="77" y="512">2ˉ⁵</text>
+    <text x="110" y="512">2ˉ⁴</text>
+    <text x="143" y="512">2ˉ³</text>
+    <text x="176" y="512">2ˉ²</text>
+    <text x="208" y="512">2ˉ¹</text>
+    <text x="239" y="512">2⁰</text>
+    <text x="271" y="512">2¹</text>
+    <text x="303" y="512">2²</text>
+    <text x="335" y="512">2³</text>
+    <text x="367" y="512">2⁴</text>
+    <text x="399" y="512">2⁵</text>
+  </g>
+
+  <!-- legends -->
+  <g transform="translate(405 185)">
+    <text class="label" x="0" y="0">Data</text>
+    <circle cx="8" cy="22" r="4" fill="#999999"/>
+    <circle cx="8" cy="44" r="6" fill="#999999"/>
+    <circle cx="8" cy="68" r="8" fill="#999999"/>
+    <text class="legend" x="24" y="26">Small</text>
+    <text class="legend" x="24" y="48">Medium</text>
+    <text class="legend" x="24" y="72">Large</text>
+  </g>
+
+  <g transform="translate(405 308)">
+    <text class="label" x="0" y="0">Device</text>
+    <circle cx="8" cy="22" r="7" fill="#98d4bf"/>
+    <circle cx="8" cy="46" r="7" fill="#9eaed8"/>
+    <circle cx="8" cy="70" r="7" fill="#d9a7d9"/>
+    <circle cx="8" cy="94" r="7" fill="#c9b2df"/>
+    <polygon points="1,118 15,111 15,125" fill="#efb28f"/>
+    <polygon points="1,142 15,135 15,149" fill="#e79a72"/>
+    <polygon points="1,166 15,159 15,173" fill="#dc875c"/>
+    <text class="legend" x="24" y="26">Serial</text>
+    <text class="legend" x="24" y="50">CPU</text>
+    <text class="legend" x="24" y="74">Xeon Phi</text>
+    <text class="legend" x="24" y="98">GPU (desktop)</text>
+    <text class="legend" x="24" y="122">GPU (Kepler)</text>
+    <text class="legend" x="24" y="146">GPU (Pascal)</text>
+    <text class="legend" x="24" y="170">GPU (Volta)</text>
+  </g>
+</svg>

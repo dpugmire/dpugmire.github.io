@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="240" viewBox="0 0 360 240" role="img" aria-labelledby="title desc">
+  <title id="title">MGARD+ visualization comparison</title>
+  <desc id="desc">Three-panel visualization showing original data, decompressed data, and relative error, with a caption describing PSNR and compression ratio.</desc>
+  <defs>
+    <linearGradient id="cubeFaceA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd21f"/>
+      <stop offset="40%" stop-color="#f7a900"/>
+      <stop offset="70%" stop-color="#8ecf22"/>
+      <stop offset="100%" stop-color="#f27f0c"/>
+    </linearGradient>
+    <linearGradient id="cubeFaceB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff180"/>
+      <stop offset="100%" stop-color="#ff9800"/>
+    </linearGradient>
+    <linearGradient id="cubeFaceC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffeeb5"/>
+      <stop offset="100%" stop-color="#e87c1a"/>
+    </linearGradient>
+    <linearGradient id="errorFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#fbf3ec"/>
+      <stop offset="100%" stop-color="#f6d2ba"/>
+    </linearGradient>
+    <linearGradient id="errorScale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e67d2d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="360" height="240" fill="#ffffff"/>
+
+  <!-- Panel labels -->
+  <g font-family="Georgia, serif" font-size="12" fill="#2d2d2d" text-anchor="middle">
+    <text x="65" y="144">(a) Original</text>
+    <text x="180" y="144">(b) Decompressed</text>
+    <text x="295" y="144">(c) Relative error</text>
+  </g>
+
+  <!-- Cube helper group 1 -->
+  <g transform="translate(22 18)">
+    <polygon points="18,14 76,10 95,24 38,28" fill="url(#cubeFaceB)"/>
+    <polygon points="18,14 38,28 36,96 16,82" fill="#f3a500"/>
+    <polygon points="38,28 95,24 93,92 36,96" fill="url(#cubeFaceA)"/>
+    <path d="M 42 48 C 56 40, 67 41, 82 38" fill="none" stroke="#f7f07d" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 46 58 C 57 49, 70 54, 80 48" fill="none" stroke="#95d126" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 49 68 C 59 62, 72 61, 84 55" fill="none" stroke="#8fca1d" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 58 80 C 67 73, 77 76, 86 70" fill="none" stroke="#ffd21f" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 36 96 L 16 82 M 36 96 L 93 92 M 38 28 L 36 96 M 95 24 L 93 92" stroke="#d58016" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- Cube helper group 2 -->
+  <g transform="translate(137 18)">
+    <polygon points="18,14 76,10 95,24 38,28" fill="url(#cubeFaceB)"/>
+    <polygon points="18,14 38,28 36,96 16,82" fill="#f2a200"/>
+    <polygon points="38,28 95,24 93,92 36,96" fill="url(#cubeFaceA)"/>
+    <path d="M 42 47 C 56 38, 66 40, 82 37" fill="none" stroke="#f7f07d" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 46 57 C 57 48, 69 52, 80 47" fill="none" stroke="#94cf20" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 50 67 C 60 60, 72 60, 84 54" fill="none" stroke="#8ac51d" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 58 79 C 67 72, 78 75, 87 69" fill="none" stroke="#ffd21f" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 36 96 L 16 82 M 36 96 L 93 92 M 38 28 L 36 96 M 95 24 L 93 92" stroke="#d58016" stroke-width="1.4" fill="none"/>
+  </g>
+
+  <!-- Error cube -->
+  <g transform="translate(252 18)">
+    <polygon points="18,14 76,10 95,24 38,28" fill="#fff6f1"/>
+    <polygon points="18,14 38,28 36,96 16,82" fill="#fdf8f4"/>
+    <polygon points="38,28 95,24 93,92 36,96" fill="url(#errorFace)"/>
+    <g opacity="0.55">
+      <circle cx="46" cy="52" r="1.2" fill="#e07d35"/>
+      <circle cx="55" cy="46" r="1.1" fill="#d96e21"/>
+      <circle cx="61" cy="60" r="1.0" fill="#e69655"/>
+      <circle cx="70" cy="63" r="1.2" fill="#d96e21"/>
+      <circle cx="76" cy="54" r="1.0" fill="#e9a16f"/>
+      <circle cx="68" cy="76" r="1.1" fill="#cf6420"/>
+      <circle cx="58" cy="80" r="1.1" fill="#e08446"/>
+      <circle cx="82" cy="72" r="1.2" fill="#d96e21"/>
+      <circle cx="50" cy="68" r="1.0" fill="#f0b183"/>
+      <circle cx="44" cy="74" r="1.0" fill="#e07d35"/>
+      <circle cx="73" cy="44" r="1.1" fill="#f0b183"/>
+      <circle cx="86" cy="58" r="1.0" fill="#d96e21"/>
+    </g>
+    <path d="M 36 96 L 16 82 M 36 96 L 93 92 M 38 28 L 36 96 M 95 24 L 93 92" stroke="#e8d8cb" stroke-width="1.2" fill="none"/>
+  </g>
+
+  <!-- Color bars -->
+  <g font-family="'Source Sans 3', 'Segoe UI', sans-serif" font-size="8.5" fill="#333">
+    <text x="41" y="159">Min</text>
+    <rect x="57" y="152" width="56" height="7" fill="url(#errorScale)" transform="scale(1 -1) translate(0 -311)"/>
+    <rect x="57" y="152" width="56" height="7" fill="url(#errorScale)"/>
+    <text x="74" y="149" text-anchor="middle">Value</text>
+    <text x="118" y="159">Max</text>
+
+    <text x="156" y="159">Min</text>
+    <rect x="172" y="152" width="56" height="7" fill="url(#errorScale)"/>
+    <text x="189" y="149" text-anchor="middle">Value</text>
+    <text x="233" y="159">Max</text>
+
+    <text x="270" y="159">-0.01</text>
+    <rect x="292" y="152" width="38" height="7" fill="url(#errorScale)"/>
+    <text x="311" y="149" text-anchor="middle">Relative error</text>
+    <text x="334" y="159">0.01</text>
+  </g>
+
+  <!-- Caption -->
+  <g font-family="'Source Sans 3', 'Segoe UI', sans-serif" fill="#222" font-size="11">
+    <text x="10" y="182">Fig. 13. Visualization of original data, decompressed data, and relative</text>
+    <text x="10" y="196">error of NYX velocity x field using our method (dataset PSNR = 60,</text>
+    <text x="10" y="210">compression ratio = 2525, field PSNR = 57, compression ratio = 1396).</text>
+  </g>
+</svg>
