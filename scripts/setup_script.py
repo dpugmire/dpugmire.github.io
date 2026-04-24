@@ -712,26 +712,25 @@ def create_index_html():
         async function renderTalks() {
             const container = document.getElementById('talks-content');
 
-            // Load all three categories (each file contains: talks: [ ... ])
-            const [keynotesData, talksData, tutorialsData] = await Promise.all([
-                loadYAML('data/keynotes.yaml'),
+            // Load both presentation categories
+            const [talksData, tutorialsData] = await Promise.all([
                 loadYAML('data/talks.yaml'),
                 loadYAML('data/tutorials.yaml'),
             ]);
 
-            const keynotes = (keynotesData && keynotesData.talks) ? keynotesData.talks : [];
             const talks = (talksData && talksData.talks) ? talksData.talks : [];
-            const tutorials = (tutorialsData && tutorialsData.talks) ? tutorialsData.talks : [];
+            const tutorials = (tutorialsData && tutorialsData.tutorials)
+                ? tutorialsData.tutorials
+                : ((tutorialsData && tutorialsData.talks) ? tutorialsData.talks : []);
 
             const tag = (arr, cat) => (arr || []).map(t => Object.assign({ _category: cat }, t));
             const all = [
-                ...tag(keynotes, 'Keynote'),
                 ...tag(talks, 'Talk'),
                 ...tag(tutorials, 'Tutorial'),
             ];
 
             if (all.length === 0) {
-                container.innerHTML = '<p>No talks found. Check data/keynotes.yaml, data/talks.yaml, data/tutorials.yaml</p>';
+                container.innerHTML = '<p>No talks found. Check data/talks.yaml and data/tutorials.yaml</p>';
                 return;
             }
 
@@ -766,12 +765,6 @@ def create_index_html():
 
             let html = '';
             html += '<div id="talk-map"></div>';
-
-            html += '<div class="category-header" style="border-left-color:#8b5cf6;">';
-            html += '  <h3>Keynotes</h3>';
-            html += '  <span class="category-count" style="background:#8b5cf6;">' + keynotes.length + '</span>';
-            html += '</div>';
-            html += renderList(tag(keynotes, 'Keynote'));
 
             html += '<div class="category-header" style="border-left-color:#10b981;">';
             html += '  <h3>Talks</h3>';
@@ -1043,35 +1036,13 @@ talks:
 
 
 def create_keynotes_yaml(overwrite=False):
-    """Create or overwrite keynotes.yaml template (Keynotes category)."""
+    """Create or overwrite a deprecated keynotes.yaml notice."""
     action = "Overwriting" if overwrite else "Creating"
     print(f"{action} data/keynotes.yaml...")
 
     yaml_content = '''# keynotes.yaml
-# Keynotes
-# lat/lon are used to place pins on the Leaflet world map in the Talks section.
-
-talks:
-  - title: "Keynote Title"
-    venue: "Conference / Event"
-    city: "City, ST"
-    country: "USA"
-    date: "2024-01-01"
-    lat: 0.0
-    lon: 0.0
-    slides: "keynote.pdf"
-
-# Template - copy and fill in:
-#  - title: "Keynote Title"
-#    venue: "Conference / Event"
-#    city: "City"
-#    country: "Country"
-#    date: "YYYY-MM-DD"
-#    lat: 00.0000      # latitude (used for map pin)
-#    lon: 00.0000      # longitude (used for map pin)
-#    slides: "file.pdf"
-#    # optional:
-#    # location: "Custom location label for popup"
+# Deprecated: this site no longer distinguishes keynotes from talks.
+# Move any keynote entries into data/talks.yaml.
 '''
 
     os.makedirs('data', exist_ok=True)
@@ -1090,7 +1061,7 @@ def create_tutorials_yaml(overwrite=False):
 # Tutorials
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
 
-talks:
+tutorials:
   - title: "Neural Networks Tutorial"
     venue: "MIT CSAIL"
     city: "Cambridge, MA"
@@ -1229,18 +1200,18 @@ def create_readme():
 
 1. Edit `data/about.md` with your bio and research overview.
 2. Edit `data/publications.yaml` with your publications (optionally include `abstract`).
-3. Edit `data/keynotes.yaml`, `data/talks.yaml`, and `data/tutorials.yaml` (including lat/lon for the map).
+3. Edit `data/talks.yaml` and `data/tutorials.yaml` (including lat/lon for the map).
 4. Edit `data/mentorship.yaml` and `data/professional_activities.yaml` with your mentorship and professional service.
 5. Optionally edit `data/fun-facts.md` and `data/quotes.md`.
-6. Run locally: `python -m http.server 8000`
-7. Open: http://localhost:8000
+6. Validate data: `python3 scripts/validate_site_data.py`
+7. Run locally: `python -m http.server 8000`
+8. Open: http://localhost:8000
 
 ## Structure
 
 - `index.html`                      - Main website (single-page app)
 - `data/about.md`                   - About/Bio (Markdown)
 - `data/publications.yaml`          - Publications
-- `data/keynotes.yaml`              - Keynotes (drives the Leaflet map and list)
 - `data/talks.yaml`                 - Talks (drives the Leaflet map and list)
 - `data/tutorials.yaml`             - Tutorials (drives the Leaflet map and list)
 - `data/mentorship.yaml`            - Mentorship entries (postdocs and thesis advisees)
@@ -1298,13 +1269,6 @@ def main(argv=None):
     else:
         print(f"Skipping {pubs_path} (already exists). Use --reset-templates to regenerate.\n")
 
-    # keynotes.yaml
-    keynotes_path = 'data/keynotes.yaml'
-    if args.reset_templates or not os.path.exists(keynotes_path):
-        create_keynotes_yaml(overwrite=args.reset_templates)
-    else:
-        print(f"Skipping {keynotes_path} (already exists). Use --reset-templates to regenerate.\n")
-
     # talks.yaml
     talks_path = 'data/talks.yaml'
     if args.reset_templates or not os.path.exists(talks_path):
@@ -1353,7 +1317,7 @@ def main(argv=None):
     print("\nNext steps:")
     print("1. Run your bibtex_to_yaml.py to regenerate data/publications.yaml (include abstract if available).")
     print("2. Edit the markdown files in data/ (about, professional-activities, fun-facts, quotes).")
-    print("3. Edit talk files in data/ (keynotes.yaml, talks.yaml, tutorials.yaml).")
+    print("3. Edit presentation files in data/ (talks.yaml, tutorials.yaml).")
     print("4. Test locally: python -m http.server 8000")
     print("5. Push to GitHub and enable GitHub Pages.")
     print("\nTo regenerate the YAML/Markdown templates, run:")

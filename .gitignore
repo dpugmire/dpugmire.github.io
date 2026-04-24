@@ -55,6 +55,6 @@ Thumbs.db
 # CV auto-generation
 # -------------------------
 cv/generated/
+cv/output/cv.tex
 cv/publications.bib
 cv/publications_*.tex
-

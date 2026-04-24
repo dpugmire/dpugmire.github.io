@@ -1,25 +1,3 @@
 # keynotes.yaml
-# Keynotes
-# lat/lon are used to place pins on the Leaflet world map in the Talks section.
-
-talks:
-  - title: "Keynote Title"
-    venue: "Conference / Event"
-    city: "City, ST"
-    country: "USA"
-    date: "2024-01-01"
-    lat: 0.0
-    lon: 0.0
-    slides: "keynote.pdf"
-
-# Template - copy and fill in:
-#  - title: "Keynote Title"
-#    venue: "Conference / Event"
-#    city: "City"
-#    country: "Country"
-#    date: "YYYY-MM-DD"
-#    lat: 00.0000      # latitude (used for map pin)
-#    lon: 00.0000      # longitude (used for map pin)
-#    slides: "file.pdf"
-#    # optional:
-#    # location: "Custom location label for popup"
+# Deprecated: this site no longer distinguishes keynotes from talks.
+# Move any keynote entries into data/talks.yaml.

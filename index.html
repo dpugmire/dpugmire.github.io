@@ -1381,7 +1381,11 @@
 
         const talks = talksData && talksData.talks ? talksData.talks : [];
         const tutorials =
-          tutorialsData && tutorialsData.talks ? tutorialsData.talks : [];
+          tutorialsData && Array.isArray(tutorialsData.tutorials)
+            ? tutorialsData.tutorials
+            : tutorialsData && Array.isArray(tutorialsData.talks)
+              ? tutorialsData.talks
+              : [];
 
         const categories = {
           talks: { name: "Talks", color: "#1f7a8c", items: talks },

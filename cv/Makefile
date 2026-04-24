@@ -6,7 +6,7 @@
 #   make clean  - Remove auxiliary files
 #   make help   - Show this help
 
-.PHONY: all gen pdf clean help view
+.PHONY: all validate gen pdf clean help view
 
 PYTHON ?= /usr/bin/python3
 PDF_NAME ?= PugmireCV.pdf
@@ -18,8 +18,13 @@ all: gen pdf
 	@echo "📄 Output: output/$(PDF_NAME)"
 	@echo ""
 
+# Validate website data before generating the CV
+validate:
+	@echo "🔎 Validating website data..."
+	$(PYTHON) ../scripts/validate_site_data.py
+
 # Generate CV from website data
-gen:
+gen: validate
 	@echo "🔄 Generating CV from website data..."
 	$(PYTHON) generate_cv.py
 
@@ -29,6 +34,7 @@ pdf:
 	@cd output && pdflatex cv.tex > /dev/null 2>&1 || pdflatex cv.tex
 	@cd output && pdflatex cv.tex > /dev/null 2>&1  # Run twice for references
 	@mv -f output/cv.pdf output/$(PDF_NAME)
+	@cp output/$(PDF_NAME) $(PDF_NAME)
 	@echo "✅ PDF compilation complete"
 
 # View the generated PDF (macOS)
@@ -57,6 +63,7 @@ help:
 	@echo ""
 	@echo "Targets:"
 	@echo "  make         - Generate CV from data and compile to PDF"
+	@echo "  make validate - Validate website data files"
 	@echo "  make gen     - Only generate LaTeX from website data"
 	@echo "  make pdf     - Only compile LaTeX to PDF"
 	@echo "  make view    - Generate, compile, and open PDF (macOS)"
@@ -66,8 +73,9 @@ help:
 	@echo ""
 	@echo "Workflow:"
 	@echo "  1. Edit your website data files (data/*.yaml, data/about.md)"
-	@echo "  2. Run 'make' to regenerate your CV"
-	@echo "  3. Your CV is at: output/$(PDF_NAME)"
+	@echo "  2. Run 'make validate' to catch schema issues early"
+	@echo "  3. Run 'make' to regenerate your CV"
+	@echo "  4. Your website-served CV is at: $(PDF_NAME)"
 	@echo ""
 
 # Install dependencies (for reference)

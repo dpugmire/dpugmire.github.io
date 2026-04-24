@@ -399,7 +399,7 @@ publications:
     authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
     venue: "CoRR"
     year: 2022
-    type: Journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.48550/arxiv.2201.08440"
     paper_url: "https://arxiv.org/abs/2201.08440"
     # abstract: ""  # Optional - full abstract text

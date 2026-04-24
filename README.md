@@ -1,15 +1,35 @@
 # Academic Website
 
+## TL;DR
+
+Test the website locally:
+
+```bash
+python3 scripts/validate_site_data.py
+python3 -m http.server 8000
+```
+
+Then open [http://localhost:8000](http://localhost:8000).
+
+Create the CV:
+
+```bash
+cd cv
+make validate
+make
+```
+
 ## Quick Start
 
 1. Edit `data/about.md` with your bio and research overview.
 2. Edit `data/publications.yaml` with your publications (optionally include `abstract`; use `note: "Best Paper Award"` for publication-linked honors).
 3. Edit `data/awards.yaml` with manual awards and honors.
-4. Edit `data/keynotes.yaml`, `data/talks.yaml`, and `data/tutorials.yaml` (including lat/lon for the map).
+4. Edit `data/talks.yaml` and `data/tutorials.yaml` (including lat/lon for the map).
 5. Edit `data/mentorship.yaml` and `data/professional_activities.yaml` with your mentorship and professional service.
 6. Optionally edit `data/fun-facts.md` and `data/quotes.md`.
-7. Run locally: `python -m http.server 8000`
-8. Open: http://localhost:8000
+7. Validate data: `python3 scripts/validate_site_data.py`
+8. Run locally: `python -m http.server 8000`
+9. Open: http://localhost:8000
 
 ## Structure
 
@@ -17,7 +37,6 @@
 - `data/about.md`                   - About/Bio (Markdown)
 - `data/awards.yaml`                - Manual awards and honors
 - `data/publications.yaml`          - Publications
-- `data/keynotes.yaml`              - Keynotes (drives the Leaflet map and list)
 - `data/talks.yaml`                 - Talks (drives the Leaflet map and list)
 - `data/tutorials.yaml`             - Tutorials (drives the Leaflet map and list)
 - `data/mentorship.yaml`            - Mentorship entries (postdocs and thesis advisees)
@@ -28,6 +47,15 @@
 - `slides/`                         - Talk PDFs
 - `scripts/`                        - Helper scripts (e.g., ORCID export, LaTeX CV)
 - `cv/`                             - CV and related documents
+
+## Validation
+
+Run `python3 scripts/validate_site_data.py` after editing `data/` files.
+
+The validator checks the schema used by both `index.html` and `cv/generate_cv.py`, including:
+- publication types and required fields
+- the canonical `talks` and `tutorials` top-level keys
+- the required `about.md` sections used by the CV generator
 
 ## Customization
 

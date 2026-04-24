@@ -1,7 +1,7 @@
 # tutorials.yaml
 # Tutorials
 # lat/lon are used to place pins on the Leaflet world map in the Talks section.
-talks:
+tutorials:
   - title: "Visualization using VisIt"
     venue: "VISTA Webinar Series, Oak Ridge National Laboratory"
     city: "Oak Ridge, TN"

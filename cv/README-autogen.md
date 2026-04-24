@@ -9,8 +9,8 @@ Your CV is automatically generated from the same data that powers your website:
 - **Awards** from `data/awards.yaml` plus `Best Paper Award` notes in `data/publications.yaml`
 - **Publications** from `data/publications.yaml`
 - **Talks** from `data/talks.yaml`
-- **Keynotes** from `data/keynotes.yaml`
 - **Tutorials** from `data/tutorials.yaml`
+- **Professional Activities** from `data/professional_activities.yaml`
 
 **Key Benefit**: Update your website data once, and your CV updates automatically. No more maintaining two separate documents!
 
@@ -23,6 +23,7 @@ make
 ```
 
 That's it! Your CV is now at `cv/output/PugmireCV.pdf`
+The website-served copy is synced to `cv/PugmireCV.pdf`.
 
 ## 📁 Directory Structure
 
@@ -43,6 +44,11 @@ cv/
 ### Generate and compile CV:
 ```bash
 make
+```
+
+### Validate data only:
+```bash
+make validate
 ```
 
 ### Just generate LaTeX (no compilation):
@@ -87,8 +93,10 @@ Edit `templates/cv_template.tex` to customize:
 The template uses placeholders that are automatically filled:
 - `{{PROFESSIONAL_EXPERIENCE}}` - Your work history
 - `{{EDUCATION}}` - Your degrees
+- `{{AWARDS}}` - Awards and honors
 - `{{PUBLICATIONS}}` - Auto-formatted publication list
-- `{{PRESENTATIONS}}` - Talks, keynotes, tutorials
+- `{{PRESENTATIONS}}` - Talks and tutorials
+- `{{PROFESSIONAL_ACTIVITIES}}` - Professional organizations and service
 - `{{GENERATION_DATE}}` - When CV was generated
 
 ### Modify Generator Logic
@@ -107,18 +115,20 @@ The generator reads from these files in your website's `data/` directory:
 |------|----------|--------|
 | `about.md` | Professional Experience, Education | Markdown tables |
 | `publications.yaml` | All publications | YAML with structured metadata |
-| `talks.yaml` | Invited talks | YAML with title, venue, location, date |
-| `keynotes.yaml` | Keynote presentations | YAML |
+| `talks.yaml` | Talks | YAML with title, venue, location, date |
 | `tutorials.yaml` | Tutorial presentations | YAML |
+| `awards.yaml` | Awards and honors | YAML |
+| `professional_activities.yaml` | Professional activities and service | YAML |
 
 ## 🔄 Workflow
 
 **Typical workflow:**
 
 1. Update your website data (e.g., add a new publication to `publications.yaml`)
-2. Run `make` in the `cv/` directory
-3. Your CV is automatically updated with the new publication
-4. Share `output/PugmireCV.pdf`
+2. Run `make validate` to catch schema issues early
+3. Run `make` in the `cv/` directory
+4. Your CV is automatically updated with the new publication
+5. Share `PugmireCV.pdf` or `output/PugmireCV.pdf`
 
 **No manual editing of LaTeX needed!**
 
@@ -127,10 +137,10 @@ The generator reads from these files in your website's `data/` directory:
 ### Current Sections:
 - ✅ Professional Experience (from about.md)
 - ✅ Education (from about.md)
+- ✅ Awards (from awards.yaml and publication notes)
 - ✅ Publications (grouped by type: Journal, Conference, Workshop, etc.)
-- ✅ Presentations (Keynotes, Tutorials, Invited Talks)
-- ⚠️  Professional Service (partially hardcoded - needs data source)
-- ⚠️  Awards (partially hardcoded - needs data source)
+- ✅ Presentations (Talks and Tutorials)
+- ✅ Professional Service (from professional_activities.yaml)
 
 ### To Add More Sections:
 
@@ -214,8 +224,6 @@ In `templates/cv_template.tex`, change:
 ## 📈 Future Enhancements
 
 Possible additions:
-- [ ] Parse `professional_activities.yaml` for service roles
-- [ ] Add awards from a YAML file
 - [ ] Generate both full CV and short 2-page resume
 - [ ] Multiple CV formats (academic, industry, government)
 - [ ] Auto-highlight your name in publication author lists

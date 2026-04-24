@@ -6,8 +6,7 @@ Generates a complete academic CV from website data sources:
 - data/about.md: Professional Experience, Education
 - data/awards.yaml: Awards
 - data/publications.yaml: Publications
-- data/talks.yaml: Invited talks
-- data/keynotes.yaml: Keynote presentations
+- data/talks.yaml: Talks
 - data/tutorials.yaml: Tutorials
 - data/professional_activities.yaml: Professional activities and service
 
@@ -20,7 +19,6 @@ Output:
 
 import re
 import unicodedata
-import sys
 import yaml
 from pathlib import Path
 from typing import List, Dict, Any
@@ -41,7 +39,6 @@ class CVGenerator:
         self.awards = []
         self.publications = []
         self.talks = []
-        self.keynotes = []
         self.tutorials = []
         self.professional_organizations = []
         self.organizations = []
@@ -79,47 +76,48 @@ class CVGenerator:
         with about_file.open("r", encoding="utf-8") as f:
             content = f.read()
 
-        # Extract Professional Experience table
-        exp_match = re.search(
-            r'### Professional Experience\s*\n\s*\|.*?\n\s*\|.*?\n((?:\s*\|.*?\n)+)',
-            content,
-            re.MULTILINE | re.DOTALL
+        self.experience = self._parse_markdown_table_section(
+            content, "Professional Experience"
         )
-        if exp_match:
-            table_rows = exp_match.group(1).strip().split('\n')
-            for row in table_rows:
-                # Parse: | 2021–Present | **Position**, Org |
-                match = re.match(r'\|\s*([^|]+)\s*\|\s*(.+?)\s*\|', row)
-                if match:
-                    years = match.group(1).strip()
-                    desc = match.group(2).strip()
-                    # Remove markdown formatting
-                    desc = re.sub(r'\*\*([^*]+)\*\*', r'\1', desc)
-                    desc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', desc)
-                    self.experience.append((years, desc))
-
-        # Extract Education table
-        edu_match = re.search(
-            r'### Education\s*\n\s*\|.*?\n\s*\|.*?\n((?:\s*\|.*?\n)+)',
-            content,
-            re.MULTILINE | re.DOTALL
-        )
-        if edu_match:
-            table_rows = edu_match.group(1).strip().split('\n')
-            for row in table_rows:
-                match = re.match(r'\|\s*([^|]+)\s*\|\s*(.+?)\s*\|', row)
-                if match:
-                    year = match.group(1).strip()
-                    desc = match.group(2).strip()
-                    # Remove markdown formatting from both year and description
-                    year = re.sub(r'\*\*([^*]+)\*\*', r'\1', year)
-                    desc = re.sub(r'\*\*([^*]+)\*\*', r'\1', desc)
-                    desc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', desc)
-                    # Skip empty rows
-                    if year and desc:
-                        self.education.append((year, desc))
+        self.education = self._parse_markdown_table_section(content, "Education")
 
         print(f"✓ Parsed {len(self.experience)} experience entries and {len(self.education)} education entries")
+
+    def _clean_markdown_text(self, text: str) -> str:
+        """Remove simple Markdown formatting used in the data files."""
+        text = re.sub(r'\*\*([^*]+)\*\*', r'\1', str(text or ""))
+        text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+        return text.strip()
+
+    def _parse_markdown_table_section(self, content: str, heading: str) -> List[tuple[str, str]]:
+        """Parse a two-column Markdown table, merging continuation rows."""
+        match = re.search(
+            rf'### {re.escape(heading)}\s*\n\s*\|.*?\n\s*\|.*?\n((?:\s*\|.*?\n)+)',
+            content,
+            re.MULTILINE | re.DOTALL
+        )
+        if not match:
+            return []
+
+        entries: List[tuple[str, str]] = []
+        table_rows = match.group(1).strip().split('\n')
+        for row in table_rows:
+            row_match = re.match(r'\|\s*([^|]*)\s*\|\s*(.+?)\s*\|', row)
+            if not row_match:
+                continue
+
+            key = self._clean_markdown_text(row_match.group(1))
+            desc = self._clean_markdown_text(row_match.group(2))
+            if not desc:
+                continue
+
+            if key:
+                entries.append((key, desc))
+            elif entries:
+                prev_key, prev_desc = entries[-1]
+                entries[-1] = (prev_key, f"{prev_desc} {desc}")
+
+        return entries
 
     def parse_awards_yaml(self):
         """Parse manually managed awards from awards.yaml."""
@@ -243,19 +241,6 @@ class CVGenerator:
         self.talks = data.get("talks", [])
         print(f"✓ Parsed {len(self.talks)} talks")
 
-    def parse_keynotes_yaml(self):
-        """Parse keynotes.yaml."""
-        keynotes_file = self.data_dir / "keynotes.yaml"
-        if not keynotes_file.exists():
-            print(f"⚠️  {keynotes_file} not found")
-            return
-
-        with keynotes_file.open("r", encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-
-        self.keynotes = data.get("keynotes", [])
-        print(f"✓ Parsed {len(self.keynotes)} keynotes")
-
     def parse_tutorials_yaml(self):
         """Parse tutorials.yaml."""
         tutorials_file = self.data_dir / "tutorials.yaml"
@@ -266,7 +251,7 @@ class CVGenerator:
         with tutorials_file.open("r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
 
-        self.tutorials = data.get("tutorials", [])
+        self.tutorials = data.get("tutorials", data.get("talks", []))
         print(f"✓ Parsed {len(self.tutorials)} tutorials")
 
     def parse_professional_activities_yaml(self):
@@ -410,14 +395,19 @@ class CVGenerator:
         return f"  \\item {entry}"
 
     def generate_presentations_section(self) -> str:
-        """Generate invited talks, keynotes, and tutorials section."""
+        """Generate talks and tutorials section."""
         sections = []
 
-        # Keynotes
-        if self.keynotes:
-            sections.append("\\subsection*{Keynote Presentations}")
+        # Talks
+        if self.talks:
+            sections.append("\\subsection*{Talks}")
             sections.append("\\begin{itemize}[leftmargin=2em]")
-            for talk in sorted(self.keynotes, key=lambda t: t.get("date", ""), reverse=True):
+            # Show only recent talks (last 5 years)
+            current_year = datetime.now().year
+            recent_talks = [t for t in self.talks
+                          if int(t.get("date", "2000").split("-")[0]) >= current_year - 5]
+
+            for talk in sorted(recent_talks, key=lambda t: t.get("date", ""), reverse=True):
                 title = self.escape_latex(talk.get("title", ""))
                 venue = self.escape_latex(talk.get("venue", ""))
                 city = talk.get("city", "")
@@ -436,29 +426,6 @@ class CVGenerator:
             sections.append("\\subsection*{Tutorials}")
             sections.append("\\begin{itemize}[leftmargin=2em]")
             for talk in sorted(self.tutorials, key=lambda t: t.get("date", ""), reverse=True):
-                title = self.escape_latex(talk.get("title", ""))
-                venue = self.escape_latex(talk.get("venue", ""))
-                city = talk.get("city", "")
-                country = talk.get("country", "")
-                date = talk.get("date", "")
-
-                location = f"{city}, {country}" if city and country else ""
-                year = date.split("-")[0] if date else ""
-
-                sections.append(f"  \\item \\textit{{{title}}}, {venue}, {location}, {year}.")
-            sections.append("\\end{itemize}")
-            sections.append("")
-
-        # Invited Talks
-        if self.talks:
-            sections.append("\\subsection*{Invited Talks}")
-            sections.append("\\begin{itemize}[leftmargin=2em]")
-            # Show only recent talks (last 5 years)
-            current_year = datetime.now().year
-            recent_talks = [t for t in self.talks
-                          if int(t.get("date", "2000").split("-")[0]) >= current_year - 5]
-
-            for talk in sorted(recent_talks, key=lambda t: t.get("date", ""), reverse=True):
                 title = self.escape_latex(talk.get("title", ""))
                 venue = self.escape_latex(talk.get("venue", ""))
                 city = talk.get("city", "")
@@ -653,7 +620,6 @@ def main():
     generator.parse_publications_yaml()
     generator.build_awards()
     generator.parse_talks_yaml()
-    generator.parse_keynotes_yaml()
     generator.parse_tutorials_yaml()
     generator.parse_professional_activities_yaml()
     print()

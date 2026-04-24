@@ -8,6 +8,7 @@ make
 ```
 
 Your auto-generated CV is now at: `cv/output/PugmireCV.pdf`
+The website-served copy is synced to: `cv/PugmireCV.pdf`
 
 ## 📊 What Was Generated
 
@@ -25,9 +26,10 @@ Your auto-generated CV is now at: `cv/output/PugmireCV.pdf`
 All data comes from your website:
 - `data/about.md` → Professional Experience & Education
 - `data/publications.yaml` → 127 publications, auto-sorted by type and year
-- `data/talks.yaml` → 45 talks
-- `data/keynotes.yaml` → Keynote presentations
+- `data/talks.yaml` → Talks
 - `data/tutorials.yaml` → Tutorial sessions
+- `data/professional_activities.yaml` → Professional service
+- `data/awards.yaml` → Awards and honors
 
 ### One Command Updates
 ```bash
@@ -80,6 +82,11 @@ make
 make gen
 ```
 
+### Validate data only:
+```bash
+make validate
+```
+
 ### Clean build files:
 ```bash
 make clean
@@ -129,14 +136,14 @@ pip install pyyaml
 When you run `make`:
 
 1. ✅ Parses 11 professional positions from `about.md`
-2. ✅ Parses 3 education entries from `about.md`
+2. ✅ Parses 2 education entries from `about.md`
 3. ✅ Loads 127 publications from `publications.yaml`
 4. ✅ Sorts publications by type (journal, conference, workshop, etc.)
 5. ✅ Formats publications with DOI links
-6. ✅ Adds recent talks (last 5 years from 45 total)
+6. ✅ Adds recent talks and tutorials
 7. ✅ Generates complete `cv.tex` file
 8. ✅ Compiles to PDF (runs pdflatex twice for references)
-9. ✅ Creates 11-page professional CV
+9. ✅ Syncs the website-served CV PDF
 
 **No manual editing required!**
 

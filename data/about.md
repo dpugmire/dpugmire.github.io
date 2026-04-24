@@ -1,6 +1,8 @@
 I am a Distinguished Research Scientist and Visualization Group Leader at [Oak Ridge National Laboratory](https://www.ornl.gov/). I also hold a Joint Faculty Professor position in the [Electrical Engineering and Computer Science Department at the University of Tennessee](https://eecs.utk.edu/).
 
-My interests are focused on research and development of scientific visualization and analysis for large-scale data.
+My research focuses on scientific visualization, in situ analysis, and scalable methods for understanding data from large-scale simulations and experiments. I work on practical tools and algorithms that help researchers explore, analyze, and communicate complex scientific results on modern HPC systems.
+
+I am particularly interested in visualization for exascale computing, uncertainty-aware analysis, and data-intensive scientific workflows that connect research ideas to production environments.
 
 ### Professional Experience
 
