@@ -33,7 +33,9 @@ make
 
 ## Structure
 
-- `index.html`                      - Main website (single-page app)
+- `index.html`                      - Main website HTML shell
+- `assets/css/site.css`             - Site styles
+- `assets/js/site.js`               - Client-side rendering and interactions
 - `data/about.md`                   - About/Bio (Markdown)
 - `data/awards.yaml`                - Manual awards and honors
 - `data/publications.yaml`          - Publications
@@ -65,3 +67,5 @@ Edit the header in `index.html` to update:
 - Institution
 - Email
 - Links
+
+Use `assets/css/site.css` for visual styling and `assets/js/site.js` for page behavior.

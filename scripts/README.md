@@ -13,7 +13,9 @@
 
 ## Structure
 
-- `index.html`                      - Main website (single-page app)
+- `index.html`                      - Main website HTML shell
+- `assets/css/site.css`             - Site styles
+- `assets/js/site.js`               - Client-side rendering and interactions
 - `data/about.md`                   - About/Bio (Markdown)
 - `data/publications.yaml`          - Publications
 - `data/talks.yaml`                 - Talks (drives the Leaflet map and talk list)
