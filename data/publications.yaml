@@ -1441,7 +1441,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'williams2013ultrascale.jpg'  # Optional - add image file to images/papers/
+    image: "williams2013ultrascale.png"
 
   # CONFERENCE - 2012
   - id: "meredith2012distributed"
@@ -1469,7 +1469,7 @@ publications:
     abstract: "We present 3D adaptive mesh refinement magnetohydrodynamic (MHD) simulations of an isolated galaxy cluster that include injection of kinetic, thermal and magnetic energy via a central active galactic nucleus (AGN) in order to study and evaluate the role that AGN may play in producing the observed cluster-wide magnetic fields. Using the MHD solver in flash 3.3, we compare several subresolution approaches to the evolution of AGN, specifically focusing on large-scale jet and bubble models. We examine the effects of magnetized outflows on the accretion history of the black hole and cluster thermodynamic properties, discuss the ability of various models to magnetize the cluster medium, and assess the sensitivity of these models to their underlying subgrid parameters. We find that magnetized jet-based models suffer a severe reduction in accretion rate compared to hydrodynamic jets; however, bubble models remain largely unaffected. While both jets and sporadically placed bubbles have difficulty reproducing the observed strength and topology of cluster magnetic fields, models based on centrally located bubbles come closest to observations. Finally, whereas jet models are relatively insensitive to changes in their subgrid parameters, the accretion rate and average magnetic field produced by the bubbles vary by as much as an order of magnitude depending on the grid resolution and accretion strength."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'sutter2012examination.jpg'  # Optional - add image file to images/papers/
+    image: "sutter2011examination.png"
 
   # CONFERENCE - 2012
   - id: "tchoua2012collaborative"
@@ -1595,7 +1595,7 @@ publications:
     abstract: "We present 3D adaptive mesh refinement magnetohydrodynamic (MHD) simulations of an isolated galaxy cluster that include injection of kinetic, thermal and magnetic energy via a central active galactic nucleus (AGN) in order to study and evaluate the role that AGN may play in producing the observed cluster-wide magnetic fields. Using the MHD solver in flash 3.3, we compare several subresolution approaches to the evolution of AGN, specifically focusing on large-scale jet and bubble models. We examine the effects of magnetized outflows on the accretion history of the black hole and cluster thermodynamic properties, discuss the ability of various models to magnetize the cluster medium, and assess the sensitivity of these models to their underlying subgrid parameters. We find that magnetized jet-based models suffer a severe reduction in accretion rate compared to hydrodynamic jets; however, bubble models remain largely unaffected. While both jets and sporadically placed bubbles have difficulty reproducing the observed strength and topology of cluster magnetic fields, models based on centrally located bubbles come closest to observations. Finally, whereas jet models are relatively insensitive to changes in their subgrid parameters, the accretion rate and average magnetic field produced by the bubbles vary by as much as an order of magnitude depending on the grid resolution and accretion strength."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'sutter2011examination.jpg'  # Optional - add image file to images/papers/
+    image: "sutter2011examination.png"
 
   # CONFERENCE - 2011
   - id: "pugmire2011magnetic"
@@ -1637,7 +1637,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'green2011simulation.jpg'  # Optional - add image file to images/papers/
+    image: "green2011simulation.png"
 
   # JOURNAL - 2011
   - id: "camp2011streamline"
@@ -1665,7 +1665,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'childs2011visit.jpg'  # Optional - add image file to images/papers/
+    image: "childs2011visit.png"
 
   # JOURNAL - 2010
   - id: "monroe2010case"
@@ -1679,7 +1679,7 @@ publications:
     abstract: "In this paper we describe the use of visualization tools and facilities in the collaborative design of a replacement weapons system, the Reliable Replacement Warhead (RRW). We used not only standard collaboration methods but also a range of visualization software and facilities to bring together domain specialists from laboratories across the country to collaborate on the design and integrate this disparate input early in the design. This was the first time in U.S. weapons history that a weapon had been designed in this collaborative manner. Benefits included projected cost savings, design improvements and increased understanding across the project."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'monroe2010case.jpg'  # Optional - add image file to images/papers/
+    image: "monroe2010case.png"
 
   # JOURNAL - 2010
   - id: "childs2010extreme"
@@ -1693,7 +1693,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'childs2010extreme.jpg'  # Optional - add image file to images/papers/
+    image: "childs2010extreme.png"
 
   # CONFERENCE - 2009
   - id: "ahrens2009parallel"
