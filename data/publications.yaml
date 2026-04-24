@@ -1724,20 +1724,6 @@ publications:
     # image: 'pugmire2009scalable.jpg'  # Optional - add image file to images/papers/
 
   # JOURNAL - 2009
-  - id: "ahrens2009vismashup"
-    title: "VISMASHUP: streamlining the creation of custom visualization applications"
-    authors: "Ahrens, J., Santos, E., Lins, L., Freire, J., Silva, C."
-    venue: "IEEE Transactions on Visualization and Computer Graphics"
-    year: 2009
-    type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1109/tvcg.2009.195"
-    paper_url: "https://www.osti.gov/biblio/1019553"
-    abstract: "Visualization is essential for understanding the increasing volumes of digital data. However, the process required to create insightful visualizations is involved and time consuming. Although several visualization tools are available, including tools with sophisticated visual interfaces, they are out of reach for users who have little or no knowledge of visualization techniques and/or who do not have programming expertise. In this paper, we propose VISMASHUP, a new framework for streamlining the creation of customized visualization applications. Because these applications can be customized for very specific tasks, they can hide much of the complexity in a visualization specification and make it easier for users to explore visualizations by manipulating a small set of parameters. We describe the framework and how it supports the various tasks a designer needs to carry out to develop an application, from mining and exploring a set of visualization specifications (pipelines), to the creation of simplified views of the pipelines, and the automatic generation of the application and its interface. We also describe the implementation of the system and demonstrate its use in two real application scenarios."
-    # note: ""  # e.g., Best Paper Award
-    # summary: ""  # Add a one-sentence summary of the paper
-    image: "ahrens2009vismashup.png"
-
-  # JOURNAL - 2009
   - id: "bethel2009occam"
     title: "Occam's razor and petascale visual data analysis"
     authors: "Bethel, E. W., Johnson, C., Ahern, S., Bell, J., Bremer, P.-T., Childs, H., Cormier-Michel, E., Day, M., Deines, E., Fogal, T., Garth, C., Geddes, C. G. R., Hagen, H., Hamann, B., Hansen, C., Jacobsen, J., Joy, K., Krüger, J., Meredith, J., Messmer, P., Ostrouchov, G., Pascucci, V., Potter, K., Prabhat, Pugmire, D., Rübel, O., Sanderson, A., Silva, C., Ushizima, D., Weber, G., Whitlock, B., Wu, K."
@@ -1747,7 +1733,7 @@ publications:
     doi: "10.1088/1742-6596/180/1/012084"
     paper_url: "https://iopscience.iop.org/article/10.1088/1742-6596/180/1/012084"
     abstract: "One of the central challenges facing visualization research is how to effectively enable knowledge discovery. An effective approach will likely combine application architectures that are capable of running on today's largest platforms to address the challenges posed by large data with visual data analysis techniques that help find, represent, and effectively convey scientifically interesting features and phenomena."
-    image: "bethel2009occam.svg"
+    image: "bethel2009occam.png"
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
 
