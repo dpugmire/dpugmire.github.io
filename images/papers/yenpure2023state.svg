@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="340" viewBox="0 0 560 340" role="img" aria-labelledby="title desc">
+  <title id="title">Particle advection optimization decision diagram</title>
+  <desc id="desc">A flowchart showing workload estimation feeding a cost decision, which branches to no further optimization or to hardware efficiency and algorithmic optimization strategies.</desc>
+  <rect width="560" height="340" fill="#ffffff"/>
+
+  <defs>
+    <style>
+      .label { font: 700 16px 'Source Sans 3', 'Segoe UI', sans-serif; fill: #0d1b2a; }
+      .small { font: 700 14px 'Source Sans 3', 'Segoe UI', sans-serif; fill: #0d1b2a; }
+      .box { fill: #79a9dc; stroke: #4e7fb2; stroke-width: 1.5; }
+      .panel { fill: #f4cb69; stroke: #c99f39; stroke-width: 1.5; }
+      .arrow { fill: none; stroke: #6a99cf; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .arrowhead { fill: #6a99cf; }
+    </style>
+  </defs>
+
+  <!-- top row boxes -->
+  <rect class="box" x="22" y="14" width="118" height="76" rx="10"/>
+  <rect class="box" x="172" y="14" width="118" height="76" rx="10"/>
+  <polygon class="box" points="342,14 412,14 460,52 412,90 342,90 294,52"/>
+  <rect class="box" x="458" y="14" width="90" height="76" rx="10"/>
+
+  <text class="label" x="81" y="46" text-anchor="middle">
+    <tspan x="81" dy="0">Determine</tspan>
+    <tspan x="81" dy="19">workload</tspan>
+  </text>
+
+  <text class="label" x="231" y="40" text-anchor="middle">
+    <tspan x="231" dy="0">Estimate</tspan>
+    <tspan x="231" dy="19">cost for</tspan>
+    <tspan x="231" dy="19">workload</tspan>
+  </text>
+
+  <text class="label" x="377" y="58" text-anchor="middle">Cost</text>
+  <text class="label" x="377" y="77" text-anchor="middle">OK?</text>
+
+  <text class="label" x="503" y="36" text-anchor="middle">
+    <tspan x="503" dy="0">No further</tspan>
+    <tspan x="503" dy="19">optimization</tspan>
+    <tspan x="503" dy="19">necessary</tspan>
+  </text>
+
+  <!-- top arrows -->
+  <path class="arrow" d="M 141 52 H 166"/>
+  <polygon class="arrowhead" points="166,43 180,52 166,61"/>
+
+  <path class="arrow" d="M 291 52 H 318"/>
+  <polygon class="arrowhead" points="318,43 332,52 318,61"/>
+
+  <path class="arrow" d="M 458 52 H 444"/>
+  <polygon class="arrowhead" points="444,43 430,52 444,61"/>
+  <text class="small" x="426" y="29">Yes</text>
+
+  <!-- lower panels -->
+  <rect class="panel" x="133" y="122" width="148" height="194" rx="18"/>
+  <rect class="panel" x="395" y="122" width="148" height="194" rx="18"/>
+
+  <text class="label" x="207" y="164" text-anchor="middle">
+    <tspan x="207" dy="0">Hardware</tspan>
+    <tspan x="207" dy="19">Efficiency</tspan>
+  </text>
+
+  <text class="label" x="469" y="164" text-anchor="middle">
+    <tspan x="469" dy="0">Algorithmic</tspan>
+    <tspan x="469" dy="19">optimizations</tspan>
+  </text>
+
+  <!-- inner buttons left -->
+  <rect class="box" x="160" y="182" width="94" height="38" rx="8"/>
+  <rect class="box" x="160" y="228" width="94" height="38" rx="8"/>
+  <rect class="box" x="160" y="274" width="94" height="38" rx="8"/>
+
+  <text class="label" x="207" y="205" text-anchor="middle">Shared Memory</text>
+  <text class="label" x="207" y="251" text-anchor="middle">
+    <tspan x="207" dy="0">Distributed</tspan>
+    <tspan x="207" dy="19">Memory</tspan>
+  </text>
+  <text class="label" x="207" y="293" text-anchor="middle">
+    <tspan x="207" dy="0">Hybrid</tspan>
+    <tspan x="207" dy="19">Parallelism</tspan>
+  </text>
+
+  <!-- inner buttons right -->
+  <rect class="box" x="422" y="182" width="94" height="38" rx="8"/>
+  <rect class="box" x="422" y="228" width="94" height="38" rx="8"/>
+  <rect class="box" x="422" y="274" width="94" height="38" rx="8"/>
+
+  <text class="label" x="469" y="205" text-anchor="middle">ODE solvers</text>
+  <text class="label" x="469" y="251" text-anchor="middle">Cell locators</text>
+  <text class="label" x="469" y="297" text-anchor="middle">Efficient I/O</text>
+
+  <rect class="box" x="422" y="320" width="94" height="0" rx="8"/>
+  <text class="label" x="469" y="311" text-anchor="middle">Precomputation</text>
+
+  <!-- feedback arrows -->
+  <path class="arrow" d="M 337 112 C 300 132, 282 164, 282 196"/>
+  <polygon class="arrowhead" points="272,197 282,182 292,197"/>
+  <path class="arrow" d="M 417 112 C 454 132, 474 164, 474 196"/>
+  <polygon class="arrowhead" points="464,197 474,182 484,197"/>
+
+  <path class="arrow" d="M 281 219 C 305 208, 323 206, 350 206 C 376 206, 393 208, 418 219"/>
+  <polygon class="arrowhead" points="409,228 423,221 413,210"/>
+
+  <path class="arrow" d="M 418 239 C 394 250, 376 252, 350 252 C 323 252, 305 250, 281 239"/>
+  <polygon class="arrowhead" points="290,230 276,237 286,248"/>
+
+  <text class="label" x="327" y="138">No</text>
+</svg>

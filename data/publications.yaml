@@ -323,6 +323,19 @@ publications:
     # summary: ""  # Add a one-sentence summary of the paper
     image: "Anirudh2022.png" # Optional - add image file to images/papers/
 
+  - id: "yenpure2023state"
+    title: "State-of-the-Art Report on Optimizing Particle Advection Performance"
+    authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
+    venue: "Computer Graphics Forum"
+    year: 2023
+    type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    doi: "10.1111/cgf.14858"
+    paper_url: "https://doi.org/10.1111/cgf.14858"
+    image: "yenpure2023state.svg"
+    abstract: "The computational work to perform particle advection-based flow visualization techniques varies based on many factors, including number of particles, duration, and mesh type. In many cases, the total work is significant, and total execution time (performance) is a critical issue. This state-of-the-art report considers existing optimizations for particle advection, using two high-level categories: algorithmic optimizations and hardware efficiency. The sub-categories for algorithmic optimizations include solvers, cell locators, I/O efficiency, and precomputation, while the sub-categories for hardware efficiency all involve parallelism: shared-memory, distributed-memory, and hybrid. Finally, this STAR concludes by identifying current gaps in our understanding of particle advection performance and its optimizations."
+    # note: ""  # e.g., Best Paper Award
+    # summary: ""  # Add a one-sentence summary of the paper
+
   # CONFERENCE - 2023
   - id: "senapati2023advancing"
     title: "Advancing Comprehension of Quantum Application Outputs: A Visualization Technique"
@@ -399,13 +412,13 @@ publications:
     authors: "Yenpure, A., Sane, S., Binyahib, R., Pugmire, D., Garth, C., Childs, H."
     venue: "CoRR"
     year: 2022
-    type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    type: preprint # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.48550/arxiv.2201.08440"
     paper_url: "https://arxiv.org/abs/2201.08440"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'yenpure2022guide.jpg'  # Optional - add image file to images/papers/
+    image: "yenpure2023state.svg"
 
   # CONFERENCE - 2022
   - id: "han2022accelerated"
@@ -1722,21 +1735,34 @@ publications:
     abstract: "Visualization is essential for understanding the increasing volumes of digital data. However, the process required to create insightful visualizations is involved and time consuming. Although several visualization tools are available, including tools with sophisticated visual interfaces, they are out of reach for users who have little or no knowledge of visualization techniques and/or who do not have programming expertise. In this paper, we propose VISMASHUP, a new framework for streamlining the creation of customized visualization applications. Because these applications can be customized for very specific tasks, they can hide much of the complexity in a visualization specification and make it easier for users to explore visualizations by manipulating a small set of parameters. We describe the framework and how it supports the various tasks a designer needs to carry out to develop an application, from mining and exploring a set of visualization specifications (pipelines), to the creation of simplified views of the pipelines, and the automatic generation of the application and its interface. We also describe the implementation of the system and demonstrate its use in two real application scenarios."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'ahrens2009vismashup.jpg'  # Optional - add image file to images/papers/
+    image: "ahrens2009vismashup.png"
+
+  # JOURNAL - 2009
+  - id: "bethel2009occam"
+    title: "Occam's razor and petascale visual data analysis"
+    authors: "Bethel, E. W., Johnson, C., Ahern, S., Bell, J., Bremer, P.-T., Childs, H., Cormier-Michel, E., Day, M., Deines, E., Fogal, T., Garth, C., Geddes, C. G. R., Hagen, H., Hamann, B., Hansen, C., Jacobsen, J., Joy, K., Krüger, J., Meredith, J., Messmer, P., Ostrouchov, G., Pascucci, V., Potter, K., Prabhat, Pugmire, D., Rübel, O., Sanderson, A., Silva, C., Ushizima, D., Weber, G., Whitlock, B., Wu, K."
+    venue: "Journal of Physics: Conference Series"
+    year: 2009
+    type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    doi: "10.1088/1742-6596/180/1/012084"
+    paper_url: "https://iopscience.iop.org/article/10.1088/1742-6596/180/1/012084"
+    abstract: "One of the central challenges facing visualization research is how to effectively enable knowledge discovery. An effective approach will likely combine application architectures that are capable of running on today's largest platforms to address the challenges posed by large data with visual data analysis techniques that help find, represent, and effectively convey scientifically interesting features and phenomena."
+    image: "bethel2009occam.svg"
+    # note: ""  # e.g., Best Paper Award
+    # summary: ""  # Add a one-sentence summary of the paper
 
   # JOURNAL - 2009
   - id: "garth2009vector"
-    title: "Vector field visual data analysis technologies for petascale computational science"
+    title: "Vector Field Visual Data Analysis Technologies for Petascale Computational Science"
     authors: "Garth, C., Deines, E., Joy, K., Bethel, E., Childs, H., Weber, G., Ahern, S., Pugmire, D., Sanderson, A., Johnson, C."
     venue: "SciDAC Review"
     year: 2009
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.2172/1020344"
-    paper_url: "https://doi.org/10.2172/1020344"
+    paper_url: "https://escholarship.org/content/qt7691139c/qt7691139c_noSplash_209512b67fadf28731f2b3ec52b190de.pdf"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'garth2009vector.jpg'  # Optional - add image file to images/papers/
+    image: "garth2009vector.png"
 
   # JOURNAL - 2007
   - id: "pugmire2007based"
