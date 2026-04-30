@@ -1651,7 +1651,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'camp2011streamline.jpg'  # Optional - add image file to images/papers/
+    image: "camp2011streamline.png"
 
   # JOURNAL - 2011
   - id: "childs2011visit"
