@@ -657,7 +657,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'binyahib2021hylipod.jpg'  # Optional - add image file to images/papers/
+    image: "binyahib2021hylipod.png"
 
   # JOURNAL - 2021
   - id: "liang2021mgard"
@@ -680,8 +680,8 @@ publications:
     venue: "Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)"
     year: 2021
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1162/99608f92.beeb1183"
-    paper_url: "https://doi.org/10.1162/99608f92.beeb1183"
+    doi: "10.2312/pgv.20211039"
+    paper_url: "https://diglib.eg.org/items/b6bb4cfd-575c-4242-8bce-74726c37a4d1"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
@@ -1762,7 +1762,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2007based.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2007based.png"
 
   # JOURNAL - 2007
   - id: "pugmire2007pick"
