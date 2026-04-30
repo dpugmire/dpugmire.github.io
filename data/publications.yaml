@@ -1231,7 +1231,7 @@ publications:
     abstract: "High performance computing applications are producing increasingly large amounts of data and placing enormous stress on current capabilities for traditional post-hoc visualization techniques. Because of the growing compute and I/O imbalance, data reductions, including in situ visualization, are required. These reduced data are used for analysis and visualization in a variety of different ways. Many of he visualization and analysis requirements are known a priori, but when they are not, scientists are dependent on the reduced data to accurately represent the simulation in post hoc analysis. The contributions of this paper is a description of the directions we are pursuing to assist a large scale fusion simulation code succeed on the next generation of supercomputers. Finally, these directions include the role of in situ processing for performing data reductions, as well as the tradeoffs between data size and data integrity within the context of complex operations in a typical scientific workflow."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kress2016preparing.jpg'  # Optional - add image file to images/papers/
+    image: "kress2016preparing.png"
 
   # CONFERENCE - 2016
   - id: "choi2016stream"
@@ -1270,7 +1270,7 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/mcg.2016.48"
     paper_url: "https://doi.org/10.1109/mcg.2016.48"
-    image: "moreland2016accelerating.jpg" # Optional - add image file to images/papers/
+    image: "moreland2016accelerating.png" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
@@ -1357,7 +1357,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'chen2013parallel.jpg'  # Optional - add image file to images/papers/
+    image: "chen2013parallel.png"
 
   # CONFERENCE - 2013
   - id: "tchoua2013adios"
@@ -1427,7 +1427,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'smith2013ultra.jpg'  # Optional - add image file to images/papers/
+    image: "smith2013ultra.png"
 
   # JOURNAL - 2013
   - id: "williams2013ultrascale"
