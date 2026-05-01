@@ -1270,7 +1270,7 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1109/mcg.2016.48"
     paper_url: "https://doi.org/10.1109/mcg.2016.48"
-    image: "moreland2016accelerating.png" # Optional - add image file to images/papers/
+    image: "moreland2016accelerating.jpg" # Optional - add image file to images/papers/
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
@@ -1343,7 +1343,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'huebl2014visualizing.jpg'  # Optional - add image file to images/papers/
+    image: "huebl2014visualizing.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2013
   - id: "chen2013parallel"
