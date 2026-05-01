@@ -1773,10 +1773,10 @@ publications:
     type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1108/aa.2007.03327aad.004"
     paper_url: "https://doi.org/10.1108/aa.2007.03327aad.004"
+    image: "monroe2010case.png"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2007pick.jpg'  # Optional - add image file to images/papers/
 
   # CONFERENCE - 1995
   - id: "grimm1995visual"
