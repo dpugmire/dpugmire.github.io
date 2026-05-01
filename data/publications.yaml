@@ -713,7 +713,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'choi2021neural.jpg'  # Optional - add image file to images/papers/
+    image: "choi2021neural.png"
 
   # PREPRINT - 2021
   - id: "chen2021scalable"
@@ -755,7 +755,7 @@ publications:
     abstract: "We present ADIOS 2, the latest version of the Adaptable Input Output (I/O) System. ADIOS 2 addresses scientific data management needs ranging from scalable I/O in supercomputers, to data analysis in personal computer and cloud systems. Version 2 introduces a unified application programming interface (API) that enables seamless data movement through files, wide-area-networks, and direct memory access, as well as high-level APIs for data analysis. The internal architecture provides a set of reusable and extendable components for managing data presentation and transport mechanisms for new applications. ADIOS 2 bindings are available in C++11, C, Fortran, Python, and Matlab and are currently used across different scientific communities. ADIOS 2 provides a communal framework to tackle data management challenges as we approach the exascale era of supercomputing."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'godoy2020adios.jpg'  # Optional - add image file to images/papers/
+    image: "godoy2020adios.png"
 
   # JOURNAL - 2020
   - id: "qin2020estimating"
