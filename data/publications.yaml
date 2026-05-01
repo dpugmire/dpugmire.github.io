@@ -783,7 +783,7 @@ publications:
     abstract: "The Adaptable I/O System (ADIOS) represents the culmination of substantial investment in Scientific Data Management, and it has demonstrated success for several important extreme-scale science cases. However, looking towards the exascale and beyond, we see the development of yet more stringent data management requirements that require new abstractions. Therefore, there is an opportunity to attempt to connect the traditional realms of HPC I/O optimization with the Database / Data Management community. As such, in this paper we offer some specific examples from our ongoing work in managing data structures, services, and performance at the extreme scale for scientific computing. Using the publish/subscribe model afforded by ADIOS, we demonstrate a set of services that connect data format, metadata, queries, data reduction, and high-performance delivery. The resulting publish/subscribe framework facilitates connection to on-line workflow systems to enable the dynamic capabilities that will be required for exascale science."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'logan2020extending.jpg'  # Optional - add image file to images/papers/
+    image: "logan2020extending.png"
 
   # JOURNAL - 2020
   - id: "lei2020global"
@@ -1315,7 +1315,7 @@ publications:
     abstract: "In this position paper, we argue that the loosely coupled in situ processing paradigm will play an important role in high performance computing for the foreseeable future. Loosely coupled in situ is an enabling technique that addresses many of the current issues with tightly coupled in situ, including, ease-of-integration, usability, and fault tolerance. We survey the prominent positives and negatives of both tightly coupled and loosely coupled in situ and present our recommendation as to why loosely coupled in situ is an enabling technique that is here to stay. We then report on some recent experiences with loosely coupled in situ processing, in an effort to explore each of the discussed factors in a real-world environment."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kress2015loosely.jpg'  # Optional - add image file to images/papers/
+    image: "kress2015loosely.png"
 
   # WORKSHOP - 2014
   - id: "davidpugmire2014towards"
@@ -1493,11 +1493,11 @@ publications:
     year: 2012
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.2312/egpgv.egpgv12.021-030"
-    paper_url: "https://doi.org/10.2312/egpgv.egpgv12.021-030"
+    paper_url: "https://diglib.eg.org/items/28d99306-587e-4162-8ffd-cb3b896cf9b9"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'meredith2012eavl.jpg'  # Optional - add image file to images/papers/
+    image: "meredith2012eavl.png"
 
   # BOOK-CHAPTER - 2012
   - id: "bethel2012hybrid"
@@ -1525,7 +1525,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'choi2012mining.jpg'  # Optional - add image file to images/papers/
+    image: "choi2012mining.png"
 
   # BOOK-CHAPTER - 2012
   - id: "pugmire2012parallel"
@@ -1553,7 +1553,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'camp2012parallel.jpg'  # Optional - add image file to images/papers/
+    image: "camp2012parallel.png"
 
   # BOOK-CHAPTER - 2012
   - id: "childs2012visit"
@@ -1707,7 +1707,7 @@ publications:
     abstract: "Scientific data sets produced by modern supercomputers like ORNL's Cray XT 4, Jaguar, can be extremely large, making visualization and analysis more difficult as moving large resultant data to dedicated analysis systems can be prohibitively expensive. We share our continuing work of integrating a parallel visualization system, ParaView, on ORNL's Jaguar system and our efforts to enable extreme scale interactive data visualization and analysis. We will discuss porting challenges and present performance numbers. Jaguar is a Cray XT4 with 7,832 compute nodes each with 4 cores and 8GB of memory, located in Oak Ridge, Tennessee. Jaguar is currently ranked No.8 in the Top 500. Jaguar, and other machines like it, enable increasingly larger data sets. Whether scientists are producing extremely massive data or small data they still have a requirement for analysis. Analysis is often difficult for larger data and it is further complicated when the user is distant to the data. Data sets that are too large to ship and/or analyze on a single desktop require a parallel analysis tool and a high performance computer to run on. Running ParaView interactively on Jaguar is a positive improvement for both local and remote users. We have shown that it is feasible for our user at LANL to visualize his simulation data created on jaguar. Local users may face fewer obstacles and get improved performance, due to their higher bandwidth to Jaguar. For future work, we would like to see higher priority queues that enable interactive visualization. A more interactive user-friendly qsub that estimates time to allocation would be very useful. Hopefully, our work will lead to more users attempting interactive visualization on Jaguar, resulting in quicker turnaround times for visualization and analysis. As users migrate to using supercomputing platforms for visualization, we expect future research possibilities in this area."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'ahrens2009parallel.jpg'  # Optional - add image file to images/papers/
+    image: "ahrens2009parallel.png"
 
   # CONFERENCE - 2009
   - id: "pugmire2009scalable"
@@ -1721,7 +1721,7 @@ publications:
     abstract: "Understanding vector fields resulting from large scientific simulations is an important and often difficult task. Streamlines, curves that are tangential to a vector field at each point, are a powerful visualization method in this context. Application of streamline-based visualization to very large vector field data represents a significant challenge due to the non-local and data-dependent nature of streamline computation, and requires careful balancing of computational demands placed on I/O, memory, communication, and processors. In this paper we review two parallelization approaches based on established parallelization paradigms (static decomposition and on-demand loading) and present a novel hybrid algorithm for computing streamlines. Our algorithm is aimed at good scalability and performance across the widely varying computational characteristics of streamline-based problems. We perform performance and scalability studies of all three algorithms on a number of prototypical application problems and demonstrate that our hybrid scheme is able to perform well in different settings."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2009scalable.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2009scalable.png"
 
   # JOURNAL - 2009
   - id: "bethel2009occam"
@@ -1790,7 +1790,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     note: "Widgets for 3D surface editing"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'grimm1995visual.jpg'  # Optional - add image file to images/papers/
+    image: "grimm1995visual.png"
 # --------------------------------------------------
 # TEMPLATE: Copy this to add a new publication
 # --------------------------------------------------
