@@ -1058,12 +1058,12 @@ publications:
     venue: "Proceedings of the Symposium on Parallel Graphics and Visualization"
     year: 2018
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1109/ldav.2018.8739239"
-    paper_url: "https://doi.org/10.1109/ldav.2018.8739239"
+    doi: "10.5555/3293524.3293529"
+    paper_url: "https://dl.acm.org/doi/10.5555/3293524.3293529"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kim2018dense.jpg'  # Optional - add image file to images/papers/
+    image: "kim2018dense.png"
 
   # ABSTRACT - 2018
   - id: "isleyen2018exploring"
@@ -1161,7 +1161,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'klasky2017exacution.jpg'  # Optional - add image file to images/papers/
+    image: "klasky2017exacution.png"
 
   # WORKSHOP - 2017
   - id: "kim2017situ"
@@ -1245,7 +1245,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'choi2016stream.jpg'  # Optional - add image file to images/papers/
+    image: "choi2016stream.png"
 
   # WORKSHOP - 2016
   - id: "sisneros2016tuned"
@@ -1455,7 +1455,7 @@ publications:
     abstract: "The coming generation of supercomputing architectures will require fundamental changes in programming models to effectively make use of the expected million to billion way concurrency and thousand-fold reduction in per-core memory. Most current parallel analysis and visualization tools achieve scalability by partitioning the data, either spatially or temporally, and running serial computational kernels on each data partition, using message passing as needed. These techniques lack the necessary level of data parallelism to execute effectively on the underlying hardware. This paper introduces a framework that enables the expression of analysis and visualization algorithms with memory-efficient execution in a hybrid distributed and data parallel manner on both multi-core and many-core processors. We demonstrate results on scientific data using CPUs and GPUs in scalable heterogeneous systems."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'meredith2012distributed.jpg'  # Optional - add image file to images/papers/
+    image: "meredith2012distributed.png"
 
   # JOURNAL - 2012
   - id: "sutter2012examination"
@@ -1483,7 +1483,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'tchoua2012collaborative.jpg'  # Optional - add image file to images/papers/
+    image: "tchoua2012collaborative.png"
 
   # CONFERENCE - 2012
   - id: "meredith2012eavl"
@@ -1609,7 +1609,7 @@ publications:
     abstract: "We examine several models of injecting magnetic fields into clusters of galaxies from active galactic nuclei, which are the powerful outflows associated with supermassive black holes in the centers of clusters. Shown are magnetic field lines after six billion years of evolution."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2011magnetic.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2009scalable.png"
 
   # ABSTRACT - 2011
   - id: "prabhat2011pattern"
