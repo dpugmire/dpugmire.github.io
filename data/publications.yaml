@@ -928,7 +928,7 @@ publications:
   # CONFERENCE - 2019
   - id: "kress2019comparing"
     title: "Comparing the Efficiency of In Situ Visualization Paradigms at Scale"
-    authors: "Kress, J."
+    authors: "Kress, J., Larsen, M., Choi, J., Kim, M., Wolf, M., Podhorszki, N., Klasky, S., Childs, H., Pugmire, D."
     venue: "High Performance Computing"
     year: 2019
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
@@ -937,7 +937,7 @@ publications:
     abstract: 'This work compares the two major paradigms for doing in situ visualization: in-line, where the simulation and visualization share the same resources, and in-transit, where simulation and visualization are given dedicated resources. Our runs vary many parameters, including simulation cycle time, visualization frequency, and dedicated resources, to study how tradeoffs change over configuration. In particular, we consider simulations as large as 1,024 nodes (16,384 cores) and dedicated visualization resources with as many as 512 nodes (8,192 cores). We draw conclusions about when each paradigm is superior, such as in-line being superior when the simulation cycle time is very fast. Surprisingly, we also find that in-transit can minimize the total resources consumed for some configurations, since it can cause the visualization routines to require fewer overall resources when they run at lower concurrency. For example, one of our scenarios finds that allocating 25\% more resources for visualization allows the simulation to run 61\% faster than its in-line comparator. Finally, we explore various models for quantifying the cost for each paradigm, and consider transition points when one paradigm is superior to the other. Our contributions inform design decisions for simulation scientists when performing in situ visualization.'
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kress2019comparing.jpg'  # Optional - add image file to images/papers/
+    image: "kress2019comparing.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2019
   - id: "binyahib2019situ"
@@ -1021,7 +1021,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'klasky2018view.jpg'  # Optional - add image file to images/papers/
+    image: "klasky2018view.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2018
   - id: "kress2018binning"
@@ -1049,7 +1049,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'choi2018coupling.jpg'  # Optional - add image file to images/papers/
+    image: "choi2018coupling.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
   - id: "kim2018dense"
@@ -1119,7 +1119,7 @@ publications:
     abstract: "Particle advection is the fundamental kernel behind most vector field visualization methods. Yet, the efficient parallel computation of large amounts of particle traces remains challenging. This is exacerbated by the variety of hardware trends in today's HPC arena, including increasing core counts in classical CPUs, many-core designs such as the Intel Xeon Phi, and massively parallel GPUs. The dedicated optimization of a particle advection kernel for each individual target architecture is both time-consuming and error prone. In this paper, we propose a performance-portable algorithm for particle advection. Our algorithm is based on the recently introduced VTK-m system and chiefly relies on its device adapter abstraction. We demonstrate the general portability of our implementation across a wide variety of hardware. Finally, our evaluation shows that our hardware-agnostic algorithm has comparable performance to hardware-specific algorithms."
     note: "Best Paper Award Finalist"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2018performance.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2018performance.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2017
   - id: "lu2017canopus"
@@ -1133,7 +1133,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'lu2017canopus.jpg'  # Optional - add image file to images/papers/
+    image: "lu2017canopus.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2017
   - id: "lu2017canopusB"
@@ -1371,7 +1371,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'tchoua2013adios.jpg'  # Optional - add image file to images/papers/
+    image: "tchoua2013adios.png" # Optional - add image file to images/papers/
 
   # ABSTRACT - 2013
   - id: "ostrouchov2013computation"
@@ -1408,12 +1408,12 @@ publications:
     venue: "Proceedings of the 13th Eurographics Symposium on Parallel Graphics and Visualization"
     year: 2013
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1109/ldav.2013.6675152"
-    paper_url: "https://doi.org/10.1109/ldav.2013.6675152"
+    doi: "10.5555/2602119.2602121"
+    paper_url: "https://dl.acm.org/doi/10.5555/2602119.2602121"
     abstract: "Although there has been significant research in GPU acceleration, both of parallel simulation codes (i.e., GPGPU) and of single GPU visualization and analysis algorithms, there has been relatively little research devoted to visualization and analysis algorithms on GPU clusters. This oversight is significant: parallel visualization and analysis algorithms have markedly different characteristics -- computational load, memory access pattern, communication, idle time, etc. -- than the other two categories.In this paper, we explore the benefits of GPU acceleration for particle advection in a parallel, distributed-memory setting. As performance properties can differ dramatically between particle advection use cases, our study operates over a variety of workloads, designed to reveal insights about underlying trends. This work has a three-fold aim: (1) to map a challenging visualization and analysis algorithm -- particle advection -- to a complex system (a cluster of GPUs), (2) to inform its performance characteristics, and (3) to evaluate the advantages and disadvantages of using the GPU. In our performance study, we identify which factors are and are not relevant for obtaining a speedup when using GPUs. In short, this study informs the following question: if faced with a parallel particle advection problem, should you implement the solution with CPUs, with GPUs, or does it not matter?"
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'camp2013acceleration.jpg'  # Optional - add image file to images/papers/
+    image: "camp2013acceleration.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2013
   - id: "smith2013ultra"
