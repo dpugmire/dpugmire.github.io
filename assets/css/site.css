@@ -799,13 +799,17 @@
       }
 
       /* Minimalist left border quotes styling */
+      #quotes-content {
+        line-height: 1.45;
+      }
+
       #quotes-content blockquote {
         background: rgba(15, 61, 104, 0.03);
         border: none;
-        border-left: 4px solid var(--accent);
+        border-left: 3px solid var(--accent);
         border-radius: 0;
-        padding: 1.5rem 2rem;
-        margin: 0 0 2rem 0;
+        padding: 0.55rem 0.8rem;
+        margin: 0 0 0.4rem 0;
         transition: all 0.2s ease;
       }
 
@@ -816,27 +820,26 @@
 
       #quotes-content blockquote p {
         margin: 0;
-        font-size: 1.1rem;
-        line-height: 1.75;
+        font-size: 1rem;
+        line-height: 1.45;
         color: var(--text);
         font-style: italic;
       }
 
       #quotes-content blockquote p:last-child {
-        margin-top: 0.75rem;
+        margin-top: 0.2rem;
         font-style: normal;
-        font-size: 0.9rem;
+        font-size: 0.86rem;
         color: var(--muted);
         font-weight: 600;
-        letter-spacing: 0.01em;
       }
 
       @media (max-width: 768px) {
         #quotes-content blockquote {
-          padding: 1.25rem 1.5rem;
+          padding: 0.55rem 0.75rem;
         }
 
         #quotes-content blockquote p {
-          font-size: 1.05rem;
+          font-size: 0.98rem;
         }
       }
