@@ -223,7 +223,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     note: "Best Paper Award Honorable Mention"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'hari2024filter.jpg'  # Optional - add image file to images/papers/
+    image: "hari2024filter.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2024
   - id: "cui2024glad"
@@ -474,7 +474,7 @@ publications:
     abstract: "As the growth of data sizes continues to outpace computational resources, there is a pressing need for data reduction techniques that can significantly reduce the amount of data and quantify the error incurred in compression. Compressing scientific data presents many challenges for reduction techniques since it is often on non-uniform or unstructured meshes, is from a high-dimensional space, and has many Quantities of Interests (QoIs) that need to be preserved. To illustrate these challenges, we focus on data from a large scale fusion code, XGC. XGC uses a Particle-In-Cell (PIC) technique which generates hundreds of PetaBytes (PBs) of data a day, from thousands of timesteps. XGC uses an unstructured mesh, and needs to compute many QoIs from the raw data, f."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'gong2022maintaining.jpg'  # Optional - add image file to images/papers/
+    image: "gong2022maintaining.png" # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2022
   - id: "bethel2022proximity"
@@ -488,21 +488,21 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bethel2022proximity.jpg'  # Optional - add image file to images/papers/
+    image: "bethel2022proximity.png" # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2022
   - id: "pugmire2022adaptable"
     title: "The Adaptable IO System (ADIOS)"
-    authors: "Pugmire, D."
+    authors: "Pugmire, D., Podhorszki, N., Klasky, S., Wolf, M., Kress, J., Kim, M., Thompson, N., Logan, J., Wang, R., Mehta, K., Suchyta, E., Godoy, W., Choi, J., Ostrouchov, G., Wan, L., Chen, J., Geveci, B., Atkins, C., Ross, C., Eisenhauer, G., Gu, J., Wu, J., Huebl, A., Tsutsumi, S."
     venue: "In Situ Visualization for Computational Science"
     year: 2022
     type: book-chapter # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1145/1383529.1383533"
-    paper_url: "https://doi.org/10.1145/1383529.1383533"
+    doi: "10.1007/978-3-030-81627-8_11"
+    paper_url: "https://link.springer.com/chapter/10.1007/978-3-030-81627-8_11"
     abstract: "The Adaptable I/O System (ADIOS) provides a publish/subscribe abstraction for data access and storage. The framework provides various engines for producing and consuming data through different mediums (storage, memory, network) for various application scenarios. ADIOS engines exist to write/read files on a storage system, to couple independent simulations together or to stream data from a simulation to analysis and visualization tools via the computer's network infrastructure, and to stream experimental/observational data from the producer to data processors via the wide-area-network. Both lossy and lossless compression are supported by ADIOS to provide for seamless exchange of data between producer and consumer. In this work we provide a description for the ADIOS framework and the abstractions provided. We demonstrate the capabilities of the ADIOS framework using a number of examples, including strong coupling of simulation codes, in situ visualization running on a separate computing cluster, and streaming of experimental data between Asia and the United States."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2022adaptable.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2022adaptable.png" # Optional - add image file to images/papers/
 
   # TECHREPORT - 2022
   - id: "moreland2022exploitation"
@@ -544,6 +544,7 @@ publications:
     abstract: "A major direction for big science is the coupling of HPC, experimental and observational facilities into computing ecosystems. These ecosystems will provide unprecedented tools for scientific inquiry. At the same time, these systems, which are complex, distributed and heterogeneous, will be a significant challenge for the visualization tools of today. In this position paper, we present our thoughts and key properties on a fundamental requirement of future solutions: pervasive in situ visualization (P-ISAV)."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
+    image: "pugmire2022need.png" # Optional - add image file to images/papers/
     # image: 'pugmire2022need.jpg'  # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2022
@@ -558,7 +559,7 @@ publications:
     abstract: "One key challenge when doing in situ processing is the investment required to add code to numerical simulations needed to take advantage of in situ processing. Such instrumentation code is often specialized, and tailored to a specific in situ method or infrastructure. Then, if a simulation wants to use other in situ tools, each of which has its own bespoke API [4], then the simulation code team will quickly become overwhelmed with having a different set of instrumentation APIs, one per in situ tool or method. In an ideal situation, such instrumentation need happen only once, and then the instrumentation API provides access to a large diversity of tools. In this way, a data producer's instrumentation need not be modified if the user desires to take advantage of a different set of in situ tools. The SENSEI generic in situ interface addresses this challenge, which means that SENSEI-instrumented codes enjoy the benefit of being able to use a diversity of tools at scale, tools that include Libsim, Catalyst, Ascent, as well as user-defined methods written in C++ or Python. SENSEI has been shown to scale to greater than 1M-way concurrency on HPC platforms, and provides support for a rich and diverse collection of common scientific data models. This chapter presents the key design challenges that enable tool and processing portability at scale, some performance analysis, and example science applications of the methods."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bethel2022sensei.jpg'  # Optional - add image file to images/papers/
+    image: "bethel2022sensei.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2022
   - id: "suchyta2022exascale"
@@ -642,7 +643,7 @@ publications:
     abstract: "Data models are required to provide the semantics of the underlying data stream for in situ visualization. In this paper we describe a set of metrics for such a data model that are useful in meeting the needs of the scientific community for visualization. We then present Fides, a library that provides a schema for the VTK-m data model, and uses the ADIOS middleware library for access to streaming data. We present four use cases of Fides in different scientific workflows, and provide an evaluation of each use case against our metrics."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2021fides.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2021fides.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2021
   - id: "binyahib2021hylipod"
@@ -685,7 +686,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'schwartz2021machine.jpg'  # Optional - add image file to images/papers/
+    image: "schwartz2021machine.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2021
   - id: "moreland2021minimizing"
@@ -853,7 +854,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'binyahib2020parallel.jpg'  # Optional - add image file to images/papers/
+    image: "binyahib2020parallel.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2020
   - id: "reina2020moving"
@@ -951,7 +952,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'binyahib2019situ.jpg'  # Optional - add image file to images/papers/
+    image: "binyahib2019situ.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2019
   - id: "leventhal2019pave"
@@ -965,7 +966,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'leventhal2019pave.jpg'  # Optional - add image file to images/papers/
+    image: "leventhal2019pave.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2019
   - id: "chen2019understanding"
@@ -979,7 +980,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'chen2019understanding.jpg'  # Optional - add image file to images/papers/
+    image: "chen2019understanding.png" # Optional - add image file to images/papers/
 
   # ABSTRACT - 2019
   - id: "dudek2019virtual"
@@ -1026,7 +1027,7 @@ publications:
   # WORKSHOP - 2018
   - id: "kress2018binning"
     title: "Binning Based Data Reduction for Vector Field Data of a Particle-In-Cell Fusion Simulation"
-    authors: "Kress, J."
+    authors: "Kress, J., Choi, J., Klasky, S., Churchill, M., Childs, H., Pugmire, D."
     venue: "High Performance Computing"
     year: 2018
     type: workshop # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
@@ -1035,7 +1036,7 @@ publications:
     abstract: "With this work, we explore the feasibility of using in situ data binning techniques to achieve significant data reductions for particle data, and study the associated errors for several post-hoc analysis techniques. We perform an application study in collaboration with fusion simulation scientists on data sets up to 489 GB per time step. We consider multiple ways to carry out the binning, and determine which techniques work the best for this simulation. With the best techniques we demonstrate reduction factors as large as 109x with low error percentage."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kress2018binning.jpg'  # Optional - add image file to images/papers/
+    image: "kress2018binning.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
   - id: "choi2018coupling"
@@ -1105,7 +1106,7 @@ publications:
     abstract: "The trends in high performance computing, where far more data can be computed that can ever be stored, have made in situ techniques an important area of research and development. Simulation campaigns, where domain scientists work with computer scientists to run a simulation and perform in situ analysis and visualization are important, and complex undertakings. In this paper we report our experiences performing in situ analysis and visualization on two campaigns. The two campaigns were related, but had important differences in terms of the codes that were used, the types of analysis and visualization required, and the visualization tools used. Further, we report the lessons learned from each campaign."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kim2018situ.jpg'  # Optional - add image file to images/papers/
+    image: "kim2018situ.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2018
   - id: "pugmire2018performance"
@@ -1147,7 +1148,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'lu2017canopus.jpg'  # Optional - add image file to images/papers/
+    image: "lu2017canopusB.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2017
   - id: "klasky2017exacution"
@@ -1175,7 +1176,7 @@ publications:
     abstract: 'The ultimate goal for radiation transport is to perform full-core reactor modelling and simulation. Advances in computational simulation bring this goal close to reality and the newest Monte Carlo transport codes have begun to shift to using accelerators that have become a stalwart in the supercomputing and HPC space. Within the reactor modelling and simulation community, Monte Carlo transport simulations are considered the gold standard for simulation. Through the use of "combinatorial geometry" (constructive solid geomtry), complex models can be used with fewer approximation compromises while at the same time scale to run on some of the largest supercomputers in the world.Unfortunately, the state-of-the-art for "combinatorial geometry" visualization is to decompose the geometry into a mesh. This approach could require a significant amount of memory which is antithetical to in situ visualization. To address this issue, we introduce a ray caster for visualizing combinatorial geometry in radiation transport code. By only using the accelerators for the radiation transport code and leaving the CPU cores idle, there is an opportunity to conduct on node in situ visualization with the idle CPU cores, something domain experts have up to this point been unable to do. By utilizing VTK-m, the visualization can be run on the CPU as this particular application demands, but also run on any architecture that is supported by VTK-m, enabling future re-use across different platforms.'
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kim2017situ.jpg'  # Optional - add image file to images/papers/
+    image: "kim2017situ.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2017
   - id: "pugmire2017pillars"
@@ -1259,7 +1260,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'sisneros2016tuned.jpg'  # Optional - add image file to images/papers/
+    image: "sisneros2016tuned.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2016
   - id: "moreland2016accelerating"
@@ -1286,6 +1287,7 @@ publications:
     paper_url: "https://doi.org/10.1109/isav.2016.014"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
+    image: "kress2016visualization.png" # Optional - add image file to images/papers/
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'kress2016visualization.jpg'  # Optional - add image file to images/papers/
 
@@ -1301,7 +1303,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2016visualization.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2016visualization.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2015
   - id: "kress2015loosely"
@@ -1511,7 +1513,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'bethel2012hybrid.jpg'  # Optional - add image file to images/papers/
+    image: "bethel2012hybrid.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2012
   - id: "choi2012mining"
@@ -1539,7 +1541,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2012parallel.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2012parallel.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2012
   - id: "camp2012parallel"
@@ -1567,7 +1569,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'childs2012visit.jpg'  # Optional - add image file to images/papers/
+    image: "childs2012visit.png" # Optional - add image file to images/papers/
 
   # BOOK-CHAPTER - 2012
   - id: "childs2012visualization"
@@ -1577,11 +1579,11 @@ publications:
     year: 2012
     type: book-chapter # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1201/b12985-17"
-    paper_url: "https://doi.org/10.1201/b12985-17"
+    paper_url: "https://www.osti.gov/servlets/purl/1170762"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'childs2012visualization.jpg'  # Optional - add image file to images/papers/
+    image: "childs2012visualization.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2011
   - id: "sutter2011examination"
