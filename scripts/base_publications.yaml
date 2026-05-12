@@ -870,12 +870,12 @@ publications:
   # CONFERENCE - 2020
   - id: 'pugmire2020visualization'
     title: 'Visualization as a service for scientific data'
-    authors: 'Pugmire, D., Kress, J., Chen, J., Childs, H., Choi, J., Ganyushin, D., Geveci, B., Kim, M., Klasky, S., Liang, X., others'
+    authors: 'Pugmire, D., Kress, J., Thompson, N., Chen, J., Logan, J., Klasky, S., Choi, J., Ganyushin, D., Liang, X., Mehta, K., others'
     venue: 'Smoky Mountains Computational Sciences and Engineering Conference'
     year: 2020
     type: conference  # journal, conference, workshop, book-chapter, preprint, other
-    doi: '10.1109/cluster49012.2020.00048'
-    paper_url: 'https://doi.org/10.1109/cluster49012.2020.00048'
+    doi: '10.1007/978-3-030-63393-6_11'
+    paper_url: 'https://doi.org/10.1007/978-3-030-63393-6_11'
     # summary: ""  # Add a one-sentence summary of the paper
     # image: 'pugmire2020visualization.jpg'  # Optional - add image file to images/papers/
 

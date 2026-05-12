@@ -628,7 +628,7 @@ publications:
     abstract: 'Extreme-scale simulations and high-resolution instruments have been generating an increasing amount of data, which poses significant challenges to not only data storage during the run, but also post-processing where data will be repeatedly retrieved and analyzed for a long period of time. The challenges in satisfying a wide range of post-hoc analysis needs while minimizing the I/O overhead caused by inappropriate and/or excessive data retrieval should never be left unmanaged. In this paper, we propose a data refactoring, compressing, and retrieval framework capable of 1) fine-grained data refactoring with regard to precision; 2) incrementally retrieving and recomposing the data in terms of various error bounds; and 3) adaptively retrieving data in multi-precision and multi-resolution with respect to different analysis. With the progressive data re-composition and the adaptable retrieval algorithms, our framework significantly reduces the amount of data retrieved when multiple incremental precision are requested and/or the downstream analysis time when coarse resolution is used. Experiments show that the amount of data retrieved under the same progressively requested error bound using our framework is 64\% less than that using state-of-the-art single-error-bounded approaches. Parallel experiments with up to 1, 024 cores and ~ 600 GB data in total show that our approach yields 1.36\texttimes and 2.52\texttimes performance over existing approaches in writing to and reading from persistent storage systems, respectively.'
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'liang2021error.jpg'  # Optional - add image file to images/papers/
+    image: "liang2021error.png" # Optional - add image file to images/papers/
 
   # WORKSHOP - 2021
   - id: "pugmire2021fides"
@@ -807,11 +807,11 @@ publications:
     year: 2020
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.4018/978-1-6684-3795-7.ch009"
-    paper_url: "https://doi.org/10.4018/978-1-6684-3795-7.ch009"
+    paper_url: "https://cug.org/proceedings/cug2020_proceedings/includes/files/spec102s1.pdf"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'wan2020performance.jpg'  # Optional - add image file to images/papers/
+    image: "wan2020performance.png" # Optional - add image file to images/papers/
 
   # PREPRINT - 2020
   - id: "liang2020mgard"
@@ -839,7 +839,7 @@ publications:
     abstract: "We analyze the opportunities for in-transit visualization to provide cost savings compared to in-line visualization. We begin by developing a cost model that includes factors related to both in-line and in-transit which allows comparisons to be made between the two methods. We then run a series of studies to create a corpus of data for our model. We run two different visualization algorithms, one that is computation heavy and one that is communication heavy with concurrencies up to 32, 768 cores. Our primary results are in exploring the cost model within the context of our corpus. Our findings show that in-transit consistently achieves significant cost efficiencies by running visualization algorithms at lower concurrency, and that in many cases these efficiencies are enough to offset other costs (transfer, blocking, and additional nodes) to be cost effective overall. Finally, this work informs future studies, which can focus on choosing ideal configurations for in-transit processing that can consistently achieve cost efficiencies."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'kress2020opportunities.jpg'  # Optional - add image file to images/papers/
+    image: "kress2020opportunities.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2020
   - id: "binyahib2020parallel"
@@ -886,16 +886,16 @@ publications:
   # CONFERENCE - 2020
   - id: "pugmire2020visualization"
     title: "Visualization as a Service for Scientific Data"
-    authors: "Pugmire, D., Kress, J., Chen, J., Childs, H., Choi, J., Ganyushin, D., Geveci, B., Kim, M., Klasky, S., Liang, X., Logan, J., Marsaglia, N., Mehta, K., Podhorszki, N., Ross, C., Suchyta, E., Thompson, N., Walton, S., Wan, L., Wolf, M."
+    authors: "Pugmire, D., Kress, J., Thompson, N., Chen, J., Logan, J., Klasky, S., Choi, J., Ganyushin, D., Liang, X., Mehta, K., others"
     venue: "Smoky Mountains Computational Sciences and Engineering Conference"
     year: 2020
     type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
-    doi: "10.1109/cluster49012.2020.00048"
-    paper_url: "https://doi.org/10.1109/cluster49012.2020.00048"
+    doi: "10.1007/978-3-030-63393-6_11"
+    paper_url: "https://doi.org/10.1007/978-3-030-63393-6_11"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'pugmire2020visualization.jpg'  # Optional - add image file to images/papers/
+    image: "pugmire2020visualization.png" # Optional - add image file to images/papers/
 
   # CONFERENCE - 2019
   - id: "binyahib2019lifeline"
@@ -909,7 +909,7 @@ publications:
     # abstract: ""  # Optional - full abstract text
     note: "Honorable Mention Best Paper"
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'binyahib2019lifeline.jpg'  # Optional - add image file to images/papers/
+    image: "binyahib2019lifeline.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2019
   - id: "ruan2019generation"
@@ -1325,11 +1325,11 @@ publications:
     year: 2014
     type: workshop # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
     doi: "10.1101/212654"
-    paper_url: "https://doi.org/10.1101/212654"
+    paper_url: "https://cdux.cs.uoregon.edu/pubs/KressBDAC.pdf"
     # abstract: ""  # Optional - full abstract text
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'davidpugmire2014towards.jpg'  # Optional - add image file to images/papers/
+    image: "davidpugmire2014towards.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2014
   - id: "huebl2014visualizing"
