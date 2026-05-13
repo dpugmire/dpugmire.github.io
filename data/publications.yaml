@@ -139,7 +139,7 @@ publications:
     abstract: "Quantum computing technology holds substantial promise as a reliable computational paradigm. However, current noisy intermediate scale quantum (NISQ) systems, are significantly impacted by noise originating from hardware inconsistencies. This noise causes errors and lowers output fidelity. So we must find which basis states cause errors. However, there are two main challenges in analyzing noise corresponding to basis states. First, the noise distribution data is high dimensional in nature, thereby making its analysis challenging. Second, although functional box plots have been used in the state of the art research to understand such a high dimensional data, they suffer from clutter and occlusion issues because of overplotting. In this study, we introduce an innovative visualization pipeline to address the aforementioned challenges to provide a clear depiction of noisy and less-noisy basis states. Specifically, our proposed visualization pipeline comprises three stages namely, low dimensional embedding, clustering, and violin plot visualization, to reduce visual clutter and effectively analyze high-dimensional noise distribution data. Our analysis uses quantum machine learning (QML) circuits as case study for drawing a distinction between noisy and less noisy basis states."
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
-    # image: 'senapati2025visualization.jpg'  # Optional - add image file to images/papers/
+    image: "senapati2025visualization.png" # Optional - add image file to images/papers/
 
   # JOURNAL - 2024
   - id: "athawale2024comparative"
