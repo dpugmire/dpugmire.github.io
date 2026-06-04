@@ -1,6 +1,12 @@
 # awards.yaml
 
 awards:
+  - year: 2026
+    title: "Best data visualization award"
+    organization: "Oak Ridge Leadership Computing Facility User Summit"
+    detail_label: ""
+    detail: '"Simulation of the Satellite Tobacco Mosaic Virus in Explicit Water"'
+
   - year: 2018
     title: "Long Term Paper Impact"
     organization: "Computer Science and Mathematics Division"
@@ -10,19 +16,19 @@ awards:
   - year: 2006
     title: "R&D 100 Award"
     organization: "R&D World Magazine"
-    detail_label: "Project"
+    detail_label: ""
     detail: '"PixelVision: An NPU-Based Image Compositor"'
 
   - year: 2016
     title: "Significant Event Award"
     organization: "Oak Ridge National Laboratory"
-    detail_label: "Project"
+    detail_label: ""
     detail: "In Transit Visualization of Fusion Simulations"
 
   - year: 2011
     title: "Significant Event Award"
     organization: "Oak Ridge National Laboratory"
-    detail_label: "Project"
+    detail_label: ""
     detail: '"Support to DOE in response to the Fukushima Dai-ichi damaged reactors"'
 
   - year: 2011
@@ -72,5 +78,3 @@ awards:
     organization: "Los Alamos National Laboratory"
     detail_label: "Award"
     detail: ""
-
-

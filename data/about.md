@@ -24,6 +24,6 @@ I am particularly interested in visualization for exascale computing, uncertaint
 
 |          |                                                                                                                                                                      |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **2000** | Ph.D. in Computer Science. [University of Utah](https://www.cs.utah.edu/), Salt Lake City, UT                                                                        |
+| **2000** | Ph.D. in Computer Science. [University of Utah](https://www.cs.utah.edu/), Salt Lake City, UT.                                                                       |
 |          | Advisors: [Elaine Cohen](https://users.cs.utah.edu/~cohen/), [Richard Riesenfeld](https://users.cs.utah.edu/~rfr/), [Chris Johnson](https://users.cs.utah.edu/~crj/) |
-| **1992** | B.S. Computer Science. [University of Utah](https://www.cs.utah.edu/), Salt Lake City, UT                                                                            |
+| **1992** | B.S. Computer Science. [University of Utah](https://www.cs.utah.edu/), Salt Lake City, UT.                                                                           |
