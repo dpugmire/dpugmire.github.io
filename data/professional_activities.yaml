@@ -37,6 +37,9 @@ organizations:
         role: "Site Chair"
 
 program_committee:
+  - event: "HPCAsia2027: International Conference on High Performance Computing in Asia Pacific Region"
+    years: [2027]
+    note: "PC Member (Data, Storage and Visualization)"
   - event: "Supercomputing Conference"
     years: [2014, 2015, 2016, 2018, 2019, 2020, 2021]
   - event: "IEEE VIS (SciVis)"
