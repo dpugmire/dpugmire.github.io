@@ -14,6 +14,47 @@ publications:
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
 
+  # CONFERENCE - 2026
+  - id: "saklani2026revinr"
+    title: "REV-INR: Regularized Evidential Implicit Neural Representation for Uncertainty-Aware Volume Visualization"
+    authors: "Saklani, S., Athawale, T. M., Pal, N., Pugmire, D., Johnson, C. R., Dutta, S."
+    venue: "Proceedings of the 19th IEEE Pacific Visualization Conference (PacificVis)"
+    year: 2026
+    type: conference # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    paper_url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11558734"
+    image: "saklani2026revinr.png" # Optional - add image file to images/papers/
+    # abstract: ""  # Optional - full abstract text
+    # note: ""  # e.g., Best Paper Award
+    # summary: ""  # Add a one-sentence summary of the paper
+
+  # JOURNAL - 2026
+  - id: "athawale2026magic"
+    title: "MAGIC: Marching Cubes Isosurface Uncertainty Visualization for Gaussian Uncertain Data With Spatial Correlation"
+    authors: "Athawale, T. M., Moreland, K., Pugmire, D., Johnson, C. R., Rosen, P., Norman, M., Georgiadou, A., Entezari, A."
+    venue: "IEEE Transactions on Visualization and Computer Graphics"
+    year: 2026
+    type: journal # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    doi: "10.1109/TVCG.2026.3653244"
+    paper_url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11353025"
+    image: "athawale2026magic.png" # Optional - add image file to images/papers/
+    # abstract: ""  # Optional - full abstract text
+    # note: ""  # e.g., Best Paper Award
+    # summary: ""  # Add a one-sentence summary of the paper
+
+  # WORKSHOP - 2026
+  - id: "moreland2026viskores"
+    title: "Viskores: Integrating Parallel Scientific Visualization Research into Applications"
+    authors: "Moreland, K., Amstutz, J., Athawale, T. M., Bolea, V., Bolstad, M., Childs, H., Geveci, B., Harrison, C., Larsen, M., Mathai, M., Marsaglia, N., Pugmire, D., Rizzi, S., Tsalikis, S., Weber, G. H."
+    venue: "VisGap - The Gap between Visualization Research and Visualization Software"
+    year: 2026
+    type: workshop # journal, conference, workshop, techreport, abstract, book-chapter, preprint, other
+    doi: "10.2312/visgap.20261000"
+    paper_url: "https://diglib.eg.org/server/api/core/bitstreams/7cbf0e2c-5935-43fe-b22b-3fe0a63544a7/content"
+    image: "moreland2026viskores.png" # Optional - add image file to images/papers/
+    # abstract: ""  # Optional - full abstract text
+    # note: ""  # e.g., Best Paper Award
+    # summary: ""  # Add a one-sentence summary of the paper
+
   # WORKSHOP - 2025
   - id: "ouermi2025efficient"
     title: "Efficient Probabilistic Visualization of Local Divergence of 2D Vector Fields with Independent Gaussian Uncertainty"
