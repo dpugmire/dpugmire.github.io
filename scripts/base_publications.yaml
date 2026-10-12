@@ -3,6 +3,24 @@
 
 publications:
 
+  # PREPRINT - 2026
+  - id: 'li2026gssurrogate'
+    title: 'GS-Surrogate: Deformable Gaussian Splatting for Parameter Space Exploration of Ensemble Simulations'
+    authors: 'Li, Z., Perera, R., Forbes, A., Moreland, K., Pugmire, D., Klasky, S., Chao, W.-L., Shen, H.-W.'
+    venue: 'arXiv preprint arXiv:2604.06358'
+    year: 2026
+    type: preprint
+    paper_url: 'https://arxiv.org/abs/2604.06358'
+
+  # PREPRINT - 2026
+  - id: 'hugie2026raiventracks'
+    title: 'RaivenTracks: Branching Provenance for Conversational Visualization Workflows'
+    authors: 'Hugie, E., Irger, A., Guo, G., Moreland, K., Pugmire, D., Klasky, S., Pfister, H.'
+    venue: 'arXiv preprint arXiv:2608.14869'
+    year: 2026
+    type: preprint
+    paper_url: 'https://arxiv.org/abs/2608.14869'
+
   # PREPRINT - 2025
   - id: 'ouermi2025efficient'
     title: 'Efficient Probabilistic Visualization of Local Divergence of 2D Vector Fields with Independent Gaussian Uncertainty'

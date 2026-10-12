@@ -55,6 +55,24 @@ publications:
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
 
+  # PREPRINT - 2026
+  - id: "li2026gssurrogate"
+    title: "GS-Surrogate: Deformable Gaussian Splatting for Parameter Space Exploration of Ensemble Simulations"
+    authors: "Li, Z., Perera, R., Forbes, A., Moreland, K., Pugmire, D., Klasky, S., Chao, W.-L., Shen, H.-W."
+    venue: "arXiv preprint arXiv:2604.06358"
+    year: 2026
+    type: preprint
+    paper_url: "https://arxiv.org/abs/2604.06358"
+
+  # PREPRINT - 2026
+  - id: "hugie2026raiventracks"
+    title: "RaivenTracks: Branching Provenance for Conversational Visualization Workflows"
+    authors: "Hugie, E., Irger, A., Guo, G., Moreland, K., Pugmire, D., Klasky, S., Pfister, H."
+    venue: "arXiv preprint arXiv:2608.14869"
+    year: 2026
+    type: preprint
+    paper_url: "https://arxiv.org/abs/2608.14869"
+
   # WORKSHOP - 2025
   - id: "ouermi2025efficient"
     title: "Efficient Probabilistic Visualization of Local Divergence of 2D Vector Fields with Independent Gaussian Uncertainty"
@@ -140,6 +158,16 @@ publications:
     # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
     image: "wang2025Parallelize.png"
+
+  # JOURNAL - 2025
+  - id: "yenpure2025steady"
+    title: "Steady-state Particle Advection Speed-ups from GPU and CPU Parallelism"
+    authors: "Yenpure, A., Pugmire, D., Childs, H."
+    venue: "Electronic Imaging"
+    year: 2025
+    type: journal
+    doi: "10.2352/ei.2025.37.12.hpci-179"
+    paper_url: "https://doi.org/10.2352/ei.2025.37.12.hpci-179"
 
   # JOURNAL - 2025
   - id: "ahrens2025alpine"
