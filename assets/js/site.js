@@ -215,13 +215,14 @@
 
         const pubs = data.publications;
 
+        const CATEGORY_COLOR = "#0f3d68";
         const types = {
-          journal: { name: "Journal Articles", color: "#0066cc", pubs: [] },
-          conference: { name: "Conference Papers", color: "#10b981", pubs: [] },
-          workshop: { name: "Workshop Papers", color: "#f59e0b", pubs: [] },
-          "book-chapter": { name: "Book Chapters", color: "#8b5cf6", pubs: [] },
-          preprint: { name: "Preprints", color: "#ec4899", pubs: [] },
-          other: { name: "Other Publications", color: "#6b7280", pubs: [] },
+          journal: { name: "Journal Articles", color: CATEGORY_COLOR, pubs: [] },
+          conference: { name: "Conference Papers", color: CATEGORY_COLOR, pubs: [] },
+          workshop: { name: "Workshop Papers", color: CATEGORY_COLOR, pubs: [] },
+          "book-chapter": { name: "Book Chapters", color: CATEGORY_COLOR, pubs: [] },
+          preprint: { name: "Preprints", color: CATEGORY_COLOR, pubs: [] },
+          other: { name: "Other Publications", color: CATEGORY_COLOR, pubs: [] },
         };
 
         pubs.forEach((pub) => {
@@ -248,144 +249,187 @@
           );
         };
 
+        // Reusable renderer for a single publication card.
+        // showType: when true, prefix the citation with the publication
+        // type (used in the mixed "Selected Publications" list).
+        const renderCard = (pub, showType) => {
+          const id = pub.id;
+          // Selected papers also appear in their normal category, so the
+          // same id renders twice. Prefix element ids in the Selected list
+          // to keep them unique in the DOM.
+          const uid = (showType ? "sel-" : "") + id;
+          const bibtex = generateBibtex(pub);
+          const bibtexEsc = escHtml(bibtex);
+
+          const paperUrl =
+            pub.paper_url || (pub.doi ? "https://doi.org/" + pub.doi : null);
+
+          // Citation: authors. "title." venue year. + DOI appended at end
+          const pieces = [];
+          if (pub.authors) pieces.push(escHtml(pub.authors) + ".");
+          if (pub.title) pieces.push('"' + renderInlineMathText(pub.title) + '."');
+          if (pub.venue) pieces.push("<i>" + escHtml(pub.venue) + "</i>");
+          if (pub.year) pieces.push(escHtml(String(pub.year)) + ".");
+
+          const citationBase = pieces.join(" ");
+
+          // Inline [Paper] [BibTeX] on same line
+          let links = '<span class="pub-links">';
+          if (paperUrl) {
+            links +=
+              ' <a href="' +
+              paperUrl +
+              '" target="_blank" rel="noopener noreferrer">[Paper]</a>';
+          }
+          links +=
+            ' <a href="#" class="bibtex-toggle" data-pub-id="' +
+            escHtml(id) +
+            '">[BibTeX]</a>';
+          links += "</span>";
+
+          const typeTag =
+            showType && pub.type
+              ? '<span class="pub-type-tag">' +
+                escHtml(
+                  types[pub.type] ? types[pub.type].name : String(pub.type),
+                ) +
+                "</span>"
+              : "";
+
+          let card = '<div class="publication">';
+          card += '  <div class="pub-image">';
+          const imageSrc = pub.image
+            ? "images/papers/" + escHtml(pub.image)
+            : publicationFallbackImage(pub);
+          card +=
+            '    <img src="' +
+            imageSrc +
+            '" alt="' +
+            escHtml(pub.title || "") +
+            '">';
+          card += "  </div>";
+
+          card += '  <div class="pub-content">';
+          card +=
+            '    <div class="pub-citation">' +
+            typeTag +
+            citationBase +
+            doiHtml(pub.doi) +
+            links +
+            "</div>";
+
+          if (pub.summary) {
+            card +=
+              '    <div class="pub-summary">' + escHtml(pub.summary) + "</div>";
+          }
+          if (pub.note) {
+            card += '    <div class="pub-note">' + escHtml(pub.note) + "</div>";
+          }
+
+          // Abstract toggle if present
+          if (pub.abstract) {
+            card += '    <details class="pub-abstract">';
+            card += "      <summary>Abstract</summary>";
+            card +=
+              '      <div class="pub-abstract-body">' +
+              escHtml(pub.abstract) +
+              "</div>";
+            card += "    </details>";
+          }
+
+          // BibTeX block
+          card +=
+            '    <div id="bibtex-' + escHtml(uid) + '" class="bibtex-container">';
+          card +=
+            '      <div class="bibtex-header"><strong>BibTeX Citation</strong>';
+          card +=
+            '        <button id="copy-btn-' +
+            escHtml(uid) +
+            '" class="btn bibtex-copy" data-pub-id="' +
+            escHtml(id) +
+            '">Copy</button>';
+          card += "      </div>";
+          card +=
+            '      <pre class="bibtex-code" id="bibtex-code-' +
+            escHtml(uid) +
+            '">' +
+            bibtexEsc +
+            "</pre>";
+          card += "    </div>";
+
+          card += "  </div>";
+          card += "</div>";
+          return card;
+        };
+
+        const categoryHeader = (id, name, color, count) =>
+          '<div id="' +
+          id +
+          '" class="category-header" style="border-left-color: ' +
+          color +
+          '"><h3>' +
+          escHtml(name) +
+          '</h3><span class="category-count" style="background: ' +
+          color +
+          '">' +
+          count +
+          "</span></div>";
+
         let html = "";
+
+        // Selected Publications highlight (papers flagged selected: true),
+        // shown first, newest to oldest, keeping their original type label.
+        const selected = pubs
+          .filter((pub) => pub.selected === true)
+          .sort(
+            (a, b) => parseInt(b.year || "0", 10) - parseInt(a.year || "0", 10),
+          );
+
+        if (selected.length > 0) {
+          html += categoryHeader(
+            "pub-selected",
+            "Selected Publications",
+            CATEGORY_COLOR,
+            selected.length,
+          );
+          selected.forEach((pub) => {
+            html += renderCard(pub, true);
+          });
+        }
 
         Object.entries(types).forEach(([key, type]) => {
           if (type.pubs.length === 0) return;
 
-          html +=
-            '<div id="pub-' +
-            key +
-            '" class="category-header" style="border-left-color: ' +
-            type.color +
-            '">';
-          html += "  <h3>" + escHtml(type.name) + "</h3>";
-          html +=
-            '  <span class="category-count" style="background: ' +
-            type.color +
-            '">' +
-            type.pubs.length +
-            "</span>";
-          html += "</div>";
+          html += categoryHeader(
+            "pub-" + key,
+            type.name,
+            type.color,
+            type.pubs.length,
+          );
 
           type.pubs.forEach((pub) => {
-            const id = pub.id;
-            const bibtex = generateBibtex(pub);
-            const bibtexEsc = escHtml(bibtex);
-
-            const paperUrl =
-              pub.paper_url || (pub.doi ? "https://doi.org/" + pub.doi : null);
-
-            // Citation: authors. "title." venue year. + DOI appended at end
-            const pieces = [];
-            if (pub.authors) pieces.push(escHtml(pub.authors) + ".");
-            if (pub.title) pieces.push('"' + renderInlineMathText(pub.title) + '."');
-            if (pub.venue) pieces.push("<i>" + escHtml(pub.venue) + "</i>");
-            if (pub.year) pieces.push(escHtml(String(pub.year)) + ".");
-
-            const citationBase = pieces.join(" ");
-
-            // Inline [Paper] [BibTeX] on same line
-            let links = '<span class="pub-links">';
-            if (paperUrl) {
-              links +=
-                ' <a href="' +
-                paperUrl +
-                '" target="_blank" rel="noopener noreferrer">[Paper]</a>';
-            }
-            links +=
-              ' <a href="#" class="bibtex-toggle" data-pub-id="' +
-              escHtml(id) +
-              '">[BibTeX]</a>';
-            links += "</span>";
-
-            html += '<div class="publication">';
-            html += '  <div class="pub-image">';
-            const imageSrc = pub.image
-              ? "images/papers/" + escHtml(pub.image)
-              : publicationFallbackImage(pub);
-            html +=
-              '    <img src="' +
-              imageSrc +
-              '" alt="' +
-              escHtml(pub.title || "") +
-              '">';
-            html += "  </div>";
-
-            html += '  <div class="pub-content">';
-            html +=
-              '    <div class="pub-citation">' +
-              citationBase +
-              doiHtml(pub.doi) +
-              links +
-              "</div>";
-
-            if (pub.summary) {
-              html +=
-                '    <div class="pub-summary">' +
-                escHtml(pub.summary) +
-                "</div>";
-            }
-            if (pub.note) {
-              html +=
-                '    <div class="pub-note">' +
-                escHtml(pub.note) +
-                "</div>";
-            }
-
-            // Abstract toggle if present
-            if (pub.abstract) {
-              html += '    <details class="pub-abstract">';
-              html += "      <summary>Abstract</summary>";
-              html +=
-                '      <div class="pub-abstract-body">' +
-                escHtml(pub.abstract) +
-                "</div>";
-              html += "    </details>";
-            }
-
-            // BibTeX block
-            html +=
-              '    <div id="bibtex-' +
-              escHtml(id) +
-              '" class="bibtex-container">';
-            html +=
-              '      <div class="bibtex-header"><strong>BibTeX Citation</strong>';
-            html +=
-              '        <button id="copy-btn-' +
-              escHtml(id) +
-              '" class="btn bibtex-copy" data-pub-id="' +
-              escHtml(id) +
-              '">Copy</button>';
-            html += "      </div>";
-            html +=
-              '      <pre class="bibtex-code" id="bibtex-code-' +
-              escHtml(id) +
-              '">' +
-              bibtexEsc +
-              "</pre>";
-            html += "    </div>";
-
-            html += "  </div>";
-            html += "</div>";
+            html += renderCard(pub, false);
           });
         });
 
         container.innerHTML = html;
 
-        // Wire up [BibTeX] toggles
+        // Wire up [BibTeX] toggles (scoped to the clicked card so the
+        // Selected and category copies of the same paper toggle their own).
         container.querySelectorAll("a.bibtex-toggle").forEach((a) => {
           a.addEventListener("click", (e) => {
             e.preventDefault();
-            toggleBibtex(a.dataset.pubId);
+            const card = a.closest(".publication");
+            const box = card ? card.querySelector(".bibtex-container") : null;
+            if (box) box.classList.toggle("show");
           });
         });
 
-        // Wire up Copy buttons
+        // Wire up Copy buttons (scoped to the clicked card)
         container.querySelectorAll("button.bibtex-copy").forEach((btn) => {
           btn.addEventListener("click", async () => {
-            const id = btn.dataset.pubId;
-            const pre = document.getElementById("bibtex-code-" + id);
+            const card = btn.closest(".publication");
+            const pre = card ? card.querySelector(".bibtex-code") : null;
             const ok = await copyTextToClipboard(pre ? pre.innerText : "");
             const original = btn.textContent;
             btn.textContent = ok ? "✓ Copied!" : "Copy failed";
@@ -417,8 +461,8 @@
               : [];
 
         const categories = {
-          talks: { name: "Talks", color: "#1f7a8c", items: talks },
-          tutorials: { name: "Tutorials", color: "#f59e0b", items: tutorials },
+          talks: { name: "Talks", color: "#0f3d68", items: talks },
+          tutorials: { name: "Tutorials", color: "#0f3d68", items: tutorials },
         };
 
         if (talks.length + tutorials.length === 0) {
@@ -1185,3 +1229,40 @@
       }
 
       initCarousel();
+
+      // ============================================
+      // Deep-link support: open the right section on
+      // page load and when the URL hash changes.
+      // ============================================
+      function activateFromHash() {
+        const raw = (location.hash || "").replace(/^#/, "");
+        if (!raw) return;
+
+        // Direct section link (e.g. #publications)
+        let navLink = document.querySelector('.nav-link[href="#' + raw + '"]');
+
+        // Sub-anchor link (e.g. #pub-journal) -> find its parent section
+        let subTargetId = null;
+        if (!navLink) {
+          const el = document.getElementById(raw);
+          const section = el ? el.closest("section") : null;
+          if (section) {
+            navLink = document.querySelector(
+              '.nav-link[href="#' + section.id + '"]',
+            );
+            subTargetId = raw;
+          }
+        }
+
+        if (!navLink) return;
+
+        navLink.click();
+
+        if (subTargetId) {
+          // Let the section render, then scroll to the sub-anchor
+          setTimeout(() => scrollToHashTarget(subTargetId), 350);
+        }
+      }
+
+      window.addEventListener("hashchange", activateFromHash);
+      activateFromHash();

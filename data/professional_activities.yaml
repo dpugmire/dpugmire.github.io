@@ -49,6 +49,7 @@ reviewer:
   - event: "Supercomputing Conference"
   - event: "IEEE Visualization Conference"
   - event: "Cluster Conference"
+  - event: "HPCAsia"
 
   - event: "Transactions on Visualization and Computer Graphics (TVCG)"
   - event: "EuroVis Conference"
@@ -60,5 +61,6 @@ reviewer:
   - event: "International Symposium on Visual Computing"
   - event: "IEEE Virtual Reality Conference"
   - event: "SoftwareX"
+  - event: "Computers and Graphics"
   - event: "DOE Early Career Research Program (ECRP)"
   - event: "DOE Small Business Innovation Research (SBIR) Program"

@@ -27,7 +27,7 @@
 
 > "Help each other. Love everyone. Every leaf. Every ray of light. Forgive."
 >
-> — _The Tree of Life_
+> — Mrs. O'Brien, _The Tree of Life_
 
 > "There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind."
 >

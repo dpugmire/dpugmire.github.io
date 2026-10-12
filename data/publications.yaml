@@ -85,6 +85,7 @@ publications:
 
   # CONFERENCE - 2025
   - id: "wang2025orbit"
+    selected: true
     title: "ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling"
     authors: "Wang, X., Choi, J., Kurihaya, T., Lyngaas, I., Yoon, H., Xiao, X., Pugmire, D., Fan, M., Nafi, N., Tsaris, A., Aji, A., Hossain, M., Wahib, M., Wang, D., Thornton, P., Balaprakash, P., Ashfaq, M., Lu, D."
     venue: "Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis"
@@ -352,6 +353,7 @@ publications:
 
   # JOURNAL - 2023
   - id: "anirudh2023review"
+    selected: true
     title: "2022 Review of Data-Driven Plasma Science"
     authors: "Anirudh, R., Archibald, R., Asif, M., Becker, M., Benkadda, S., Bremer, P., Budé, R., Chang, C., Chen, L., Churchill, R., Citrin, J., Gaffney, J., Gainaru, A., Gekelman, W., Gibbs, T., Hamaguchi, S., Hill, C., Humbird, K., Jalas, S., Kawaguchi, S., et al."
     venue: "IEEE Transactions on Plasma Science"
@@ -941,6 +943,7 @@ publications:
 
   # CONFERENCE - 2019
   - id: "binyahib2019lifeline"
+    selected: true
     title: "A Lifeline-Based Approach for Work Requesting and Parallel Particle Advection"
     authors: "Binyahib, R., Pugmire, D., Norris, B., Childs, H."
     venue: "IEEE Symposium on Large Data Analysis and Visualization (LDAV)"
@@ -1151,6 +1154,7 @@ publications:
 
   # CONFERENCE - 2018
   - id: "pugmire2018performance"
+    selected: true
     title: "Performance-Portable Particle Advection with VTK-m"
     authors: "Pugmire, D., Yenpure, A., Kim, M., Kress, J., Maynard, R., Childs, H., Hentschel, B."
     venue: "Eurographics Symposium on Parallel Graphics and Visualization (EGPGV)"
@@ -1305,6 +1309,7 @@ publications:
 
   # JOURNAL - 2016
   - id: "moreland2016accelerating"
+    selected: true
     title: "VTK-m: Accelerating the Visualization Toolkit for Massively Threaded Architectures"
     authors: "Moreland, K., Sewell, C., Usher, W., Lo, L., Meredith, J., Pugmire, D., Kress, J., Schroots, H., Ma, K., Childs, H., Larsen, M., Chen, C., Maynard, R., Geveci, B."
     venue: "IEEE Computer Graphics and Applications"
@@ -1754,6 +1759,7 @@ publications:
 
   # CONFERENCE - 2009
   - id: "pugmire2009scalable"
+    selected: true
     title: "Scalable computation of streamlines on very large datasets"
     authors: "Pugmire, D., Childs, H., Garth, C., Ahern, S., Weber, G."
     venue: "Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis"
@@ -1831,7 +1837,7 @@ publications:
     doi: "10.1145/215585.215652"
     paper_url: "https://doi.org/10.1145/215585.215652"
     # abstract: ""  # Optional - full abstract text
-    note: "Widgets for 3D surface editing"
+    # note: ""  # e.g., Best Paper Award
     # summary: ""  # Add a one-sentence summary of the paper
     image: "grimm1995visual.png"
 # --------------------------------------------------
