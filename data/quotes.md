@@ -110,3 +110,43 @@
 > "Life's barely long enough to get good at one thing. So be careful what you get good at."
 >
 > — Rust Cohle, _True Detective_
+
+> "Death created time to grow the things that it would kill."
+>
+> — Rust Cohle, _True Detective_ (season 1)
+
+> "Why do people have to die?"<br>
+> "To make life more important."
+>
+> — Nate Fisher, _Six Feet Under_
+
+> "It is not down in any map; true places never are."
+>
+> — Herman Melville, _Moby-Dick_
+
+> "The universe is under no obligation to make sense to you."
+>
+> — Neil deGrasse Tyson
+
+> "And if love remains<br>
+> Though everything is lost<br>
+> We will pay the price<br>
+> But we will not count the cost"
+>
+> — "Bravado", Rush, Roll the Bones
+
+> "There also weren’t any bad guys to hate, which made everything that much harder to get into focus."
+>
+> — Tom Perrotta, _The Leftovers_
+
+> "In the darkness, in the worst of it, in the absence of light, we sing."
+>
+> — Father Paul, _Midnight Mass_
+
+> "I love you, but you are not serious people."
+>
+> — Logan Roy, _Succession_
+
+> "You can’t make a Tomelette without breaking some Greggs."
+>
+> — Logan Roy, _Succession_

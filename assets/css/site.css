@@ -290,20 +290,47 @@
       }
 
       .carousel-btn {
-        background: var(--brand);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        background: #666;
         color: white;
         border: none;
-        padding: 0.4rem 0.9rem;
-        border-radius: 6px;
+        border-radius: 4px;
         cursor: pointer;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0;
+        line-height: 1;
         transition: all 0.2s ease;
       }
 
+      .carousel-btn::before {
+        width: 0;
+        height: 0;
+        content: "";
+        border-top: 0.45rem solid transparent;
+        border-bottom: 0.45rem solid transparent;
+      }
+
+      .carousel-btn:first-child::before {
+        border-right: 0.6rem solid white;
+      }
+
+      .carousel-btn:last-child::before {
+        border-left: 0.6rem solid white;
+      }
+
       .carousel-btn:hover {
-        background: var(--brand-strong);
+        background: #4d4d4d;
         transform: translateY(-1px);
+      }
+
+      .carousel-btn:focus-visible {
+        outline: 3px solid var(--brand);
+        outline-offset: 3px;
       }
 
       .carousel-indicators {
