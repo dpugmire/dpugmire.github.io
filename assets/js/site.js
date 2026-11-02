@@ -1190,6 +1190,15 @@
           inner.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
 
+        document.querySelectorAll('.about-carousel-item video').forEach((video, index) => {
+          if (index === currentSlide) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+            video.currentTime = 0;
+          }
+        });
+
         const indicators = document.querySelectorAll('.carousel-indicator');
         indicators.forEach((indicator, index) => {
           indicator.classList.toggle('active', index === currentSlide);
