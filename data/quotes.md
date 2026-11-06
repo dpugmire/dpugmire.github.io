@@ -15,6 +15,18 @@
 >
 > — Yann Martel, _Life of Pi_
 
+> "I suppose in the end, the whole of life becomes an act of letting go, but what always hurts the most is not taking a moment to say goodbye."
+>
+> — Adult Pi Patel, _Life of Pi_
+
+> "You forget what you want to remember, and you remember what you want to forget."
+>
+> — Cormac McCarthy, _The Road_
+
+> "What you end up remembering isn’t always the same as what you have witnessed."
+>
+> — Julian Barnes, _The Sense of an Ending_
+
 > Kevin Garvey: "Why isn't it enough?"
 >
 > Kevin Garvey Sr.: "'It' is enough."
@@ -26,6 +38,30 @@
 > — Emma Donoghue, _Room_
 
 > "Help each other. Love everyone. Every leaf. Every ray of light. Forgive."
+>
+> — Mrs. O'Brien, _The Tree of Life_
+
+> "They should've sent a poet."
+>
+> — Ellie Arroway, _Contact_
+
+> "People are frightened by what they don't understand."
+>
+> — John Merrick, _The Elephant Man_
+
+> "All work and no play makes Jack a dull boy."
+>
+> — Jack Torrance, _The Shining_
+
+> "If the rule you followed led you to this, of what use was the rule?"
+>
+> — Anton Chigurh, _No Country for Old Men_
+
+> "I’m exhausted. I can’t remember who’s alive and who isn’t."
+>
+> — Georgy Malenkov, _The Death of Stalin_
+
+> "The nuns taught us there are two ways through life: the way of nature and the way of grace. You have to choose which one you'll follow. Grace doesn't try to please itself. It accepts being slighted, forgotten, disliked. It accepts insults and injuries. Nature only wants to please itself, get others to please it, too, likes to lord it over them, to have its own way. It finds reasons to be unhappy when all the world is shining around it, when love is smiling through all things. They taught us that no one who loves the way of grace ever comes to a bad end."
 >
 > — Mrs. O'Brien, _The Tree of Life_
 
@@ -147,6 +183,22 @@
 >
 > — Logan Roy, _Succession_
 
+> "Wouldst thou like to live deliciously?"
+>
+> — Black Phillip, _The Witch_
+
+> "It’s only when we wake up that we realize something was actually strange."
+>
+> — Dom Cobb, _Inception_
+
 > "You can’t make a Tomelette without breaking some Greggs."
 >
 > — Logan Roy, _Succession_
+
+> "Some things there’s no moving on from. And I think that’s a good thing."
+>
+> — Colm Doherty, _The Banshees of Inisherin_
+
+> "The coin don’t have no say. It’s just you."
+>
+> — Anton Chigurh, _No Country for Old Men_
