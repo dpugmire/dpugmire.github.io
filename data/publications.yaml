@@ -2,6 +2,25 @@
 # Generated from BibTeX on 2025-12-12 15:50:55
 
 publications:
+  # CONFERENCE - 2026
+  - id: "klasky2026convergence"
+    title: "Convergence-Calibrated Compression for Contour-Stable CFD Visualization"
+    authors: "Klasky, E. B., Lee, J., Gong, Q., Athawale, T. M., Pugmire, D., Podhorszki, N., Gainaru, A., Rangarajan, A., Ranka, S., Chen, J., Childs, H., Klasky, S."
+    venue: "2026 IEEE International Conference on eScience (eScience)"
+    year: 2026
+    type: conference
+    paper_url: "https://ieeexplore.ieee.org/abstract/document/11761372/"
+    image: "klasky2026convergence.png"
+
+  # TECHNICAL REPORT - 2026
+  - id: "dasilva2026dataaihighlights"
+    title: "Data and AI Systems FY 2026 Highlights"
+    authors: "Da Silva, R. F., Klasky, S., Patton, R., Pugmire, D., Thomas, T., Widener, P., Athawale, T., Bhowmick, C., Chae, J., Choi, J. Y., Coletti, M., Cong, G., Das, S., Dunivan Stahl, C., Engstrom, K., Gautam, A., Gong, Q., Johnson-Scott, Z., Kim, M., Kotevska, O., Lee, J., Li, Z., Logan, J., Mehta, K., Moreland, K., Podhorszki, N., Schmidt, E., Suchyta, E., Suter, F."
+    venue: "Oak Ridge National Laboratory Technical Memorandum ORNL/TM-2026/4963"
+    year: 2026
+    type: techreport
+    paper_url: "https://www.osti.gov/biblio/17168022"
+
   # PREPRINT - 2026
   - id: "irger2026raiven"
     title: "Raiven: LLM-Based Visualization Authoring via Domain-Specific Language Mediation"
