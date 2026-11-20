@@ -1,7 +1,9 @@
       function updateTopbarHeightVar() {
         const topbar = document.getElementById("topbar");
         if (!topbar) return;
-        const h = topbar.getBoundingClientRect().height;
+        const h = getComputedStyle(topbar).position === "sticky"
+          ? topbar.getBoundingClientRect().height
+          : 0;
         document.documentElement.style.setProperty(
           "--topbar-height",
           Math.ceil(h) + "px",
@@ -17,7 +19,9 @@
         const topbar = document.getElementById("topbar");
         const section = target.closest("section");
         const stickySubheader = section ? section.querySelector(".pub-header") : null;
-        const topbarHeight = topbar ? topbar.getBoundingClientRect().height : 0;
+        const topbarHeight = topbar && getComputedStyle(topbar).position === "sticky"
+          ? topbar.getBoundingClientRect().height
+          : 0;
         const stickySubheaderHeight = stickySubheader
           ? stickySubheader.getBoundingClientRect().height
           : 0;
@@ -267,7 +271,7 @@
           // Citation: authors. "title." venue year. + DOI appended at end
           const pieces = [];
           if (pub.authors) pieces.push(escHtml(pub.authors) + ".");
-          if (pub.title) pieces.push('"' + renderInlineMathText(pub.title) + '."');
+          if (pub.title) pieces.push('<span class="pub-title">"' + renderInlineMathText(pub.title) + '."</span>');
           if (pub.venue) pieces.push("<i>" + escHtml(pub.venue) + "</i>");
           if (pub.year) pieces.push(escHtml(String(pub.year)) + ".");
 
@@ -1168,6 +1172,8 @@
       // ============================================
       let currentSlide = 0;
       let autoSlideInterval = null;
+      let carouselPaused = false;
+      let carouselHovered = false;
       const slideCount = document.querySelectorAll('.about-carousel-item').length;
 
       function initCarousel() {
@@ -1192,7 +1198,11 @@
 
         document.querySelectorAll('.about-carousel-item video').forEach((video, index) => {
           if (index === currentSlide) {
-            video.play().catch(() => {});
+            if (carouselPaused) {
+              video.pause();
+            } else {
+              video.play().catch(() => {});
+            }
           } else {
             video.pause();
             video.currentTime = 0;
@@ -1220,6 +1230,10 @@
       }
 
       function startAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = null;
+        if (carouselPaused || carouselHovered) return;
+
         autoSlideInterval = setInterval(() => {
           currentSlide = (currentSlide + 1) % slideCount;
           updateCarousel();
@@ -1227,14 +1241,33 @@
       }
 
       function resetAutoSlide() {
-        clearInterval(autoSlideInterval);
         startAutoSlide();
       }
 
       const carousel = document.querySelector('.about-carousel');
       if (carousel) {
-        carousel.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-        carousel.addEventListener('mouseleave', () => startAutoSlide());
+        carousel.addEventListener('mouseenter', () => {
+          carouselHovered = true;
+          clearInterval(autoSlideInterval);
+          autoSlideInterval = null;
+        });
+        carousel.addEventListener('mouseleave', () => {
+          carouselHovered = false;
+          startAutoSlide();
+        });
+      }
+
+      const carouselPauseButton = document.getElementById('carouselPause');
+      if (carouselPauseButton) {
+        carouselPauseButton.addEventListener('click', () => {
+          carouselPaused = !carouselPaused;
+          carouselPauseButton.textContent = carouselPaused ? 'Resume' : 'Pause';
+          carouselPauseButton.setAttribute('aria-label', carouselPaused
+            ? 'Resume carousel and video'
+            : 'Pause carousel and video');
+          updateCarousel();
+          resetAutoSlide();
+        });
       }
 
       initCarousel();
